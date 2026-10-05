@@ -1,0 +1,1135 @@
+{
+  "input": "install\\NFS_WIN.EXE",
+  "analysis_utc": "2026-10-05T18:51:05.727785+00:00",
+  "size_bytes": 1069056,
+  "sha256": "ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b",
+  "coff_timestamp_raw": 834990940,
+  "coff_timestamp_utc": "1996-06-17T05:55:40+00:00",
+  "machine": "0x14c",
+  "optional_magic": "0x10b",
+  "subsystem": 2,
+  "image_base": 4194304,
+  "entrypoint_rva": 575490,
+  "entrypoint_va": 4769794,
+  "entrypoint_offset": 572418,
+  "size_of_image": 1314816,
+  "linker_version": [
+    2,
+    18
+  ],
+  "subsystem_version": [
+    3,
+    10
+  ],
+  "os_version_field": [
+    1,
+    11
+  ],
+  "stack_reserve": 32000,
+  "stack_commit": 32000,
+  "heap_reserve": 8192,
+  "heap_commit": 4096,
+  "coff_characteristics": "0x8182",
+  "dll_characteristics": "0x0",
+  "coff_symbol_count": 0,
+  "directories": [
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_EXPORT",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_IMPORT",
+      "rva": 1249280,
+      "size": 4552
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_RESOURCE",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_EXCEPTION",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_SECURITY",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_BASERELOC",
+      "rva": 1257472,
+      "size": 56136
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_DEBUG",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_COPYRIGHT",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_GLOBALPTR",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_TLS",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_IAT",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR",
+      "rva": 0,
+      "size": 0
+    },
+    {
+      "name": "IMAGE_DIRECTORY_ENTRY_RESERVED",
+      "rva": 0,
+      "size": 0
+    }
+  ],
+  "sections": [
+    {
+      "name": "BEGTEXT",
+      "rva": 4096,
+      "virtual_size_field": 0,
+      "raw_offset": 1024,
+      "raw_size_field": 704000,
+      "file_backed": true,
+      "entropy_file_bytes": 6.521563958175439,
+      "characteristics": "0x60000020"
+    },
+    {
+      "name": "DGROUP",
+      "rva": 708608,
+      "virtual_size_field": 0,
+      "raw_offset": 705024,
+      "raw_size_field": 303104,
+      "file_backed": true,
+      "entropy_file_bytes": 2.9210851469102694,
+      "characteristics": "0xc0000040"
+    },
+    {
+      "name": ".bss",
+      "rva": 1011712,
+      "virtual_size_field": 0,
+      "raw_offset": 0,
+      "raw_size_field": 235520,
+      "file_backed": false,
+      "entropy_file_bytes": null,
+      "characteristics": "0xc0000080"
+    },
+    {
+      "name": ".idata",
+      "rva": 1249280,
+      "virtual_size_field": 0,
+      "raw_offset": 1008128,
+      "raw_size_field": 4608,
+      "file_backed": true,
+      "entropy_file_bytes": 5.278970086869281,
+      "characteristics": "0xc0000040"
+    },
+    {
+      "name": ".reloc",
+      "rva": 1257472,
+      "virtual_size_field": 0,
+      "raw_offset": 1012736,
+      "raw_size_field": 56320,
+      "file_backed": true,
+      "entropy_file_bytes": 6.817968427821974,
+      "characteristics": "0x42000040"
+    }
+  ],
+  "overlay_offset": null,
+  "overlay_size": 0,
+  "imports": [
+    {
+      "dll": "GDI32.dll",
+      "symbols": [
+        {
+          "name": "GetStockObject",
+          "ordinal": null,
+          "iat_va": 5443840
+        },
+        {
+          "name": "SetStretchBltMode",
+          "ordinal": null,
+          "iat_va": 5443844
+        },
+        {
+          "name": "StretchBlt",
+          "ordinal": null,
+          "iat_va": 5443848
+        }
+      ]
+    },
+    {
+      "dll": "USER32.dll",
+      "symbols": [
+        {
+          "name": "AdjustWindowRect",
+          "ordinal": null,
+          "iat_va": 5443988
+        },
+        {
+          "name": "BeginPaint",
+          "ordinal": null,
+          "iat_va": 5443992
+        },
+        {
+          "name": "ClientToScreen",
+          "ordinal": null,
+          "iat_va": 5443996
+        },
+        {
+          "name": "CreateWindowExA",
+          "ordinal": null,
+          "iat_va": 5444000
+        },
+        {
+          "name": "DefWindowProcA",
+          "ordinal": null,
+          "iat_va": 5444004
+        },
+        {
+          "name": "DestroyWindow",
+          "ordinal": null,
+          "iat_va": 5444008
+        },
+        {
+          "name": "DispatchMessageA",
+          "ordinal": null,
+          "iat_va": 5444012
+        },
+        {
+          "name": "EndPaint",
+          "ordinal": null,
+          "iat_va": 5444016
+        },
+        {
+          "name": "GetClientRect",
+          "ordinal": null,
+          "iat_va": 5444020
+        },
+        {
+          "name": "GetDesktopWindow",
+          "ordinal": null,
+          "iat_va": 5444024
+        },
+        {
+          "name": "GetKeyState",
+          "ordinal": null,
+          "iat_va": 5444028
+        },
+        {
+          "name": "GetMessageA",
+          "ordinal": null,
+          "iat_va": 5444032
+        },
+        {
+          "name": "GetSystemMetrics",
+          "ordinal": null,
+          "iat_va": 5444036
+        },
+        {
+          "name": "GetWindowLongA",
+          "ordinal": null,
+          "iat_va": 5444040
+        },
+        {
+          "name": "IsIconic",
+          "ordinal": null,
+          "iat_va": 5444044
+        },
+        {
+          "name": "LoadCursorA",
+          "ordinal": null,
+          "iat_va": 5444048
+        },
+        {
+          "name": "LoadIconA",
+          "ordinal": null,
+          "iat_va": 5444052
+        },
+        {
+          "name": "MessageBoxA",
+          "ordinal": null,
+          "iat_va": 5444056
+        },
+        {
+          "name": "PostMessageA",
+          "ordinal": null,
+          "iat_va": 5444060
+        },
+        {
+          "name": "RegisterClassA",
+          "ordinal": null,
+          "iat_va": 5444064
+        },
+        {
+          "name": "SendNotifyMessageA",
+          "ordinal": null,
+          "iat_va": 5444068
+        },
+        {
+          "name": "SetCursorPos",
+          "ordinal": null,
+          "iat_va": 5444072
+        },
+        {
+          "name": "SetCursor",
+          "ordinal": null,
+          "iat_va": 5444076
+        },
+        {
+          "name": "SetFocus",
+          "ordinal": null,
+          "iat_va": 5444080
+        },
+        {
+          "name": "SetForegroundWindow",
+          "ordinal": null,
+          "iat_va": 5444084
+        },
+        {
+          "name": "SetWindowPos",
+          "ordinal": null,
+          "iat_va": 5444088
+        },
+        {
+          "name": "ShowCursor",
+          "ordinal": null,
+          "iat_va": 5444092
+        },
+        {
+          "name": "ShowWindow",
+          "ordinal": null,
+          "iat_va": 5444096
+        },
+        {
+          "name": "SystemParametersInfoA",
+          "ordinal": null,
+          "iat_va": 5444100
+        },
+        {
+          "name": "TranslateMessage",
+          "ordinal": null,
+          "iat_va": 5444104
+        },
+        {
+          "name": "UpdateWindow",
+          "ordinal": null,
+          "iat_va": 5444108
+        },
+        {
+          "name": "keybd_event",
+          "ordinal": null,
+          "iat_va": 5444112
+        }
+      ]
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "symbols": [
+        {
+          "name": "CloseHandle",
+          "ordinal": null,
+          "iat_va": 5444320
+        },
+        {
+          "name": "CreateEventA",
+          "ordinal": null,
+          "iat_va": 5444324
+        },
+        {
+          "name": "CreateFileA",
+          "ordinal": null,
+          "iat_va": 5444328
+        },
+        {
+          "name": "CreateMutexA",
+          "ordinal": null,
+          "iat_va": 5444332
+        },
+        {
+          "name": "CreateThread",
+          "ordinal": null,
+          "iat_va": 5444336
+        },
+        {
+          "name": "DebugBreak",
+          "ordinal": null,
+          "iat_va": 5444340
+        },
+        {
+          "name": "DuplicateHandle",
+          "ordinal": null,
+          "iat_va": 5444344
+        },
+        {
+          "name": "EscapeCommFunction",
+          "ordinal": null,
+          "iat_va": 5444348
+        },
+        {
+          "name": "ExitProcess",
+          "ordinal": null,
+          "iat_va": 5444352
+        },
+        {
+          "name": "ExitThread",
+          "ordinal": null,
+          "iat_va": 5444356
+        },
+        {
+          "name": "FindClose",
+          "ordinal": null,
+          "iat_va": 5444360
+        },
+        {
+          "name": "FindFirstFileA",
+          "ordinal": null,
+          "iat_va": 5444364
+        },
+        {
+          "name": "FindNextFileA",
+          "ordinal": null,
+          "iat_va": 5444368
+        },
+        {
+          "name": "GetCommModemStatus",
+          "ordinal": null,
+          "iat_va": 5444372
+        },
+        {
+          "name": "GetCommState",
+          "ordinal": null,
+          "iat_va": 5444376
+        },
+        {
+          "name": "GetCurrentDirectoryA",
+          "ordinal": null,
+          "iat_va": 5444380
+        },
+        {
+          "name": "GetCurrentProcess",
+          "ordinal": null,
+          "iat_va": 5444384
+        },
+        {
+          "name": "GetCurrentThreadId",
+          "ordinal": null,
+          "iat_va": 5444388
+        },
+        {
+          "name": "GetCurrentThread",
+          "ordinal": null,
+          "iat_va": 5444392
+        },
+        {
+          "name": "GetDiskFreeSpaceA",
+          "ordinal": null,
+          "iat_va": 5444396
+        },
+        {
+          "name": "GetDriveTypeA",
+          "ordinal": null,
+          "iat_va": 5444400
+        },
+        {
+          "name": "GetFileAttributesA",
+          "ordinal": null,
+          "iat_va": 5444404
+        },
+        {
+          "name": "GetFileSize",
+          "ordinal": null,
+          "iat_va": 5444408
+        },
+        {
+          "name": "GetLastError",
+          "ordinal": null,
+          "iat_va": 5444412
+        },
+        {
+          "name": "GetModuleHandleA",
+          "ordinal": null,
+          "iat_va": 5444416
+        },
+        {
+          "name": "GetOverlappedResult",
+          "ordinal": null,
+          "iat_va": 5444420
+        },
+        {
+          "name": "GetThreadPriority",
+          "ordinal": null,
+          "iat_va": 5444424
+        },
+        {
+          "name": "GetTickCount",
+          "ordinal": null,
+          "iat_va": 5444428
+        },
+        {
+          "name": "GlobalAlloc",
+          "ordinal": null,
+          "iat_va": 5444432
+        },
+        {
+          "name": "GlobalFree",
+          "ordinal": null,
+          "iat_va": 5444436
+        },
+        {
+          "name": "GlobalLock",
+          "ordinal": null,
+          "iat_va": 5444440
+        },
+        {
+          "name": "GlobalMemoryStatus",
+          "ordinal": null,
+          "iat_va": 5444444
+        },
+        {
+          "name": "GlobalUnlock",
+          "ordinal": null,
+          "iat_va": 5444448
+        },
+        {
+          "name": "OutputDebugStringA",
+          "ordinal": null,
+          "iat_va": 5444452
+        },
+        {
+          "name": "PurgeComm",
+          "ordinal": null,
+          "iat_va": 5444456
+        },
+        {
+          "name": "ReadFile",
+          "ordinal": null,
+          "iat_va": 5444460
+        },
+        {
+          "name": "ReleaseMutex",
+          "ordinal": null,
+          "iat_va": 5444464
+        },
+        {
+          "name": "ResumeThread",
+          "ordinal": null,
+          "iat_va": 5444468
+        },
+        {
+          "name": "SetCommState",
+          "ordinal": null,
+          "iat_va": 5444472
+        },
+        {
+          "name": "SetCommTimeouts",
+          "ordinal": null,
+          "iat_va": 5444476
+        },
+        {
+          "name": "SetCurrentDirectoryA",
+          "ordinal": null,
+          "iat_va": 5444480
+        },
+        {
+          "name": "SetEvent",
+          "ordinal": null,
+          "iat_va": 5444484
+        },
+        {
+          "name": "SetFilePointer",
+          "ordinal": null,
+          "iat_va": 5444488
+        },
+        {
+          "name": "SetPriorityClass",
+          "ordinal": null,
+          "iat_va": 5444492
+        },
+        {
+          "name": "SetThreadPriority",
+          "ordinal": null,
+          "iat_va": 5444496
+        },
+        {
+          "name": "SleepEx",
+          "ordinal": null,
+          "iat_va": 5444500
+        },
+        {
+          "name": "TerminateThread",
+          "ordinal": null,
+          "iat_va": 5444504
+        },
+        {
+          "name": "WaitForMultipleObjectsEx",
+          "ordinal": null,
+          "iat_va": 5444508
+        },
+        {
+          "name": "WriteFile",
+          "ordinal": null,
+          "iat_va": 5444512
+        }
+      ]
+    },
+    {
+      "dll": "USER32.DLL",
+      "symbols": [
+        {
+          "name": "GetActiveWindow",
+          "ordinal": null,
+          "iat_va": 5444532
+        },
+        {
+          "name": "wsprintfA",
+          "ordinal": null,
+          "iat_va": 5444536
+        }
+      ]
+    },
+    {
+      "dll": "DSOUND.dll",
+      "symbols": [
+        {
+          "name": "DirectSoundCreate",
+          "ordinal": null,
+          "iat_va": 5444552
+        }
+      ]
+    },
+    {
+      "dll": "WINMM.dll",
+      "symbols": [
+        {
+          "name": "joyGetDevCapsA",
+          "ordinal": null,
+          "iat_va": 5444620
+        },
+        {
+          "name": "joyGetNumDevs",
+          "ordinal": null,
+          "iat_va": 5444624
+        },
+        {
+          "name": "joyGetPosEx",
+          "ordinal": null,
+          "iat_va": 5444628
+        },
+        {
+          "name": "timeBeginPeriod",
+          "ordinal": null,
+          "iat_va": 5444632
+        },
+        {
+          "name": "timeEndPeriod",
+          "ordinal": null,
+          "iat_va": 5444636
+        },
+        {
+          "name": "timeGetDevCaps",
+          "ordinal": null,
+          "iat_va": 5444640
+        },
+        {
+          "name": "timeSetEvent",
+          "ordinal": null,
+          "iat_va": 5444644
+        },
+        {
+          "name": "waveOutClose",
+          "ordinal": null,
+          "iat_va": 5444648
+        },
+        {
+          "name": "waveOutGetDevCapsA",
+          "ordinal": null,
+          "iat_va": 5444652
+        },
+        {
+          "name": "waveOutGetNumDevs",
+          "ordinal": null,
+          "iat_va": 5444656
+        },
+        {
+          "name": "waveOutOpen",
+          "ordinal": null,
+          "iat_va": 5444660
+        },
+        {
+          "name": "waveOutPrepareHeader",
+          "ordinal": null,
+          "iat_va": 5444664
+        },
+        {
+          "name": "waveOutReset",
+          "ordinal": null,
+          "iat_va": 5444668
+        },
+        {
+          "name": "waveOutWrite",
+          "ordinal": null,
+          "iat_va": 5444672
+        }
+      ]
+    },
+    {
+      "dll": "KERNEL32.DLL",
+      "symbols": [
+        {
+          "name": "CloseHandle",
+          "ordinal": null,
+          "iat_va": 5444860
+        },
+        {
+          "name": "CreateEventA",
+          "ordinal": null,
+          "iat_va": 5444864
+        },
+        {
+          "name": "CreateFileA",
+          "ordinal": null,
+          "iat_va": 5444868
+        },
+        {
+          "name": "CreateMutexA",
+          "ordinal": null,
+          "iat_va": 5444872
+        },
+        {
+          "name": "CreateThread",
+          "ordinal": null,
+          "iat_va": 5444876
+        },
+        {
+          "name": "DeleteFileA",
+          "ordinal": null,
+          "iat_va": 5444880
+        },
+        {
+          "name": "ExitProcess",
+          "ordinal": null,
+          "iat_va": 5444884
+        },
+        {
+          "name": "ExitThread",
+          "ordinal": null,
+          "iat_va": 5444888
+        },
+        {
+          "name": "GetCommandLineA",
+          "ordinal": null,
+          "iat_va": 5444892
+        },
+        {
+          "name": "GetConsoleMode",
+          "ordinal": null,
+          "iat_va": 5444896
+        },
+        {
+          "name": "GetCurrentDirectoryA",
+          "ordinal": null,
+          "iat_va": 5444900
+        },
+        {
+          "name": "GetCurrentProcessId",
+          "ordinal": null,
+          "iat_va": 5444904
+        },
+        {
+          "name": "GetCurrentThreadId",
+          "ordinal": null,
+          "iat_va": 5444908
+        },
+        {
+          "name": "GetCurrentThread",
+          "ordinal": null,
+          "iat_va": 5444912
+        },
+        {
+          "name": "GetDiskFreeSpaceA",
+          "ordinal": null,
+          "iat_va": 5444916
+        },
+        {
+          "name": "GetEnvironmentStrings",
+          "ordinal": null,
+          "iat_va": 5444920
+        },
+        {
+          "name": "GetFileAttributesA",
+          "ordinal": null,
+          "iat_va": 5444924
+        },
+        {
+          "name": "GetFileType",
+          "ordinal": null,
+          "iat_va": 5444928
+        },
+        {
+          "name": "GetLastError",
+          "ordinal": null,
+          "iat_va": 5444932
+        },
+        {
+          "name": "GetLocalTime",
+          "ordinal": null,
+          "iat_va": 5444936
+        },
+        {
+          "name": "GetModuleFileNameA",
+          "ordinal": null,
+          "iat_va": 5444940
+        },
+        {
+          "name": "GetModuleHandleA",
+          "ordinal": null,
+          "iat_va": 5444944
+        },
+        {
+          "name": "GetProcAddress",
+          "ordinal": null,
+          "iat_va": 5444948
+        },
+        {
+          "name": "GetStdHandle",
+          "ordinal": null,
+          "iat_va": 5444952
+        },
+        {
+          "name": "GetTimeZoneInformation",
+          "ordinal": null,
+          "iat_va": 5444956
+        },
+        {
+          "name": "GetVersion",
+          "ordinal": null,
+          "iat_va": 5444960
+        },
+        {
+          "name": "LoadLibraryA",
+          "ordinal": null,
+          "iat_va": 5444964
+        },
+        {
+          "name": "LocalAlloc",
+          "ordinal": null,
+          "iat_va": 5444968
+        },
+        {
+          "name": "LocalFree",
+          "ordinal": null,
+          "iat_va": 5444972
+        },
+        {
+          "name": "ReadConsoleInputA",
+          "ordinal": null,
+          "iat_va": 5444976
+        },
+        {
+          "name": "ReadFile",
+          "ordinal": null,
+          "iat_va": 5444980
+        },
+        {
+          "name": "ReleaseMutex",
+          "ordinal": null,
+          "iat_va": 5444984
+        },
+        {
+          "name": "SetConsoleMode",
+          "ordinal": null,
+          "iat_va": 5444988
+        },
+        {
+          "name": "SetCurrentDirectoryA",
+          "ordinal": null,
+          "iat_va": 5444992
+        },
+        {
+          "name": "SetEvent",
+          "ordinal": null,
+          "iat_va": 5444996
+        },
+        {
+          "name": "SetFilePointer",
+          "ordinal": null,
+          "iat_va": 5445000
+        },
+        {
+          "name": "SetStdHandle",
+          "ordinal": null,
+          "iat_va": 5445004
+        },
+        {
+          "name": "TlsAlloc",
+          "ordinal": null,
+          "iat_va": 5445008
+        },
+        {
+          "name": "TlsFree",
+          "ordinal": null,
+          "iat_va": 5445012
+        },
+        {
+          "name": "TlsGetValue",
+          "ordinal": null,
+          "iat_va": 5445016
+        },
+        {
+          "name": "TlsSetValue",
+          "ordinal": null,
+          "iat_va": 5445020
+        },
+        {
+          "name": "WaitForSingleObject",
+          "ordinal": null,
+          "iat_va": 5445024
+        },
+        {
+          "name": "WriteConsoleA",
+          "ordinal": null,
+          "iat_va": 5445028
+        },
+        {
+          "name": "WriteFile",
+          "ordinal": null,
+          "iat_va": 5445032
+        }
+      ]
+    },
+    {
+      "dll": "WSOCK32.dll",
+      "symbols": [
+        {
+          "name": "select",
+          "ordinal": 18,
+          "iat_va": 5445096
+        },
+        {
+          "name": "sendto",
+          "ordinal": 20,
+          "iat_va": 5445100
+        },
+        {
+          "name": "closesocket",
+          "ordinal": 3,
+          "iat_va": 5445104
+        },
+        {
+          "name": "getsockname",
+          "ordinal": 6,
+          "iat_va": 5445108
+        },
+        {
+          "name": "bind",
+          "ordinal": 2,
+          "iat_va": 5445112
+        },
+        {
+          "name": "htons",
+          "ordinal": 9,
+          "iat_va": 5445116
+        },
+        {
+          "name": "ioctlsocket",
+          "ordinal": 12,
+          "iat_va": 5445120
+        },
+        {
+          "name": "setsockopt",
+          "ordinal": 21,
+          "iat_va": 5445124
+        },
+        {
+          "name": "socket",
+          "ordinal": 23,
+          "iat_va": 5445128
+        },
+        {
+          "name": "WSACleanup",
+          "ordinal": 116,
+          "iat_va": 5445132
+        },
+        {
+          "name": "WSAStartup",
+          "ordinal": 115,
+          "iat_va": 5445136
+        },
+        {
+          "name": "WSAGetLastError",
+          "ordinal": 111,
+          "iat_va": 5445140
+        },
+        {
+          "name": "recvfrom",
+          "ordinal": 17,
+          "iat_va": 5445144
+        }
+      ]
+    },
+    {
+      "dll": "DPLAY.dll",
+      "symbols": [
+        {
+          "name": "ordinal_2",
+          "ordinal": 2,
+          "iat_va": 5445164
+        },
+        {
+          "name": "ordinal_1",
+          "ordinal": 1,
+          "iat_va": 5445168
+        }
+      ]
+    },
+    {
+      "dll": "DDRAW.dll",
+      "symbols": [
+        {
+          "name": "DirectDrawCreate",
+          "ordinal": null,
+          "iat_va": 5445184
+        }
+      ]
+    },
+    {
+      "dll": "iforce.dll",
+      "symbols": [
+        {
+          "name": "_Buffeting",
+          "ordinal": null,
+          "iat_va": 5445252
+        },
+        {
+          "name": "_ClearForces",
+          "ordinal": null,
+          "iat_va": 5445256
+        },
+        {
+          "name": "_CloseStick",
+          "ordinal": null,
+          "iat_va": 5445260
+        },
+        {
+          "name": "_DisableForces",
+          "ordinal": null,
+          "iat_va": 5445264
+        },
+        {
+          "name": "_Echo",
+          "ordinal": null,
+          "iat_va": 5445268
+        },
+        {
+          "name": "_EnableForces",
+          "ordinal": null,
+          "iat_va": 5445272
+        },
+        {
+          "name": "_InitStick",
+          "ordinal": null,
+          "iat_va": 5445276
+        },
+        {
+          "name": "_Jolt",
+          "ordinal": null,
+          "iat_va": 5445280
+        },
+        {
+          "name": "_SetJoystickPort",
+          "ordinal": null,
+          "iat_va": 5445284
+        },
+        {
+          "name": "_XVibrationClear",
+          "ordinal": null,
+          "iat_va": 5445288
+        },
+        {
+          "name": "_XVibration",
+          "ordinal": null,
+          "iat_va": 5445292
+        },
+        {
+          "name": "_XYVectorForce",
+          "ordinal": null,
+          "iat_va": 5445296
+        },
+        {
+          "name": "_YVibrationClear",
+          "ordinal": null,
+          "iat_va": 5445300
+        },
+        {
+          "name": "_YVibration",
+          "ordinal": null,
+          "iat_va": 5445304
+        }
+      ]
+    }
+  ],
+  "import_descriptor_count": 11,
+  "distinct_import_dlls": [
+    "ddraw.dll",
+    "dplay.dll",
+    "dsound.dll",
+    "gdi32.dll",
+    "iforce.dll",
+    "kernel32.dll",
+    "user32.dll",
+    "winmm.dll",
+    "wsock32.dll"
+  ],
+  "import_slot_count": 175,
+  "base_relocation_blocks": 185,
+  "base_relocation_entries": {
+    "3": 27240,
+    "0": 88
+  },
+  "parser_warnings": [],
+  "strings_count": 9701,
+  "linear_disassembly_instruction_count": 206754,
+  "tools": {
+    "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+    "pefile": "2024.8.26",
+    "capstone": "5.0.7"
+  },
+  "limits": [
+    "Static examination only; target executable was not run.",
+    "Linear xrefs may include embedded code data or missed instruction boundaries; validate local disassembly.",
+    "PE header timestamp and flags do not establish provenance or authenticity.",
+    "No reference clean executable or signature-based malware scan was supplied."
+  ]
+}

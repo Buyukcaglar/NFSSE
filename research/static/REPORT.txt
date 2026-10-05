@@ -1,0 +1,242 @@
+NFS_WIN.EXE static analysis
+Analysis date: 2026-10-05
+Input: install\NFS_WIN.EXE
+
+RESULT
+
+This is the native 32-bit Windows game executable for Road & Track Presents
+The Need for Speed Special Edition. The included README identifies Windows 95
+as the Windows target. This is a full game executable, separate from INSTALLW.EXE
+and INFSW.EXE, and separate from the DOS NFS_DOS.EXE supplied alongside it.
+
+The most consequential findings are its installed configuration requirement,
+legacy DirectX/IPX dependencies, and a live By_R&T writeability check that changes
+a field in the current car object when writing to the car-spec directory succeeds.
+
+No target executable was launched, installed, patched, or uploaded. Findings below
+come from local PE parsing, strings, x86 disassembly, and included documentation.
+The original executable's SHA-256 was checked before and after analysis.
+
+IDENTITY AND FORMAT
+
+Size:                 1,069,056 bytes (1,044 KiB)
+SHA-256:              ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b
+COFF timestamp:       1996-06-17 05:55:40 UTC (embedded metadata, not proof of provenance)
+Format:               PE32; IMAGE_FILE_MACHINE_I386 (0x014C)
+Subsystem:            Windows GUI (2)
+Preferred image base: 0x00400000
+Entrypoint RVA:       0x0008C802
+Entrypoint VA:        0x0048C802
+Entrypoint file offset: 0x0008BC02
+Mapped image size:    0x00141000 (1,314,816 bytes)
+Linker version field: 2.18
+Toolchain evidence:   embedded WATCOM C/C++32 runtime copyright and Watcom-style
+                      BEGTEXT/DGROUP sections; exact compiler release unconfirmed.
+
+The entrypoint jumps to runtime startup at VA 0x004A2282. The DOS stub's reference
+to a Windows NT windowed executable is generic stub text; the shipped README is
+the evidence for the intended Windows 95 environment.
+
+There are no PE version resources, named executable exports, debug directory,
+TLS directory, certificate table, or appended overlay. The parser reported no
+warnings. No PE COFF symbols are supplied. Embedded diagnostic strings retain
+useful routine labels, but are not a complete symbol table.
+
+The PE has base relocations, but DllCharacteristics is zero: modern ASLR and NX
+compatibility flags are absent. These are header observations, not an assessment
+of runtime safety or of compatibility with current Windows.
+
+SECTION MAP
+
+Section   RVA       File offset  Raw-size field  Access   File-byte entropy
+BEGTEXT   00001000  00000400     000ABE00        R/X      6.522
+DGROUP    000AD000  000AC200     0004A000        R/W      2.921
+.bss      000F7000  00000000     00039800        R/W      not file-backed
+.idata    00131000  000F6200     00001200        R/W      5.279
+.reloc    00133000  000F7400     0000DC00        R        6.818
+
+All section VirtualSize fields are zero, a legacy layout. The .bss raw-size field
+describes uninitialized storage here; its zero file pointer must not be treated
+as initialized bytes at the start of the file. BEGTEXT includes code and embedded
+tables/strings, so a linear sweep is not a reliable complete function map.
+
+Readable code, ordinary import tables, runtime strings, and separate low-entropy
+data provide no obvious evidence of a whole-image packer. This does not prove
+that every routine is free of obfuscation or that the file is an authentic clean
+release; no external clean reference was compared.
+
+DEPENDENCIES AND SUBSYSTEMS
+
+The normal import table has 175 slots in 11 descriptors, covering 9 distinct DLL
+names. USER32 and KERNEL32 each appear twice with different capitalization.
+There is no delay-import directory.
+
+DDRAW.dll:  DirectDrawCreate. Display code tries the default hardware path, then
+            emulation on failure (VA 0x0047CA75 onward). Diagnostics describe
+            palettes, Mode X, primary/back surfaces, and page flipping.
+DSOUND.dll: DirectSoundCreate. WINMM also supplies waveOutOpen/Write/Reset and
+            other wave-output operations. Both audio implementations have code;
+            the complete selection/fallback policy was not reconstructed.
+DPLAY.dll:  ordinals 1 and 2. Both supplied DirectPlay DLLs resolve these to
+            DirectPlayCreate and DirectPlayEnumerate, respectively.
+WSOCK32.dll: socket, bind, sendto, recvfrom, select, and startup/cleanup routines.
+            Two inspected socket calls pass family 6, type 2, protocol 1000,
+            matching IPX datagrams. The README specifies IPX-compatible network
+            play and 2-8 players. Imports do not establish Internet/TCP gameplay.
+WINMM.dll:  joystick APIs, multimedia timer APIs, and wave output.
+iforce.dll: 14 force-feedback exports, including _InitStick, _Jolt, _Buffeting,
+            _XYVectorForce, and vibration operations. All requested exports are
+            present in the bundled IFORCE.DLL. Its imports are KERNEL32, GDI32,
+            and USER32. This is a normal load-time dependency even when a player
+            does not use force feedback.
+USER32/GDI32/KERNEL32: windows, input, GDI stretch blits, file I/O, threads,
+            mutexes/events, memory, and serial/modem control.
+
+There are no Direct3D or OpenGL imports. Display/palette diagnostics and inspected
+byte-writing graphics code support a software-rendering design using DirectDraw
+for presentation. This is an architectural inference, not a complete renderer
+decompilation. A runtime LoadLibrary/GetProcAddress site resolves USER32.dll's
+MessageBoxExA for error reporting.
+
+CONFIGURATION AND ASSETS
+
+The game parses nfs.cfg at VA 0x00432144 (file 0x00031544). The inspected parser
+recognizes YESSOUND, NOVIDEO, LOWVIDEO, GERMAN, and NOREMOTE tokens. The video
+choice maps to 0/1/2 for disabled/low/other. In a successfully parsed configuration,
+the fourth token NOREMOTE clears the remote-mode flag; a different fourth token
+sets it. A missing nfs.cfg initializes all four parser outputs to zero. Other
+stored game settings also use config.dat.
+
+The path-table loader starts at VA 0x0042A188 (file 0x00029588) and references
+gamedata\config\paths.dat. On success, it copies 0x5F0 bytes (1,520 bytes) into
+the path table at VA 0x00524198. Path buffers use 0x50-byte spacing.
+
+Default relative directories are present in the code, but the inspected build
+flag at VA 0x004C5CCC is initialized to 1. With that flag, failure to open the
+paths table goes to the termination callback at VA 0x0042A470, rather than using
+the fallback directory branch. The callback pointer at VA 0x004C6F88 initially
+resolves to VA 0x00487B70 and enters the runtime exit path.
+
+The user confirmed that this supplied install folder is a dump of installation
+media. It contains GAMEDATA/CONFIG/CONFIG.DAT, but contains neither the generated
+GAMEDATA/CONFIG/PATHS.DAT nor nfs.cfg. Those missing installation settings are
+expected for the confirmed source. Static evidence does not establish that direct
+launch from the supplied folder would succeed.
+
+The executable references external .QFS/.FSH artwork, .TGV movies, .BNK audio
+banks, replay files, controller settings, track data, and car specifications.
+The supplied asset folders contain:
+  FRONTEND: 755 files, 371,336,218 bytes
+  GAMEDATA:   6 files,     428,891 bytes
+  SIMDATA:  473 files, 149,076,194 bytes
+Assets therefore remain essential; the executable is not a self-contained game.
+
+DISC CHECKS
+
+Two distinct inspected paths matter:
+
+1. After loading paths.dat, the local-play path extracts the movie path's drive
+   letter, calls the drive wrapper at VA 0x004673AC, then the GetDriveTypeA helper
+   at VA 0x00471F20. The helper compares the result to 5 (CD-ROM drive type).
+   Failure reaches termination. A subsequent file-access check targets title.tgv.
+   These gates appear at VA 0x0042A425 through 0x0042A470.
+
+2. Startup builds the configured movie path plus title.tgv and calls a generic
+   file-presence/open helper at VA 0x0043268F. Failure selects one of the strings
+   "NFS CD not present..." and "NFS SE CD not present...", then terminates.
+   The remote-mode flag skips this branch. The strings are at file offsets
+   0x000AE998 and 0x000AE9B0; the decision branch is at file 0x00031A99.
+
+These are live code references, not only unused messages. Identifying these
+checks does not prove that all possible disc/media checks have been recovered.
+
+BY_R&T WRITEABILITY CHECK
+
+String file offset: 0x000AEF90; VA 0x004AFD90.
+Code range:         VA 0x0044028C-0x00440349.
+String reference:   file 0x0003F6CE; VA 0x004402CE.
+Car-field write:    file 0x0003F736; VA 0x00440336.
+
+The enabled local-play branch copies the car-spec path buffer at VA 0x00524648,
+appends By_R&T, and opens the resulting filename with the literal mode "wb".
+The default directory string is simdata/carspecs/. If the open succeeds, it calls
+a fwrite-style runtime routine for four bytes, then writes zero to a 32-bit
+field at offset +0x3C in the car structure reached through the current object.
+The original file handle is closed afterward.
+
+Approximate behavior, with analyst labels:
+  if build_flag != 0 and remote_mode == 0:
+      file = fopen(car_specs_path + "By_R&T", "wb")
+      if file != NULL:
+          fwrite(&file, 1, 4, file)
+          current_object->car_data->field_0x3C = 0
+          fclose(file)
+
+Writing fails on read-only media and can succeed after assets are placed on
+writable storage. This is strong evidence of a writeability-based anti-copy
+mechanism. It does not merely test whether an existing marker file is present.
+The field's precise physics meaning and a numerical speed limit were not proven
+in this analysis; a claimed 25-mph cap would need further physics tracing or
+runtime testing.
+
+The supplied SIMDATA/CARSPECS/BY_R&T already contains four bytes: AE 1F 57 00.
+Its contents do not change the success/failure condition of the observed "wb"
+open. No history or authenticity conclusion is drawn from those four bytes.
+
+WINDOWS/DOS DISTINCTION
+
+NFS_DOS.EXE is 1,254,591 bytes with MZ/LE signatures. NFS_WIN.EXE is the distinct
+PE32 Windows executable described here. Their layouts and hashes differ.
+Previously recorded DOS patch offsets must not be transplanted into this file.
+No patch has been applied to either executable.
+
+EVIDENCE FILES AND LIMITS
+
+pe_inventory.json:         PE headers, sections, imports, hashes, tool versions.
+imports.txt:               all normal import slots and IAT addresses.
+strings.txt:               ASCII/UTF-16 strings with file offsets and VAs.
+selected_strings_xrefs.json: selected linear-sweep code references.
+import_callsites.json:     normal import thunks and observed call sites.
+verified_excerpts.asm:     locally checked disassembly ranges for this exact hash.
+supporting_files.json:     sibling hashes, dependency-export checks, asset counts.
+analyze_nfs_win.py:        reproducible read-only inventory/extraction script.
+
+Example rerun from the repository root:
+  python tools\analyze_nfs_win.py install\NFS_WIN.EXE build\analysis
+
+Python packages pefile 2024.8.26 and capstone 5.0.9 were installed in that task
+temporary tool directory; they were not installed into the game directory.
+
+All addresses above use the preferred image base and are specific to the stated
+SHA-256. Function descriptions are analyst interpretations unless an actual
+import name is stated. Linear disassembly may include tables or miss boundaries;
+only the listed local excerpts were examined for the stated behavior.
+
+No interactive gameplay, audiovisual fidelity, modern Windows compatibility,
+complete decompilation, or malware-free/authentic-release status is established
+by this static analysis.
+
+FOLLOW-UP: USER-REPORTED MISSING DPLAY.DLL ERROR (2026-10-05)
+
+The user reported a Windows loader error that DPLAY.dll was not found. This
+occurs before game startup. No app-local DPLAY.dll was initially present, and
+neither Windows system directory contained dplay.dll on this host. The available
+32-bit SysWOW64/dplayx.dll was only a stub exporting DllMain, so it was not a
+matching replacement for the two DirectPlay exports this game imports.
+
+The two media copies, REDIST/DIRECTX/DPLAY.DLL and DIRECTX3/DIRECTX/DPLAY.DLL,
+are identical 39,936-byte x86 DLLs with version 4.03.00.1096. Their SHA-256 is
+7f3978149dd401c33ab0cf34bf776d794005dccf8307cce5006710976c6df545.
+Their two exports match NFS_WIN.EXE's required ordinals. All directly imported
+functions were found in this host's 32-bit KERNEL32, USER32, and ADVAPI32 DLLs.
+
+Copied REDIST/DIRECTX/DPLAY.DLL to install/DPLAY.dll, beside NFS_WIN.EXE, without
+overwriting any file. Verified that the destination matches the source byte for
+byte and that NFS_WIN.EXE's original SHA-256 remains unchanged. No Windows feature
+or system DLL was modified. The install folder is now the original dump plus this
+one support DLL. Removing only this added DLL restores its prior contents.
+
+This supplies the missing normal import. The game has not been relaunched to
+establish startup success, DirectPlay operation, or later game compatibility.
+Installer-generated paths/configuration remain absent, as noted above.
+The exact action and hash checks are recorded in dplay_loader_fix.json.

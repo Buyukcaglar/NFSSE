@@ -1,0 +1,32 @@
+NFSPortable 3; image=00400000; executable-relative working directory established
+Legacy scratch references relocated to 00110000
+Video frame and palette presentation synchronization installed
+Window initialization synchronization installed
+Memory-status and initial-window compatibility hooks installed
+GlobalMemoryStatus phys=2147483647/2147483647 -> 268435456/536870912, virtual=2069303296/2147352576
+GlobalMemoryStatus phys=2147483647/2147483647 -> 268435456/536870912, virtual=2069303296/2147352576
+GlobalMemoryStatus phys=2147483647/2147483647 -> 268435456/536870912, virtual=2069303296/2147352576
+CreateWindow requested=640x480 used=640x480 hwnd=012B0336 error=0
+Window graphics initialization completed: result=1, thread=51092
+Main thread waited for graphics initialization: result=0
+Buffered legacy file stream: frontend/movie/title.tgv
+DirectPlay local provider dpwsock.dll: module=10000000 error=0
+DirectPlay local provider dpserial.dll: module=61000000 error=0
+Buffered legacy file stream: frontend/movie/ea.tgv
+Movie copy #1 source=320x240 xy=0,-20 clip=0,0,320,200 pitch=320 pixels=04880000 format=00007B08
+Movie copy #1 differing pixels=0
+Movie copy #2 source=320x240 xy=0,-20 clip=0,0,320,200 pitch=320 pixels=02690000 format=00007B08
+Movie copy #2 differing pixels=0
+Movie copy #3 source=320x240 xy=0,-20 clip=0,0,320,200 pitch=320 pixels=04880000 format=00007B08
+Movie copy #3 differing pixels=0
+Movie copy #4 source=320x240 xy=0,-20 clip=0,0,320,200 pitch=320 pixels=02690000 format=00007B08
+Movie copy #4 differing pixels=0
+Movie copy #100 differing pixels=0
+Movie copy #200 differing pixels=0
+Movie copy #300 differing pixels=0
+Buffered legacy file stream: frontend/movie/attract3.tgv
+Movie copy #400 differing pixels=0
+Movie copy #500 differing pixels=0
+Movie copy #600 differing pixels=0
+Mouse xy=164,110 buttons=1 notify=1
+Buffered legacy file stream: frontend/music/rock5.as4

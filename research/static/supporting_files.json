@@ -1,0 +1,153 @@
+{
+  "iforce_imported_exports_all_present": true,
+  "directplay_ordinal_resolution": [
+    {
+      "path": "install\\REDIST\\DIRECTX\\DPLAY.DLL",
+      "sha256": "7f3978149dd401c33ab0cf34bf776d794005dccf8307cce5006710976c6df545",
+      "exports": [
+        {
+          "ordinal": 1,
+          "name": "DirectPlayCreate"
+        },
+        {
+          "ordinal": 2,
+          "name": "DirectPlayEnumerate"
+        }
+      ]
+    },
+    {
+      "path": "install\\DIRECTX3\\DIRECTX\\DPLAY.DLL",
+      "sha256": "7f3978149dd401c33ab0cf34bf776d794005dccf8307cce5006710976c6df545",
+      "exports": [
+        {
+          "ordinal": 1,
+          "name": "DirectPlayCreate"
+        },
+        {
+          "ordinal": 2,
+          "name": "DirectPlayEnumerate"
+        }
+      ]
+    }
+  ],
+  "related_files": [
+    {
+      "path": "install\\IFORCE.DLL",
+      "size": 40960,
+      "sha256": "c6bc16517ef7a451e4bc171a67ff248d6cb357ea666a21a4d7e4ca4c91fd4db1"
+    },
+    {
+      "path": "install\\NFS_DOS.EXE",
+      "size": 1254591,
+      "sha256": "057de87c3b7588dd10d25d34a3c572ecf5980100d71e7efb9ab0638697536186"
+    },
+    {
+      "path": "install\\INSTALLW.EXE",
+      "size": 25600,
+      "sha256": "0565e6f35e534a5aab24c83d358ce4c9a02733c1f28a1d8fc665b12554fc5104"
+    },
+    {
+      "path": "install\\INFSW.EXE",
+      "size": 460288,
+      "sha256": "5209a0bff5347ad5cb3937e68bb7f9adae99bb5e0b4851be3d96b860b7d5e569"
+    },
+    {
+      "path": "install\\README.TXT",
+      "size": 30743,
+      "sha256": "728939cf6cbb3ed0a0eaeb752f160becd447d9ecb4011297db83f23e7c52460c"
+    },
+    {
+      "path": "install\\GATEWAY\\Gateway.cfg",
+      "size": 2789,
+      "sha256": "d0c3da5403fee7a3858cb180245ff10020f4568a9386d400a5813df27f6741b1"
+    }
+  ],
+  "asset_folders": [
+    {
+      "folder": "FRONTEND",
+      "files": 755,
+      "bytes": 371336218,
+      "extensions": {
+        ".FSH": 14,
+        ".QFS": 353,
+        ".ENG": 2,
+        ".GER": 2,
+        ".FFN": 8,
+        ".INV": 102,
+        ".EAS": 193,
+        ".TGV": 26,
+        ".ASF": 3,
+        ".AS4": 12,
+        ".TXT": 38,
+        "": 2
+      }
+    },
+    {
+      "folder": "GAMEDATA",
+      "files": 6,
+      "bytes": 428891,
+      "extensions": {
+        ".DAT": 1,
+        ".CFG": 1,
+        ".RPL": 4
+      }
+    },
+    {
+      "folder": "SIMDATA",
+      "files": 473,
+      "bytes": 149076194,
+      "extensions": {
+        ".CFM": 39,
+        ".PDN": 22,
+        ".FSH": 41,
+        "": 19,
+        ".CFG": 1,
+        ".PBS": 9,
+        ".FMM": 36,
+        ".FAM": 78,
+        ".QFS": 143,
+        ".TRI": 17,
+        ".B00": 2,
+        ".B01": 2,
+        ".B02": 2,
+        ".B03": 2,
+        ".B10": 2,
+        ".B11": 2,
+        ".B12": 2,
+        ".B13": 2,
+        ".B20": 2,
+        ".B21": 2,
+        ".B22": 2,
+        ".B23": 2,
+        ".FSB": 4,
+        ".MMB": 2,
+        ".BNK": 38
+      }
+    }
+  ],
+  "configuration_files": {
+    "gamedata/config/paths.dat": {
+      "exists": false,
+      "path": "install\\GAMEDATA\\CONFIG\\paths.dat"
+    },
+    "nfs.cfg": {
+      "exists": false,
+      "path": "install\\nfs.cfg"
+    },
+    "gamedata/config/config.dat": {
+      "exists": true,
+      "path": "install\\GAMEDATA\\CONFIG\\CONFIG.DAT"
+    }
+  },
+  "copy_check_marker": {
+    "path": "install\\SIMDATA\\CARSPECS\\BY_R&T",
+    "size": 4,
+    "sha256": "577a1e8ecb0d746a3acbcd19c881d4cf607156e618854c8c2a6eccb4598d0442",
+    "bytes_hex": "ae 1f 57 00"
+  },
+  "iforce_dependencies": [
+    "KERNEL32.dll",
+    "GDI32.dll",
+    "USER32.dll"
+  ]
+}

@@ -1,0 +1,716 @@
+[
+  {
+    "offset": 572427,
+    "offset_hex": "0x8bc0b",
+    "va": 4769803,
+    "section": "BEGTEXT",
+    "encoding": "ascii",
+    "text": "WATCOM C/C++32 Run-Time system. (c) Copyright by WATCOM International Corp. 1988-1995. All rights reserved.",
+    "code_xrefs": []
+  },
+  {
+    "offset": 706916,
+    "offset_hex": "0xac964",
+    "va": 4904804,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "DOS Compatible IPX Connection",
+    "code_xrefs": [
+      {
+        "va": 4260230,
+        "offset": 62854,
+        "bytes": "b8 64 d7 4a 00",
+        "mnemonic": "mov",
+        "operands": "eax, 0x4ad764"
+      }
+    ]
+  },
+  {
+    "offset": 712244,
+    "offset_hex": "0xade34",
+    "va": 4910132,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "%sconfig.dat",
+    "code_xrefs": [
+      {
+        "va": 4366366,
+        "offset": 168990,
+        "bytes": "68 34 ec 4a 00",
+        "mnemonic": "push",
+        "operands": "0x4aec34"
+      },
+      {
+        "va": 4367647,
+        "offset": 170271,
+        "bytes": "68 34 ec 4a 00",
+        "mnemonic": "push",
+        "operands": "0x4aec34"
+      }
+    ]
+  },
+  {
+    "offset": 712268,
+    "offset_hex": "0xade4c",
+    "va": 4910156,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "gamedata\\config\\paths.dat",
+    "code_xrefs": [
+      {
+        "va": 4366740,
+        "offset": 169364,
+        "bytes": "68 4c ec 4a 00",
+        "mnemonic": "push",
+        "operands": "0x4aec4c"
+      }
+    ]
+  },
+  {
+    "offset": 712740,
+    "offset_hex": "0xae024",
+    "va": 4910628,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "%stitle.tgv",
+    "code_xrefs": [
+      {
+        "va": 4367419,
+        "offset": 170043,
+        "bytes": "68 24 ee 4a 00",
+        "mnemonic": "push",
+        "operands": "0x4aee24"
+      }
+    ]
+  },
+  {
+    "offset": 714420,
+    "offset_hex": "0xae6b4",
+    "va": 4912308,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "nfs.cfg",
+    "code_xrefs": [
+      {
+        "va": 4399453,
+        "offset": 202077,
+        "bytes": "b8 b4 f4 4a 00",
+        "mnemonic": "mov",
+        "operands": "eax, 0x4af4b4"
+      }
+    ]
+  },
+  {
+    "offset": 714428,
+    "offset_hex": "0xae6bc",
+    "va": 4912316,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "YESSOUND",
+    "code_xrefs": [
+      {
+        "va": 4399556,
+        "offset": 202180,
+        "bytes": "ba bc f4 4a 00",
+        "mnemonic": "mov",
+        "operands": "edx, 0x4af4bc"
+      }
+    ]
+  },
+  {
+    "offset": 714440,
+    "offset_hex": "0xae6c8",
+    "va": 4912328,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "NOVIDEO",
+    "code_xrefs": [
+      {
+        "va": 4399629,
+        "offset": 202253,
+        "bytes": "ba c8 f4 4a 00",
+        "mnemonic": "mov",
+        "operands": "edx, 0x4af4c8"
+      }
+    ]
+  },
+  {
+    "offset": 714448,
+    "offset_hex": "0xae6d0",
+    "va": 4912336,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "LOWVIDEO",
+    "code_xrefs": [
+      {
+        "va": 4399657,
+        "offset": 202281,
+        "bytes": "ba d0 f4 4a 00",
+        "mnemonic": "mov",
+        "operands": "edx, 0x4af4d0"
+      }
+    ]
+  },
+  {
+    "offset": 714924,
+    "offset_hex": "0xae8ac",
+    "va": 4912812,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "Windows was unable to change your video card to 256 color mode.  Please use the Display control panel to change your color palette to 256 colors, then reboot your system and try running the game again.",
+    "code_xrefs": [
+      {
+        "va": 4400483,
+        "offset": 203107,
+        "bytes": "68 ac f6 4a 00",
+        "mnemonic": "push",
+        "operands": "0x4af6ac"
+      }
+    ]
+  },
+  {
+    "offset": 715148,
+    "offset_hex": "0xae98c",
+    "va": 4913036,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "%stitle.tgv",
+    "code_xrefs": [
+      {
+        "va": 4400754,
+        "offset": 203378,
+        "bytes": "68 8c f7 4a 00",
+        "mnemonic": "push",
+        "operands": "0x4af78c"
+      }
+    ]
+  },
+  {
+    "offset": 715160,
+    "offset_hex": "0xae998",
+    "va": 4913048,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "NFS CD not present...",
+    "code_xrefs": [
+      {
+        "va": 4400824,
+        "offset": 203448,
+        "bytes": "68 98 f7 4a 00",
+        "mnemonic": "push",
+        "operands": "0x4af798"
+      }
+    ]
+  },
+  {
+    "offset": 715184,
+    "offset_hex": "0xae9b0",
+    "va": 4913072,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "NFS SE CD not present...",
+    "code_xrefs": [
+      {
+        "va": 4400831,
+        "offset": 203455,
+        "bytes": "68 b0 f7 4a 00",
+        "mnemonic": "push",
+        "operands": "0x4af7b0"
+      }
+    ]
+  },
+  {
+    "offset": 716688,
+    "offset_hex": "0xaef90",
+    "va": 4914576,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "By_R&T",
+    "code_xrefs": [
+      {
+        "va": 4457166,
+        "offset": 259790,
+        "bytes": "be 90 fd 4a 00",
+        "mnemonic": "mov",
+        "operands": "esi, 0x4afd90"
+      }
+    ]
+  },
+  {
+    "offset": 716796,
+    "offset_hex": "0xaeffc",
+    "va": 4914684,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "%sea.tgv",
+    "code_xrefs": [
+      {
+        "va": 4463639,
+        "offset": 266263,
+        "bytes": "68 fc fd 4a 00",
+        "mnemonic": "push",
+        "operands": "0x4afdfc"
+      }
+    ]
+  },
+  {
+    "offset": 716808,
+    "offset_hex": "0xaf008",
+    "va": 4914696,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "%sattract%d.tgv",
+    "code_xrefs": [
+      {
+        "va": 4463742,
+        "offset": 266366,
+        "bytes": "68 08 fe 4a 00",
+        "mnemonic": "push",
+        "operands": "0x4afe08"
+      }
+    ]
+  },
+  {
+    "offset": 716824,
+    "offset_hex": "0xaf018",
+    "va": 4914712,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "%stitle.tgv",
+    "code_xrefs": [
+      {
+        "va": 4463779,
+        "offset": 266403,
+        "bytes": "68 18 fe 4a 00",
+        "mnemonic": "push",
+        "operands": "0x4afe18"
+      }
+    ]
+  },
+  {
+    "offset": 717300,
+    "offset_hex": "0xaf1f4",
+    "va": 4915188,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "BUG: AddNewPlayers() - Viewer Overflow (should have gotten past addplayer_callback())",
+    "code_xrefs": [
+      {
+        "va": 4468790,
+        "offset": 271414,
+        "bytes": "68 f4 ff 4a 00",
+        "mnemonic": "push",
+        "operands": "0x4afff4"
+      }
+    ]
+  },
+  {
+    "offset": 717388,
+    "offset_hex": "0xaf24c",
+    "va": 4915276,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "BUG: AddNewPlayers() - Player Overflow (should have gotten past addplayer_callback())",
+    "code_xrefs": [
+      {
+        "va": 4468587,
+        "offset": 271211,
+        "bytes": "bd 4c 00 4b 00",
+        "mnemonic": "mov",
+        "operands": "ebp, 0x4b004c"
+      }
+    ]
+  },
+  {
+    "offset": 726948,
+    "offset_hex": "0xb17a4",
+    "va": 4924836,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "initgraphics - DirectX FAILED TO ACCESS WINDOW (%d).",
+    "code_xrefs": [
+      {
+        "va": 4683027,
+        "offset": 485651,
+        "bytes": "68 a4 25 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b25a4"
+      }
+    ]
+  },
+  {
+    "offset": 727632,
+    "offset_hex": "0xb1a50",
+    "va": 4925520,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "AddPlayr->",
+    "code_xrefs": [
+      {
+        "va": 4687729,
+        "offset": 490353,
+        "bytes": "68 50 28 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b2850"
+      }
+    ]
+  },
+  {
+    "offset": 727680,
+    "offset_hex": "0xb1a80",
+    "va": 4925568,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "OldPlayr->",
+    "code_xrefs": [
+      {
+        "va": 4688023,
+        "offset": 490647,
+        "bytes": "b8 80 28 4b 00",
+        "mnemonic": "mov",
+        "operands": "eax, 0x4b2880"
+      }
+    ]
+  },
+  {
+    "offset": 729508,
+    "offset_hex": "0xb21a4",
+    "va": 4927396,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "serialset - WIN95 VERSION OF SERIALSET()",
+    "code_xrefs": [
+      {
+        "va": 4703091,
+        "offset": 505715,
+        "bytes": "68 a4 2f 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b2fa4"
+      }
+    ]
+  },
+  {
+    "offset": 729768,
+    "offset_hex": "0xb22a8",
+    "va": 4927656,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "DirectDrawCreate HAL (%d)",
+    "code_xrefs": [
+      {
+        "va": 4704908,
+        "offset": 507532,
+        "bytes": "68 a8 30 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b30a8"
+      }
+    ]
+  },
+  {
+    "offset": 729820,
+    "offset_hex": "0xb22dc",
+    "va": 4927708,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "DirectDrawCreate HEL (%d)",
+    "code_xrefs": [
+      {
+        "va": 4704974,
+        "offset": 507598,
+        "bytes": "68 dc 30 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b30dc"
+      }
+    ]
+  },
+  {
+    "offset": 729848,
+    "offset_hex": "0xb22f8",
+    "va": 4927736,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "failed DirectDrawCreate",
+    "code_xrefs": [
+      {
+        "va": 4705000,
+        "offset": 507624,
+        "bytes": "68 f8 30 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b30f8"
+      }
+    ]
+  },
+  {
+    "offset": 729876,
+    "offset_hex": "0xb2314",
+    "va": 4927764,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "initgraphics - FAILED DirectDrawCreate (%d)",
+    "code_xrefs": [
+      {
+        "va": 4705039,
+        "offset": 507663,
+        "bytes": "68 14 31 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b3114"
+      }
+    ]
+  },
+  {
+    "offset": 733120,
+    "offset_hex": "0xb2fc0",
+    "va": 4931008,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "AcceptedPlayers",
+    "code_xrefs": [
+      {
+        "va": 4718143,
+        "offset": 520767,
+        "bytes": "b8 c0 3d 4b 00",
+        "mnemonic": "mov",
+        "operands": "eax, 0x4b3dc0"
+      },
+      {
+        "va": 4721491,
+        "offset": 524115,
+        "bytes": "68 c0 3d 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b3dc0"
+      }
+    ]
+  },
+  {
+    "offset": 733136,
+    "offset_hex": "0xb2fd0",
+    "va": 4931024,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "dplay_safesend - DIRECTPLAY SEND CALLED FROM MAIN THREAD WHILE SURFACE LOCKED!",
+    "code_xrefs": [
+      {
+        "va": 4718228,
+        "offset": 520852,
+        "bytes": "68 d0 3d 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b3dd0"
+      }
+    ]
+  },
+  {
+    "offset": 733344,
+    "offset_hex": "0xb30a0",
+    "va": 4931232,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "DPlayLib",
+    "code_xrefs": [
+      {
+        "va": 4719866,
+        "offset": 522490,
+        "bytes": "68 a0 3e 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b3ea0"
+      }
+    ]
+  },
+  {
+    "offset": 733488,
+    "offset_hex": "0xb3130",
+    "va": 4931376,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "shutdplaygame - ONLY SERVER IS PERMITTED TO SHUT GAME.",
+    "code_xrefs": [
+      {
+        "va": 4722057,
+        "offset": 524681,
+        "bytes": "68 30 3f 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b3f30"
+      }
+    ]
+  },
+  {
+    "offset": 733688,
+    "offset_hex": "0xb31f8",
+    "va": 4931576,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "opendplayconnection - CANNOT OPEN CONNECTION TO SELF",
+    "code_xrefs": [
+      {
+        "va": 4722783,
+        "offset": 525407,
+        "bytes": "68 f8 3f 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b3ff8"
+      }
+    ]
+  },
+  {
+    "offset": 733744,
+    "offset_hex": "0xb3230",
+    "va": 4931632,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "opendplayconnection - MUST SPECIFY VALID PEER ADDRESS",
+    "code_xrefs": [
+      {
+        "va": 4722802,
+        "offset": 525426,
+        "bytes": "68 30 40 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b4030"
+      }
+    ]
+  },
+  {
+    "offset": 733840,
+    "offset_hex": "0xb3290",
+    "va": 4931728,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "DOS IPX compatible",
+    "code_xrefs": []
+  },
+  {
+    "offset": 733988,
+    "offset_hex": "0xb3324",
+    "va": 4931876,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "WINIPXSend",
+    "code_xrefs": [
+      {
+        "va": 4725809,
+        "offset": 528433,
+        "bytes": "68 24 41 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b4124"
+      }
+    ]
+  },
+  {
+    "offset": 734012,
+    "offset_hex": "0xb333c",
+    "va": 4931900,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "WINIPXRecv",
+    "code_xrefs": [
+      {
+        "va": 4726185,
+        "offset": 528809,
+        "bytes": "68 3c 41 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b413c"
+      }
+    ]
+  },
+  {
+    "offset": 734024,
+    "offset_hex": "0xb3348",
+    "va": 4931912,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "WINIPXFlush",
+    "code_xrefs": [
+      {
+        "va": 4726345,
+        "offset": 528969,
+        "bytes": "68 48 41 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b4148"
+      }
+    ]
+  },
+  {
+    "offset": 741292,
+    "offset_hex": "0xb4fac",
+    "va": 4939180,
+    "section": "DGROUP",
+    "encoding": "ascii",
+    "text": "EACLibWindow",
+    "code_xrefs": [
+      {
+        "va": 4832524,
+        "offset": 635148,
+        "bytes": "68 ac 5d 4b 00",
+        "mnemonic": "push",
+        "operands": "0x4b5dac"
+      },
+      {
+        "va": 4833197,
+        "offset": 635821,
+        "bytes": "be ac 5d 4b 00",
+        "mnemonic": "mov",
+        "operands": "esi, 0x4b5dac"
+      }
+    ]
+  },
+  {
+    "offset": 1009901,
+    "offset_hex": "0xf68ed",
+    "va": 5445357,
+    "section": ".idata",
+    "encoding": "ascii",
+    "text": "DSOUND.dll",
+    "code_xrefs": []
+  },
+  {
+    "offset": 1009947,
+    "offset_hex": "0xf691b",
+    "va": 5445403,
+    "section": ".idata",
+    "encoding": "ascii",
+    "text": "DPLAY.dll",
+    "code_xrefs": []
+  },
+  {
+    "offset": 1009967,
+    "offset_hex": "0xf692f",
+    "va": 5445423,
+    "section": ".idata",
+    "encoding": "ascii",
+    "text": "iforce.dll",
+    "code_xrefs": []
+  },
+  {
+    "offset": 1010906,
+    "offset_hex": "0xf6cda",
+    "va": 5446362,
+    "section": ".idata",
+    "encoding": "ascii",
+    "text": "GetDriveTypeA",
+    "code_xrefs": []
+  },
+  {
+    "offset": 1012096,
+    "offset_hex": "0xf7180",
+    "va": 5447552,
+    "section": ".idata",
+    "encoding": "ascii",
+    "text": "GetProcAddress",
+    "code_xrefs": []
+  },
+  {
+    "offset": 1012156,
+    "offset_hex": "0xf71bc",
+    "va": 5447612,
+    "section": ".idata",
+    "encoding": "ascii",
+    "text": "GetVersion",
+    "code_xrefs": []
+  },
+  {
+    "offset": 1012448,
+    "offset_hex": "0xf72e0",
+    "va": 5447904,
+    "section": ".idata",
+    "encoding": "ascii",
+    "text": "DirectDrawCreate",
+    "code_xrefs": []
+  }
+]

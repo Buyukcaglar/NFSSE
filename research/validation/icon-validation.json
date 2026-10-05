@@ -1,0 +1,20 @@
+{
+  "executable": "portable relocation test\\NFSSE.exe",
+  "sha256": "a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd",
+  "icon": {
+    "source": "NFSICONN.ICO",
+    "source_sha256": "b2ff38678651bcd20190d97185e002da5ea6cd02789bfff2159ce7e42677921a",
+    "image_count": 1,
+    "group_id": 1,
+    "resource_section_rva": "0x142000",
+    "resource_section_raw_offset": "0x105200",
+    "resource_bytes": 924,
+    "image_payloads_unchanged": true
+  },
+  "old_sections_byte_identical": true,
+  "entry_point_unchanged": true,
+  "windows_resource_lookup": true,
+  "windows_shell_icon_extraction": true,
+  "original_media_executable_sha256": "ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b",
+  "builder_reproduces_identical_executable": true
+}

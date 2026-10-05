@@ -1,0 +1,14 @@
+NFSPortable 2; image=00400000; executable-relative working directory established
+Legacy scratch references relocated to 00110000
+Window initialization synchronization installed
+Memory-status and initial-window compatibility hooks installed
+GlobalMemoryStatus phys=2147483647/2147483647 -> 268435456/536870912, virtual=2064306176/2147352576
+GlobalMemoryStatus phys=2147483647/2147483647 -> 268435456/536870912, virtual=2064306176/2147352576
+GlobalMemoryStatus phys=2147483647/2147483647 -> 268435456/536870912, virtual=2064306176/2147352576
+CreateWindow requested=10000x10000 used=640x480 hwnd=01011906 error=0
+Window graphics initialization completed: result=1, thread=40104
+Main thread waited for graphics initialization: result=0
+Buffered legacy file stream: frontend/movie/title.tgv
+DirectPlay local provider dpwsock.dll: module=15210000 error=0
+DirectPlay local provider dpserial.dll: module=61000000 error=0
+Buffered legacy file stream: frontend/movie/ea.tgv

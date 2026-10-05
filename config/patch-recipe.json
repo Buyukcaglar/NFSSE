@@ -1,0 +1,178 @@
+{
+  "schema": 1,
+  "source_executable": "NFS_WIN.EXE",
+  "source_sha256": "ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b",
+  "source_bytes": 1069056,
+  "base_patched_sha256": "d9a171f640c6f7e9860edce383b5f73f27cd4a8a389a2c6832d86a399c977c91",
+  "icon_sha256": "b2ff38678651bcd20190d97185e002da5ea6cd02789bfff2159ce7e42677921a",
+  "final_executable_sha256": "a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd",
+  "writes": [
+    {
+      "offset": 170021,
+      "before": "66833d1eb3520000",
+      "after": "e94c000000909090",
+      "purpose": "Skip physical CD gates"
+    },
+    {
+      "offset": 259724,
+      "before": "66833dcc5c4c0000",
+      "after": "e9b8000000909090",
+      "purpose": "Skip By_R&T writeability/sabotage block"
+    },
+    {
+      "offset": 134,
+      "before": "0500",
+      "after": "0600",
+      "purpose": "Append helper bootstrap section"
+    },
+    {
+      "offset": 168,
+      "before": "02c80800",
+      "after": "00101400",
+      "purpose": "AddressOfEntryPoint"
+    },
+    {
+      "offset": 208,
+      "before": "00101400",
+      "after": "00201400",
+      "purpose": "SizeOfImage"
+    },
+    {
+      "offset": 156,
+      "before": "00be0a00",
+      "after": "00c00a00",
+      "purpose": "SizeOfCode"
+    },
+    {
+      "offset": 216,
+      "before": "00000000",
+      "after": "00000000",
+      "purpose": "CheckSum"
+    },
+    {
+      "offset": 576,
+      "before": "00000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "after": "2e6e6673706174000b01000000101400000200000050100000000000000000000000000020000060",
+      "purpose": "Helper bootstrap section header"
+    }
+  ],
+  "bootstrap_raw_offset": 1069056,
+  "bootstrap_raw_size": 512,
+  "bootstrap_hex": "9c60e8000000005b81eb071014008d836c10140050ff936415130085c00f842900000089c68d837c1014005056ff935415130085c00f8411000000ffd085c00f8407000000619de9b6b7f4ff6a108d8387101400508d8397101400506a00ff93d81113006a01ff93141513004e4653506f727461626c652e646c6c00496e697469616c697a65004e465320534520506f727461626c6500506f727461626c6520636f6d7061746962696c69747920696e697469616c697a6174696f6e206661696c65642e204b656570204e4653506f727461626c652e646c6c20626573696465204e465353452e65786520616e6420636865636b20706f727461626c652d72756e74696d652e6c6f672e00",
+  "paths": [
+    {
+      "index": 0,
+      "global_va": "0x524198",
+      "source_va": "0x4aec68",
+      "path": "gamedata/config/"
+    },
+    {
+      "index": 1,
+      "global_va": "0x5241e8",
+      "source_va": "0x4aec7c",
+      "path": "gamedata/savegame/"
+    },
+    {
+      "index": 2,
+      "global_va": "0x524238",
+      "source_va": "0x4aeda0",
+      "path": "frontend/speech/"
+    },
+    {
+      "index": 3,
+      "global_va": "0x524288",
+      "source_va": "0x4aecd4",
+      "path": "simdata/soundbnk/"
+    },
+    {
+      "index": 4,
+      "global_va": "0x5242d8",
+      "source_va": "0x4aecc4",
+      "path": "frontend/music/"
+    },
+    {
+      "index": 5,
+      "global_va": "0x524328",
+      "source_va": "0x4aedb4",
+      "path": "frontend/art/"
+    },
+    {
+      "index": 6,
+      "global_va": "0x524378",
+      "source_va": "0x4aeca4",
+      "path": "gamedata/modem/"
+    },
+    {
+      "index": 7,
+      "global_va": "0x5243c8",
+      "source_va": "0x4aecb4",
+      "path": "frontend/movie/"
+    },
+    {
+      "index": 8,
+      "global_va": "0x524418",
+      "source_va": "0x4aec90",
+      "path": "gamedata/replay/"
+    },
+    {
+      "index": 9,
+      "global_va": "0x524468",
+      "source_va": "0x4aecfc",
+      "path": "simdata/misc/"
+    },
+    {
+      "index": 10,
+      "global_va": "0x5244b8",
+      "source_va": "0x4aede4",
+      "path": "simdata/etrackFm/"
+    },
+    {
+      "index": 11,
+      "global_va": "0x524508",
+      "source_va": "0x4aee08",
+      "path": "simdata/ntrackFm/"
+    },
+    {
+      "index": 12,
+      "global_va": "0x524558",
+      "source_va": "0x4aedd4",
+      "path": "simdata/slides/"
+    },
+    {
+      "index": 13,
+      "global_va": "0x5245a8",
+      "source_va": "0x4aed0c",
+      "path": "simdata/carFams/"
+    },
+    {
+      "index": 14,
+      "global_va": "0x5245f8",
+      "source_va": "0x4aed20",
+      "path": "simdata/soundBnk/"
+    },
+    {
+      "index": 15,
+      "global_va": "0x524648",
+      "source_va": "0x4aece8",
+      "path": "simdata/carspecs/"
+    },
+    {
+      "index": 16,
+      "global_va": "0x524698",
+      "source_va": "0x4aedf8",
+      "path": "simdata/dash/"
+    },
+    {
+      "index": 17,
+      "global_va": "0x5246e8",
+      "source_va": "0x4aecfc",
+      "path": "simdata/misc/"
+    },
+    {
+      "index": 18,
+      "global_va": "0x524738",
+      "source_va": "0x4aedc4",
+      "path": "frontend/show/"
+    }
+  ]
+}

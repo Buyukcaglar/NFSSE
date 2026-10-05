@@ -1,0 +1,86 @@
+# NFSSE user guide
+
+## Requirements
+
+- Modern Windows capable of running 32-bit desktop applications. The development host was Windows 11 IoT Enterprise LTSC, x64, build 26100. Other Windows editions and ARM emulation have not been exercised.
+- Your own supported English Special Edition installation media, extracted to a folder or accessible from a mounted disc.
+- About 520 MB of writable destination space.
+- The complete release patch-kit ZIP, extracted before installation.
+
+The supported original `NFS_WIN.EXE` has size **1,069,056 bytes** and SHA-256:
+
+```text
+ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b
+```
+
+The media folder must contain `NFS_WIN.EXE`, `NFSICONN.ICO`, `IFORCE.DLL`, `FRONTEND`, `SIMDATA`, `GAMEDATA`, `REDIST/DIRECTX` and `DIRECTX3/DIRECTX`. The installer copies the needed DirectPlay files from those last two folders. Other editions, languages, modified executables and the DOS executable are not supported by this recipe.
+
+## Installation
+
+1. Open [Releases](https://github.com/Buyukcaglar/NFSSE/releases/latest), download `NFSSE-v0.1.0-patch-kit.zip`, and extract it to a folder.
+2. Double-click `Install-NFSSE.cmd` inside the extracted kit. A console asks for the media folder and destination folder.
+3. Enter the folder directly containing `NFS_WIN.EXE`. Choose a new destination outside the media folder, such as `C:\Games\NFSSE`.
+4. Wait for the verified executable and game data to be written. Close the installer after its success message.
+5. Open the destination and double-click `NFSSE.exe`.
+
+Python and Visual Studio are unnecessary for the release installer. It uses Windows PowerShell and its built-in C# compiler. It writes the chosen destination without changing the source media, installing services, registering DLLs, modifying the registry or enabling the Windows legacy DirectPlay feature.
+
+For unattended installation, run this from the extracted kit in Windows PowerShell:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Install-NFSSE.ps1 -SourceMedia "D:\NFSSE-Media" -Destination "C:\Games\NFSSE" -NonInteractive
+```
+
+`SourceMedia` may also point to a mounted disc root. The installer validates the media executable, media icon, patch-kit file hashes and generated executable before copying game data. An unsupported build is rejected before destination files are written.
+
+## Playing and moving the game
+
+Launch `NFSSE.exe` directly. `Run-NFS.cmd` is an optional convenience: the executable's compatibility helper establishes its own working directory, so a desktop shortcut and double-click launch use the same executable-relative paths.
+
+Once installed, all game assets and required legacy DLLs are local. The physical CD and source-media folder are no longer needed for normal play. To move the game, close it and move the **whole destination folder**, including `FRONTEND`, `SIMDATA`, `GAMEDATA`, `NFSPortable.dll`, `ddraw.dll`, the DirectPlay DLLs and configuration files. Keep it on a writable drive; saves and settings live in that folder.
+
+Back up the entire `GAMEDATA` folder and root `nfs.cfg` before moving or reinstalling. To uninstall, close the game and remove the destination after preserving saves. No system-wide component needs uninstalling.
+
+## Display and video
+
+The default configuration scales the game's original image to a borderless fullscreen window while retaining the desktop mode. Gameplay uses its original 640×480 image with 4:3 proportions. Videos retain the proportions of their original mode, including 320×200 clips. Black margins are expected when the image and monitor proportions differ. This release does not add higher internal rendering resolutions or replace the original artwork or video decoder.
+
+The tested combination in `ddraw.ini` is GDI rendering, `singlecpu=true`, `maintas=true`, an empty `aspect_ratio`, `minfps=5`, and `lock_surfaces=true`. Periodic redraws are needed for the observed menu and movie presentation problems. Keep these defaults when reporting a regression.
+
+The release also sets `toggle_borderless=true` and `adjmouse=true`. Alt+Enter is configured to toggle windowed/borderless presentation, but this shortcut's final behavior and exit-mode restoration were not confirmed during the session. Normal borderless startup was exercised without a desktop resolution change.
+
+Use the bundled **cnc-ddraw 7.1.0.0 DLL**. The helper synchronizes presentation through a verified location inside that exact build, so replacing `ddraw.dll` with another version requires a corresponding helper update.
+
+## Configuration and reinstall
+
+The installer creates a 19-record relative `GAMEDATA/CONFIG/PATHS.DAT`. Avoid editing it into absolute drive paths: relocation depends on those relative records and the executable setting its working directory.
+
+The initial `nfs.cfg` is:
+
+```powershell
+"YESSOUND HIGHVIDEO ENGLISH NOREMOTE `r`n"
+```
+
+There is a trailing space before the line ending. Preserve it when editing because the legacy option parser expects token separation.
+
+Running the installer again against a destination it created refreshes the managed executable, helper, support DLLs, path table and documentation. Existing game files, saves, `nfs.cfg` and `ddraw.ini` are preserved. It refuses an unrelated nonempty destination or an executable with unrecognized modifications. Close the game before reinstalling. To restore graphics defaults, back up your `ddraw.ini`, remove that file, and rerun the installer.
+
+## Troubleshooting
+
+| Symptom | Action |
+| --- | --- |
+| Unsupported executable or icon | Confirm the selected folder contains unmodified supported English media. Compare its SHA-256; this release has no recipe for other builds. |
+| Patch-kit integrity check fails | Extract the complete release ZIP again. Keep its folders together. |
+| `DPLAY.dll` missing | Launch from the completed destination, and confirm the media included the required `REDIST` and `DIRECTX3` files. Rerun the installer. |
+| Portable compatibility initialization failed | Keep `NFSPortable.dll`, the bundled `ddraw.dll`, and local DirectPlay DLLs beside `NFSSE.exe`. Read `portable-runtime.log` and report the first failing initialization step. |
+| `dpserial.dll` service error | Confirm local `DPSERIAL.DLL` is present. The helper should log a local provider load; restore the matching support files with the installer. |
+| `streamreader - ILLEGAL CHUNK SIZE` | Confirm the current helper is installed. Its buffered-read hook addresses the observed zero-byte legacy stream failure. Include the runtime log if it recurs. |
+| Stalled video, corrupted presentation or menus ignoring clicks | Restore the default `ddraw.ini`, especially GDI, `singlecpu=true` and `minfps=5`; use the exact bundled renderer. Report which clip or menu failed. |
+| Wrong video proportions | Keep `maintas=true` and `aspect_ratio=` empty so each original mode determines its proportions. |
+| Settings or saves do not persist | Use a writable destination outside protected system folders and close the game before backing up files. |
+
+Open a [bug report](https://github.com/Buyukcaglar/NFSSE/issues/new/choose) with release version, Windows version, display setup, reproduction steps and `portable-runtime.log`. Review logs for personal folder names before attaching them. Do not attach original game files, video captures containing game assets or full process memory dumps.
+
+## I-Force and multiplayer
+
+Original I-Force code and `IFORCE.DLL` are preserved. Modern USB I-Force support is a low-priority backlog task and has no implementation or device verification in this release. Legacy multiplayer providers are made available locally for startup compatibility; network play, serial play and modem play have not been validated.

@@ -1,0 +1,7 @@
+{
+  "pid": 53864,
+  "relocated_executable": "portable relocation test\\NFSSE.exe",
+  "launch_working_directory": "analysis",
+  "runtime_working_directory": "portable relocation test\\",
+  "process_affinity_mask": 1
+}

@@ -1,0 +1,28 @@
+{
+  "asset_count": 1228,
+  "changed_or_missing_assets": [],
+  "source_executable_sha256": "ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b",
+  "source_and_portable_iforce_identical": true,
+  "relative_path_records": [
+    "gamedata/config/",
+    "gamedata/savegame/",
+    "frontend/speech/",
+    "simdata/soundbnk/",
+    "frontend/music/",
+    "frontend/art/",
+    "gamedata/modem/",
+    "frontend/movie/",
+    "gamedata/replay/",
+    "simdata/misc/",
+    "simdata/etrackFm/",
+    "simdata/ntrackFm/",
+    "simdata/slides/",
+    "simdata/carFams/",
+    "simdata/soundBnk/",
+    "simdata/carspecs/",
+    "simdata/dash/",
+    "simdata/misc/",
+    "frontend/show/"
+  ],
+  "configured_renderer": "; Original image scaled to a centered 4:3 borderless window.\n; GDI avoids the graphics mode transition deadlock observed with D3D9.\n[ddraw]\nwindowed=true\nfullscreen=true\nborder=false\nmaintas=true\naspect_ratio=\nrenderer=gdi\nsavesettings=0\nnoactivateapp=false\nsinglecpu=true\nmaxfps=-1\nminfps=5\nlock_surfaces=true\n"
+}

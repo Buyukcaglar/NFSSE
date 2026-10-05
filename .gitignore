@@ -1,0 +1,26 @@
+# Original media, installed games, captures, and local session caches.
+/install/
+/NFSSE/
+/portable/
+/portable relocation test/
+/analysis/
+/Run-NFS.cmd
+/portable-runtime.log
+/runtime/
+/release-manifest.json
+/build/
+__pycache__/
+*.pyc
+*.dll
+*.exe
+*.dmp
+*.bin
+*.ico
+*.png
+*.jpg
+*.zip
+*.obj
+*.lib
+*.exp
+*.pdb
+*.stackdump

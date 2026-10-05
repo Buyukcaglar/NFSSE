@@ -1,0 +1,12 @@
+{
+  "action": "Added app-local DPLAY.dll from the installation media; no existing file overwritten.",
+  "utc": "2026-10-05T18:53:59.947078+00:00",
+  "source": "install\\REDIST\\DIRECTX\\DPLAY.DLL",
+  "destination": "install\\DPLAY.dll",
+  "dll_sha256": "7f3978149dd401c33ab0cf34bf776d794005dccf8307cce5006710976c6df545",
+  "dll_size": 39936,
+  "dll_version": "4.03.00.1096",
+  "game_sha256_unchanged": true,
+  "validation": "Static architecture, exports, direct dependency export availability, and hashes; game not launched.",
+  "undo": "Remove only the added install/DPLAY.dll to restore the prior directory contents."
+}

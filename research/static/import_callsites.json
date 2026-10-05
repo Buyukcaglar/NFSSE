@@ -1,0 +1,5672 @@
+[
+  {
+    "symbol": "GDI32.dll!GetStockObject",
+    "iat_va": 5443840,
+    "direct_iat_xrefs": [
+      {
+        "va": 4833184,
+        "offset": 635808,
+        "bytes": "2e ff 15 00 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531100]"
+      },
+      {
+        "va": 4901310,
+        "offset": 703934,
+        "bytes": "ff 25 00 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531100]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901310,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "GDI32.dll!SetStretchBltMode",
+    "iat_va": 5443844,
+    "direct_iat_xrefs": [
+      {
+        "va": 4712994,
+        "offset": 515618,
+        "bytes": "2e ff 15 04 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531104]"
+      },
+      {
+        "va": 4901514,
+        "offset": 704138,
+        "bytes": "ff 25 04 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531104]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901514,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "GDI32.dll!StretchBlt",
+    "iat_va": 5443848,
+    "direct_iat_xrefs": [
+      {
+        "va": 4713048,
+        "offset": 515672,
+        "bytes": "2e ff 15 08 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531108]"
+      },
+      {
+        "va": 4901508,
+        "offset": 704132,
+        "bytes": "ff 25 08 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531108]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901508,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!AdjustWindowRect",
+    "iat_va": 5443988,
+    "direct_iat_xrefs": [
+      {
+        "va": 4706294,
+        "offset": 508918,
+        "bytes": "2e ff 15 94 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531194]"
+      },
+      {
+        "va": 4832414,
+        "offset": 635038,
+        "bytes": "2e ff 15 94 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531194]"
+      },
+      {
+        "va": 4901526,
+        "offset": 704150,
+        "bytes": "ff 25 94 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531194]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901526,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!BeginPaint",
+    "iat_va": 5443992,
+    "direct_iat_xrefs": [
+      {
+        "va": 4832062,
+        "offset": 634686,
+        "bytes": "2e ff 15 98 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531198]"
+      },
+      {
+        "va": 4901394,
+        "offset": 704018,
+        "bytes": "ff 25 98 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531198]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901394,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!ClientToScreen",
+    "iat_va": 5443996,
+    "direct_iat_xrefs": [
+      {
+        "va": 4830735,
+        "offset": 633359,
+        "bytes": "2e ff 15 9c 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53119c]"
+      },
+      {
+        "va": 4831420,
+        "offset": 634044,
+        "bytes": "2e ff 15 9c 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53119c]"
+      },
+      {
+        "va": 4832573,
+        "offset": 635197,
+        "bytes": "2e ff 15 9c 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53119c]"
+      },
+      {
+        "va": 4901418,
+        "offset": 704042,
+        "bytes": "ff 25 9c 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53119c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901418,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!CreateWindowExA",
+    "iat_va": 5444000,
+    "direct_iat_xrefs": [
+      {
+        "va": 4832530,
+        "offset": 635154,
+        "bytes": "2e ff 15 a0 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311a0]"
+      },
+      {
+        "va": 4901370,
+        "offset": 703994,
+        "bytes": "ff 25 a0 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311a0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901370,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!DefWindowProcA",
+    "iat_va": 5444004,
+    "direct_iat_xrefs": [
+      {
+        "va": 4832311,
+        "offset": 634935,
+        "bytes": "2e ff 15 a4 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311a4]"
+      },
+      {
+        "va": 4901382,
+        "offset": 704006,
+        "bytes": "ff 25 a4 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311a4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901382,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!DestroyWindow",
+    "iat_va": 5444008,
+    "direct_iat_xrefs": [
+      {
+        "va": 4832754,
+        "offset": 635378,
+        "bytes": "2e ff 15 a8 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311a8]"
+      },
+      {
+        "va": 4832922,
+        "offset": 635546,
+        "bytes": "2e ff 15 a8 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311a8]"
+      },
+      {
+        "va": 4901352,
+        "offset": 703976,
+        "bytes": "ff 25 a8 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311a8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901352,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!DispatchMessageA",
+    "iat_va": 5444012,
+    "direct_iat_xrefs": [
+      {
+        "va": 4832865,
+        "offset": 635489,
+        "bytes": "2e ff 15 ac 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311ac]"
+      },
+      {
+        "va": 4901334,
+        "offset": 703958,
+        "bytes": "ff 25 ac 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311ac]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901334,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!EndPaint",
+    "iat_va": 5444016,
+    "direct_iat_xrefs": [
+      {
+        "va": 4832079,
+        "offset": 634703,
+        "bytes": "2e ff 15 b0 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311b0]"
+      },
+      {
+        "va": 4901388,
+        "offset": 704012,
+        "bytes": "ff 25 b0 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311b0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901388,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!GetClientRect",
+    "iat_va": 5444020,
+    "direct_iat_xrefs": [
+      {
+        "va": 4704694,
+        "offset": 507318,
+        "bytes": "2e ff 15 b4 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311b4]"
+      },
+      {
+        "va": 4831403,
+        "offset": 634027,
+        "bytes": "2e ff 15 b4 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311b4]"
+      },
+      {
+        "va": 4832560,
+        "offset": 635184,
+        "bytes": "2e ff 15 b4 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311b4]"
+      },
+      {
+        "va": 4901556,
+        "offset": 704180,
+        "bytes": "ff 25 b4 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311b4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901556,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!GetDesktopWindow",
+    "iat_va": 5444024,
+    "direct_iat_xrefs": [
+      {
+        "va": 4660978,
+        "offset": 463602,
+        "bytes": "2e ff 15 b8 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311b8]"
+      },
+      {
+        "va": 4901772,
+        "offset": 704396,
+        "bytes": "ff 25 b8 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311b8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901772,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!GetKeyState",
+    "iat_va": 5444028,
+    "direct_iat_xrefs": [
+      {
+        "va": 4750729,
+        "offset": 553353,
+        "bytes": "2e ff 15 bc 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311bc]"
+      },
+      {
+        "va": 4901502,
+        "offset": 704126,
+        "bytes": "ff 25 bc 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311bc]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901502,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!GetMessageA",
+    "iat_va": 5444032,
+    "direct_iat_xrefs": [
+      {
+        "va": 4832806,
+        "offset": 635430,
+        "bytes": "2e ff 15 c0 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311c0]"
+      },
+      {
+        "va": 4901346,
+        "offset": 703970,
+        "bytes": "ff 25 c0 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311c0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901346,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!GetSystemMetrics",
+    "iat_va": 5444036,
+    "direct_iat_xrefs": [
+      {
+        "va": 4832452,
+        "offset": 635076,
+        "bytes": "2e ff 15 c4 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311c4]"
+      },
+      {
+        "va": 4832476,
+        "offset": 635100,
+        "bytes": "2e ff 15 c4 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311c4]"
+      },
+      {
+        "va": 4901376,
+        "offset": 704000,
+        "bytes": "ff 25 c4 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311c4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901376,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!GetWindowLongA",
+    "iat_va": 5444040,
+    "direct_iat_xrefs": [
+      {
+        "va": 4706281,
+        "offset": 508905,
+        "bytes": "2e ff 15 c8 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311c8]"
+      },
+      {
+        "va": 4901532,
+        "offset": 704156,
+        "bytes": "ff 25 c8 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311c8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901532,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!IsIconic",
+    "iat_va": 5444044,
+    "direct_iat_xrefs": [
+      {
+        "va": 4831373,
+        "offset": 633997,
+        "bytes": "2e ff 15 cc 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311cc]"
+      },
+      {
+        "va": 4901400,
+        "offset": 704024,
+        "bytes": "ff 25 cc 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311cc]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901400,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!LoadCursorA",
+    "iat_va": 5444048,
+    "direct_iat_xrefs": [
+      {
+        "va": 4833171,
+        "offset": 635795,
+        "bytes": "2e ff 15 d0 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311d0]"
+      },
+      {
+        "va": 4901316,
+        "offset": 703940,
+        "bytes": "ff 25 d0 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311d0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901316,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!LoadIconA",
+    "iat_va": 5444052,
+    "direct_iat_xrefs": [
+      {
+        "va": 4833154,
+        "offset": 635778,
+        "bytes": "2e ff 15 d4 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311d4]"
+      },
+      {
+        "va": 4901322,
+        "offset": 703946,
+        "bytes": "ff 25 d4 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311d4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901322,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!MessageBoxA",
+    "iat_va": 5444056,
+    "direct_iat_xrefs": [
+      {
+        "va": 4660996,
+        "offset": 463620,
+        "bytes": "2e ff 15 d8 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311d8]"
+      },
+      {
+        "va": 4684506,
+        "offset": 487130,
+        "bytes": "2e ff 15 d8 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311d8]"
+      },
+      {
+        "va": 4901766,
+        "offset": 704390,
+        "bytes": "ff 25 d8 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311d8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901766,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!PostMessageA",
+    "iat_va": 5444060,
+    "direct_iat_xrefs": [
+      {
+        "va": 4830534,
+        "offset": 633158,
+        "bytes": "2e ff 15 dc 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311dc]"
+      },
+      {
+        "va": 4901430,
+        "offset": 704054,
+        "bytes": "ff 25 dc 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311dc]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901430,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!RegisterClassA",
+    "iat_va": 5444064,
+    "direct_iat_xrefs": [
+      {
+        "va": 4833211,
+        "offset": 635835,
+        "bytes": "2e ff 15 e0 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311e0]"
+      },
+      {
+        "va": 4901304,
+        "offset": 703928,
+        "bytes": "ff 25 e0 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311e0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901304,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!SendNotifyMessageA",
+    "iat_va": 5444068,
+    "direct_iat_xrefs": [
+      {
+        "va": 4830500,
+        "offset": 633124,
+        "bytes": "2e ff 15 e4 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311e4]"
+      },
+      {
+        "va": 4901436,
+        "offset": 704060,
+        "bytes": "ff 25 e4 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311e4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901436,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!SetCursorPos",
+    "iat_va": 5444072,
+    "direct_iat_xrefs": [
+      {
+        "va": 4830768,
+        "offset": 633392,
+        "bytes": "2e ff 15 e8 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311e8]"
+      },
+      {
+        "va": 4901412,
+        "offset": 704036,
+        "bytes": "ff 25 e8 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311e8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901412,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!SetCursor",
+    "iat_va": 5444076,
+    "direct_iat_xrefs": [
+      {
+        "va": 4830777,
+        "offset": 633401,
+        "bytes": "2e ff 15 ec 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311ec]"
+      },
+      {
+        "va": 4901406,
+        "offset": 704030,
+        "bytes": "ff 25 ec 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311ec]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901406,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!SetFocus",
+    "iat_va": 5444080,
+    "direct_iat_xrefs": [
+      {
+        "va": 4832623,
+        "offset": 635247,
+        "bytes": "2e ff 15 f0 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311f0]"
+      },
+      {
+        "va": 4901358,
+        "offset": 703982,
+        "bytes": "ff 25 f0 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311f0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901358,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!SetForegroundWindow",
+    "iat_va": 5444084,
+    "direct_iat_xrefs": [
+      {
+        "va": 4706108,
+        "offset": 508732,
+        "bytes": "2e ff 15 f4 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311f4]"
+      },
+      {
+        "va": 4709704,
+        "offset": 512328,
+        "bytes": "2e ff 15 f4 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311f4]"
+      },
+      {
+        "va": 4901544,
+        "offset": 704168,
+        "bytes": "ff 25 f4 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311f4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901544,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!SetWindowPos",
+    "iat_va": 5444088,
+    "direct_iat_xrefs": [
+      {
+        "va": 4706336,
+        "offset": 508960,
+        "bytes": "2e ff 15 f8 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311f8]"
+      },
+      {
+        "va": 4901520,
+        "offset": 704144,
+        "bytes": "ff 25 f8 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311f8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901520,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!ShowCursor",
+    "iat_va": 5444092,
+    "direct_iat_xrefs": [
+      {
+        "va": 4684454,
+        "offset": 487078,
+        "bytes": "2e ff 15 fc 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311fc]"
+      },
+      {
+        "va": 4706146,
+        "offset": 508770,
+        "bytes": "2e ff 15 fc 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311fc]"
+      },
+      {
+        "va": 4706167,
+        "offset": 508791,
+        "bytes": "2e ff 15 fc 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311fc]"
+      },
+      {
+        "va": 4830804,
+        "offset": 633428,
+        "bytes": "2e ff 15 fc 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311fc]"
+      },
+      {
+        "va": 4832646,
+        "offset": 635270,
+        "bytes": "2e ff 15 fc 11 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5311fc]"
+      },
+      {
+        "va": 4901640,
+        "offset": 704264,
+        "bytes": "ff 25 fc 11 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5311fc]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901640,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!ShowWindow",
+    "iat_va": 5444096,
+    "direct_iat_xrefs": [
+      {
+        "va": 4704773,
+        "offset": 507397,
+        "bytes": "2e ff 15 00 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531200]"
+      },
+      {
+        "va": 4901550,
+        "offset": 704174,
+        "bytes": "ff 25 00 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531200]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901550,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!SystemParametersInfoA",
+    "iat_va": 5444100,
+    "direct_iat_xrefs": [
+      {
+        "va": 4706185,
+        "offset": 508809,
+        "bytes": "2e ff 15 04 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531204]"
+      },
+      {
+        "va": 4901538,
+        "offset": 704162,
+        "bytes": "ff 25 04 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531204]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901538,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!TranslateMessage",
+    "iat_va": 5444104,
+    "direct_iat_xrefs": [
+      {
+        "va": 4832855,
+        "offset": 635479,
+        "bytes": "2e ff 15 08 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531208]"
+      },
+      {
+        "va": 4901340,
+        "offset": 703964,
+        "bytes": "ff 25 08 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531208]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901340,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!UpdateWindow",
+    "iat_va": 5444108,
+    "direct_iat_xrefs": [
+      {
+        "va": 4832615,
+        "offset": 635239,
+        "bytes": "2e ff 15 0c 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53120c]"
+      },
+      {
+        "va": 4901364,
+        "offset": 703988,
+        "bytes": "ff 25 0c 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53120c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901364,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.dll!keybd_event",
+    "iat_va": 5444112,
+    "direct_iat_xrefs": [
+      {
+        "va": 4750760,
+        "offset": 553384,
+        "bytes": "2e ff 15 10 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531210]"
+      },
+      {
+        "va": 4750772,
+        "offset": 553396,
+        "bytes": "2e ff 15 10 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531210]"
+      },
+      {
+        "va": 4901496,
+        "offset": 704120,
+        "bytes": "ff 25 10 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531210]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901496,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!CloseHandle",
+    "iat_va": 5444320,
+    "direct_iat_xrefs": [
+      {
+        "va": 4679925,
+        "offset": 482549,
+        "bytes": "2e ff 15 e0 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312e0]"
+      },
+      {
+        "va": 4679947,
+        "offset": 482571,
+        "bytes": "2e ff 15 e0 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312e0]"
+      },
+      {
+        "va": 4680797,
+        "offset": 483421,
+        "bytes": "2e ff 15 e0 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312e0]"
+      },
+      {
+        "va": 4700866,
+        "offset": 503490,
+        "bytes": "2e ff 15 e0 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312e0]"
+      },
+      {
+        "va": 4755424,
+        "offset": 558048,
+        "bytes": "2e ff 15 e0 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312e0]"
+      },
+      {
+        "va": 4901688,
+        "offset": 704312,
+        "bytes": "ff 25 e0 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5312e0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901688,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!CreateEventA",
+    "iat_va": 5444324,
+    "direct_iat_xrefs": [
+      {
+        "va": 4680624,
+        "offset": 483248,
+        "bytes": "2e ff 15 e4 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312e4]"
+      },
+      {
+        "va": 4702007,
+        "offset": 504631,
+        "bytes": "2e ff 15 e4 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312e4]"
+      },
+      {
+        "va": 4702049,
+        "offset": 504673,
+        "bytes": "2e ff 15 e4 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312e4]"
+      },
+      {
+        "va": 4901652,
+        "offset": 704276,
+        "bytes": "ff 25 e4 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5312e4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901652,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!CreateFileA",
+    "iat_va": 5444328,
+    "direct_iat_xrefs": [
+      {
+        "va": 4701933,
+        "offset": 504557,
+        "bytes": "2e ff 15 e8 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312e8]"
+      },
+      {
+        "va": 4754235,
+        "offset": 556859,
+        "bytes": "2e ff 15 e8 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312e8]"
+      },
+      {
+        "va": 4901580,
+        "offset": 704204,
+        "bytes": "ff 25 e8 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5312e8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901580,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!CreateMutexA",
+    "iat_va": 5444332,
+    "direct_iat_xrefs": [
+      {
+        "va": 4680441,
+        "offset": 483065,
+        "bytes": "2e ff 15 ec 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312ec]"
+      },
+      {
+        "va": 4680814,
+        "offset": 483438,
+        "bytes": "2e ff 15 ec 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312ec]"
+      },
+      {
+        "va": 4901670,
+        "offset": 704294,
+        "bytes": "ff 25 ec 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5312ec]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901670,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!CreateThread",
+    "iat_va": 5444336,
+    "direct_iat_xrefs": [
+      {
+        "va": 4679745,
+        "offset": 482369,
+        "bytes": "2e ff 15 f0 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312f0]"
+      },
+      {
+        "va": 4901712,
+        "offset": 704336,
+        "bytes": "ff 25 f0 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5312f0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901712,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!DebugBreak",
+    "iat_va": 5444340,
+    "direct_iat_xrefs": [
+      {
+        "va": 4684481,
+        "offset": 487105,
+        "bytes": "2e ff 15 f4 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312f4]"
+      },
+      {
+        "va": 4718240,
+        "offset": 520864,
+        "bytes": "2e ff 15 f4 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312f4]"
+      },
+      {
+        "va": 4782603,
+        "offset": 585227,
+        "bytes": "2e ff 15 f4 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312f4]"
+      },
+      {
+        "va": 4782640,
+        "offset": 585264,
+        "bytes": "2e ff 15 f4 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312f4]"
+      },
+      {
+        "va": 4831627,
+        "offset": 634251,
+        "bytes": "2e ff 15 f4 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312f4]"
+      },
+      {
+        "va": 4901628,
+        "offset": 704252,
+        "bytes": "ff 25 f4 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5312f4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901628,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!DuplicateHandle",
+    "iat_va": 5444344,
+    "direct_iat_xrefs": [
+      {
+        "va": 4679694,
+        "offset": 482318,
+        "bytes": "2e ff 15 f8 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312f8]"
+      },
+      {
+        "va": 4901718,
+        "offset": 704342,
+        "bytes": "ff 25 f8 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5312f8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901718,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!EscapeCommFunction",
+    "iat_va": 5444348,
+    "direct_iat_xrefs": [
+      {
+        "va": 4701075,
+        "offset": 503699,
+        "bytes": "2e ff 15 fc 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312fc]"
+      },
+      {
+        "va": 4701187,
+        "offset": 503811,
+        "bytes": "2e ff 15 fc 12 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5312fc]"
+      },
+      {
+        "va": 4901592,
+        "offset": 704216,
+        "bytes": "ff 25 fc 12 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5312fc]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901592,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!ExitProcess",
+    "iat_va": 5444352,
+    "direct_iat_xrefs": [
+      {
+        "va": 4684515,
+        "offset": 487139,
+        "bytes": "2e ff 15 00 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531300]"
+      },
+      {
+        "va": 4901622,
+        "offset": 704246,
+        "bytes": "ff 25 00 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531300]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901622,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!ExitThread",
+    "iat_va": 5444356,
+    "direct_iat_xrefs": [
+      {
+        "va": 4680606,
+        "offset": 483230,
+        "bytes": "2e ff 15 04 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531304]"
+      },
+      {
+        "va": 4901658,
+        "offset": 704282,
+        "bytes": "ff 25 04 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531304]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901658,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!FindClose",
+    "iat_va": 5444360,
+    "direct_iat_xrefs": [
+      {
+        "va": 4755566,
+        "offset": 558190,
+        "bytes": "2e ff 15 08 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531308]"
+      },
+      {
+        "va": 4755600,
+        "offset": 558224,
+        "bytes": "2e ff 15 08 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531308]"
+      },
+      {
+        "va": 4901448,
+        "offset": 704072,
+        "bytes": "ff 25 08 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531308]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901448,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!FindFirstFileA",
+    "iat_va": 5444364,
+    "direct_iat_xrefs": [
+      {
+        "va": 4755617,
+        "offset": 558241,
+        "bytes": "2e ff 15 0c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53130c]"
+      },
+      {
+        "va": 4901442,
+        "offset": 704066,
+        "bytes": "ff 25 0c 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53130c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901442,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!FindNextFileA",
+    "iat_va": 5444368,
+    "direct_iat_xrefs": [
+      {
+        "va": 4755520,
+        "offset": 558144,
+        "bytes": "2e ff 15 10 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531310]"
+      },
+      {
+        "va": 4901460,
+        "offset": 704084,
+        "bytes": "ff 25 10 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531310]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901460,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetCommModemStatus",
+    "iat_va": 5444372,
+    "direct_iat_xrefs": [
+      {
+        "va": 4701305,
+        "offset": 503929,
+        "bytes": "2e ff 15 14 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531314]"
+      },
+      {
+        "va": 4901586,
+        "offset": 704210,
+        "bytes": "ff 25 14 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531314]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901586,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetCommState",
+    "iat_va": 5444376,
+    "direct_iat_xrefs": [
+      {
+        "va": 4702932,
+        "offset": 505556,
+        "bytes": "2e ff 15 18 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531318]"
+      },
+      {
+        "va": 4901568,
+        "offset": 704192,
+        "bytes": "ff 25 18 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531318]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901568,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetCurrentDirectoryA",
+    "iat_va": 5444380,
+    "direct_iat_xrefs": [
+      {
+        "va": 4753438,
+        "offset": 556062,
+        "bytes": "2e ff 15 1c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53131c]"
+      },
+      {
+        "va": 4901484,
+        "offset": 704108,
+        "bytes": "ff 25 1c 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53131c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901484,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetCurrentProcess",
+    "iat_va": 5444384,
+    "direct_iat_xrefs": [
+      {
+        "va": 4679665,
+        "offset": 482289,
+        "bytes": "2e ff 15 20 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531320]"
+      },
+      {
+        "va": 4679681,
+        "offset": 482305,
+        "bytes": "2e ff 15 20 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531320]"
+      },
+      {
+        "va": 4830639,
+        "offset": 633263,
+        "bytes": "2e ff 15 20 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531320]"
+      },
+      {
+        "va": 4830663,
+        "offset": 633287,
+        "bytes": "2e ff 15 20 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531320]"
+      },
+      {
+        "va": 4901730,
+        "offset": 704354,
+        "bytes": "ff 25 20 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531320]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901730,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetCurrentThreadId",
+    "iat_va": 5444388,
+    "direct_iat_xrefs": [
+      {
+        "va": 4679642,
+        "offset": 482266,
+        "bytes": "2e ff 15 24 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531324]"
+      },
+      {
+        "va": 4680046,
+        "offset": 482670,
+        "bytes": "2e ff 15 24 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531324]"
+      },
+      {
+        "va": 4901736,
+        "offset": 704360,
+        "bytes": "ff 25 24 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531324]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901736,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetCurrentThread",
+    "iat_va": 5444392,
+    "direct_iat_xrefs": [
+      {
+        "va": 4679673,
+        "offset": 482297,
+        "bytes": "2e ff 15 28 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531328]"
+      },
+      {
+        "va": 4679905,
+        "offset": 482529,
+        "bytes": "2e ff 15 28 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531328]"
+      },
+      {
+        "va": 4680156,
+        "offset": 482780,
+        "bytes": "2e ff 15 28 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531328]"
+      },
+      {
+        "va": 4680333,
+        "offset": 482957,
+        "bytes": "2e ff 15 28 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531328]"
+      },
+      {
+        "va": 4901724,
+        "offset": 704348,
+        "bytes": "ff 25 28 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531328]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901724,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetDiskFreeSpaceA",
+    "iat_va": 5444396,
+    "direct_iat_xrefs": [
+      {
+        "va": 4754159,
+        "offset": 556783,
+        "bytes": "2e ff 15 2c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53132c]"
+      },
+      {
+        "va": 4754582,
+        "offset": 557206,
+        "bytes": "2e ff 15 2c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53132c]"
+      },
+      {
+        "va": 4901478,
+        "offset": 704102,
+        "bytes": "ff 25 2c 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53132c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901478,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetDriveTypeA",
+    "iat_va": 5444400,
+    "direct_iat_xrefs": [
+      {
+        "va": 4661027,
+        "offset": 463651,
+        "bytes": "2e ff 15 30 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531330]"
+      },
+      {
+        "va": 4901760,
+        "offset": 704384,
+        "bytes": "ff 25 30 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531330]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901760,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetFileAttributesA",
+    "iat_va": 5444404,
+    "direct_iat_xrefs": [
+      {
+        "va": 4755536,
+        "offset": 558160,
+        "bytes": "2e ff 15 34 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531334]"
+      },
+      {
+        "va": 4755639,
+        "offset": 558263,
+        "bytes": "2e ff 15 34 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531334]"
+      },
+      {
+        "va": 4901454,
+        "offset": 704078,
+        "bytes": "ff 25 34 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531334]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901454,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetFileSize",
+    "iat_va": 5444408,
+    "direct_iat_xrefs": [
+      {
+        "va": 4754541,
+        "offset": 557165,
+        "bytes": "2e ff 15 38 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531338]"
+      },
+      {
+        "va": 4901472,
+        "offset": 704096,
+        "bytes": "ff 25 38 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531338]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901472,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetLastError",
+    "iat_va": 5444412,
+    "direct_iat_xrefs": [
+      {
+        "va": 4679554,
+        "offset": 482178,
+        "bytes": "2e ff 15 3c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53133c]"
+      },
+      {
+        "va": 4700040,
+        "offset": 502664,
+        "bytes": "2e ff 15 3c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53133c]"
+      },
+      {
+        "va": 4700267,
+        "offset": 502891,
+        "bytes": "2e ff 15 3c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53133c]"
+      },
+      {
+        "va": 4700418,
+        "offset": 503042,
+        "bytes": "2e ff 15 3c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53133c]"
+      },
+      {
+        "va": 4700547,
+        "offset": 503171,
+        "bytes": "2e ff 15 3c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53133c]"
+      },
+      {
+        "va": 4754830,
+        "offset": 557454,
+        "bytes": "2e ff 15 3c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53133c]"
+      },
+      {
+        "va": 4755098,
+        "offset": 557722,
+        "bytes": "2e ff 15 3c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53133c]"
+      },
+      {
+        "va": 4782572,
+        "offset": 585196,
+        "bytes": "2e ff 15 3c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53133c]"
+      },
+      {
+        "va": 4901742,
+        "offset": 704366,
+        "bytes": "ff 25 3c 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53133c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901742,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetModuleHandleA",
+    "iat_va": 5444416,
+    "direct_iat_xrefs": [
+      {
+        "va": 4833092,
+        "offset": 635716,
+        "bytes": "2e ff 15 40 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531340]"
+      },
+      {
+        "va": 4901328,
+        "offset": 703952,
+        "bytes": "ff 25 40 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531340]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901328,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetOverlappedResult",
+    "iat_va": 5444420,
+    "direct_iat_xrefs": [
+      {
+        "va": 4700388,
+        "offset": 503012,
+        "bytes": "2e ff 15 44 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531344]"
+      },
+      {
+        "va": 4700491,
+        "offset": 503115,
+        "bytes": "2e ff 15 44 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531344]"
+      },
+      {
+        "va": 4901604,
+        "offset": 704228,
+        "bytes": "ff 25 44 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531344]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901604,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetThreadPriority",
+    "iat_va": 5444424,
+    "direct_iat_xrefs": [
+      {
+        "va": 4680168,
+        "offset": 482792,
+        "bytes": "2e ff 15 48 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531348]"
+      },
+      {
+        "va": 4901682,
+        "offset": 704306,
+        "bytes": "ff 25 48 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531348]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901682,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GetTickCount",
+    "iat_va": 5444428,
+    "direct_iat_xrefs": [
+      {
+        "va": 4679473,
+        "offset": 482097,
+        "bytes": "2e ff 15 4c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53134c]"
+      },
+      {
+        "va": 4679483,
+        "offset": 482107,
+        "bytes": "2e ff 15 4c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53134c]"
+      },
+      {
+        "va": 4679498,
+        "offset": 482122,
+        "bytes": "2e ff 15 4c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53134c]"
+      },
+      {
+        "va": 4679568,
+        "offset": 482192,
+        "bytes": "2e ff 15 4c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53134c]"
+      },
+      {
+        "va": 4679581,
+        "offset": 482205,
+        "bytes": "2e ff 15 4c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53134c]"
+      },
+      {
+        "va": 4837040,
+        "offset": 639664,
+        "bytes": "2e ff 15 4c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53134c]"
+      },
+      {
+        "va": 4901754,
+        "offset": 704378,
+        "bytes": "ff 25 4c 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53134c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901754,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GlobalAlloc",
+    "iat_va": 5444432,
+    "direct_iat_xrefs": [
+      {
+        "va": 4868229,
+        "offset": 670853,
+        "bytes": "2e ff 15 50 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531350]"
+      },
+      {
+        "va": 4868315,
+        "offset": 670939,
+        "bytes": "2e ff 15 50 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531350]"
+      },
+      {
+        "va": 4901298,
+        "offset": 703922,
+        "bytes": "ff 25 50 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531350]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901298,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GlobalFree",
+    "iat_va": 5444436,
+    "direct_iat_xrefs": [
+      {
+        "va": 4868726,
+        "offset": 671350,
+        "bytes": "2e ff 15 54 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531354]"
+      },
+      {
+        "va": 4868772,
+        "offset": 671396,
+        "bytes": "2e ff 15 54 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531354]"
+      },
+      {
+        "va": 4901280,
+        "offset": 703904,
+        "bytes": "ff 25 54 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531354]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901280,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GlobalLock",
+    "iat_va": 5444440,
+    "direct_iat_xrefs": [
+      {
+        "va": 4868270,
+        "offset": 670894,
+        "bytes": "2e ff 15 58 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531358]"
+      },
+      {
+        "va": 4868354,
+        "offset": 670978,
+        "bytes": "2e ff 15 58 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531358]"
+      },
+      {
+        "va": 4901292,
+        "offset": 703916,
+        "bytes": "ff 25 58 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531358]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901292,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GlobalMemoryStatus",
+    "iat_va": 5444444,
+    "direct_iat_xrefs": [
+      {
+        "va": 4660952,
+        "offset": 463576,
+        "bytes": "2e ff 15 5c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53135c]"
+      },
+      {
+        "va": 4755939,
+        "offset": 558563,
+        "bytes": "2e ff 15 5c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53135c]"
+      },
+      {
+        "va": 4756115,
+        "offset": 558739,
+        "bytes": "2e ff 15 5c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53135c]"
+      },
+      {
+        "va": 4901778,
+        "offset": 704402,
+        "bytes": "ff 25 5c 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53135c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901778,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!GlobalUnlock",
+    "iat_va": 5444448,
+    "direct_iat_xrefs": [
+      {
+        "va": 4868701,
+        "offset": 671325,
+        "bytes": "2e ff 15 60 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531360]"
+      },
+      {
+        "va": 4868749,
+        "offset": 671373,
+        "bytes": "2e ff 15 60 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531360]"
+      },
+      {
+        "va": 4901286,
+        "offset": 703910,
+        "bytes": "ff 25 60 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531360]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901286,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!OutputDebugStringA",
+    "iat_va": 5444452,
+    "direct_iat_xrefs": [
+      {
+        "va": 4684474,
+        "offset": 487098,
+        "bytes": "2e ff 15 64 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531364]"
+      },
+      {
+        "va": 4718233,
+        "offset": 520857,
+        "bytes": "2e ff 15 64 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531364]"
+      },
+      {
+        "va": 4750829,
+        "offset": 553453,
+        "bytes": "2e ff 15 64 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531364]"
+      },
+      {
+        "va": 4782596,
+        "offset": 585220,
+        "bytes": "2e ff 15 64 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531364]"
+      },
+      {
+        "va": 4782633,
+        "offset": 585257,
+        "bytes": "2e ff 15 64 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531364]"
+      },
+      {
+        "va": 4831620,
+        "offset": 634244,
+        "bytes": "2e ff 15 64 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531364]"
+      },
+      {
+        "va": 4901634,
+        "offset": 704258,
+        "bytes": "ff 25 64 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531364]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901634,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!PurgeComm",
+    "iat_va": 5444456,
+    "direct_iat_xrefs": [
+      {
+        "va": 4700786,
+        "offset": 503410,
+        "bytes": "2e ff 15 68 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531368]"
+      },
+      {
+        "va": 4700814,
+        "offset": 503438,
+        "bytes": "2e ff 15 68 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531368]"
+      },
+      {
+        "va": 4700848,
+        "offset": 503472,
+        "bytes": "2e ff 15 68 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531368]"
+      },
+      {
+        "va": 4901598,
+        "offset": 704222,
+        "bytes": "ff 25 68 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531368]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901598,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!ReadFile",
+    "iat_va": 5444460,
+    "direct_iat_xrefs": [
+      {
+        "va": 4700016,
+        "offset": 502640,
+        "bytes": "2e ff 15 6c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53136c]"
+      },
+      {
+        "va": 4754794,
+        "offset": 557418,
+        "bytes": "2e ff 15 6c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53136c]"
+      },
+      {
+        "va": 4901616,
+        "offset": 704240,
+        "bytes": "ff 25 6c 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53136c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901616,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!ReleaseMutex",
+    "iat_va": 5444464,
+    "direct_iat_xrefs": [
+      {
+        "va": 4680594,
+        "offset": 483218,
+        "bytes": "2e ff 15 70 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531370]"
+      },
+      {
+        "va": 4680961,
+        "offset": 483585,
+        "bytes": "2e ff 15 70 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531370]"
+      },
+      {
+        "va": 4901664,
+        "offset": 704288,
+        "bytes": "ff 25 70 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531370]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901664,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!ResumeThread",
+    "iat_va": 5444468,
+    "direct_iat_xrefs": [
+      {
+        "va": 4679822,
+        "offset": 482446,
+        "bytes": "2e ff 15 74 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531374]"
+      },
+      {
+        "va": 4901706,
+        "offset": 704330,
+        "bytes": "ff 25 74 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531374]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901706,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!SetCommState",
+    "iat_va": 5444472,
+    "direct_iat_xrefs": [
+      {
+        "va": 4703073,
+        "offset": 505697,
+        "bytes": "2e ff 15 78 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531378]"
+      },
+      {
+        "va": 4901562,
+        "offset": 704186,
+        "bytes": "ff 25 78 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531378]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901562,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!SetCommTimeouts",
+    "iat_va": 5444476,
+    "direct_iat_xrefs": [
+      {
+        "va": 4702110,
+        "offset": 504734,
+        "bytes": "2e ff 15 7c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53137c]"
+      },
+      {
+        "va": 4901574,
+        "offset": 704198,
+        "bytes": "ff 25 7c 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53137c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901574,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!SetCurrentDirectoryA",
+    "iat_va": 5444480,
+    "direct_iat_xrefs": [
+      {
+        "va": 4753394,
+        "offset": 556018,
+        "bytes": "2e ff 15 80 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531380]"
+      },
+      {
+        "va": 4901490,
+        "offset": 704114,
+        "bytes": "ff 25 80 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531380]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901490,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!SetEvent",
+    "iat_va": 5444484,
+    "direct_iat_xrefs": [
+      {
+        "va": 4680637,
+        "offset": 483261,
+        "bytes": "2e ff 15 84 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531384]"
+      },
+      {
+        "va": 4901646,
+        "offset": 704270,
+        "bytes": "ff 25 84 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531384]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901646,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!SetFilePointer",
+    "iat_va": 5444488,
+    "direct_iat_xrefs": [
+      {
+        "va": 4755265,
+        "offset": 557889,
+        "bytes": "2e ff 15 88 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531388]"
+      },
+      {
+        "va": 4755353,
+        "offset": 557977,
+        "bytes": "2e ff 15 88 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531388]"
+      },
+      {
+        "va": 4901466,
+        "offset": 704090,
+        "bytes": "ff 25 88 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531388]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901466,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!SetPriorityClass",
+    "iat_va": 5444492,
+    "direct_iat_xrefs": [
+      {
+        "va": 4830647,
+        "offset": 633271,
+        "bytes": "2e ff 15 8c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53138c]"
+      },
+      {
+        "va": 4830671,
+        "offset": 633295,
+        "bytes": "2e ff 15 8c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53138c]"
+      },
+      {
+        "va": 4901424,
+        "offset": 704048,
+        "bytes": "ff 25 8c 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53138c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901424,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!SetThreadPriority",
+    "iat_va": 5444496,
+    "direct_iat_xrefs": [
+      {
+        "va": 4680412,
+        "offset": 483036,
+        "bytes": "2e ff 15 90 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531390]"
+      },
+      {
+        "va": 4901676,
+        "offset": 704300,
+        "bytes": "ff 25 90 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531390]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901676,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!SleepEx",
+    "iat_va": 5444500,
+    "direct_iat_xrefs": [
+      {
+        "va": 4679833,
+        "offset": 482457,
+        "bytes": "2e ff 15 94 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531394]"
+      },
+      {
+        "va": 4679963,
+        "offset": 482587,
+        "bytes": "2e ff 15 94 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531394]"
+      },
+      {
+        "va": 4680030,
+        "offset": 482654,
+        "bytes": "2e ff 15 94 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531394]"
+      },
+      {
+        "va": 4901700,
+        "offset": 704324,
+        "bytes": "ff 25 94 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531394]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901700,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!TerminateThread",
+    "iat_va": 5444504,
+    "direct_iat_xrefs": [
+      {
+        "va": 4679917,
+        "offset": 482541,
+        "bytes": "2e ff 15 98 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531398]"
+      },
+      {
+        "va": 4679939,
+        "offset": 482563,
+        "bytes": "2e ff 15 98 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531398]"
+      },
+      {
+        "va": 4901694,
+        "offset": 704318,
+        "bytes": "ff 25 98 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531398]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901694,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!WaitForMultipleObjectsEx",
+    "iat_va": 5444508,
+    "direct_iat_xrefs": [
+      {
+        "va": 4679516,
+        "offset": 482140,
+        "bytes": "2e ff 15 9c 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53139c]"
+      },
+      {
+        "va": 4901748,
+        "offset": 704372,
+        "bytes": "ff 25 9c 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53139c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901748,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.dll!WriteFile",
+    "iat_va": 5444512,
+    "direct_iat_xrefs": [
+      {
+        "va": 4700206,
+        "offset": 502830,
+        "bytes": "2e ff 15 a0 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5313a0]"
+      },
+      {
+        "va": 4755062,
+        "offset": 557686,
+        "bytes": "2e ff 15 a0 13 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x5313a0]"
+      },
+      {
+        "va": 4901610,
+        "offset": 704234,
+        "bytes": "ff 25 a0 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5313a0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901610,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.DLL!GetActiveWindow",
+    "iat_va": 5444532,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901952,
+        "offset": 704576,
+        "bytes": "ff 25 b4 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5313b4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901952,
+        "callers": [
+          {
+            "va": 4877603,
+            "offset": 680227,
+            "bytes": "e8 18 5f 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc40"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "USER32.DLL!wsprintfA",
+    "iat_va": 5444536,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901958,
+        "offset": 704582,
+        "bytes": "ff 25 b8 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5313b8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901958,
+        "callers": [
+          {
+            "va": 4877524,
+            "offset": 680148,
+            "bytes": "e8 6d 5f 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc46"
+          },
+          {
+            "va": 4877595,
+            "offset": 680219,
+            "bytes": "e8 26 5f 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc46"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "DSOUND.dll!DirectSoundCreate",
+    "iat_va": 5444552,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901988,
+        "offset": 704612,
+        "bytes": "ff 25 c8 13 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5313c8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901988,
+        "callers": [
+          {
+            "va": 4866729,
+            "offset": 669353,
+            "bytes": "e8 b6 89 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc64"
+          },
+          {
+            "va": 4866968,
+            "offset": 669592,
+            "bytes": "e8 c7 88 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc64"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!joyGetDevCapsA",
+    "iat_va": 5444620,
+    "direct_iat_xrefs": [
+      {
+        "va": 4771957,
+        "offset": 574581,
+        "bytes": "2e ff 15 0c 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53140c]"
+      },
+      {
+        "va": 4772107,
+        "offset": 574731,
+        "bytes": "2e ff 15 0c 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53140c]"
+      },
+      {
+        "va": 4902006,
+        "offset": 704630,
+        "bytes": "ff 25 0c 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53140c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902006,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!joyGetNumDevs",
+    "iat_va": 5444624,
+    "direct_iat_xrefs": [
+      {
+        "va": 4771922,
+        "offset": 574546,
+        "bytes": "2e ff 15 10 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531410]"
+      },
+      {
+        "va": 4902012,
+        "offset": 704636,
+        "bytes": "ff 25 10 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531410]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902012,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!joyGetPosEx",
+    "iat_va": 5444628,
+    "direct_iat_xrefs": [
+      {
+        "va": 4772481,
+        "offset": 575105,
+        "bytes": "2e ff 15 14 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531414]"
+      },
+      {
+        "va": 4902000,
+        "offset": 704624,
+        "bytes": "ff 25 14 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531414]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902000,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!timeBeginPeriod",
+    "iat_va": 5444632,
+    "direct_iat_xrefs": [
+      {
+        "va": 4769650,
+        "offset": 572274,
+        "bytes": "2e ff 15 18 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531418]"
+      },
+      {
+        "va": 4902018,
+        "offset": 704642,
+        "bytes": "ff 25 18 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531418]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902018,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!timeEndPeriod",
+    "iat_va": 5444636,
+    "direct_iat_xrefs": [
+      {
+        "va": 4769255,
+        "offset": 571879,
+        "bytes": "2e ff 15 1c 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53141c]"
+      },
+      {
+        "va": 4902030,
+        "offset": 704654,
+        "bytes": "ff 25 1c 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53141c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902030,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!timeGetDevCaps",
+    "iat_va": 5444640,
+    "direct_iat_xrefs": [
+      {
+        "va": 4769439,
+        "offset": 572063,
+        "bytes": "2e ff 15 20 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531420]"
+      },
+      {
+        "va": 4902024,
+        "offset": 704648,
+        "bytes": "ff 25 20 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531420]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902024,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!timeSetEvent",
+    "iat_va": 5444644,
+    "direct_iat_xrefs": [
+      {
+        "va": 4768744,
+        "offset": 571368,
+        "bytes": "2e ff 15 24 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531424]"
+      },
+      {
+        "va": 4902036,
+        "offset": 704660,
+        "bytes": "ff 25 24 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531424]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902036,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!waveOutClose",
+    "iat_va": 5444648,
+    "direct_iat_xrefs": [
+      {
+        "va": 4868654,
+        "offset": 671278,
+        "bytes": "2e ff 15 28 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531428]"
+      },
+      {
+        "va": 4901844,
+        "offset": 704468,
+        "bytes": "ff 25 28 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531428]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901844,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!waveOutGetDevCapsA",
+    "iat_va": 5444652,
+    "direct_iat_xrefs": [
+      {
+        "va": 4867984,
+        "offset": 670608,
+        "bytes": "2e ff 15 2c 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53142c]"
+      },
+      {
+        "va": 4901868,
+        "offset": 704492,
+        "bytes": "ff 25 2c 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53142c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901868,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!waveOutGetNumDevs",
+    "iat_va": 5444656,
+    "direct_iat_xrefs": [
+      {
+        "va": 4867962,
+        "offset": 670586,
+        "bytes": "2e ff 15 30 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531430]"
+      },
+      {
+        "va": 4901874,
+        "offset": 704498,
+        "bytes": "ff 25 30 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531430]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901874,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!waveOutOpen",
+    "iat_va": 5444660,
+    "direct_iat_xrefs": [
+      {
+        "va": 4868170,
+        "offset": 670794,
+        "bytes": "2e ff 15 34 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531434]"
+      },
+      {
+        "va": 4901862,
+        "offset": 704486,
+        "bytes": "ff 25 34 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531434]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901862,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!waveOutPrepareHeader",
+    "iat_va": 5444664,
+    "direct_iat_xrefs": [
+      {
+        "va": 4868470,
+        "offset": 671094,
+        "bytes": "2e ff 15 38 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531438]"
+      },
+      {
+        "va": 4901856,
+        "offset": 704480,
+        "bytes": "ff 25 38 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531438]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901856,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!waveOutReset",
+    "iat_va": 5444668,
+    "direct_iat_xrefs": [
+      {
+        "va": 4868613,
+        "offset": 671237,
+        "bytes": "2e ff 15 3c 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x53143c]"
+      },
+      {
+        "va": 4901850,
+        "offset": 704474,
+        "bytes": "ff 25 3c 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53143c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901850,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "WINMM.dll!waveOutWrite",
+    "iat_va": 5444672,
+    "direct_iat_xrefs": [
+      {
+        "va": 4867941,
+        "offset": 670565,
+        "bytes": "2e ff 15 40 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531440]"
+      },
+      {
+        "va": 4868538,
+        "offset": 671162,
+        "bytes": "2e ff 15 40 14 53 00",
+        "mnemonic": "call",
+        "operands": "dword ptr cs:[0x531440]"
+      },
+      {
+        "va": 4901880,
+        "offset": 704504,
+        "bytes": "ff 25 40 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531440]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901880,
+        "callers": []
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!CloseHandle",
+    "iat_va": 5444860,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902060,
+        "offset": 704684,
+        "bytes": "ff 25 fc 14 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5314fc]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902060,
+        "callers": [
+          {
+            "va": 4845834,
+            "offset": 648458,
+            "bytes": "e8 9d db 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accac"
+          },
+          {
+            "va": 4877963,
+            "offset": 680587,
+            "bytes": "e8 1c 5e 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accac"
+          },
+          {
+            "va": 4878578,
+            "offset": 681202,
+            "bytes": "e8 b5 5b 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accac"
+          },
+          {
+            "va": 4900768,
+            "offset": 703392,
+            "bytes": "e8 07 05 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accac"
+          },
+          {
+            "va": 4901037,
+            "offset": 703661,
+            "bytes": "e8 fa 03 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accac"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!CreateEventA",
+    "iat_va": 5444864,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901796,
+        "offset": 704420,
+        "bytes": "ff 25 00 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531500]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901796,
+        "callers": [
+          {
+            "va": 4900948,
+            "offset": 703572,
+            "bytes": "e8 4b 03 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acba4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!CreateFileA",
+    "iat_va": 5444868,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902114,
+        "offset": 704738,
+        "bytes": "ff 25 04 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531504]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902114,
+        "callers": [
+          {
+            "va": 4844213,
+            "offset": 646837,
+            "bytes": "e8 28 e2 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acce2"
+          },
+          {
+            "va": 4844247,
+            "offset": 646871,
+            "bytes": "e8 06 e2 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acce2"
+          },
+          {
+            "va": 4900036,
+            "offset": 702660,
+            "bytes": "e8 19 08 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acce2"
+          },
+          {
+            "va": 4900078,
+            "offset": 702702,
+            "bytes": "e8 ef 07 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acce2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!CreateMutexA",
+    "iat_va": 5444872,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901928,
+        "offset": 704552,
+        "bytes": "ff 25 08 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531508]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901928,
+        "callers": [
+          {
+            "va": 4878175,
+            "offset": 680799,
+            "bytes": "e8 c4 5c 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc28"
+          },
+          {
+            "va": 4878820,
+            "offset": 681444,
+            "bytes": "e8 3f 5a 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!CreateThread",
+    "iat_va": 5444876,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901790,
+        "offset": 704414,
+        "bytes": "ff 25 0c 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53150c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901790,
+        "callers": [
+          {
+            "va": 4900997,
+            "offset": 703621,
+            "bytes": "e8 14 03 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acb9e"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!DeleteFileA",
+    "iat_va": 5444880,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902150,
+        "offset": 704774,
+        "bytes": "ff 25 10 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531510]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902150,
+        "callers": [
+          {
+            "va": 4752734,
+            "offset": 555358,
+            "bytes": "e8 a3 47 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd06"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!ExitProcess",
+    "iat_va": 5444884,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902108,
+        "offset": 704732,
+        "bytes": "ff 25 14 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531514]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902108,
+        "callers": [
+          {
+            "va": 4845081,
+            "offset": 647705,
+            "bytes": "e8 be de 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accdc"
+          },
+          {
+            "va": 4845391,
+            "offset": 648015,
+            "bytes": "e8 88 dd 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accdc"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!ExitThread",
+    "iat_va": 5444888,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901784,
+        "offset": 704408,
+        "bytes": "ff 25 18 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531518]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901784,
+        "callers": [
+          {
+            "va": 4901088,
+            "offset": 703712,
+            "bytes": "e8 b3 02 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acb98"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetCommandLineA",
+    "iat_va": 5444892,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902090,
+        "offset": 704714,
+        "bytes": "ff 25 1c 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53151c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902090,
+        "callers": [
+          {
+            "va": 4845130,
+            "offset": 647754,
+            "bytes": "e8 7b de 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accca"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetConsoleMode",
+    "iat_va": 5444896,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901832,
+        "offset": 704456,
+        "bytes": "ff 25 20 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531520]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901832,
+        "callers": [
+          {
+            "va": 4898302,
+            "offset": 700926,
+            "bytes": "e8 c5 0d 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acbc8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetCurrentDirectoryA",
+    "iat_va": 5444900,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902138,
+        "offset": 704762,
+        "bytes": "ff 25 24 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531524]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902138,
+        "callers": [
+          {
+            "va": 4808933,
+            "offset": 611557,
+            "bytes": "e8 10 6c 01 00",
+            "mnemonic": "call",
+            "operands": "0x4accfa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetCurrentProcessId",
+    "iat_va": 5444904,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902072,
+        "offset": 704696,
+        "bytes": "ff 25 28 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531528]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902072,
+        "callers": [
+          {
+            "va": 4845398,
+            "offset": 648022,
+            "bytes": "e8 5d dd 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accb8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetCurrentThreadId",
+    "iat_va": 5444908,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901934,
+        "offset": 704558,
+        "bytes": "ff 25 2c 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53152c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901934,
+        "callers": [
+          {
+            "va": 4878135,
+            "offset": 680759,
+            "bytes": "e8 f2 5c 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc2e"
+          },
+          {
+            "va": 4878341,
+            "offset": 680965,
+            "bytes": "e8 24 5c 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc2e"
+          },
+          {
+            "va": 4900925,
+            "offset": 703549,
+            "bytes": "e8 ec 03 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc2e"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetCurrentThread",
+    "iat_va": 5444912,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901802,
+        "offset": 704426,
+        "bytes": "ff 25 30 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531530]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901802,
+        "callers": [
+          {
+            "va": 4900893,
+            "offset": 703517,
+            "bytes": "e8 88 03 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acbaa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetDiskFreeSpaceA",
+    "iat_va": 5444916,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902132,
+        "offset": 704756,
+        "bytes": "ff 25 34 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531534]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902132,
+        "callers": [
+          {
+            "va": 4809089,
+            "offset": 611713,
+            "bytes": "e8 6e 6b 01 00",
+            "mnemonic": "call",
+            "operands": "0x4accf4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetEnvironmentStrings",
+    "iat_va": 5444920,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902102,
+        "offset": 704726,
+        "bytes": "ff 25 38 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531538]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902102,
+        "callers": [
+          {
+            "va": 4845091,
+            "offset": 647715,
+            "bytes": "e8 ae de 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accd6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetFileAttributesA",
+    "iat_va": 5444924,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902126,
+        "offset": 704750,
+        "bytes": "ff 25 3c 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53153c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902126,
+        "callers": [
+          {
+            "va": 4809149,
+            "offset": 611773,
+            "bytes": "e8 2c 6b 01 00",
+            "mnemonic": "call",
+            "operands": "0x4accee"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetFileType",
+    "iat_va": 5444928,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901964,
+        "offset": 704588,
+        "bytes": "ff 25 40 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531540]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901964,
+        "callers": [
+          {
+            "va": 4876277,
+            "offset": 678901,
+            "bytes": "e8 52 64 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc4c"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetLastError",
+    "iat_va": 5444932,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902042,
+        "offset": 704666,
+        "bytes": "ff 25 44 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531544]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902042,
+        "callers": [
+          {
+            "va": 4855264,
+            "offset": 657888,
+            "bytes": "e8 b5 b6 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc9a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetLocalTime",
+    "iat_va": 5444936,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902054,
+        "offset": 704678,
+        "bytes": "ff 25 48 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531548]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902054,
+        "callers": [
+          {
+            "va": 4852236,
+            "offset": 654860,
+            "bytes": "e8 95 c2 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acca6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetModuleFileNameA",
+    "iat_va": 5444940,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902096,
+        "offset": 704720,
+        "bytes": "ff 25 4c 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53154c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902096,
+        "callers": [
+          {
+            "va": 4845113,
+            "offset": 647737,
+            "bytes": "e8 92 de 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accd0"
+          },
+          {
+            "va": 4845225,
+            "offset": 647849,
+            "bytes": "e8 22 de 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accd0"
+          },
+          {
+            "va": 4877700,
+            "offset": 680324,
+            "bytes": "e8 47 5f 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accd0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetModuleHandleA",
+    "iat_va": 5444944,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902078,
+        "offset": 704702,
+        "bytes": "ff 25 50 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531550]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902078,
+        "callers": [
+          {
+            "va": 4845309,
+            "offset": 647933,
+            "bytes": "e8 bc dd 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accbe"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetProcAddress",
+    "iat_va": 5444948,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901940,
+        "offset": 704564,
+        "bytes": "ff 25 54 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531554]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901940,
+        "callers": [
+          {
+            "va": 4877644,
+            "offset": 680268,
+            "bytes": "e8 e3 5e 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetStdHandle",
+    "iat_va": 5444952,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901970,
+        "offset": 704594,
+        "bytes": "ff 25 58 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531558]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901970,
+        "callers": [
+          {
+            "va": 4876062,
+            "offset": 678686,
+            "bytes": "e8 2f 65 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc52"
+          },
+          {
+            "va": 4876074,
+            "offset": 678698,
+            "bytes": "e8 23 65 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc52"
+          },
+          {
+            "va": 4876086,
+            "offset": 678710,
+            "bytes": "e8 17 65 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc52"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetTimeZoneInformation",
+    "iat_va": 5444956,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901886,
+        "offset": 704510,
+        "bytes": "ff 25 5c 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53155c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901886,
+        "callers": [
+          {
+            "va": 4881107,
+            "offset": 683731,
+            "bytes": "e8 26 51 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acbfe"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!GetVersion",
+    "iat_va": 5444960,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902084,
+        "offset": 704708,
+        "bytes": "ff 25 60 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531560]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902084,
+        "callers": [
+          {
+            "va": 4845242,
+            "offset": 647866,
+            "bytes": "e8 05 de 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accc4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!LoadLibraryA",
+    "iat_va": 5444964,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901946,
+        "offset": 704570,
+        "bytes": "ff 25 64 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531564]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901946,
+        "callers": [
+          {
+            "va": 4877623,
+            "offset": 680247,
+            "bytes": "e8 fe 5e 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc3a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!LocalAlloc",
+    "iat_va": 5444968,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901982,
+        "offset": 704606,
+        "bytes": "ff 25 68 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531568]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901982,
+        "callers": [
+          {
+            "va": 4875476,
+            "offset": 678100,
+            "bytes": "e8 85 67 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc5e"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!LocalFree",
+    "iat_va": 5444972,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901814,
+        "offset": 704438,
+        "bytes": "ff 25 6c 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53156c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901814,
+        "callers": [
+          {
+            "va": 4898475,
+            "offset": 701099,
+            "bytes": "e8 06 0d 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acbb6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!ReadConsoleInputA",
+    "iat_va": 5444976,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901838,
+        "offset": 704462,
+        "bytes": "ff 25 70 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531570]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901838,
+        "callers": [
+          {
+            "va": 4898093,
+            "offset": 700717,
+            "bytes": "e8 9c 0e 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acbce"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!ReadFile",
+    "iat_va": 5444980,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902048,
+        "offset": 704672,
+        "bytes": "ff 25 74 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531574]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902048,
+        "callers": [
+          {
+            "va": 4855129,
+            "offset": 657753,
+            "bytes": "e8 42 b7 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acca0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!ReleaseMutex",
+    "iat_va": 5444984,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901916,
+        "offset": 704540,
+        "bytes": "ff 25 78 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531578]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901916,
+        "callers": [
+          {
+            "va": 4878253,
+            "offset": 680877,
+            "bytes": "e8 6a 5c 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc1c"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!SetConsoleMode",
+    "iat_va": 5444988,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901826,
+        "offset": 704450,
+        "bytes": "ff 25 7c 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53157c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901826,
+        "callers": [
+          {
+            "va": 4898310,
+            "offset": 700934,
+            "bytes": "e8 b7 0d 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acbc2"
+          },
+          {
+            "va": 4898329,
+            "offset": 700953,
+            "bytes": "e8 a4 0d 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acbc2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!SetCurrentDirectoryA",
+    "iat_va": 5444992,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902144,
+        "offset": 704768,
+        "bytes": "ff 25 80 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531580]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902144,
+        "callers": [
+          {
+            "va": 4755453,
+            "offset": 558077,
+            "bytes": "e8 fe 3c 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!SetEvent",
+    "iat_va": 5444996,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901808,
+        "offset": 704432,
+        "bytes": "ff 25 84 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531584]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901808,
+        "callers": [
+          {
+            "va": 4900805,
+            "offset": 703429,
+            "bytes": "e8 e6 03 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acbb0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!SetFilePointer",
+    "iat_va": 5445000,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902066,
+        "offset": 704690,
+        "bytes": "ff 25 88 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531588]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902066,
+        "callers": [
+          {
+            "va": 4845734,
+            "offset": 648358,
+            "bytes": "e8 07 dc 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accb2"
+          },
+          {
+            "va": 4860349,
+            "offset": 662973,
+            "bytes": "e8 f0 a2 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accb2"
+          },
+          {
+            "va": 4876486,
+            "offset": 679110,
+            "bytes": "e8 e7 63 00 00",
+            "mnemonic": "call",
+            "operands": "0x4accb2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!SetStdHandle",
+    "iat_va": 5445004,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901976,
+        "offset": 704600,
+        "bytes": "ff 25 8c 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53158c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901976,
+        "callers": [
+          {
+            "va": 4875893,
+            "offset": 678517,
+            "bytes": "e8 de 65 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc58"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!TlsAlloc",
+    "iat_va": 5445008,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901904,
+        "offset": 704528,
+        "bytes": "ff 25 90 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531590]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901904,
+        "callers": [
+          {
+            "va": 4878360,
+            "offset": 680984,
+            "bytes": "e8 f3 5b 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc10"
+          },
+          {
+            "va": 4878404,
+            "offset": 681028,
+            "bytes": "e8 c7 5b 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!TlsFree",
+    "iat_va": 5445012,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901892,
+        "offset": 704516,
+        "bytes": "ff 25 94 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531594]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901892,
+        "callers": [
+          {
+            "va": 4878612,
+            "offset": 681236,
+            "bytes": "e8 eb 5a 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc04"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!TlsGetValue",
+    "iat_va": 5445016,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901910,
+        "offset": 704534,
+        "bytes": "ff 25 98 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531598]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901910,
+        "callers": [
+          {
+            "va": 4878272,
+            "offset": 680896,
+            "bytes": "e8 51 5c 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc16"
+          },
+          {
+            "va": 4878529,
+            "offset": 681153,
+            "bytes": "e8 50 5b 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc16"
+          },
+          {
+            "va": 4898880,
+            "offset": 701504,
+            "bytes": "e8 d1 0b 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!TlsSetValue",
+    "iat_va": 5445020,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901898,
+        "offset": 704522,
+        "bytes": "ff 25 9c 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53159c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901898,
+        "callers": [
+          {
+            "va": 4878497,
+            "offset": 681121,
+            "bytes": "e8 64 5b 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc0a"
+          },
+          {
+            "va": 4878564,
+            "offset": 681188,
+            "bytes": "e8 21 5b 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc0a"
+          },
+          {
+            "va": 4878889,
+            "offset": 681513,
+            "bytes": "e8 dc 59 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc0a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!WaitForSingleObject",
+    "iat_va": 5445024,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901922,
+        "offset": 704546,
+        "bytes": "ff 25 a0 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5315a0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901922,
+        "callers": [
+          {
+            "va": 4878204,
+            "offset": 680828,
+            "bytes": "e8 a1 5c 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc22"
+          },
+          {
+            "va": 4901027,
+            "offset": 703651,
+            "bytes": "e8 7a 03 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!WriteConsoleA",
+    "iat_va": 5445028,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901820,
+        "offset": 704444,
+        "bytes": "ff 25 a4 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5315a4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901820,
+        "callers": [
+          {
+            "va": 4898425,
+            "offset": 701049,
+            "bytes": "e8 3e 0d 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acbbc"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "KERNEL32.DLL!WriteFile",
+    "iat_va": 5445032,
+    "direct_iat_xrefs": [
+      {
+        "va": 4901994,
+        "offset": 704618,
+        "bytes": "ff 25 a8 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5315a8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4901994,
+        "callers": [
+          {
+            "va": 4860415,
+            "offset": 663039,
+            "bytes": "e8 66 a2 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc6a"
+          },
+          {
+            "va": 4877830,
+            "offset": 680454,
+            "bytes": "e8 5f 5e 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc6a"
+          },
+          {
+            "va": 4879509,
+            "offset": 682133,
+            "bytes": "e8 d0 57 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acc6a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!select",
+    "iat_va": 5445096,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902120,
+        "offset": 704744,
+        "bytes": "ff 25 e8 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5315e8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902120,
+        "callers": [
+          {
+            "va": 4843016,
+            "offset": 645640,
+            "bytes": "e8 db e6 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acce8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!sendto",
+    "iat_va": 5445100,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902156,
+        "offset": 704780,
+        "bytes": "ff 25 ec 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5315ec]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902156,
+        "callers": [
+          {
+            "va": 4725704,
+            "offset": 528328,
+            "bytes": "e8 3f b1 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd0c"
+          },
+          {
+            "va": 4841743,
+            "offset": 644367,
+            "bytes": "e8 f8 eb 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd0c"
+          },
+          {
+            "va": 4842106,
+            "offset": 644730,
+            "bytes": "e8 8d ea 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd0c"
+          },
+          {
+            "va": 4843482,
+            "offset": 646106,
+            "bytes": "e8 2d e5 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd0c"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!closesocket",
+    "iat_va": 5445104,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902162,
+        "offset": 704786,
+        "bytes": "ff 25 f0 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5315f0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902162,
+        "callers": [
+          {
+            "va": 4724879,
+            "offset": 527503,
+            "bytes": "e8 7e b4 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd12"
+          },
+          {
+            "va": 4725001,
+            "offset": 527625,
+            "bytes": "e8 04 b4 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd12"
+          },
+          {
+            "va": 4842569,
+            "offset": 645193,
+            "bytes": "e8 c4 e8 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd12"
+          },
+          {
+            "va": 4843367,
+            "offset": 645991,
+            "bytes": "e8 a6 e5 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!getsockname",
+    "iat_va": 5445108,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902168,
+        "offset": 704792,
+        "bytes": "ff 25 f4 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5315f4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902168,
+        "callers": [
+          {
+            "va": 4724776,
+            "offset": 527400,
+            "bytes": "e8 eb b4 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd18"
+          },
+          {
+            "va": 4842532,
+            "offset": 645156,
+            "bytes": "e8 ef e8 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!bind",
+    "iat_va": 5445112,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902174,
+        "offset": 704798,
+        "bytes": "ff 25 f8 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5315f8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902174,
+        "callers": [
+          {
+            "va": 4724744,
+            "offset": 527368,
+            "bytes": "e8 11 b5 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd1e"
+          },
+          {
+            "va": 4842507,
+            "offset": 645131,
+            "bytes": "e8 0e e9 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd1e"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!htons",
+    "iat_va": 5445116,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902180,
+        "offset": 704804,
+        "bytes": "ff 25 fc 15 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5315fc]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902180,
+        "callers": [
+          {
+            "va": 4724723,
+            "offset": 527347,
+            "bytes": "e8 2c b5 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd24"
+          },
+          {
+            "va": 4841797,
+            "offset": 644421,
+            "bytes": "e8 da eb 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd24"
+          },
+          {
+            "va": 4841981,
+            "offset": 644605,
+            "bytes": "e8 22 eb 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd24"
+          },
+          {
+            "va": 4842494,
+            "offset": 645118,
+            "bytes": "e8 21 e9 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd24"
+          },
+          {
+            "va": 4842796,
+            "offset": 645420,
+            "bytes": "e8 f3 e7 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd24"
+          },
+          {
+            "va": 4843295,
+            "offset": 645919,
+            "bytes": "e8 00 e6 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!ioctlsocket",
+    "iat_va": 5445120,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902186,
+        "offset": 704810,
+        "bytes": "ff 25 00 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531600]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902186,
+        "callers": [
+          {
+            "va": 4724666,
+            "offset": 527290,
+            "bytes": "e8 6b b5 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd2a"
+          },
+          {
+            "va": 4725379,
+            "offset": 528003,
+            "bytes": "e8 a2 b2 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd2a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!setsockopt",
+    "iat_va": 5445124,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902192,
+        "offset": 704816,
+        "bytes": "ff 25 04 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531604]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902192,
+        "callers": [
+          {
+            "va": 4724466,
+            "offset": 527090,
+            "bytes": "e8 39 b6 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd30"
+          },
+          {
+            "va": 4724517,
+            "offset": 527141,
+            "bytes": "e8 06 b6 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd30"
+          },
+          {
+            "va": 4724568,
+            "offset": 527192,
+            "bytes": "e8 d3 b5 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd30"
+          },
+          {
+            "va": 4724619,
+            "offset": 527243,
+            "bytes": "e8 a0 b5 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd30"
+          },
+          {
+            "va": 4842445,
+            "offset": 645069,
+            "bytes": "e8 5e e9 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd30"
+          },
+          {
+            "va": 4842468,
+            "offset": 645092,
+            "bytes": "e8 47 e9 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!socket",
+    "iat_va": 5445128,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902198,
+        "offset": 704822,
+        "bytes": "ff 25 08 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531608]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902198,
+        "callers": [
+          {
+            "va": 4724385,
+            "offset": 527009,
+            "bytes": "e8 90 b6 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd36"
+          },
+          {
+            "va": 4842403,
+            "offset": 645027,
+            "bytes": "e8 8e e9 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd36"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!WSACleanup",
+    "iat_va": 5445132,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902204,
+        "offset": 704828,
+        "bytes": "ff 25 0c 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53160c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902204,
+        "callers": [
+          {
+            "va": 4724234,
+            "offset": 526858,
+            "bytes": "e8 2d b7 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd3c"
+          },
+          {
+            "va": 4726477,
+            "offset": 529101,
+            "bytes": "e8 6a ae 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd3c"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!WSAStartup",
+    "iat_va": 5445136,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902210,
+        "offset": 704834,
+        "bytes": "ff 25 10 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531610]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902210,
+        "callers": [
+          {
+            "va": 4724188,
+            "offset": 526812,
+            "bytes": "e8 61 b7 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd42"
+          },
+          {
+            "va": 4726420,
+            "offset": 529044,
+            "bytes": "e8 a9 ae 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd42"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!WSAGetLastError",
+    "iat_va": 5445140,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902216,
+        "offset": 704840,
+        "bytes": "ff 25 14 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531614]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902216,
+        "callers": [
+          {
+            "va": 4723895,
+            "offset": 526519,
+            "bytes": "e8 8c b8 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd48"
+          },
+          {
+            "va": 4724476,
+            "offset": 527100,
+            "bytes": "e8 47 b6 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd48"
+          },
+          {
+            "va": 4724527,
+            "offset": 527151,
+            "bytes": "e8 14 b6 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd48"
+          },
+          {
+            "va": 4724578,
+            "offset": 527202,
+            "bytes": "e8 e1 b5 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd48"
+          },
+          {
+            "va": 4724629,
+            "offset": 527253,
+            "bytes": "e8 ae b5 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd48"
+          },
+          {
+            "va": 4724676,
+            "offset": 527300,
+            "bytes": "e8 7f b5 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd48"
+          },
+          {
+            "va": 4724820,
+            "offset": 527444,
+            "bytes": "e8 ef b4 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd48"
+          },
+          {
+            "va": 4724889,
+            "offset": 527513,
+            "bytes": "e8 aa b4 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd48"
+          },
+          {
+            "va": 4725011,
+            "offset": 527635,
+            "bytes": "e8 30 b4 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd48"
+          },
+          {
+            "va": 4725737,
+            "offset": 528361,
+            "bytes": "e8 5a b1 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd48"
+          },
+          {
+            "va": 4843245,
+            "offset": 645869,
+            "bytes": "e8 56 e6 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd48"
+          },
+          {
+            "va": 4843380,
+            "offset": 646004,
+            "bytes": "e8 cf e5 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "WSOCK32.dll!recvfrom",
+    "iat_va": 5445144,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902222,
+        "offset": 704846,
+        "bytes": "ff 25 18 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531618]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902222,
+        "callers": [
+          {
+            "va": 4723764,
+            "offset": 526388,
+            "bytes": "e8 15 b9 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd4e"
+          },
+          {
+            "va": 4843102,
+            "offset": 645726,
+            "bytes": "e8 eb e6 00 00",
+            "mnemonic": "call",
+            "operands": "0x4acd4e"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "DPLAY.dll!ordinal_2",
+    "iat_va": 5445164,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902228,
+        "offset": 704852,
+        "bytes": "ff 25 2c 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53162c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902228,
+        "callers": [
+          {
+            "va": 4719806,
+            "offset": 522430,
+            "bytes": "e8 91 c8 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd54"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "DPLAY.dll!ordinal_1",
+    "iat_va": 5445168,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902234,
+        "offset": 704858,
+        "bytes": "ff 25 30 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531630]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902234,
+        "callers": [
+          {
+            "va": 4717423,
+            "offset": 520047,
+            "bytes": "e8 e6 d1 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd5a"
+          },
+          {
+            "va": 4719913,
+            "offset": 522537,
+            "bytes": "e8 2c c8 02 00",
+            "mnemonic": "call",
+            "operands": "0x4acd5a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "DDRAW.dll!DirectDrawCreate",
+    "iat_va": 5445184,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902240,
+        "offset": 704864,
+        "bytes": "ff 25 40 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531640]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902240,
+        "callers": [
+          {
+            "va": 4704890,
+            "offset": 507514,
+            "bytes": "e8 e1 02 03 00",
+            "mnemonic": "call",
+            "operands": "0x4acd60"
+          },
+          {
+            "va": 4704956,
+            "offset": 507580,
+            "bytes": "e8 9f 02 03 00",
+            "mnemonic": "call",
+            "operands": "0x4acd60"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_Buffeting",
+    "iat_va": 5445252,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902246,
+        "offset": 704870,
+        "bytes": "ff 25 84 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531684]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902246,
+        "callers": [
+          {
+            "va": 4444502,
+            "offset": 247126,
+            "bytes": "e8 0b fc 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd66"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_ClearForces",
+    "iat_va": 5445256,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902300,
+        "offset": 704924,
+        "bytes": "ff 25 88 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531688]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902300,
+        "callers": [
+          {
+            "va": 4443061,
+            "offset": 245685,
+            "bytes": "e8 e2 01 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acd9c"
+          },
+          {
+            "va": 4443136,
+            "offset": 245760,
+            "bytes": "e8 97 01 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acd9c"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_CloseStick",
+    "iat_va": 5445260,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902306,
+        "offset": 704930,
+        "bytes": "ff 25 8c 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53168c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902306,
+        "callers": [
+          {
+            "va": 4443032,
+            "offset": 245656,
+            "bytes": "e8 05 02 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acda2"
+          },
+          {
+            "va": 4443068,
+            "offset": 245692,
+            "bytes": "e8 e1 01 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acda2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_DisableForces",
+    "iat_va": 5445264,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902294,
+        "offset": 704918,
+        "bytes": "ff 25 90 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531690]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902294,
+        "callers": [
+          {
+            "va": 4443096,
+            "offset": 245720,
+            "bytes": "e8 b9 01 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acd96"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_Echo",
+    "iat_va": 5445268,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902312,
+        "offset": 704936,
+        "bytes": "ff 25 94 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531694]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902312,
+        "callers": [
+          {
+            "va": 4443014,
+            "offset": 245638,
+            "bytes": "e8 1d 02 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acda8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_EnableForces",
+    "iat_va": 5445272,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902288,
+        "offset": 704912,
+        "bytes": "ff 25 98 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x531698]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902288,
+        "callers": [
+          {
+            "va": 4443116,
+            "offset": 245740,
+            "bytes": "e8 9f 01 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acd90"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_InitStick",
+    "iat_va": 5445276,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902318,
+        "offset": 704942,
+        "bytes": "ff 25 9c 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x53169c]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902318,
+        "callers": [
+          {
+            "va": 4442993,
+            "offset": 245617,
+            "bytes": "e8 38 02 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acdae"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_Jolt",
+    "iat_va": 5445280,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902282,
+        "offset": 704906,
+        "bytes": "ff 25 a0 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5316a0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902282,
+        "callers": [
+          {
+            "va": 4443258,
+            "offset": 245882,
+            "bytes": "e8 0b 01 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acd8a"
+          },
+          {
+            "va": 4443462,
+            "offset": 246086,
+            "bytes": "e8 3f 00 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acd8a"
+          },
+          {
+            "va": 4443505,
+            "offset": 246129,
+            "bytes": "e8 14 00 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acd8a"
+          },
+          {
+            "va": 4443524,
+            "offset": 246148,
+            "bytes": "e8 01 00 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acd8a"
+          },
+          {
+            "va": 4443541,
+            "offset": 246165,
+            "bytes": "e8 f0 ff 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd8a"
+          },
+          {
+            "va": 4443642,
+            "offset": 246266,
+            "bytes": "e8 8b ff 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd8a"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_SetJoystickPort",
+    "iat_va": 5445284,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902324,
+        "offset": 704948,
+        "bytes": "ff 25 a4 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5316a4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902324,
+        "callers": [
+          {
+            "va": 4442980,
+            "offset": 245604,
+            "bytes": "e8 4b 02 07 00",
+            "mnemonic": "call",
+            "operands": "0x4acdb4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_XVibrationClear",
+    "iat_va": 5445288,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902270,
+        "offset": 704894,
+        "bytes": "ff 25 a8 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5316a8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902270,
+        "callers": [
+          {
+            "va": 4443856,
+            "offset": 246480,
+            "bytes": "e8 a9 fe 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd7e"
+          },
+          {
+            "va": 4444090,
+            "offset": 246714,
+            "bytes": "e8 bf fd 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd7e"
+          },
+          {
+            "va": 4444395,
+            "offset": 247019,
+            "bytes": "e8 8e fc 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd7e"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_XVibration",
+    "iat_va": 5445292,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902258,
+        "offset": 704882,
+        "bytes": "ff 25 ac 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5316ac]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902258,
+        "callers": [
+          {
+            "va": 4444168,
+            "offset": 246792,
+            "bytes": "e8 65 fd 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd72"
+          },
+          {
+            "va": 4444238,
+            "offset": 246862,
+            "bytes": "e8 1f fd 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd72"
+          },
+          {
+            "va": 4444306,
+            "offset": 246930,
+            "bytes": "e8 db fc 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd72"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_XYVectorForce",
+    "iat_va": 5445296,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902276,
+        "offset": 704900,
+        "bytes": "ff 25 b0 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5316b0]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902276,
+        "callers": [
+          {
+            "va": 4443753,
+            "offset": 246377,
+            "bytes": "e8 16 ff 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd84"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_YVibrationClear",
+    "iat_va": 5445300,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902264,
+        "offset": 704888,
+        "bytes": "ff 25 b4 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5316b4]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902264,
+        "callers": [
+          {
+            "va": 4443882,
+            "offset": 246506,
+            "bytes": "e8 89 fe 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd78"
+          },
+          {
+            "va": 4444415,
+            "offset": 247039,
+            "bytes": "e8 74 fc 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd78"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "iforce.dll!_YVibration",
+    "iat_va": 5445304,
+    "direct_iat_xrefs": [
+      {
+        "va": 4902252,
+        "offset": 704876,
+        "bytes": "ff 25 b8 16 53 00",
+        "mnemonic": "jmp",
+        "operands": "dword ptr [0x5316b8]"
+      }
+    ],
+    "thunks": [
+      {
+        "va": 4902252,
+        "callers": [
+          {
+            "va": 4444357,
+            "offset": 246981,
+            "bytes": "e8 a2 fc 06 00",
+            "mnemonic": "call",
+            "operands": "0x4acd6c"
+          }
+        ]
+      }
+    ]
+  }
+]

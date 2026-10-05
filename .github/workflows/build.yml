@@ -1,0 +1,29 @@
+name: Build and validate
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Build 32-bit compatibility helper
+        shell: cmd
+        run: tools\build-runtime.cmd
+      - name: Parse installer scripts and compile icon tooling
+        shell: powershell
+        run: |
+          $ErrorActionPreference = 'Stop'
+          foreach ($file in Get-ChildItem -Recurse -Filter *.ps1) {
+            $tokens = $null; $errors = $null
+            [System.Management.Automation.Language.Parser]::ParseFile($file.FullName, [ref]$tokens, [ref]$errors) | Out-Null
+            if ($errors.Count) { throw ($errors | Out-String) }
+          }
+          Add-Type -Path tools\IconResources.cs
+          try { [NfsseIconResources]::Embed((New-Object byte[] 256), (New-Object byte[] 6)); throw 'Invalid input accepted' }
+          catch [System.Management.Automation.MethodInvocationException] { }
+      - uses: actions/upload-artifact@v7
+        with:
+          name: NFSPortable-x86
+          path: build/NFSPortable.dll

@@ -1,0 +1,116 @@
+[
+  {
+    "index": 0,
+    "global_va": "0x524198",
+    "source_va": "0x4aec68",
+    "path": "gamedata/config/"
+  },
+  {
+    "index": 1,
+    "global_va": "0x5241e8",
+    "source_va": "0x4aec7c",
+    "path": "gamedata/savegame/"
+  },
+  {
+    "index": 2,
+    "global_va": "0x524238",
+    "source_va": "0x4aeda0",
+    "path": "frontend/speech/"
+  },
+  {
+    "index": 3,
+    "global_va": "0x524288",
+    "source_va": "0x4aecd4",
+    "path": "simdata/soundbnk/"
+  },
+  {
+    "index": 4,
+    "global_va": "0x5242d8",
+    "source_va": "0x4aecc4",
+    "path": "frontend/music/"
+  },
+  {
+    "index": 5,
+    "global_va": "0x524328",
+    "source_va": "0x4aedb4",
+    "path": "frontend/art/"
+  },
+  {
+    "index": 6,
+    "global_va": "0x524378",
+    "source_va": "0x4aeca4",
+    "path": "gamedata/modem/"
+  },
+  {
+    "index": 7,
+    "global_va": "0x5243c8",
+    "source_va": "0x4aecb4",
+    "path": "frontend/movie/"
+  },
+  {
+    "index": 8,
+    "global_va": "0x524418",
+    "source_va": "0x4aec90",
+    "path": "gamedata/replay/"
+  },
+  {
+    "index": 9,
+    "global_va": "0x524468",
+    "source_va": "0x4aecfc",
+    "path": "simdata/misc/"
+  },
+  {
+    "index": 10,
+    "global_va": "0x5244b8",
+    "source_va": "0x4aede4",
+    "path": "simdata/etrackFm/"
+  },
+  {
+    "index": 11,
+    "global_va": "0x524508",
+    "source_va": "0x4aee08",
+    "path": "simdata/ntrackFm/"
+  },
+  {
+    "index": 12,
+    "global_va": "0x524558",
+    "source_va": "0x4aedd4",
+    "path": "simdata/slides/"
+  },
+  {
+    "index": 13,
+    "global_va": "0x5245a8",
+    "source_va": "0x4aed0c",
+    "path": "simdata/carFams/"
+  },
+  {
+    "index": 14,
+    "global_va": "0x5245f8",
+    "source_va": "0x4aed20",
+    "path": "simdata/soundBnk/"
+  },
+  {
+    "index": 15,
+    "global_va": "0x524648",
+    "source_va": "0x4aece8",
+    "path": "simdata/carspecs/"
+  },
+  {
+    "index": 16,
+    "global_va": "0x524698",
+    "source_va": "0x4aedf8",
+    "path": "simdata/dash/"
+  },
+  {
+    "index": 17,
+    "global_va": "0x5246e8",
+    "source_va": "0x4aecfc",
+    "path": "simdata/misc/"
+  },
+  {
+    "index": 18,
+    "global_va": "0x524738",
+    "source_va": "0x4aedc4",
+    "path": "frontend/show/"
+  }
+]
