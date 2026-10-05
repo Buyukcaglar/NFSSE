@@ -4,6 +4,8 @@
 
 **Priority:** low. **Status:** deferred; no implementation in v0.1.0.
 
+Tracked in [GitHub issue #1](https://github.com/Buyukcaglar/NFSSE/issues/1).
+
 Preserve the game's original I-Force call path and `IFORCE.DLL` while investigating how original force-feedback effects could reach compatible modern USB devices. The user requested USB devices if possible and then explicitly deferred implementation.
 
 Before work starts, identify an actual device/model and its Windows driver/API, map the original DLL's calls and effect behavior, and determine whether an adapter can preserve those semantics. Validation requires real hardware and comparison against original effect behavior. Merely detecting a USB controller is insufficient evidence of force-feedback support.
