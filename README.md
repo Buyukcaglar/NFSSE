@@ -4,13 +4,13 @@
 
 Modern Windows compatibility patch for **The Need for Speed Special Edition**, Windows version. It creates a portable installation from your own installation media, scales the original graphics in fullscreen or a movable window, and fixes the startup, video and menu problems investigated in this project.
 
-[Stable patch kit](https://github.com/Buyukcaglar/NFSSE/releases/latest) · [v0.1.4 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.4) · [User guide](docs/USER_GUIDE.md) · [Validation and limits](docs/VALIDATION.md) · [Report a problem](https://github.com/Buyukcaglar/NFSSE/issues/new/choose)
+[Stable patch kit](https://github.com/Buyukcaglar/NFSSE/releases/latest) · [v0.1.5 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.5) · [User guide](docs/USER_GUIDE.md) · [Validation and limits](docs/VALIDATION.md) · [Report a problem](https://github.com/Buyukcaglar/NFSSE/issues/new/choose)
 
-**v0.1.4 is a prerelease** fixing the title-bar icon by using the original icon already embedded in the game executable. The user confirmed v0.1.3's movable window and desktop-height sizing visual task passed. The icon fix passes build and regression checks and awaits visual confirmation. **v0.1.1 remains the latest stable release.**
+**v0.1.5 is a prerelease** setting the window title to **The Need for Speed: Special Edition** and including the original title-bar icon fix. The user confirmed v0.1.3's movable window and desktop-height sizing visual task passed. The new caption and icon await visual confirmation. **v0.1.1 remains the latest stable release.**
 
 ## Install and play
 
-1. Download `NFSSE-v0.1.4-patch-kit.zip` from the [prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.4), or `NFSSE-v0.1.1-patch-kit.zip` from the [stable release](https://github.com/Buyukcaglar/NFSSE/releases/latest), and extract the complete ZIP.
+1. Download `NFSSE-v0.1.5-patch-kit.zip` from the [prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.5), or `NFSSE-v0.1.1-patch-kit.zip` from the [stable release](https://github.com/Buyukcaglar/NFSSE/releases/latest), and extract the complete ZIP.
 2. Double-click `Install-NFSSE.cmd`.
 3. Select the folder containing your original `NFS_WIN.EXE`, `FRONTEND`, `SIMDATA`, `GAMEDATA`, `REDIST` and `DIRECTX3`. Choose a separate destination folder.
 4. Double-click `NFSSE.exe` in the destination. Move that complete folder to relocate the installation.
@@ -22,6 +22,7 @@ This release supports one verified English media executable: 1,069,056 bytes, SH
 ## Included changes
 
 - Borderless display scaling preserves each original mode's proportions and leaves the desktop resolution unchanged. Gameplay retains its original internal resolution.
+- v0.1.5 displays `The Need for Speed: Special Edition` as the game window title.
 - v0.1.3 makes Alt+Enter windowed mode movable through a standard title bar and border. Above a desktop height of 960 pixels, it fixes the client area at 1280×960; at 960 or below, the configured size is retained. The check uses height only and runs at each launch.
 - v0.1.2 releases stale keyboard states after Alt+Tab and handles Alt+F4 directly. Its installer adds missing Alt+Enter/mouse settings to older configurations with an exact backup, preserving explicit custom values.
 - Executable-relative paths and locally copied assets allow play without the physical CD.

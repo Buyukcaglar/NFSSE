@@ -1,6 +1,6 @@
 # NFSSE user guide
 
-This guide covers the [v0.1.4 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.4). The user confirmed the earlier window-border and sizing visual task passed. The title-bar icon fix has passed automated checks and awaits visual confirmation. [v0.1.1](https://github.com/Buyukcaglar/NFSSE/releases/latest) remains the latest stable release.
+This guide covers the [v0.1.5 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.5). The game window title is `The Need for Speed: Special Edition`, with the earlier original-icon fix included. The window-border and sizing visual task is accepted; the new caption and icon await visual confirmation. [v0.1.1](https://github.com/Buyukcaglar/NFSSE/releases/latest) remains the latest stable release.
 
 ## Requirements
 
@@ -19,7 +19,7 @@ The media folder must contain `NFS_WIN.EXE`, `NFSICONN.ICO`, `IFORCE.DLL`, `FRON
 
 ## Installation
 
-1. Download `NFSSE-v0.1.4-patch-kit.zip` from the [prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.4), or `NFSSE-v0.1.1-patch-kit.zip` from the [stable release](https://github.com/Buyukcaglar/NFSSE/releases/latest), and extract it to a folder.
+1. Download `NFSSE-v0.1.5-patch-kit.zip` from the [prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.5), or `NFSSE-v0.1.1-patch-kit.zip` from the [stable release](https://github.com/Buyukcaglar/NFSSE/releases/latest), and extract it to a folder.
 2. Double-click `Install-NFSSE.cmd` inside the extracted kit. A console asks for the media folder and destination folder.
 3. Enter the folder directly containing `NFS_WIN.EXE`. Choose a new destination outside the media folder, such as `C:\Games\NFSSE`.
 4. Wait for the verified executable and game data to be written. Close the installer after its success message.
@@ -55,6 +55,8 @@ The defaults set `border=true`, `toggle_borderless=true` and `adjmouse=true`. Th
 
 From v0.1.4, the game window uses the original icon already embedded in `NFSSE.exe`, addressing the generic application icon on the title bar. This fix updates the helper; it does not replace the icon artwork or require an external icon file beside the game. Its visible result still awaits confirmation.
 
+From v0.1.5, the title bar displays `The Need for Speed: Special Edition`. Restart the game after upgrading to apply the new title and icon binding.
+
 The v0.1.2 helper releases stale keyboard states when the window loses or regains focus, addressing Enter becoming unavailable after Alt+Tab. Alt+F4 closes the game immediately. Use the in-game quit flow when you need to save progress normally.
 
 Use the bundled **cnc-ddraw 7.1.0.0 DLL**. The helper synchronizes presentation through a verified location inside that exact build, so replacing `ddraw.dll` with another version requires a corresponding helper update.
@@ -75,7 +77,7 @@ Running the installer again against a destination it created refreshes the manag
 
 To update a v0.1.0 installation, run the v0.1.1 installer with the same source media and destination. It adds the 11 missing race announcer clips beside `NFSSE.exe`. Keep these root `.EAS` files when moving the game; race announcements load them directly from the game folder.
 
-To apply the title-bar icon fix, run the v0.1.4 prerelease installer with the same source media and destination. It includes the earlier announcer, window and keyboard fixes. Relaunch the game and check the icon on the title bar after Alt+Enter. The window-presentation visual task is already accepted; keyboard recovery, immediate exit and broader display coverage retain their separate validation checks.
+To apply the window-title and title-bar icon changes, run the v0.1.5 prerelease installer with the same source media and destination. It includes the earlier announcer, window and keyboard fixes. Relaunch the game to apply the title and icon. The window-presentation visual task is already accepted; keyboard recovery, immediate exit and broader display coverage retain their separate validation checks.
 
 ## Troubleshooting
 

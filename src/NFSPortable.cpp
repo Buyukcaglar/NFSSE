@@ -176,6 +176,7 @@ static HWND WINAPI portableCreateWindow(DWORD exStyle, LPCSTR className, LPCSTR 
     HINSTANCE instance, LPVOID parameter) {
     const bool gameWindow = reinterpret_cast<ULONG_PTR>(className) > 0xffff &&
         strcmp(className, "EACLibWindow") == 0;
+    if (gameWindow) title = "The Need for Speed: Special Edition";
     const int requestedWidth = width, requestedHeight = height;
     if (gameWindow && (width <= 0 || width > 4096 || height <= 0 || height > 4096)) {
         width = 640;
@@ -322,7 +323,7 @@ extern "C" __declspec(dllexport) BOOL WINAPI Initialize() {
 
     logFile = CreateFileW(L"portable-runtime.log", GENERIC_WRITE, FILE_SHARE_READ,
         nullptr, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, nullptr);
-    logMessage("NFSPortable 6; image=%p; executable-relative working directory established\r\n", base);
+    logMessage("NFSPortable 7; image=%p; executable-relative working directory established\r\n", base);
     gameBase = base;
     windowReady = CreateEventW(nullptr, TRUE, FALSE, nullptr);
     if (!windowReady) return FALSE;

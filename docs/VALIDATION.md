@@ -1,6 +1,6 @@
 # Validation record
 
-Prerelease: **v0.1.4**, 2026-10-06. Latest stable release: **v0.1.1**. The user confirmed v0.1.3's window-presentation visual task passed. The title-bar icon fix and nonvisual focus/exit behavior have separate checks below. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
+Prerelease: **v0.1.5**, 2026-10-06. Latest stable release: **v0.1.1**. The user confirmed v0.1.3's window-presentation visual task passed. The new window caption, title-bar icon fix and nonvisual focus/exit behavior have separate checks below. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
 
 ## Compilation and static checks
 
@@ -35,7 +35,13 @@ The helper compiles without warnings, and the existing focus, shortcut, window-p
 
 No game launch or automated visual check was performed for the icon fix. The class-icon binding has code/resource evidence; its visible title-bar result awaits user confirmation. The earlier window-presentation acceptance remains recorded separately.
 
-## Accepted runtime observations
+## v0.1.5 window-title checks
+
+The x86 helper compiles without warnings and the existing input, icon-registration, renderer-policy and configuration checks pass. Source review confirms the exact requested caption, `The Need for Speed: Special Edition`, is substituted only for the supported `EACLibWindow` class before calling the existing window-creation function. Other title arguments pass through. The packaged installer passes its installation, preservation and rejection checks with the updated helper. See [window-title-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/window-title-validation.json) and [window-title-installer-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/window-title-installer-validation.json).
+
+No game launch or automated visual check was performed. The caption has source/build evidence; the visible new title and icon still await user confirmation. The accepted v0.1.3 window-presentation task remains accepted.
+
+## Earlier accepted runtime observations
 
 Development host: Windows 11 IoT Enterprise LTSC x64, build 26100, two 2560×1600 displays at 60 Hz. Display probes before startup and from the relocated run recorded unchanged desktop modes.
 
@@ -61,7 +67,7 @@ An installation made with the published v0.1.0 kit was upgraded to v0.1.1. The u
 
 - Complete manual race, save/reload cycle and comprehensive audio/video coverage.
 - Input/exit checks: Enter after repeated Alt+Tab, Alt+F4 from both presentation modes, and unchanged desktop mode after exit. These have automated regression evidence but no separate user confirmation; the window-presentation visual task is already accepted.
-- v0.1.4 prerelease: visible title-bar icon after restarting with the updated helper. The v0.1.3 window-presentation visual task passed; smaller desktops and broader display-transition coverage still require separate host/runtime checks.
+- v0.1.5 prerelease: visible full window title and original title-bar icon after restarting with the updated helper. The v0.1.3 window-presentation visual task passed; smaller desktops and broader display-transition coverage still require separate host/runtime checks.
 - Multiplayer, serial/modem links and contemporary USB I-Force devices.
 - Other Windows builds, display drivers, multi-monitor arrangements, ARM emulation and non-English or different media executables.
 

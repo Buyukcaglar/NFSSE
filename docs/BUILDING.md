@@ -19,7 +19,7 @@ The GitHub Actions workflow builds the helper on Windows and checks PowerShell p
 After building, run in Windows PowerShell:
 
 ```powershell
-.\tools\package-release.ps1 -Version 0.1.4
+.\tools\package-release.ps1 -Version 0.1.5
 ```
 
 This downloads the exact [cnc-ddraw 7.1.0.0 archive](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/v7.1.0.0), checks its hash and the renderer DLL hash, then creates the kit ZIP and `SHA256SUMS.txt` under `build/releases`. A fresh output root is required for repeated packaging; it will not overwrite an existing staging directory.
@@ -27,10 +27,10 @@ This downloads the exact [cnc-ddraw 7.1.0.0 archive](https://github.com/FunkyFr3
 For an existing archive or an explicitly selected helper:
 
 ```powershell
-.\tools\package-release.ps1 -Version 0.1.4 -RuntimeDll "C:\Builds\NFSPortable.dll" -CncArchive "C:\Downloads\cnc-ddraw.zip" -OutputRoot "C:\Builds\NFSSE-release"
+.\tools\package-release.ps1 -Version 0.1.5 -RuntimeDll "C:\Builds\NFSPortable.dll" -CncArchive "C:\Downloads\cnc-ddraw.zip" -OutputRoot "C:\Builds\NFSSE-release"
 ```
 
-The published v0.1.0 and v0.1.1 kits use the same helper binary accepted during the session. The v0.1.2 prerelease adds focus/shortcut fixes; v0.1.3 adds the window border and height-based sizing. The user accepted the v0.1.3 window-presentation visual task. v0.1.4 binds the embedded original icon to the game window class; its visible icon result remains pending. Rebuilding the same source with another compiler or timestamp may produce a different DLL hash; compilation alone does not validate its gameplay behavior. The kit manifest records whichever helper is packaged. The original game executable is generated only by the installer from the user's verified media.
+The published v0.1.0 and v0.1.1 kits use the same helper binary accepted during the session. The v0.1.2 prerelease adds focus/shortcut fixes; v0.1.3 adds the window border and height-based sizing. The user accepted the v0.1.3 window-presentation visual task. v0.1.4 binds the embedded original icon to the game window class; its visible icon result remains pending. v0.1.5 sets the requested full window title through the existing window-creation hook. Rebuilding the same source with another compiler or timestamp may produce a different DLL hash; compilation alone does not validate its gameplay behavior. The kit manifest records whichever helper is packaged. The original game executable is generated only by the installer from the user's verified media.
 
 Pinned input hashes:
 
@@ -42,6 +42,7 @@ Pinned input hashes:
 | v0.1.2 prerelease helper DLL | `ab8be11d0d3278a6c5aa098bfb5f9201caf260d43894c304950c671a69647326` |
 | v0.1.3 prerelease helper DLL | `8b0a3556fc84af570e1f9330ab8006a1e9d16890d5c8aebec49350e0ef7c4c19` |
 | v0.1.4 prerelease helper DLL | `32f777353b2637997a4ccb869e2359a73845aac5bc30d02ac6dd2c050d905a61` |
+| v0.1.5 prerelease helper DLL | `6cc562a54c8c861db79ff7ce55b8168570c176bb7840d77d1d0d1c045e386ff1` |
 | Generated game executable including icon | `a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd` |
 
 ## Media-dependent verification
@@ -53,7 +54,7 @@ Use a separate destination for development. Keep the supported original executab
 The media-dependent installation checks can be reproduced without launching the game:
 
 ```powershell
-.\tools\test-installer.ps1 -Kit "C:\Builds\NFSSE-release\NFSSE-v0.1.4-patch-kit" -SourceMedia "C:\Media"
+.\tools\test-installer.ps1 -Kit "C:\Builds\NFSSE-release\NFSSE-v0.1.5-patch-kit" -SourceMedia "C:\Media"
 ```
 
 This creates a fresh ignored test directory, checks copied asset hashes, exercises reinstall preservation and rejected-input cases, and writes a JSON result. It leaves the test outputs in place for inspection.

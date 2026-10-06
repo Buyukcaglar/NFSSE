@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.5 — Prerelease, 2026-10-06
+
+- Set the game window title to `The Need for Speed: Special Edition` through the existing window-creation hook. Other window classes retain their supplied captions. The executable, original icon, game data, renderer and accepted window-sizing policy are unchanged.
+- Include the earlier title-bar icon fix and record the user's accepted window-presentation visual task. The new caption and icon still await visual confirmation; build, existing regression and patch-kit installer checks pass.
+
 ## 0.1.4 — Prerelease, 2026-10-06
 
 - Bind the original embedded icon to the game window class so the title bar uses the game icon. The legacy code requested nonexistent group 32512; the installer embeds the original media icon as group 1. The executable, icon artwork and renderer are unchanged.

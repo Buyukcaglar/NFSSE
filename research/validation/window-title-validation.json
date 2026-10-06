@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-10-06T11:04:15.2769457Z",
+  "candidate_version": "0.1.5",
+  "helper_version": 7,
+  "helper_sha256": "6cc562a54c8c861db79ff7ce55b8168570c176bb7840d77d1d0d1c045e386ff1",
+  "window_title": "The Need for Speed: Special Edition",
+  "supported_window_class": "EACLibWindow",
+  "title_substitution_reviewed_in_existing_create_window_hook": true,
+  "other_window_class_titles_pass_through_source_reviewed": true,
+  "native_x86_build_without_warnings": true,
+  "existing_input_icon_renderer_and_config_regressions_pass": true,
+  "executable_sha256": "a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd",
+  "renderer_sha256": "85e0f7d530dfda134793a57cb3e76b0287dcc96892ee57162dd68f47283b03a9",
+  "prior_window_presentation_visual_task_accepted_by_user": true,
+  "game_launched": false,
+  "automated_visual_check": false,
+  "new_caption_and_icon_visual_acceptance": "pending"
+}

@@ -23,7 +23,7 @@ The icon builder appends a seventh `.rsrc` section at RVA `0x142000`, file offse
 | --- | --- |
 | Working directory | `GetModuleFileNameW` root followed by `SetCurrentDirectoryW` |
 | Memory reporting | `GlobalMemoryStatus` IAT RVA `0x13135C`; cap legacy signed 32-bit comparisons |
-| Initial window | IAT RVA `0x1311A0`, bounded initial size 640×480; fix 10,000-pixel initialization pushes at `0x7787D`/`0x77882` |
+| Initial window | IAT RVA `0x1311A0`, bounded initial size 640×480; fix 10,000-pixel initialization pushes at `0x7787D`/`0x77882`; v0.1.5 supplies `The Need for Speed: Special Edition` as the game caption |
 | Window input | `RegisterClassA` IAT RVA `0x1311E0`; wrap only `EACLibWindow` with its verified dispatcher at RVA `0x9BB7C` |
 | Window icon | Assign original embedded `RT_GROUP_ICON` 1 to the supported class using `LoadIconW` from the game module |
 | VGA/debug scratch | Five verified `0xB0000`/`0xB00A0` references redirected to a private 64 KB allocation; similar physics constants remain intact |
@@ -74,6 +74,10 @@ The original registration at VA `0x49BF82` calls `LoadIconA` with the game modul
 The v0.1.4 registration hook loads group 1 from the game module with `LoadIconW` and sets the copied class description's `hIcon` before registration. This is a shared resource icon with process lifetime; the caller's class structure is untouched. Missing resources fail registration with the loader's error rather than silently reverting to a generic icon. No icon pixels, resource IDs, executable bytes, window sizing or renderer hooks are changed. The existing class icon supplies the window caption through Windows' normal icon selection/scaling.
 
 Native checks cover the production class assignment and resource/module selection with a fake loader; a separate resource-only mapping exercises the actual Windows icon lookup against the unchanged game executable. Neither creates a window or launches the game. Visual confirmation of the icon remains a separate user check.
+
+## Window title
+
+The v0.1.5 caption change is confined to the existing `CreateWindowExA` hook: only class `EACLibWindow` receives `The Need for Speed: Special Edition` as its title. Other classes retain the original title argument. The game strings and executable bytes are not patched, and the icon and presentation hooks are unchanged.
 
 ## Relative data paths
 
