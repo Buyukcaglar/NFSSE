@@ -1,6 +1,6 @@
 # NFSSE user guide
 
-This guide covers [v0.2.0, the latest full release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.0). It adds optional English/German/Japanese language selection while retaining the accepted v0.1.5 compatibility runtime, window title and original icon. The user confirmed that the local three-language integration looks OK; automated installer checks are recorded separately.
+This guide covers [v0.2.1](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.1), including the Japanese Graphics selection crash fix and optional English/German/Japanese language selection. Install from original media into a new, empty destination folder. The accepted v0.1.5 compatibility runtime, window title and original icon are retained. The user confirmed that Graphics selection no longer crashes; automated installer checks are recorded separately.
 
 For the optional English/German/Japanese flag selector, use the
 [three-language edition guide](LANGUAGE_EDITION.md). Its NFSSE.exe opens the
@@ -10,9 +10,9 @@ language window, then starts the unchanged accepted engine as NFSSE-Game.exe.
 
 The standard installation starts directly in English. During interactive installation, choose the optional language selector to show English, German and Japanese flags before the game starts. English and German resources come from the supported English Special Edition media. To enable Japanese, also supply the supported Japanese media folder. Without that folder, the Japanese flag is disabled and marked "Not installed".
 
-For unattended installation, add `-LanguageSelector` for English/German selection, or `-JapaneseMedia "C:\Media\Japanese"` to install Japanese and enable the selector. Add `-DisableLanguageSelector` to return an existing installation to direct English play. See the [language guide](LANGUAGE_EDITION.md) for complete commands and the original language/voice behavior.
+For unattended installation, add `-LanguageSelector` for English/German selection, or `-JapaneseMedia "C:\Media\Japanese"` to install Japanese and enable the selector. See the [language guide](LANGUAGE_EDITION.md) for complete commands and the original language/voice behavior.
 
-Reinstalling preserves an enabled selector, the selected language, installed Japanese resources, saves and settings. Japanese media is not needed again unless its pack must be rebuilt. Disabling the selector retains that pack for later reuse. Managed language changes are backed up under the destination's `.patch-backups` folder. Installation uses only Windows' built-in tools; normal play needs neither PowerShell nor source media.
+Installation uses Windows' built-in tools and your verified original media. After installation, normal play needs neither PowerShell nor source media.
 
 ## Requirements
 
@@ -31,9 +31,9 @@ The media folder must contain `NFS_WIN.EXE`, `NFSICONN.ICO`, `IFORCE.DLL`, `FRON
 
 ## Installation
 
-1. Download `NFSSE-v0.2.0-patch-kit.zip` from the [latest release](https://github.com/Buyukcaglar/NFSSE/releases/latest) and extract it to a folder.
+1. Download `NFSSE-v0.2.1-patch-kit.zip` from the [latest release](https://github.com/Buyukcaglar/NFSSE/releases/latest) and extract it to a folder.
 2. Double-click `Install-NFSSE.cmd` inside the extracted kit. A console asks for the media folder and destination folder.
-3. Enter the folder directly containing `NFS_WIN.EXE`. Choose a new destination outside the media folder, such as `C:\Games\NFSSE`.
+3. Enter the folder directly containing your original `NFS_WIN.EXE`. Choose a new, empty destination outside your media and existing game folders, such as `C:\Games\NFSSE`.
 4. Choose whether to enable the language selector; supply Japanese media if desired. Wait for the verified game data to be written, then close the installer after its success message.
 5. Open the destination and double-click `NFSSE.exe`.
 
@@ -67,13 +67,13 @@ The defaults set `border=true`, `toggle_borderless=true` and `adjmouse=true`. Th
 
 From v0.1.4, the game window uses the original icon already embedded in `NFSSE.exe`, addressing the generic application icon on the title bar. This fix updates the helper; it does not replace the icon artwork or require an external icon file beside the game. The user visually confirmed the original title-bar icon with v0.1.5.
 
-From v0.1.5, the title bar displays `The Need for Speed: Special Edition`. Restart the game after upgrading to apply the new title and icon binding.
+The title bar displays `The Need for Speed: Special Edition` and uses the original game icon.
 
 The v0.1.2 helper releases stale keyboard states when the window loses or regains focus, addressing Enter becoming unavailable after Alt+Tab. Alt+F4 closes the game immediately. Use the in-game quit flow when you need to save progress normally.
 
 Use the bundled **cnc-ddraw 7.1.0.0 DLL**. The helper synchronizes presentation through a verified location inside that exact build, so replacing `ddraw.dll` with another version requires a corresponding helper update.
 
-## Configuration and reinstall
+## Configuration
 
 The installer creates a 19-record relative `GAMEDATA/CONFIG/PATHS.DAT`. Avoid editing it into absolute drive paths: relocation depends on those relative records and the executable setting its working directory.
 
@@ -85,11 +85,12 @@ The initial `nfs.cfg` is:
 
 There is a trailing space before the line ending. Preserve it when editing because the legacy option parser expects token separation.
 
-Running the installer again against a destination it created refreshes managed executable/runtime files and documentation. Enabled language features and the current selection are preserved unless explicitly disabled. Existing game files, saves and configuration settings are preserved; enabling or disabling language selection updates only the language routing and original race-announcer files. For `ddraw.ini`, v0.1.3 sets global `border=true` and adds missing `toggle_borderless` and `adjmouse` keys; your other settings and comments remain. If it changes the file, the original is saved beside it as `ddraw.ini.before-input-update.bak`, with a numeric suffix if that backup already exists. Explicit toggle/mouse values and other game sections are preserved. The helper always enables the window border; on desktops taller than 960 pixels it overrides width, height and resizing in memory for that launch. It refuses an unrelated nonempty destination or an executable with unrecognized modifications. Close the game before reinstalling. To restore graphics defaults, back up your `ddraw.ini`, remove that file, and rerun the installer.
-
-To update a v0.1.0 installation, run the latest installer with the same source media and destination. It adds the 11 missing race announcer clips beside `NFSSE.exe`. Keep these root `.EAS` files when moving the game; race announcements load them directly from the game folder.
-
-To apply the window-title and title-bar icon changes, run the v0.2.0 release installer with the same source media and destination. It includes the earlier announcer, window and keyboard fixes. Relaunch the game to apply the title and icon. The window-presentation visual task is already accepted; keyboard recovery, immediate exit and broader display coverage retain their separate validation checks.
+Display choices are in `ddraw.ini`. The defaults include `border=true`,
+`toggle_borderless=true` and `adjmouse=true`. Close the game and back up this
+file before changing it. On desktops taller than 960 pixels, the helper applies
+the 1280×960 window size in memory for that launch. Keep the eleven root `.EAS`
+files in the completed installation; the original race announcements load them
+directly from the game folder.
 
 ## Troubleshooting
 
@@ -97,8 +98,8 @@ To apply the window-title and title-bar icon changes, run the v0.2.0 release ins
 | --- | --- |
 | Unsupported executable or icon | Confirm the selected folder contains unmodified supported English media. Compare its SHA-256; this release has no recipe for other builds. |
 | Patch-kit integrity check fails | Extract the complete release ZIP again. Keep its folders together. |
-| `DPLAY.dll` missing | Launch from the completed destination, and confirm the media included the required `REDIST` and `DIRECTX3` files. Rerun the installer. |
-| Missing “best time”, “final lap” or finishing-position voices | Update with the latest installer. It adds `BESTTIME.EAS`, `BESTLAST.EAS`, `FINALLAP.EAS` and `FIRST.EAS` through `EIGHTH.EAS` beside `NFSSE.exe`. |
+| `DPLAY.dll` missing | Confirm the original media includes `REDIST` and `DIRECTX3`, then complete a fresh installation into a new folder. |
+| Missing “best time”, “final lap” or finishing-position voices | Confirm the completed installation includes `BESTTIME.EAS`, `BESTLAST.EAS`, `FINALLAP.EAS` and `FIRST.EAS` through `EIGHTH.EAS` beside `NFSSE.exe`. Fresh installation copies these original recordings. |
 | Portable compatibility initialization failed | Keep `NFSPortable.dll`, the bundled `ddraw.dll`, and local DirectPlay DLLs beside `NFSSE.exe`. Read `portable-runtime.log` and report the first failing initialization step. |
 | `dpserial.dll` service error | Confirm local `DPSERIAL.DLL` is present. The helper should log a local provider load; restore the matching support files with the installer. |
 | `streamreader - ILLEGAL CHUNK SIZE` | Confirm the current helper is installed. Its buffered-read hook addresses the observed zero-byte legacy stream failure. Include the runtime log if it recurs. |
@@ -107,7 +108,7 @@ To apply the window-title and title-bar icon changes, run the v0.2.0 release ins
 | Windowed mode has no title bar or cannot be moved | Use the latest helper and installer, then drag the title bar after Alt+Enter. If the game captures the cursor, use Alt+Tab to switch away and back, or the renderer's Ctrl+Tab cursor-unlock shortcut. |
 | Title bar shows a generic application icon | Use the latest helper, which assigns the original embedded icon to the window class. Restart the game after updating. |
 | Window is smaller than 1280×960 | The fixed size applies only when the primary desktop's current height is greater than 960 pixels. Relaunch after changing desktop resolution and check the `Window presentation` entry in `portable-runtime.log`. |
-| Alt+Enter does nothing in an older installation | Use the latest installer to add missing toggle settings, or set `toggle_borderless=true` in `[ddraw]`. An explicit custom hotkey or game-specific override can change the shortcut. |
+| Alt+Enter does nothing | Check `toggle_borderless=true` in `[ddraw]`. An explicit custom hotkey or game-specific override can change the shortcut. |
 | Enter stops working after Alt+Tab | Use the latest helper, which resets stale keyboard states on focus transitions. Report whether the issue remains after switching away and back several times. |
 | Settings or saves do not persist | Use a writable destination outside protected system folders and close the game before backing up files. |
 

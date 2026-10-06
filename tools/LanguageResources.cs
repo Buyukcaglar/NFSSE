@@ -45,15 +45,58 @@ public static class NfsLanguageResources {
     public static byte[] Encode(byte[] raw) {
         Need(raw.Length >= 16 && raw.Length < 0x1000000 && Encoding.ASCII.GetString(raw, 0, 4) == "SHPI", "Expected bounded SHPI data");
         List<byte> output = new List<byte>(); output.AddRange(new byte[] {0x10, 0xfb, (byte)(raw.Length >> 16), (byte)(raw.Length >> 8), (byte)raw.Length});
-        int position = 0;
-        while (raw.Length - position >= 4) {
-            int size = Math.Min(112, ((raw.Length - position) / 4) * 4);
-            output.Add((byte)(0xe0 + size / 4 - 1));
-            for (int i = 0; i < size; i++) output.Add(raw[position++]);
+        // The original loader stages the file in decoded_size + 1024 bytes,
+        // then decodes from the buffer's end. Literal-only encoding overflows
+        // this workspace for large screens despite a correct round trip.
+        Dictionary<int, int> recent = new Dictionary<int, int>();
+        int position = 0, literalStart = 0, written = 0, peak = 0;
+        while (position + 3 <= raw.Length) {
+            int tag = Key(raw, position), previous, distance = 0, length = 0;
+            if (recent.TryGetValue(tag, out previous)) distance = position - previous;
+            if (distance > 0 && distance <= 131072) {
+                int limit = Math.Min(1028, raw.Length - position);
+                while (length < limit && raw[previous + length] == raw[position + length]) length++;
+            }
+            bool usable = length >= 5 || length >= 4 && distance <= 16384 || length >= 3 && distance <= 1024;
+            if (!usable) { recent[tag] = position++; continue; }
+            Literals(raw, output, position, ref literalStart, ref written, ref peak);
+            int tail = position - literalStart, offset = distance - 1;
+            if (length <= 10 && distance <= 1024) {
+                output.Add((byte)((offset >> 8) << 5 | (length - 3) << 2 | tail));
+                output.Add((byte)offset);
+            } else if (length <= 67 && distance <= 16384) {
+                output.Add((byte)(0x80 | length - 4));
+                output.Add((byte)(tail << 6 | offset >> 8)); output.Add((byte)offset);
+            } else {
+                int count = length - 5;
+                output.Add((byte)(0xc0 | (offset >> 16) << 4 | (count >> 8) << 2 | tail));
+                output.Add((byte)(offset >> 8)); output.Add((byte)offset); output.Add((byte)count);
+            }
+            for (int i = literalStart; i < position; i++) output.Add(raw[i]);
+            written += tail + length; peak = Math.Max(peak, written - output.Count);
+            int end = position + length;
+            while (position < end) {
+                if (position + 3 <= raw.Length) recent[Key(raw, position)] = position;
+                position++;
+            }
+            literalStart = position;
         }
-        output.Add((byte)(0xfc + raw.Length - position));
-        while (position < raw.Length) output.Add(raw[position++]);
+        Literals(raw, output, raw.Length, ref literalStart, ref written, ref peak);
+        output.Add((byte)(0xfc + raw.Length - literalStart));
+        for (int i = literalStart; i < raw.Length; i++) output.Add(raw[i]);
+        Need(output.Count + peak <= raw.Length + 1024, "RefPack exceeds legacy in-place workspace");
         return output.ToArray();
+    }
+    static int Key(byte[] raw, int position) {
+        return raw[position] << 16 | raw[position + 1] << 8 | raw[position + 2];
+    }
+    static void Literals(byte[] raw, List<byte> output, int end, ref int start, ref int written, ref int peak) {
+        while (end - start >= 4) {
+            int size = Math.Min(112, ((end - start) / 4) * 4);
+            output.Add((byte)(0xe0 + size / 4 - 1));
+            for (int i = 0; i < size; i++) output.Add(raw[start++]);
+            written += size; peak = Math.Max(peak, written - output.Count);
+        }
     }
     public sealed class Archive {
         public readonly List<string> Order = new List<string>();

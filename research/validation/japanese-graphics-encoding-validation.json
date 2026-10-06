@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-06",
+  "original_executable_sha256": "ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b",
+  "user_report": "Japanese Graphics options abort: resizememblock - SENTINEL CORRUPTED, LENGTH 503876",
+  "cause": "Literal-only RefPack exceeded the decoded_size + 1024 allocation. Loader copies the compressed bytes before its subsequent size check.",
+  "graphics": [
+    {
+      "context": "OPTION",
+      "old_file_bytes": 507348,
+      "decoded_bytes": 502852,
+      "loader_allocation_bytes": 503876,
+      "overflow_bytes": 3472,
+      "old_sha256": "6d6adbaa93400d2377a098649712a767109562ace20f80d2ebce3b1659234ead",
+      "decoded_sha256": "e1c83597ff1a837402832008a8330a27c2f47e0333ec9f2ece1e932a9bb4ed2d",
+      "new_file_bytes": 332033,
+      "new_sha256": "1c62f4139054d4bb641911f86c6e7ba7f539a9d7d49732567532a252611e4974",
+      "decoded_bytes_unchanged": true
+    },
+    {
+      "context": "CHECK",
+      "old_file_bytes": 507348,
+      "decoded_bytes": 502852,
+      "loader_allocation_bytes": 503876,
+      "overflow_bytes": 3472,
+      "old_sha256": "9c53c2ff672f6db14d612e1a9514554197775baaec87b5b637fa1896d52c8ae4",
+      "decoded_sha256": "49db23b1ed4ceb68ce309e18f6a82a309d84849bb71d3bf7b0f489159b6d9486",
+      "new_file_bytes": 335091,
+      "new_sha256": "8fc0db41df163b7f243d78553388c61e9c22900b2fae5b6ee0992be9f4c431ee",
+      "decoded_bytes_unchanged": true
+    }
+  ],
+  "original_decompressor_exercised_in_isolation": true,
+  "workspace_sentinels_intact": true,
+  "game_launched": false,
+  "selector_ui_launched": false,
+  "in_game_confirmation": "User confirmed no crash on Japanese Graphics selection, 2026-10-06",
+  "status": "resolved_user_confirmed",
+  "user_acceptance": {
+    "date": "2026-10-06",
+    "user_statement": "Confirmed, no crash on selection.",
+    "scope": "Reported Japanese Graphics selection crash resolved.",
+    "entry_context": "Not specified in the confirmation",
+    "automated_checks_launched_game_or_selector_ui": false
+  },
+  "version": "0.2.1",
+  "installation_scope": "Fresh installation from verified original English and optional Japanese media into a new destination.",
+  "python_resource_tests": 8,
+  "csharp_reference_cases": 36,
+  "released_installer_cases_passed": 11,
+  "japanese_generated_outputs_verified": 436,
+  "fresh_installation_original_decoder_checks_passed": true,
+  "release_zip_sha256": "f5570dae3ff99ad0ce1e75f2f80ccf7a171525b50073cab07a35c49271104ada"
+}

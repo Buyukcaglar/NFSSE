@@ -28,4 +28,18 @@ foreach ($case in $cases) {
     if ($failed -ne $case.reject) { throw "Unexpected acceptance/rejection: $($case.action)" }
     if (-not $case.reject -and (Hash $actual) -ne (Hash (Unhex $case.expected))) { throw "Resource output differs from Python reference: $($case.action)" }
 }
+$raw = New-Object byte[] 502852
+[Text.Encoding]::ASCII.GetBytes('SHPI').CopyTo($raw, 0)
+for ($i=4; $i -lt $raw.Length; $i++) { $raw[$i] = ($i - 4) % 256 }
+$packed = [NfsLanguageResources]::Encode($raw)
+if ($packed.Length -ge $raw.Length -or (Hash ([NfsLanguageResources]::Decode($packed))) -ne (Hash $raw)) { throw 'Large graphics compression is incompatible.' }
+$random = New-Object byte[] 200000
+[Random]::new(1234).NextBytes($random)
+foreach ($prefix in @(4, 200004)) {
+    $raw = New-Object byte[] ($prefix + $random.Length)
+    [Text.Encoding]::ASCII.GetBytes('SHPI').CopyTo($raw, 0); $random.CopyTo($raw, $prefix)
+    $rejected = $false
+    try { [NfsLanguageResources]::Encode($raw) | Out-Null } catch { $rejected = $_.Exception.ToString().Contains('in-place workspace') }
+    if (-not $rejected) { throw 'Unsafe literal suffix accepted.' }
+}
 Write-Output "$($cases.Count) synthetic C# resource cases passed; no game media or UI used."

@@ -37,8 +37,13 @@ detail controls and three 320×200 labels come from the English OPTION resource,
 with their original pixels and metadata. This derived screen is used for both
 OPTION and CHECK contexts. It avoids palette conversion and matches each English
 directory order. Those seven controls retain their original English/numeric text.
-The archives use lossless literal RefPack encoding; no artwork is generated or
+The archives use lossless RefPack encoding with backreferences; no artwork is generated or
 resampled.
+
+The earlier literal-only encoder made these files larger than the game's
+decoded-size-plus-1024-byte loading workspace and caused the reported Japanese
+graphics-menu sentinel crash. The repaired encoder checks both that allocation
+and every in-place decoding boundary. The decoded archives remain byte-identical.
 
 Both HUD archives retain all original Japanese entry blobs requested by the
 English engine, in the English directory order. The 67 extra low-resolution

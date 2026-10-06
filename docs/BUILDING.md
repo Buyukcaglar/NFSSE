@@ -20,10 +20,10 @@ The GitHub Actions workflow builds the helper on Windows and checks PowerShell p
 
 ## Patch-kit release
 
-Build the selector with `tools\build-language-launcher.cmd`. v0.2.0 packaging requires the accepted v0.1.5 helper binary (hash below), rather than a newly rebuilt helper. If necessary, extract it from the v0.1.5 PatchKit. Then run in PowerShell:
+Build the selector with `tools\build-language-launcher.cmd`. v0.2.1 packaging requires the accepted v0.1.5 helper binary (hash below), rather than a newly rebuilt helper. If necessary, extract it from the v0.1.5 PatchKit. Then run in PowerShell:
 
 ```powershell
-.\tools\package-release.ps1 -Version 0.2.0
+.\tools\package-release.ps1 -Version 0.2.1
 ```
 
 This downloads the exact [cnc-ddraw 7.1.0.0 archive](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/v7.1.0.0), checks its hash and the renderer DLL hash, then creates the kit ZIP and `SHA256SUMS.txt` under `build/releases`. A fresh output root is required for repeated packaging; it will not overwrite an existing staging directory.
@@ -31,7 +31,7 @@ This downloads the exact [cnc-ddraw 7.1.0.0 archive](https://github.com/FunkyFr3
 For an existing archive or an explicitly selected helper:
 
 ```powershell
-.\tools\package-release.ps1 -Version 0.2.0 -RuntimeDll "C:\Builds\NFSSE-v0.1.5-patch-kit\runtime\NFSPortable.dll" -CncArchive "C:\Downloads\cnc-ddraw.zip" -OutputRoot "C:\Builds\NFSSE-release"
+.\tools\package-release.ps1 -Version 0.2.1 -RuntimeDll "C:\Builds\NFSSE-v0.1.5-patch-kit\runtime\NFSPortable.dll" -CncArchive "C:\Downloads\cnc-ddraw.zip" -OutputRoot "C:\Builds\NFSSE-release"
 ```
 
 The published v0.1.0 and v0.1.1 kits use the same helper binary accepted during the session. The v0.1.2 prerelease adds focus/shortcut fixes; v0.1.3 adds the window border and height-based sizing. The user accepted the v0.1.3 window-presentation visual task. v0.1.4 binds the embedded original icon to the game window class, and v0.1.5 sets the requested full title through the existing window-creation hook. The user visually confirmed the title and original icon with v0.1.5. Rebuilding the same source with another compiler or timestamp may produce a different DLL hash; compilation alone does not validate its gameplay behavior. v0.2.0 packaging pins the accepted helper and renderer hashes. The manifest records every kit file. The new raw native selector contains no original game icon; the installer embeds that icon from the user's verified media. The original game executable is generated only by the installer. Optional resource conversion uses Windows' built-in C# compiler and verified user media, without including game assets in the kit.
@@ -60,7 +60,7 @@ Use a separate destination for development. Keep the supported original executab
 The media-dependent installation checks can be reproduced without launching the game:
 
 ```powershell
-.\tools\test-installer.ps1 -Kit "C:\Builds\NFSSE-release\NFSSE-v0.2.0-patch-kit" -SourceMedia "C:\Media"
+.\tools\test-installer.ps1 -Kit "C:\Builds\NFSSE-release\NFSSE-v0.2.1-patch-kit" -SourceMedia "C:\Media"
 ```
 
 This creates a fresh ignored test directory, checks copied asset hashes, exercises reinstall preservation and rejected-input cases, and writes a JSON result. It leaves the test outputs in place for inspection.
@@ -68,10 +68,23 @@ This creates a fresh ignored test directory, checks copied asset hashes, exercis
 For the optional language installer, run the developer reference suite with both supported media folders:
 
 ```powershell
-python tools/test-language-installer.py --kit "C:\Builds\NFSSE-release\NFSSE-v0.2.0-patch-kit" --english-media "C:\Media\English" --japanese-media "C:\Media\Japanese" --output-root "build/language-installer-check"
+python tools/test-language-installer.py --kit "C:\Builds\NFSSE-release\NFSSE-v0.2.1-patch-kit" --english-media "C:\Media\English" --japanese-media "C:\Media\Japanese" --output-root "build/language-installer-check"
 ```
 
 Run `tools\test-languages.cmd`, `python -m unittest discover -s tests -p test_nfs_resources.py`, and `tests\LanguageResources.Tests.ps1` in Windows PowerShell for media-independent native and converter checks. Python is required only for development reference tools. CI compiles both native components and runs these media-independent checks; it cannot exercise full installation without the user's media.
+
+For the Japanese graphics encoder check, `tools\test-qfs-loader.cmd` takes the
+supported original `NFS_WIN.EXE` followed by one or more QFS/decoded-FSH pairs:
+
+```cmd
+tools\test-qfs-loader.cmd install\NFS_WIN.EXE NFSSE\LANG\JA\ART\OPTION\GRAPHICS.QFS NFSSE\LANG\JA\ART\OPTION\GRAPHICS.FSH NFSSE\LANG\JA\ART\CHECK\GRAPHICS.QFS NFSSE\LANG\JA\ART\CHECK\GRAPHICS.FSH
+```
+
+This x86 check verifies the original executable's complete hash, runs only its
+self-contained RefPack decoder in an isolated buffer with the original loader's
+allocation/staging layout, compares all output bytes and checks surrounding
+sentinels. It does not start the game. Use resources generated by a fresh
+installation when checking the released encoder.
 
 ## Analysis and icon reference tools
 

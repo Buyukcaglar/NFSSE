@@ -1,6 +1,39 @@
 # Validation record
 
-Latest full release: **v0.2.0**, 2026-10-06. The user confirmed the local three-language integration with "Everything looks ok" and authorized optional PatchKit integration and publication. The accepted v0.1.5 engine/helper/renderer are retained. Earlier window-presentation, title and icon confirmations remain recorded separately. Automated checks below validate specific files and behavior; collective user confirmation does not establish every frame, audio sample, multiplayer path or Windows host.
+Latest full release: **v0.2.1**, 2026-10-06. The user confirmed the Japanese Graphics selection crash resolved and authorized the corrected PatchKit and documentation for fresh installation from original media. The accepted v0.1.5 engine/helper/renderer are retained. Earlier language, window-presentation, title and icon confirmations remain recorded separately. Automated checks below validate specific files and behavior; user confirmation does not establish every frame, audio sample, multiplayer path or Windows host.
+
+## v0.2.1 Japanese graphics-menu checks
+
+After the earlier collective language confirmation, the user reported an abort
+when opening Graphics in Japanese: `resizememblock - SENTINEL CORRUPTED`, with
+block length 503,876. The generated QFS was 507,348 bytes; its decoded archive
+was 502,852 bytes. Static examination of the supported engine confirms that
+the loader allocates decoded size plus 1,024 and copies the compressed file
+into that allocation before its later size check. The old file therefore
+overran the allocation by 3,472 bytes, exactly explaining the reported length.
+See `research/static/japanese-graphics-loader.json` for the verified instructions.
+
+The repaired backreference encoder produces 332,033-byte OPTION and 335,091-byte
+CHECK archives with identical decoded bytes. Eight Python resource tests and
+36 C# reference fixtures pass, including large archives and rejection of
+incompressible suffixes that exceed the in-place workspace. An x86 harness
+executes only the original, hash-verified, self-contained RefPack decompressor
+on both actual graphics archives using the game's staging layout; both decoded
+outputs match and the surrounding sentinel bytes survive. The unsafe old file
+is rejected by the harness before copying it.
+
+The release uses the normal installer to create the corrected resources from
+the user's verified original media in a new destination. The standard installer
+suite and eleven optional-language cases pass, including exact agreement of
+all 436 Japanese outputs with the reference builder and rejection of modified
+graphics resources. Records are `research/validation/patchkit-basic-v0.2.1.json`,
+`research/validation/patchkit-languages-v0.2.1.json` and
+`research/validation/japanese-graphics-encoding-validation.json`.
+The automated checks did not launch the game or selector UI. On
+2026-10-06 the user stated, "Confirmed, no crash on selection." This closes the
+reported Japanese Graphics selection crash. The confirmation does not identify
+which menu entry context was exercised or establish individual graphics-setting
+behavior.
 
 ## v0.2.0 optional PatchKit checks
 

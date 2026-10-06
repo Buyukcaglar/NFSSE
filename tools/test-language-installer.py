@@ -68,6 +68,7 @@ def main():
     builder.require((game / 'GAMEDATA/CONFIG/PATHS.DAT').read_bytes() == builder.paths_for(recipe, 'Japanese'), 'Japanese selection was lost')
     for target, replacement, name in [
         (game / 'LANG/JA/SPEECH/NSXGEN16.EAS', b'CUSTOM RESOURCE', 'damaged-japanese-preserved'),
+        (game / 'LANG/JA/ART/OPTION/GRAPHICS.QFS', b'CUSTOM GRAPHICS', 'damaged-japanese-graphics-preserved'),
         (game / 'GAMEDATA/CONFIG/PATHS.DAT', b'CUSTOM PATHS', 'custom-paths-preserved'),
         (game / 'FIRST.EAS', b'CUSTOM AUDIO', 'custom-announcer-preserved')]:
         data = target.read_bytes(); target.write_bytes(replacement)
@@ -88,7 +89,8 @@ def main():
     rejected = output / 'rejected-japanese-output'
     run('unsupported-japanese-before-destination-write', rejected, ['-JapaneseMedia', str(invalid)], success=False)
     builder.require(not rejected.exists(), 'Invalid Japanese input created destination files')
-    result = {'version': '0.2.0', 'checked_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'passed': True,
+    release = json.loads((kit / 'release-manifest.json').read_text(encoding='utf-8-sig'))
+    result = {'version': release['version'], 'checked_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(), 'passed': True,
               'game_launched': False, 'selector_ui_launched': False, 'shell': 'Windows PowerShell 5.1',
               'python_required_by_installer': False, 'cases': checks, 'japanese_outputs_match_python_reference': len(expected),
               'german_announcer_files_selected': 11, 'shared_saves_settings_preserved': True,

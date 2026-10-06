@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.2.1 — Japanese graphics-menu stability, 2026-10-06
+
+- Replace literal-only RefPack encoding with bounded backreference compression.
+  The old 507,348-byte Japanese graphics file exceeded the original loader's
+  503,876-byte allocation and corrupted its memory sentinel. Both graphics
+  contexts retain byte-identical decoded archives and original artwork.
+- Build the corrected Japanese resources during fresh installation from the
+  user's original English and Japanese media. Use a new destination folder.
+  The accepted game engine, compatibility helper and renderer are retained.
+- Add large-resource, in-place workspace and Windows conversion regressions,
+  plus an isolated check using the original game's exact
+  decompressor. On 2026-10-06 the user confirmed no crash on Graphics selection.
+
 ## 0.2.0 — Optional language editions, 2026-10-06
 
 - Open a native English/German/Japanese flag window from NFSSE.exe and start the

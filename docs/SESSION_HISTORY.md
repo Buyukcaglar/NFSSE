@@ -30,3 +30,11 @@ After the v0.1.5 helper was installed, the user stated that the current title/ic
 On 2026-10-06 the user requested publication as a full release rather than a prerelease, and stated that I-Force was reported working with no further work requested. v0.1.5 is promoted to the latest full release using the existing patch kit and verified hash. IFORCE-001 is closed; the original I-Force code and DLL are unchanged. The working report is recorded separately from independently exercised hardware checks. The online documentation reflects the promotion and closure; the ZIP retains its original packaging snapshot.
 
 On 2026-10-06 the user supplied Japanese release media, requested a compatibility prototype and then a native English/German/Japanese flag selector. Original Japanese race-announcer files match English; German has eleven distinct original race announcements, selected alongside its resource paths. Static analysis explains the original English Japanese name/exit dialogs. After confirming the local integration looked OK, the user authorized all language work as optional PatchKit features and a new GitHub release. v0.2.0 adds built-in Windows installation, feature-preserving reinstall and explicit return to direct English play, while retaining the accepted game engine/helper/renderer and excluding original media from publication.
+
+The user subsequently reported a crash when selecting Graphics in Japanese.
+The generated literal-only RefPack file exceeded the original game's loading
+allocation by 3,472 bytes. Bounded backreference compression preserves the
+decoded artwork and fits both graphics contexts. Original-decompressor checks
+passed, and the user confirmed no crash on selection. The user authorized
+v0.2.1 publication with the normal fresh-installation workflow and requested
+that existing Japanese-mod repair instructions and tooling be omitted.

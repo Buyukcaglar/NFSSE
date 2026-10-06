@@ -69,18 +69,73 @@ def decode_qfs(data):
 
 
 def encode_qfs(data):
-    """Encode losslessly with literal RefPack runs; favor auditability over size."""
+    """Encode RefPack within the game's 1024-byte in-place workspace.
+
+    The loader copies the compressed file into decoded_size + 1024 bytes,
+    then moves it to the buffer's end before decoding. Literal-only encoding
+    can overflow that allocation even though it round trips correctly.
+    """
     if data[:4] != b"SHPI" or not 16 <= len(data) < 0x1000000:
         raise ValueError("Expected bounded SHPI data")
     encoded = bytearray(b"\x10\xfb" + len(data).to_bytes(3, "big"))
-    pos = 0
-    while len(data) - pos >= 4:
-        size = min(112, ((len(data) - pos) // 4) * 4)
-        encoded.append(0xe0 + size // 4 - 1)
-        encoded.extend(data[pos:pos + size])
-        pos += size
-    encoded.append(0xfc + len(data) - pos)
-    encoded.extend(data[pos:])
+    recent = {}
+    pos = literal_start = written = peak = 0
+
+    def literals(end):
+        nonlocal literal_start, written, peak
+        while end - literal_start >= 4:
+            size = min(112, ((end - literal_start) // 4) * 4)
+            encoded.append(0xe0 + size // 4 - 1)
+            encoded.extend(data[literal_start:literal_start + size])
+            literal_start += size
+            written += size
+            peak = max(peak, written - len(encoded))
+
+    def key(index):
+        return (data[index] << 16) | (data[index + 1] << 8) | data[index + 2]
+
+    while pos + 3 <= len(data):
+        tag = key(pos)
+        previous = recent.get(tag)
+        distance = pos - previous if previous is not None else 0
+        length = 0
+        if 0 < distance <= 131072:
+            limit = min(1028, len(data) - pos)
+            while length < limit and data[previous + length] == data[pos + length]:
+                length += 1
+        usable = (length >= 5 or length >= 4 and distance <= 16384
+                  or length >= 3 and distance <= 1024)
+        if not usable:
+            recent[tag] = pos
+            pos += 1
+            continue
+        literals(pos)
+        tail = pos - literal_start
+        offset = distance - 1
+        if length <= 10 and distance <= 1024:
+            encoded.extend(((offset >> 8) << 5 | (length - 3) << 2 | tail, offset & 255))
+        elif length <= 67 and distance <= 16384:
+            encoded.extend((0x80 | length - 4, tail << 6 | offset >> 8, offset & 255))
+        else:
+            count = length - 5
+            encoded.extend((0xc0 | (offset >> 16) << 4 | (count >> 8) << 2 | tail,
+                            (offset >> 8) & 255, offset & 255, count & 255))
+        encoded.extend(data[literal_start:pos])
+        written += tail + length
+        peak = max(peak, written - len(encoded))
+        end = pos + length
+        while pos < end:
+            if pos + 3 <= len(data):
+                recent[key(pos)] = pos
+            pos += 1
+        literal_start = pos
+    literals(len(data))
+    encoded.append(0xfc + len(data) - literal_start)
+    encoded.extend(data[literal_start:])
+    # Check both the initial copy and every decoding boundary. A compact file
+    # can still overwrite unread input if its final literal runs expand too far.
+    if len(encoded) + peak > len(data) + 1024:
+        raise ValueError("RefPack exceeds legacy in-place workspace")
     return bytes(encoded)
 
 

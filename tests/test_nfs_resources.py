@@ -1,4 +1,5 @@
 import struct
+import random
 import sys
 from pathlib import Path
 import unittest
@@ -34,6 +35,61 @@ class ResourcesTests(unittest.TestCase):
             expected = initial + b"a" * count
             stream = b"\x10\xfb" + len(expected).to_bytes(3, "big") + b"\xe3" + initial + command + b"\xfc"
             self.assertEqual(decode_qfs(stream), expected)
+
+    def test_large_screen_encoding_fits_the_legacy_loader(self):
+        raw = b"SHPI" + bytes(n % 256 for n in range(502848))
+        # The old literal-only file exceeds decoded_size + 1024, matching
+        # the user's 503876-byte corrupted graphics block.
+        old_size = 5 + len(raw) + (len(raw) // 112) + 1
+        self.assertGreater(old_size, len(raw) + 1024)
+        encoded = encode_qfs(raw)
+        self.assertLess(len(encoded), len(raw))
+        capacity = len(raw) + 1024
+        buffer = bytearray(capacity)
+        buffer[capacity - len(encoded):] = encoded
+        # Decode directly from the same staging buffer the game uses. Check
+        # unread input after each byte rather than using a separate decoder.
+        source, target = capacity - len(encoded) + 5, 0
+        while True:
+            command = buffer[source]; source += 1
+            count = 1 if command < 0x80 else 2 if command < 0xc0 else 3 if command < 0xe0 else 0
+            args = buffer[source:source + count]; source += count
+            distance = length = 0
+            if command < 0x80:
+                literals = command & 3
+                distance = ((command & 0x60) << 3) + args[0] + 1
+                length = ((command >> 2) & 7) + 3
+            elif command < 0xc0:
+                literals = args[0] >> 6
+                distance = ((args[0] & 0x3f) << 8) + args[1] + 1
+                length = (command & 0x3f) + 4
+            elif command < 0xe0:
+                literals = command & 3
+                distance = ((command & 0x10) << 12) + (args[0] << 8) + args[1] + 1
+                length = ((command & 0x0c) << 6) + args[2] + 5
+            else:
+                literals = ((command & 0x1f) << 2) + 4 if command < 0xfc else command & 3
+            for _ in range(literals):
+                value = buffer[source]; source += 1
+                self.assertLess(target, source)
+                buffer[target] = value; target += 1
+            for _ in range(length):
+                self.assertLess(target, source)
+                buffer[target] = buffer[target - distance]; target += 1
+            if command >= 0xfc:
+                break
+        self.assertEqual(target, len(raw))
+        self.assertEqual(source, capacity)
+        self.assertEqual(buffer[:target], raw)
+
+    def test_incompressible_tail_cannot_overwrite_unread_input(self):
+        rng = random.Random(1234)
+        tail = rng.randbytes(200000)
+        # Initial compressible pixels make the total file small, but a large
+        # incompressible suffix still needs more than the loader's workspace.
+        for raw in (b"SHPI" + tail, b"SHPI" + bytes(200000) + tail):
+            with self.assertRaisesRegex(ValueError, 'in-place workspace'):
+                encode_qfs(raw)
 
     def test_malformed_compression_is_rejected(self):
         for stream in (b"\x10\xfb\x00\x00\x10\x00\x00\xfc",

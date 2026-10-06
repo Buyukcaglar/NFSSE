@@ -1,5 +1,5 @@
 param(
-    [string]$Version = '0.2.0',
+    [string]$Version = '0.2.1',
     [string]$RuntimeDll,
     [string]$LanguageLauncher,
     [string]$CncArchive,
@@ -41,7 +41,7 @@ foreach ($name in @('patch-recipe.json', 'ddraw.ini', 'japanese-resource-profile
 foreach ($name in @('LanguageEdition.ps1', 'LanguageResources.cs')) { [IO.File]::Copy((Join-Path $repo "tools\$name"), (Join-Path $kit "tools\$name"), $false) }
 [IO.File]::Copy((Join-Path $repo 'licenses\cnc-ddraw-MIT.txt'), (Join-Path $kit 'licenses\cnc-ddraw-MIT.txt'), $false)
 foreach ($name in @('USER_GUIDE.md', 'VALIDATION.md', 'LANGUAGE_EDITION.md')) { [IO.File]::Copy((Join-Path $repo "docs\$name"), (Join-Path $kit $name), $false) }
-[IO.File]::WriteAllText((Join-Path $kit 'README.txt'), "NFSSE v$Version compatibility patch kit`r`n`r`nExtract this complete ZIP, then double-click Install-NFSSE.cmd.`r`nSupply your own supported English installation media and choose a separate destination.`r`nThe language-selector window is optional. Supply Japanese media to add Japanese.`r`nNormal play and installation need no Python, Visual Studio or administrator rights.`r`nAfter installation, double-click NFSSE.exe in the destination folder.`r`nRead USER_GUIDE.md, LANGUAGE_EDITION.md and VALIDATION.md for details.`r`nGame media, the game engine and its original icon are not included in this ZIP.`r`nhttps://github.com/Buyukcaglar/NFSSE`r`n", [Text.Encoding]::ASCII)
+[IO.File]::WriteAllText((Join-Path $kit 'README.txt'), "NFSSE v$Version compatibility patch kit`r`n`r`nExtract this complete ZIP, then double-click Install-NFSSE.cmd.`r`nSupply your own supported original English media and choose a new, empty destination folder.`r`nThe language-selector window is optional. Supply Japanese media to add Japanese.`r`nNormal play and installation need no Python, Visual Studio or administrator rights.`r`nAfter installation, double-click NFSSE.exe in the destination folder.`r`nRead USER_GUIDE.md, LANGUAGE_EDITION.md and VALIDATION.md for details.`r`nGame media, the game engine and its original icon are not included in this ZIP.`r`nhttps://github.com/Buyukcaglar/NFSSE`r`n", [Text.Encoding]::ASCII)
 # Keep extracted upstream files outside the distributable kit.
 $files = @(Get-ChildItem -LiteralPath $kit -Recurse -File | Sort-Object FullName | ForEach-Object {
     [ordered]@{ path = $_.FullName.Substring($kit.Length + 1).Replace('\', '/'); sha256 = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant() }

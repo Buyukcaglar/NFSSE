@@ -1,0 +1,12 @@
+{
+  "version": "0.2.1",
+  "archive_sha256": "f5570dae3ff99ad0ce1e75f2f80ccf7a171525b50073cab07a35c49271104ada",
+  "kit_files": 20,
+  "manifest_file_hashes_verified": true,
+  "archive_exactly_matches_manifest": true,
+  "converter_and_installer_match_repository": true,
+  "original_game_media_included": false,
+  "original_icon_included": false,
+  "existing_japanese_mod_repair_code_included": false,
+  "installation_scope": "Fresh installation from original English and optional Japanese media into a new, empty destination."
+}
