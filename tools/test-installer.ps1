@@ -91,13 +91,15 @@ foreach ($name in @('IFORCE.DLL', 'NFSICONN.ICO', 'DPLAY.dll', 'ddraw.dll')) {
 # Exercise the real packaged installer, including another game's overrides.
 $graphicsPath = Join-Path $destination 'ddraw.ini'
 $legacyGraphics = [regex]::Replace([IO.File]::ReadAllText($graphicsPath), '(?im)^(toggle_borderless|adjmouse)=.*\r?\n', '')
-$legacyGraphics += "`r`n[OtherGame]`r`ntoggle_borderless=false`r`nadjmouse=false`r`n"
+$legacyGraphics = $legacyGraphics.Replace('border=true', 'border=false')
+$legacyGraphics += "`r`n[OtherGame]`r`ntoggle_borderless=false`r`nadjmouse=false`r`nborder=false`r`n"
 [IO.File]::WriteAllText($graphicsPath, $legacyGraphics)
 Run-Installer $Kit $SourceMedia $destination 'legacy-display-upgrade' $true
 $updatedGraphics = [IO.File]::ReadAllText($graphicsPath)
 Assert ($updatedGraphics.Contains("toggle_borderless=true`r`nadjmouse=true`r`n[OtherGame]")) 'Legacy display keys were not added to the global section.'
 Assert ($updatedGraphics.Contains("; Installer test sentinel") -and $updatedGraphics.Contains('renderer=gdi')) 'Display upgrade lost custom configuration.'
-Assert ($updatedGraphics.EndsWith("[OtherGame]`r`ntoggle_borderless=false`r`nadjmouse=false`r`n")) 'Display upgrade changed another game section.'
+Assert ($updatedGraphics.Contains("border=true")) 'Legacy border=false was not upgraded.'
+Assert ($updatedGraphics.EndsWith("[OtherGame]`r`ntoggle_borderless=false`r`nadjmouse=false`r`nborder=false`r`n")) 'Display upgrade changed another game section.'
 Assert ([IO.File]::ReadAllText($graphicsPath + '.before-input-update.bak') -eq $legacyGraphics) 'Display upgrade lost its original configuration backup.'
 foreach ($path in @($savePath, (Join-Path $destination 'nfs.cfg'), $existingSpeech)) {
     Assert ((Hash $path) -eq $preserved[$path]) 'Display upgrade changed unrelated user data.'
@@ -157,6 +159,7 @@ $result = [ordered]@{
     initial_config_spacing_preserved = $true
     reinstall_preserves_save_and_configs = $true
     legacy_display_keys_added_with_backup = $true
+    legacy_border_disabled_upgraded = $true
     legacy_display_upgrade_preserves_other_settings = $true
     display_upgrade_idempotent = $true
     reinstall_refreshes_readonly_managed_components = $true

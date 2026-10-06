@@ -1,4 +1,4 @@
-# Add missing compatibility settings without replacing the player's settings.
+# Add missing compatibility settings and enable the requested movable border.
 function Update-NfsseGraphicsConfig([string]$Path) {
     $bytes = [IO.File]::ReadAllBytes($Path)
     $offset = 0
@@ -22,18 +22,24 @@ function Update-NfsseGraphicsConfig([string]$Path) {
         $end = if ($next.Success) { $start + $next.Index } else { $text.Length }
         $settings = $text.Substring($start, $end - $start)
     }
-    else { $end = $text.Length; $settings = '' }
+    else { $start = $end = $text.Length; $settings = '' }
+    $updatedSettings = [regex]::Replace($settings,
+        '(?im)^([ \t]*border[ \t]*=[ \t]*)[^\s;#\r\n]*', '${1}true')
     $missing = @()
-    foreach ($name in @('toggle_borderless', 'adjmouse')) {
+    foreach ($name in @('toggle_borderless', 'adjmouse', 'border')) {
         if (-not [regex]::IsMatch($settings, ('(?im)^[ \t]*' + $name + '[ \t]*='))) {
             $missing += "$name=true"
         }
     }
-    if (-not $missing.Count) { return $false }
-    $insert = if ($end -gt 0 -and $text[$end - 1] -ne "`n") { $newline } else { '' }
-    if (-not $section.Success) { $insert += '[ddraw]' + $newline }
-    $insert += ($missing -join $newline) + $newline
-    $updated = $text.Insert($end, $insert)
+    if (-not $missing.Count -and $updatedSettings -ceq $settings) { return $false }
+    $updated = $text.Substring(0, $start) + $updatedSettings + $text.Substring($end)
+    $end += $updatedSettings.Length - $settings.Length
+    if ($missing.Count) {
+        $insert = if ($end -gt 0 -and $updated[$end - 1] -ne "`n") { $newline } else { '' }
+        if (-not $section.Success) { $insert += '[ddraw]' + $newline }
+        $insert += ($missing -join $newline) + $newline
+        $updated = $updated.Insert($end, $insert)
+    }
     $backup = $Path + '.before-input-update.bak'
     $suffix = 0
     while ([IO.File]::Exists($backup)) { $suffix++; $backup = $Path + ".before-input-update.$suffix.bak" }

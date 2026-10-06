@@ -155,7 +155,7 @@ try {
     if (-not [IO.File]::Exists($graphicsPath)) { [IO.File]::Copy((Join-Path $PSScriptRoot 'config\ddraw.ini'), $graphicsPath, $false) }
     . (Join-Path $PSScriptRoot 'tools\GraphicsConfig.ps1')
     if (Update-NfsseGraphicsConfig $graphicsPath) {
-        Write-Host 'Added missing Alt+Enter/mouse settings. Original ddraw.ini retained in a backup beside it.'
+        Write-Host 'Enabled a movable window border and added missing display settings. Original ddraw.ini retained in a backup beside it.'
     }
     [IO.File]::WriteAllText((Join-Path $Destination 'Run-NFS.cmd'), "@echo off`r`n`"%~dp0NFSSE.exe`"`r`n", [Text.Encoding]::ASCII)
     foreach ($name in @('USER_GUIDE.md', 'VALIDATION.md', 'LICENSE')) {
@@ -168,7 +168,7 @@ try {
     $record | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $Destination 'nfsse-installation.json') -Encoding UTF8
     Write-Host "Installed: $exePath"
     Write-Host 'Double-click NFSSE.exe to play. Move the complete destination folder to relocate it.'
-    Write-Host 'Existing saves and settings are preserved; missing display compatibility keys are added with a backup.'
+    Write-Host 'Existing saves and other settings are preserved; window-border compatibility settings are updated with a backup.'
     if (-not $NonInteractive) { Read-Host 'Press Enter to close' | Out-Null }
 }
 catch {

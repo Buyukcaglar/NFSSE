@@ -19,6 +19,47 @@ static decltype(&CreateFileA) realCreateFile;
 static decltype(&ReadFile) realReadFile;
 static void logMessage(const char* format, ...);
 
+static bool verifyGraphicsSetting(BYTE* graphics, DWORD keyRva, const char* key,
+    DWORD loadRva, DWORD readRva, DWORD storeRva, DWORD settingRva) {
+    // Verify the key, its cfg_get_int/bool call, and the relocated store into
+    // g_config before using a private setting in the pinned renderer build.
+    return strcmp(reinterpret_cast<const char*>(graphics + keyRva), key) == 0 &&
+        graphics[loadRva] == 0xb9 &&
+        *reinterpret_cast<DWORD*>(graphics + loadRva + 1) == reinterpret_cast<DWORD>(graphics + keyRva) &&
+        graphics[loadRva + 5] == 0xe8 &&
+        *reinterpret_cast<LONG*>(graphics + loadRva + 6) == static_cast<LONG>(readRva - loadRva - 10) &&
+        graphics[storeRva] == 0xa3 &&
+        *reinterpret_cast<DWORD*>(graphics + storeRva + 1) == reinterpret_cast<DWORD>(graphics + settingRva);
+}
+
+static bool configureWindowPresentation(BYTE* graphics, DWORD desktopHeight) {
+    auto dos = reinterpret_cast<IMAGE_DOS_HEADER*>(graphics);
+    auto nt = reinterpret_cast<IMAGE_NT_HEADERS32*>(graphics + dos->e_lfanew);
+    if (dos->e_magic != IMAGE_DOS_SIGNATURE || nt->Signature != IMAGE_NT_SIGNATURE ||
+        nt->FileHeader.Machine != IMAGE_FILE_MACHINE_I386 ||
+        nt->FileHeader.TimeDateStamp != 0x676faadf || nt->OptionalHeader.SizeOfImage != 0x6c000 ||
+        !verifyGraphicsSetting(graphics, 0x48250, "width", 0x1e0b7, 0x1ef70, 0x1e0c3, 0x58b88) ||
+        !verifyGraphicsSetting(graphics, 0x48258, "height", 0x1e0c8, 0x1ef70, 0x1e0d4, 0x58b8c) ||
+        !verifyGraphicsSetting(graphics, 0x48318, "border", 0x1e295, 0x1eea0, 0x1e2a4, 0x596fc) ||
+        !verifyGraphicsSetting(graphics, 0x48330, "resizable", 0x1e2bd, 0x1eea0, 0x1e2cc, 0x59704)) {
+        logMessage("Unexpected cnc-ddraw window configuration layout\r\n");
+        return false;
+    }
+    // cnc-ddraw reads ddraw.ini in DllMain, before our bootstrap. Apply the
+    // launch policy to its already-loaded settings before any game window or
+    // rendering thread starts; the on-disk configuration stays untouched.
+    *reinterpret_cast<BOOL*>(graphics + 0x596fc) = TRUE;
+    if (desktopHeight > 960) {
+        *reinterpret_cast<LONG*>(graphics + 0x58b88) = 1280;
+        *reinterpret_cast<LONG*>(graphics + 0x58b8c) = 960;
+        *reinterpret_cast<BOOL*>(graphics + 0x59704) = FALSE;
+    }
+    logMessage("Window presentation: desktop height=%lu; client=%ldx%ld; border=true; resizable=%ld\r\n",
+        desktopHeight, *reinterpret_cast<LONG*>(graphics + 0x58b88),
+        *reinterpret_cast<LONG*>(graphics + 0x58b8c), *reinterpret_cast<BOOL*>(graphics + 0x59704));
+    return true;
+}
+
 static void releaseGameKeys(HWND window) {
     // The original WM_KEYUP handler clears one entry in its 128-scan-code
     // table. Release through that handler instead of editing game memory.
@@ -270,7 +311,7 @@ extern "C" __declspec(dllexport) BOOL WINAPI Initialize() {
 
     logFile = CreateFileW(L"portable-runtime.log", GENERIC_WRITE, FILE_SHARE_READ,
         nullptr, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, nullptr);
-    logMessage("NFSPortable 4; image=%p; executable-relative working directory established\r\n", base);
+    logMessage("NFSPortable 5; image=%p; executable-relative working directory established\r\n", base);
     gameBase = base;
     windowReady = CreateEventW(nullptr, TRUE, FALSE, nullptr);
     if (!windowReady) return FALSE;
@@ -329,6 +370,15 @@ extern "C" __declspec(dllexport) BOOL WINAPI Initialize() {
     if (graphicsNt->FileHeader.TimeDateStamp != 0x676faadf ||
         graphicsNt->OptionalHeader.SizeOfImage != 0x6c000 || graphics[0x6949] != 0x68 ||
         *reinterpret_cast<DWORD*>(graphics + 0x694a) != reinterpret_cast<DWORD>(graphics + 0x5f190)) return FALSE;
+    // The ANSI display query and GetSystemMetrics can be hooked by cnc-ddraw
+    // to report the game mode. Its hook list leaves the Unicode query intact.
+    DEVMODEW desktop = {};
+    desktop.dmSize = sizeof(desktop);
+    if (!EnumDisplaySettingsW(nullptr, ENUM_CURRENT_SETTINGS, &desktop) || !desktop.dmPelsHeight) {
+        logMessage("Could not read the current desktop resolution: error=%lu\r\n", GetLastError());
+        return FALSE;
+    }
+    if (!configureWindowPresentation(graphics, desktop.dmPelsHeight)) return FALSE;
     presentationLock = reinterpret_cast<CRITICAL_SECTION*>(graphics + 0x5f190);
     if (!replaceCall(base, 0x42473, 0x8ed2a, reinterpret_cast<void*>(&beginVideoPaletteUpdate)) ||
         !replaceCall(base, 0x424a1, 0x8ed2c, reinterpret_cast<void*>(&endVideoPaletteUpdate))) return FALSE;

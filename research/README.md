@@ -16,4 +16,6 @@ Diagnostic helper variants are experimental code, not supported runtime alternat
 
 The v0.1.2 input records distinguish production helper functions exercised with a fake game dispatcher from the packaged installer's media-dependent checks. Neither launches the game or proves in-game keyboard, display or exit behavior. That confirmation remains open in [Validation](../docs/VALIDATION.md).
 
+The v0.1.3 window records cover the production height/border policy against the exact renderer mapped without imports or DllMain, and a packaged installer upgrade from `border=false`. These establish the guarded field layout, strictly greater-than-960 cutoff and file preservation. They do not run the renderer's display or message loop and do not prove visible window size, dragging or mouse behavior.
+
 Use `tools/analyze_nfs_win.py` against your own original executable to regenerate the full local static inventory. The active installer and patch recipe supersede the session's exploratory assembly/copy scripts. Read [Session history](../docs/SESSION_HISTORY.md) for how each observation affected the final implementation and [Validation](../docs/VALIDATION.md) for its limits.

@@ -9,6 +9,6 @@
 
 The new project code and documentation use the root MIT license. That grant does not apply to the original game or its assets. Keep original media files out of public issues and pull requests.
 
-The cnc-ddraw DLL is pinned because the helper synchronizes against a verified private critical section in that specific binary. Its archive and DLL hashes are listed in [Building](BUILDING.md); upgrading the wrapper requires code review and runtime validation, not just changing a download URL.
+The cnc-ddraw DLL is pinned because the helper uses a verified private presentation critical section and, from v0.1.3, guarded window-configuration fields in that specific binary. The renderer remains unmodified. Its archive and DLL hashes are listed in [Building](BUILDING.md); upgrading the wrapper requires code review and runtime validation, not just changing a download URL.
 
 Microsoft's [PE/COFF specification](https://learn.microsoft.com/en-us/windows/win32/debug/pe-format) is the reference for the appended bootstrap/resource sections. Icon extraction uses the normal [Windows `ExtractIconEx` interface](https://learn.microsoft.com/en-us/windows/win32/api/shellapi/nf-shellapi-extracticonexw).

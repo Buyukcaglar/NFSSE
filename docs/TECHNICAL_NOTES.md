@@ -31,6 +31,7 @@ The icon builder appends a seventh `.rsrc` section at RVA `0x142000`, file offse
 | Graphics initialization | Calls at `0x9C19A`, `0x9BDE0`, `0x9C1F7` synchronize the worker's graphics completion with the main thread using an event |
 | DirectPlay | Validate original `DPLAY.dll` timestamp `0x31A17FF9`; redirect provider load call RVA `0x11E9` to executable-folder DLL paths |
 | Movie presentation | Calls `0x42473` and `0x424A1` acquire/release the verified cnc-ddraw presentation critical section around frame/palette update |
+| Window presentation | Query the current primary desktop with unhooked `EnumDisplaySettingsW`; enable the pinned renderer's border and select fixed 1280×960 client dimensions only for desktop height >960 |
 
 The DirectPlay provider hook intercepts the call itself because a graphics wrapper can rebind imported `LoadLibraryA` slots. Recognized local providers are `dpwsock.dll`, `dpserial.dll`, `dpwsockx.dll` and `dpmodemx.dll`. These DLLs and their core DirectPlay companions are obtained from the user's media; system folders are not modified.
 
@@ -44,7 +45,24 @@ The original keyboard-down handler at VA `0x49B954` sets a byte in the 128-entry
 
 The original handler consumes `WM_SYSKEYDOWN`, preventing the normal conversion of Alt+F4 to a close command. The helper catches F4 with the Alt context bit and calls `ExitProcess(0)`, matching the bundled renderer's default `SC_CLOSE` path. This is an immediate close; use the game's normal quit flow when saving progress is required. Ordinary F4 and normal Enter/character messages continue to the original dispatcher.
 
-The older local configuration omitted `toggle_borderless=true`, which the renderer requires to leave its borderless fullscreen state through Alt+Enter. The installer now adds missing `toggle_borderless` and `adjmouse` keys only to the global `[ddraw]` section. It preserves explicit overrides and other sections, saves the original bytes as `ddraw.ini.before-input-update.bak` (with a numeric suffix if necessary), and is idempotent. It retains existing line endings and encoding, including ANSI comments and supported BOM encodings.
+The older local configuration omitted `toggle_borderless=true`, which the renderer requires to leave its borderless fullscreen state through Alt+Enter. The installer adds missing `toggle_borderless` and `adjmouse` keys only to the global `[ddraw]` section. From v0.1.3 it also enables `border=true`, replacing the earlier borderless-window value. It preserves other explicit settings, comments and other sections, saves the original bytes as `ddraw.ini.before-input-update.bak` (with a numeric suffix if necessary), and is idempotent. It retains existing line endings and encoding, including ANSI comments and supported BOM encodings.
+
+## Movable window and desktop-height sizing
+
+The user reported that the v0.1.2 window lacked a border and could not be moved. The shipped `border=false` setting accounts for the missing title bar: upstream [dd_SetDisplayMode](https://github.com/FunkyFr3sh/cnc-ddraw/blob/v7.1.0.0/src/dd.c) strips the caption when disabled and adds `WS_OVERLAPPEDWINDOW` when enabled. Fullscreen presentation explicitly suppresses the border, so enabling it preserves borderless startup. Upstream sizes the client first, then calls `AdjustWindowRectEx` to add the title bar and frame.
+
+The v0.1.3 helper reads the primary display's actual pixel height with `EnumDisplaySettingsW(NULL, ENUM_CURRENT_SETTINGS, ...)`. The bundled renderer hooks the ANSI query and `GetSystemMetrics`, but leaves the Unicode query intact. The check is strictly **height >960**; no width or 720-pixel cutoff is used. Above that threshold, the helper sets `g_config.window_rect.right/bottom` to 1280/960 and `resizable=false`. At or below it, existing width/height/resizable settings remain. The border is enabled in either case. Only presentation changes; the game's original rendering modes, video proportions and mouse scaling remain under cnc-ddraw's existing code.
+
+The renderer reads configuration in [DllMain](https://github.com/FunkyFr3sh/cnc-ddraw/blob/v7.1.0.0/src/dllmain.c), before the executable bootstrap loads the helper. Consequently, writing the INI at that point would be too late. The policy instead updates the already-loaded settings before any game window or rendering thread starts. It does not persist these runtime overrides to the INI. This uses private fields of the pinned build, guarded by PE signature/machine/timestamp/image size, the configuration key strings, the relocated `MOV ECX` key references, the calls to `cfg_get_int`/`cfg_get_bool`, and the relocated `MOV [address], EAX` stores in [cfg_load](https://github.com/FunkyFr3sh/cnc-ddraw/blob/v7.1.0.0/src/config.c). All checks run before any settings are changed; mismatches reject initialization.
+
+| Setting | Field RVA | Key-load RVA | Store RVA |
+| --- | --- | --- | --- |
+| Width | `0x58B88` | `0x1E0B7` | `0x1E0C3` |
+| Height | `0x58B8C` | `0x1E0C8` | `0x1E0D4` |
+| Border | `0x596FC` | `0x1E295` | `0x1E2A4` |
+| Resizable | `0x59704` | `0x1E2BD` | `0x1E2CC` |
+
+Regression checks map the hash-verified renderer using `DONT_RESOLVE_DLL_REFERENCES`, so its imports, DllMain, hooks and render loop do not execute. They exercise the production verifier and policy at 0, 720, 768, 959, 960, 961, 1080 and 1600 pixels, compare all mapped bytes outside the four fields, and reject a deliberately changed store operand before any writes. These checks establish the layout and height policy; title-bar dragging, mouse clicks and visible client dimensions still require user confirmation.
 
 ## Relative data paths
 

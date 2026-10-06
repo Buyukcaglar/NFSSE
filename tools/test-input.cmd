@@ -13,6 +13,10 @@ build\WindowInputTests.exe
 if not "%ERRORLEVEL%"=="0" goto fail
 build\WindowInputTests.exe --alt-f4
 if not "%ERRORLEVEL%"=="0" goto fail
+cl /nologo /MT /O2 /W4 /EHsc /Fo:build\WindowPresentationTests.obj tests\WindowPresentationTests.cpp /link /OUT:build\WindowPresentationTests.exe user32.lib
+if errorlevel 1 goto fail
+"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -File tests\WindowRenderer.Tests.ps1
+if errorlevel 1 goto fail
 "%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -File tests\GraphicsConfig.Tests.ps1
 if errorlevel 1 goto fail
 popd

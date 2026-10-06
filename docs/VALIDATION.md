@@ -1,6 +1,6 @@
 # Validation record
 
-Prerelease: **v0.1.2**, 2026-10-06. Latest stable release: **v0.1.1**. Runtime/user acceptance below describes the earlier helper; the new focus/shortcut changes require their own in-game confirmation. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
+Prerelease: **v0.1.3**, 2026-10-06. Latest stable release: **v0.1.1**. Runtime/user acceptance below describes the earlier helper; the new focus/shortcut and window-border/sizing changes require their own in-game confirmation. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
 
 ## Compilation and static checks
 
@@ -21,7 +21,15 @@ The updated x86 helper builds with MSVC without warnings. Native regression chec
 
 Configuration checks passed for legacy global-section migration, preservation of explicit values and other game sections, exact backups, repeated upgrades, ANSI comments, and UTF-8/UTF-16 BOM files. The packaged installer passed fresh installation, the existing preservation/rejection checks, an actual legacy display-config upgrade with backup, and idempotent reinstall. See [input-shortcut-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/input-shortcut-validation.json) and [input-installer-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/input-installer-validation.json). The game executable, original assets and bundled renderer retain their previous hashes. No v0.1.2 game launch or visual check was performed.
 
-## Runtime and user acceptance
+## v0.1.3 window presentation checks
+
+The helper builds without MSVC warnings, and the earlier focus/Enter/Alt+F4 tests still pass. Window tests map the exact hash-verified cnc-ddraw binary without resolving imports or running DllMain. The production configuration verifier and policy pass for desktop heights 0, 720, 768, 959, 960, 961, 1080 and 1600: the border is always enabled; only heights greater than 960 select 1280×960 and disable resizing; lower heights retain configured size/resizability. All renderer bytes outside those four settings remain unchanged, including fullscreen state. A changed configuration-store operand is rejected before writes. No game, renderer initialization, rendering loop, display-mode change or desktop input is involved.
+
+Configuration checks cover replacement of global `border=false` with `border=true`, missing border/toggle/mouse keys, inline comments, exact backups, other-section and preference preservation, repeated upgrades and encoding. The packaged installer passes fresh installation, legacy-border upgrade, idempotence and existing preservation/rejection cases. See [window-presentation-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/window-presentation-validation.json) and [window-installer-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/window-installer-validation.json). No game launch or automated visual check was performed for this change.
+
+The user reported a missing border and inability to move the v0.1.2 window. This is the issue addressed by v0.1.3; it is not acceptance of the new border, sizing, input or exit behavior.
+
+## Accepted runtime observations
 
 Development host: Windows 11 IoT Enterprise LTSC x64, build 26100, two 2560×1600 displays at 60 Hz. Display probes before startup and from the relocated run recorded unchanged desktop modes.
 
@@ -47,6 +55,7 @@ An installation made with the published v0.1.0 kit was upgraded to v0.1.1. The u
 
 - Complete manual race, save/reload cycle and comprehensive audio/video coverage.
 - v0.1.2 prerelease: Enter after repeated Alt+Tab, Alt+Enter in menus and a race, Alt+F4 from both presentation modes, and unchanged desktop mode after exit. No game launch was performed for the prerelease's automated checks.
+- v0.1.3 prerelease: title-bar dragging, fixed 1280×960 client dimensions on desktops taller than 960 pixels, smaller-window behavior at/below 960, mouse selection and repeated transitions through video/menu/race modes. No automated game launch or visual check was performed.
 - Multiplayer, serial/modem links and contemporary USB I-Force devices.
 - Other Windows builds, display drivers, multi-monitor arrangements, ARM emulation and non-English or different media executables.
 
