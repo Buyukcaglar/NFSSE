@@ -2,15 +2,13 @@
 
 ## IFORCE-001 — Modern USB I-Force support
 
-**Priority:** low. **Status:** deferred; no implementation through v0.1.5.
+**Status:** closed; reported working, no further work planned.
 
-Tracked in [GitHub issue #1](https://github.com/Buyukcaglar/NFSSE/issues/1).
+Closed in [GitHub issue #1](https://github.com/Buyukcaglar/NFSSE/issues/1).
 
-Preserve the game's original I-Force call path and `IFORCE.DLL` while investigating how original force-feedback effects could reach compatible modern USB devices. The user requested USB devices if possible and then explicitly deferred implementation.
+On 2026-10-06 the user reported that I-Force was working and explicitly requested no further work on it. The original call path and `IFORCE.DLL` remain intact; no new adapter or wrapper integration was implemented for this closure.
 
-Before work starts, identify an actual device/model and its Windows driver/API, map the original DLL's calls and effect behavior, and determine whether an adapter can preserve those semantics. Validation requires real hardware and comparison against original effect behavior. Merely detecting a USB controller is insufficient evidence of force-feedback support.
-
-The current release copies the original DLL unchanged. It does not claim that USB force feedback works.
+The [working report](../research/validation/iforce-user-report.json) records the user's statement without inferring a specific controller, wrapper configuration or independent hardware test.
 
 ## Validation follow-ups
 

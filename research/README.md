@@ -25,3 +25,5 @@ The v0.1.5 window-title records distinguish the source-reviewed exact caption an
 Use `tools/analyze_nfs_win.py` against your own original executable to regenerate the full local static inventory. The active installer and patch recipe supersede the session's exploratory assembly/copy scripts. Read [Session history](../docs/SESSION_HISTORY.md) for how each observation affected the final implementation and [Validation](../docs/VALIDATION.md) for its limits.
 
 The later direct user confirmation for the v0.1.5 full title and original icon is in "window-title-user-acceptance.json". This acceptance record is distinct from the earlier automated/build snapshots, which retain their original status at the time of checking.
+
+`validation/iforce-user-report.json` records the user's subsequent statement that I-Force is reported working and no further work is requested. It closes IFORCE-001 without changes to the original code or DLL. The controller and wrapper configuration are unspecified; the record describes a supplied report, not an independently exercised hardware check. The same request promotes the unchanged v0.1.5 patch kit to the latest full release.

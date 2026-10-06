@@ -1,6 +1,6 @@
 # Validation record
 
-Prerelease: **v0.1.5**, 2026-10-06. Latest stable release: **v0.1.1**. The user confirmed v0.1.3's window-presentation visual task passed. The user also visually confirmed the full window title and original title-bar icon with v0.1.5. Nonvisual focus/exit behavior retains its separate checks below. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
+Latest full release: **v0.1.5**, 2026-10-06, promoted at the user's request with the existing patch kit unchanged. The user confirmed v0.1.3's window-presentation visual task passed. The user also visually confirmed the full window title and original title-bar icon with v0.1.5. Nonvisual focus/exit behavior retains its separate checks below. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
 
 ## Compilation and static checks
 
@@ -63,12 +63,18 @@ The installer checks source and output hashes and kit integrity during installat
 
 An installation made with the published v0.1.0 kit was upgraded to v0.1.1. The upgrade added all 11 missing root clips with hashes matching the source and preserved 1,250 existing game and configuration files, including save/settings sentinels, the executable and runtime DLLs. Refreshed documentation and the installation record were excluded from that preservation count. See [race-speech-upgrade-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/race-speech-upgrade-validation.json). The original installer tables and game loaders establish the missing-copy diagnosis; race voice playback still awaits user verification.
 
+## I-Force working report
+
+On 2026-10-06, the user stated that I-Force was reported working and requested no further work on that front. [IFORCE-001](BACKLOG.md) and its GitHub issue are closed with no additional implementation planned. The original I-Force code and copied `IFORCE.DLL` remain unchanged. See [iforce-user-report.json](../research/validation/iforce-user-report.json).
+
+This is a user-supplied working report; no controller model or wrapper configuration was specified, and no independent force-feedback hardware check was performed during this task. I-Force is removed from the active follow-up list.
+
 ## Outstanding checks
 
 - Complete manual race, save/reload cycle and comprehensive audio/video coverage.
 - Input/exit checks: Enter after repeated Alt+Tab, Alt+F4 from both presentation modes, and unchanged desktop mode after exit. These have automated regression evidence but no separate user confirmation; the window-presentation visual task is already accepted.
 - Smaller desktops and broader display-transition/host coverage still require separate runtime checks. The v0.1.3 window-presentation task and v0.1.5 full title/original-icon visual task are accepted on the observed setup.
-- Multiplayer, serial/modem links and contemporary USB I-Force devices.
+- Multiplayer and serial/modem links.
 - Other Windows builds, display drivers, multi-monitor arrangements, ARM emulation and non-English or different media executables.
 
-The original I-Force path is retained, but no force-feedback hardware claim is made. See [Backlog](https://github.com/Buyukcaglar/NFSSE/blob/main/docs/BACKLOG.md).
+See [Backlog](https://github.com/Buyukcaglar/NFSSE/blob/main/docs/BACKLOG.md) for the remaining follow-ups.

@@ -97,4 +97,4 @@ The native EA clip decoder was compared with FFmpeg's `eatgv` decoder: all 333 c
 
 ## Scope and future work
 
-No I-Force functionality is removed or newly implemented. The installer copies original `IFORCE.DLL`; USB compatibility remains [IFORCE-001](BACKLOG.md). Higher internal resolutions, networking modernization and broad Windows/device coverage are separate future work. Static correctness, compilation and user acceptance are recorded separately in [Validation](VALIDATION.md).
+No I-Force functionality is removed or newly implemented. The installer copies original `IFORCE.DLL`; the user reports I-Force working, and [IFORCE-001](BACKLOG.md) is closed with no further work planned. Higher internal resolutions, networking modernization and broad Windows/device coverage are separate future work. Static correctness, compilation and user acceptance are recorded separately in [Validation](VALIDATION.md).

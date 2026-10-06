@@ -4,13 +4,13 @@
 
 Modern Windows compatibility patch for **The Need for Speed Special Edition**, Windows version. It creates a portable installation from your own installation media, scales the original graphics in fullscreen or a movable window, and fixes the startup, video and menu problems investigated in this project.
 
-[Stable patch kit](https://github.com/Buyukcaglar/NFSSE/releases/latest) · [v0.1.5 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.5) · [User guide](docs/USER_GUIDE.md) · [Validation and limits](docs/VALIDATION.md) · [Report a problem](https://github.com/Buyukcaglar/NFSSE/issues/new/choose)
+[Latest patch kit](https://github.com/Buyukcaglar/NFSSE/releases/latest) · [v0.1.5 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.5) · [User guide](docs/USER_GUIDE.md) · [Validation and limits](docs/VALIDATION.md) · [Report a problem](https://github.com/Buyukcaglar/NFSSE/issues/new/choose)
 
-**v0.1.5 is a prerelease** setting the window title to **The Need for Speed: Special Edition** and including the original title-bar icon fix. The user confirmed v0.1.3's movable window and desktop-height sizing visual task passed. The user visually confirmed the new caption and original icon. **v0.1.1 remains the latest stable release.**
+**v0.1.5 is the latest full release**, setting the window title to **The Need for Speed: Special Edition** and including the original title-bar icon fix. The user confirmed the movable window and desktop-height sizing visual task passed, then visually confirmed the new caption and original icon. I-Force is reported working; no further I-Force work is planned.
 
 ## Install and play
 
-1. Download `NFSSE-v0.1.5-patch-kit.zip` from the [prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.5), or `NFSSE-v0.1.1-patch-kit.zip` from the [stable release](https://github.com/Buyukcaglar/NFSSE/releases/latest), and extract the complete ZIP.
+1. Download `NFSSE-v0.1.5-patch-kit.zip` from the [latest release](https://github.com/Buyukcaglar/NFSSE/releases/latest) and extract the complete ZIP.
 2. Double-click `Install-NFSSE.cmd`.
 3. Select the folder containing your original `NFS_WIN.EXE`, `FRONTEND`, `SIMDATA`, `GAMEDATA`, `REDIST` and `DIRECTX3`. Choose a separate destination folder.
 4. Double-click `NFSSE.exe` in the destination. Move that complete folder to relocate the installation.
@@ -31,9 +31,9 @@ This release supports one verified English media executable: 1,069,056 bytes, SH
 - Legacy DirectPlay providers load from the game folder.
 - Buffered file reads, synchronized video presentation and periodic redraws address the observed video and menu failures.
 - The original `NFSICONN.ICO` is embedded in the generated `NFSSE.exe`; v0.1.4 also assigns that embedded icon to the game window class for the title bar.
-- Original I-Force code and `IFORCE.DLL` are retained. Modern USB device support is deferred; see the [backlog](docs/BACKLOG.md).
+- Original I-Force code and `IFORCE.DLL` are retained. I-Force is reported working and the [backlog item](docs/BACKLOG.md) is closed with no further work planned.
 
-Videos, menu clicks, attract mode and relocation were accepted with the earlier helper on Windows 11. The v0.1.3 window-presentation visual task is accepted on the user's setup; the title and icon are also visually accepted. Separate nonvisual input/exit checks remain open. A complete manual race, save/reload cycle, multiplayer and modern force-feedback hardware remain unverified. Read the [validation record](docs/VALIDATION.md) before interpreting this as broad compatibility certification.
+Videos, menu clicks, attract mode and relocation were accepted with the earlier helper on Windows 11. The v0.1.3 window-presentation visual task is accepted on the user's setup; the title and icon are also visually accepted. Separate nonvisual input/exit checks remain open. A complete manual race, save/reload cycle and multiplayer remain unverified. The [validation record](docs/VALIDATION.md) distinguishes these checks and the I-Force working report.
 
 ## Project contents
 

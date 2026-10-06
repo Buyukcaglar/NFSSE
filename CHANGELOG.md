@@ -1,9 +1,10 @@
 # Changelog
 
-## 0.1.5 — Prerelease, 2026-10-06
+## 0.1.5 — 2026-10-06
 
 - Set the game window title to `The Need for Speed: Special Edition` through the existing window-creation hook. Other window classes retain their supplied captions. The executable, original icon, game data, renderer and accepted window-sizing policy are unchanged.
 - Include the earlier title-bar icon fix and record the user's accepted window-presentation visual task. The user visually confirmed the full caption and original icon with v0.1.5; build, existing regression and patch-kit installer checks pass.
+- Promote the unchanged patch kit to the latest full release at the user's request. Record I-Force as reported working and close IFORCE-001 with no further implementation planned.
 
 ## 0.1.4 — Prerelease, 2026-10-06
 

@@ -42,8 +42,10 @@ Pinned input hashes:
 | v0.1.2 prerelease helper DLL | `ab8be11d0d3278a6c5aa098bfb5f9201caf260d43894c304950c671a69647326` |
 | v0.1.3 prerelease helper DLL | `8b0a3556fc84af570e1f9330ab8006a1e9d16890d5c8aebec49350e0ef7c4c19` |
 | v0.1.4 prerelease helper DLL | `32f777353b2637997a4ccb869e2359a73845aac5bc30d02ac6dd2c050d905a61` |
-| v0.1.5 prerelease helper DLL | `6cc562a54c8c861db79ff7ce55b8168570c176bb7840d77d1d0d1c045e386ff1` |
+| v0.1.5 full-release helper DLL | `6cc562a54c8c861db79ff7ce55b8168570c176bb7840d77d1d0d1c045e386ff1` |
 | Generated game executable including icon | `a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd` |
+
+v0.1.5 was promoted from prerelease to the latest full release at the user's request. Its published ZIP remains unchanged, with SHA-256 `20a82c6c19b673c308981e64ccf897a0134db95ebc7a6176729a6a9663f63226`. The ZIP's documentation is the packaging snapshot from before the final visual confirmation and promotion; the online guide and validation record contain the current status.
 
 ## Media-dependent verification
 

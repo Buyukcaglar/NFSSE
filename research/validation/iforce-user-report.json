@@ -1,0 +1,17 @@
+{
+  "recorded_date": "2026-10-06",
+  "release_version": "0.1.5",
+  "evidence_kind": "user-supplied working report in this conversation",
+  "user_statement": "publish as release not prerelease, IForce reported to be working so we'll not be doing anything on that front either.",
+  "iforce_status": "reported working",
+  "controller_model_specified": false,
+  "wrapper_configuration_specified": false,
+  "independent_hardware_check_performed": false,
+  "original_iforce_code_and_dll_changed": false,
+  "additional_iforce_implementation_requested": false,
+  "work_item": "IFORCE-001",
+  "work_item_status": "closed; no further work planned",
+  "github_issue": "https://github.com/Buyukcaglar/NFSSE/issues/1",
+  "release_decision": "promote unchanged v0.1.5 patch kit to latest full release",
+  "patch_kit_sha256": "20a82c6c19b673c308981e64ccf897a0134db95ebc7a6176729a6a9663f63226"
+}

@@ -1,6 +1,6 @@
 # NFSSE user guide
 
-This guide covers the [v0.1.5 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.5). The game window title is `The Need for Speed: Special Edition`, with the earlier original-icon fix included. The window-border and sizing visual task is accepted; the user has also visually confirmed the new caption and original icon. [v0.1.1](https://github.com/Buyukcaglar/NFSSE/releases/latest) remains the latest stable release.
+This guide covers [v0.1.5, the latest full release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.5). The game window title is `The Need for Speed: Special Edition`, with the earlier original-icon fix included. The window-border and sizing visual task is accepted; the user has also visually confirmed the new caption and original icon.
 
 ## Requirements
 
@@ -19,7 +19,7 @@ The media folder must contain `NFS_WIN.EXE`, `NFSICONN.ICO`, `IFORCE.DLL`, `FRON
 
 ## Installation
 
-1. Download `NFSSE-v0.1.5-patch-kit.zip` from the [prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.5), or `NFSSE-v0.1.1-patch-kit.zip` from the [stable release](https://github.com/Buyukcaglar/NFSSE/releases/latest), and extract it to a folder.
+1. Download `NFSSE-v0.1.5-patch-kit.zip` from the [latest release](https://github.com/Buyukcaglar/NFSSE/releases/latest) and extract it to a folder.
 2. Double-click `Install-NFSSE.cmd` inside the extracted kit. A console asks for the media folder and destination folder.
 3. Enter the folder directly containing `NFS_WIN.EXE`. Choose a new destination outside the media folder, such as `C:\Games\NFSSE`.
 4. Wait for the verified executable and game data to be written. Close the installer after its success message.
@@ -75,9 +75,9 @@ There is a trailing space before the line ending. Preserve it when editing becau
 
 Running the installer again against a destination it created refreshes the managed executable, helper, support DLLs, path table and documentation. Existing game files, saves and `nfs.cfg` are preserved. For `ddraw.ini`, v0.1.3 sets global `border=true` and adds missing `toggle_borderless` and `adjmouse` keys; your other settings and comments remain. If it changes the file, the original is saved beside it as `ddraw.ini.before-input-update.bak`, with a numeric suffix if that backup already exists. Explicit toggle/mouse values and other game sections are preserved. The helper always enables the window border; on desktops taller than 960 pixels it overrides width, height and resizing in memory for that launch. It refuses an unrelated nonempty destination or an executable with unrecognized modifications. Close the game before reinstalling. To restore graphics defaults, back up your `ddraw.ini`, remove that file, and rerun the installer.
 
-To update a v0.1.0 installation, run the v0.1.1 installer with the same source media and destination. It adds the 11 missing race announcer clips beside `NFSSE.exe`. Keep these root `.EAS` files when moving the game; race announcements load them directly from the game folder.
+To update a v0.1.0 installation, run the latest installer with the same source media and destination. It adds the 11 missing race announcer clips beside `NFSSE.exe`. Keep these root `.EAS` files when moving the game; race announcements load them directly from the game folder.
 
-To apply the window-title and title-bar icon changes, run the v0.1.5 prerelease installer with the same source media and destination. It includes the earlier announcer, window and keyboard fixes. Relaunch the game to apply the title and icon. The window-presentation visual task is already accepted; keyboard recovery, immediate exit and broader display coverage retain their separate validation checks.
+To apply the window-title and title-bar icon changes, run the v0.1.5 release installer with the same source media and destination. It includes the earlier announcer, window and keyboard fixes. Relaunch the game to apply the title and icon. The window-presentation visual task is already accepted; keyboard recovery, immediate exit and broader display coverage retain their separate validation checks.
 
 ## Troubleshooting
 
@@ -92,15 +92,15 @@ To apply the window-title and title-bar icon changes, run the v0.1.5 prerelease 
 | `streamreader - ILLEGAL CHUNK SIZE` | Confirm the current helper is installed. Its buffered-read hook addresses the observed zero-byte legacy stream failure. Include the runtime log if it recurs. |
 | Stalled video, corrupted presentation or menus ignoring clicks | Restore the default `ddraw.ini`, especially GDI, `singlecpu=true` and `minfps=5`; use the exact bundled renderer. Report which clip or menu failed. |
 | Wrong video proportions | Keep `maintas=true` and `aspect_ratio=` empty so each original mode determines its proportions. |
-| Windowed mode has no title bar or cannot be moved | Use the v0.1.3 helper and installer, then drag the title bar after Alt+Enter. If the game captures the cursor, use Alt+Tab to switch away and back, or the renderer's Ctrl+Tab cursor-unlock shortcut. |
-| Title bar shows a generic application icon | Use the v0.1.4 helper, which assigns the original embedded icon to the window class. Restart the game after updating. |
+| Windowed mode has no title bar or cannot be moved | Use the latest helper and installer, then drag the title bar after Alt+Enter. If the game captures the cursor, use Alt+Tab to switch away and back, or the renderer's Ctrl+Tab cursor-unlock shortcut. |
+| Title bar shows a generic application icon | Use the latest helper, which assigns the original embedded icon to the window class. Restart the game after updating. |
 | Window is smaller than 1280×960 | The fixed size applies only when the primary desktop's current height is greater than 960 pixels. Relaunch after changing desktop resolution and check the `Window presentation` entry in `portable-runtime.log`. |
-| Alt+Enter does nothing in an older installation | Use the v0.1.2 prerelease installer to add missing toggle settings, or set `toggle_borderless=true` in `[ddraw]`. An explicit custom hotkey or game-specific override can change the shortcut. |
-| Enter stops working after Alt+Tab | Use the v0.1.2 prerelease helper, which resets stale keyboard states on focus transitions. Report whether the issue remains after switching away and back several times. |
+| Alt+Enter does nothing in an older installation | Use the latest installer to add missing toggle settings, or set `toggle_borderless=true` in `[ddraw]`. An explicit custom hotkey or game-specific override can change the shortcut. |
+| Enter stops working after Alt+Tab | Use the latest helper, which resets stale keyboard states on focus transitions. Report whether the issue remains after switching away and back several times. |
 | Settings or saves do not persist | Use a writable destination outside protected system folders and close the game before backing up files. |
 
 Open a [bug report](https://github.com/Buyukcaglar/NFSSE/issues/new/choose) with release version, Windows version, display setup, reproduction steps and `portable-runtime.log`. Review logs for personal folder names before attaching them. Do not attach original game files, video captures containing game assets or full process memory dumps.
 
 ## I-Force and multiplayer
 
-Original I-Force code and `IFORCE.DLL` are preserved. Modern USB I-Force support is a low-priority backlog task and has no implementation or device verification in this release. Legacy multiplayer providers are made available locally for startup compatibility; network play, serial play and modem play have not been validated.
+Original I-Force code and `IFORCE.DLL` are preserved. The user reports I-Force working and requested no further work on it; the related backlog item is closed. The report does not specify the controller or wrapper configuration. Legacy multiplayer providers are made available locally for startup compatibility; network play, serial play and modem play have not been validated.
