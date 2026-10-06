@@ -73,7 +73,7 @@ The original registration at VA `0x49BF82` calls `LoadIconA` with the game modul
 
 The v0.1.4 registration hook loads group 1 from the game module with `LoadIconW` and sets the copied class description's `hIcon` before registration. This is a shared resource icon with process lifetime; the caller's class structure is untouched. Missing resources fail registration with the loader's error rather than silently reverting to a generic icon. No icon pixels, resource IDs, executable bytes, window sizing or renderer hooks are changed. The existing class icon supplies the window caption through Windows' normal icon selection/scaling.
 
-Native checks cover the production class assignment and resource/module selection with a fake loader; a separate resource-only mapping exercises the actual Windows icon lookup against the unchanged game executable. Neither creates a window or launches the game. Visual confirmation of the icon remains a separate user check.
+Native checks cover the production class assignment and resource/module selection with a fake loader; a separate resource-only mapping exercises the actual Windows icon lookup against the unchanged game executable. Neither creates a window or launches the game. The user subsequently confirmed the original icon and full window title visually with v0.1.5; see the separate user-acceptance record in [Validation](VALIDATION.md).
 
 ## Window title
 

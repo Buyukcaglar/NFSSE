@@ -1,6 +1,6 @@
 # Validation record
 
-Prerelease: **v0.1.5**, 2026-10-06. Latest stable release: **v0.1.1**. The user confirmed v0.1.3's window-presentation visual task passed. The new window caption, title-bar icon fix and nonvisual focus/exit behavior have separate checks below. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
+Prerelease: **v0.1.5**, 2026-10-06. Latest stable release: **v0.1.1**. The user confirmed v0.1.3's window-presentation visual task passed. The user also visually confirmed the full window title and original title-bar icon with v0.1.5. Nonvisual focus/exit behavior retains its separate checks below. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
 
 ## Compilation and static checks
 
@@ -33,13 +33,13 @@ The user reported a missing border and inability to move the v0.1.2 window. Afte
 
 The helper compiles without warnings, and the existing focus, shortcut, window-policy and configuration tests pass. The production registration hook is exercised with a fake icon loader and registrar: it loads group 1 from the game module, assigns that handle to the game class, preserves the caller-owned class structure and unrelated classes, and rejects a missing icon. A separate Windows resource-only mapping confirms `LoadIconW` loads the original embedded group 1 and cannot load the legacy request for group 32512. The game executable, original icon and renderer hashes are unchanged. See [titlebar-icon-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/titlebar-icon-validation.json).
 
-No game launch or automated visual check was performed for the icon fix. The class-icon binding has code/resource evidence; its visible title-bar result awaits user confirmation. The earlier window-presentation acceptance remains recorded separately.
+No game launch or automated visual check was performed during the icon-fix checks. The user subsequently confirmed the original icon visually with v0.1.5, as recorded below. The earlier window-presentation acceptance remains recorded separately.
 
 ## v0.1.5 window-title checks
 
 The x86 helper compiles without warnings and the existing input, icon-registration, renderer-policy and configuration checks pass. Source review confirms the exact requested caption, `The Need for Speed: Special Edition`, is substituted only for the supported `EACLibWindow` class before calling the existing window-creation function. Other title arguments pass through. The packaged installer passes its installation, preservation and rejection checks with the updated helper. See [window-title-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/window-title-validation.json) and [window-title-installer-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/window-title-installer-validation.json).
 
-No game launch or automated visual check was performed. The caption has source/build evidence; the visible new title and icon still await user confirmation. The accepted v0.1.3 window-presentation task remains accepted.
+No automated game launch or visual check was performed for the caption change. After installing helper version 7, the user stated “Visually confirmed” for the current title/icon task. The local runtime log identifies helper version 7, matching the installed v0.1.5 helper hash. This accepts the full window title and original title-bar icon on the observed setup. See [window-title-user-acceptance.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/window-title-user-acceptance.json). The accepted v0.1.3 window-presentation task remains accepted; no broader gameplay, input/exit or host coverage is inferred.
 
 ## Earlier accepted runtime observations
 
@@ -67,7 +67,7 @@ An installation made with the published v0.1.0 kit was upgraded to v0.1.1. The u
 
 - Complete manual race, save/reload cycle and comprehensive audio/video coverage.
 - Input/exit checks: Enter after repeated Alt+Tab, Alt+F4 from both presentation modes, and unchanged desktop mode after exit. These have automated regression evidence but no separate user confirmation; the window-presentation visual task is already accepted.
-- v0.1.5 prerelease: visible full window title and original title-bar icon after restarting with the updated helper. The v0.1.3 window-presentation visual task passed; smaller desktops and broader display-transition coverage still require separate host/runtime checks.
+- Smaller desktops and broader display-transition/host coverage still require separate runtime checks. The v0.1.3 window-presentation task and v0.1.5 full title/original-icon visual task are accepted on the observed setup.
 - Multiplayer, serial/modem links and contemporary USB I-Force devices.
 - Other Windows builds, display drivers, multi-monitor arrangements, ARM emulation and non-English or different media executables.
 

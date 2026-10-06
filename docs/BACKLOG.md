@@ -15,7 +15,7 @@ The current release copies the original DLL unchanged. It does not claim that US
 ## Validation follow-ups
 
 - Complete the separate in-game focus-recovery and Alt+F4 checks without desktop mode changes. The window-presentation visual task is already accepted.
-- Confirm v0.1.5's full window title and original title-bar icon. The user accepted v0.1.3's window-presentation visual task; smaller-desktop and broader host/transition coverage remain separate follow-ups.
+- Expand smaller-desktop and broader host/transition coverage. The user accepted the window-presentation task and the full window title/original-icon visual task.
 - Exercise a complete race and save/reload with the public installer output.
 - Expand host/display coverage and assess multiplayer separately.
 

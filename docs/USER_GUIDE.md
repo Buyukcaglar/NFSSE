@@ -1,6 +1,6 @@
 # NFSSE user guide
 
-This guide covers the [v0.1.5 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.5). The game window title is `The Need for Speed: Special Edition`, with the earlier original-icon fix included. The window-border and sizing visual task is accepted; the new caption and icon await visual confirmation. [v0.1.1](https://github.com/Buyukcaglar/NFSSE/releases/latest) remains the latest stable release.
+This guide covers the [v0.1.5 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.5). The game window title is `The Need for Speed: Special Edition`, with the earlier original-icon fix included. The window-border and sizing visual task is accepted; the user has also visually confirmed the new caption and original icon. [v0.1.1](https://github.com/Buyukcaglar/NFSSE/releases/latest) remains the latest stable release.
 
 ## Requirements
 
@@ -53,7 +53,7 @@ Alt+Enter switches between a bordered window and borderless fullscreen. Drag the
 
 The defaults set `border=true`, `toggle_borderless=true` and `adjmouse=true`. The installer enables the border in older configurations and adds missing toggle/mouse keys. The helper applies the launch sizing policy in memory without rewriting the file. Borderless startup still fills the desktop and preserves each original mode's proportions. The user confirmed the v0.1.3 window-presentation visual task passed. Behavior on smaller desktops has separate automated policy checks.
 
-From v0.1.4, the game window uses the original icon already embedded in `NFSSE.exe`, addressing the generic application icon on the title bar. This fix updates the helper; it does not replace the icon artwork or require an external icon file beside the game. Its visible result still awaits confirmation.
+From v0.1.4, the game window uses the original icon already embedded in `NFSSE.exe`, addressing the generic application icon on the title bar. This fix updates the helper; it does not replace the icon artwork or require an external icon file beside the game. The user visually confirmed the original title-bar icon with v0.1.5.
 
 From v0.1.5, the title bar displays `The Need for Speed: Special Edition`. Restart the game after upgrading to apply the new title and icon binding.
 

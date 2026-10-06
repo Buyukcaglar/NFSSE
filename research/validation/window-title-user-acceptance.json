@@ -1,0 +1,17 @@
+{
+  "recorded_date": "2026-10-06",
+  "release_version": "0.1.5",
+  "source_commit": "e7b02bf97d5f89a64d42df3d12157b37f411ca1c",
+  "helper_version": 7,
+  "helper_sha256": "6cc562a54c8c861db79ff7ce55b8168570c176bb7840d77d1d0d1c045e386ff1",
+  "patch_kit_sha256": "20a82c6c19b673c308981e64ccf897a0134db95ebc7a6176729a6a9663f63226",
+  "evidence_kind": "direct user visual confirmation in this conversation",
+  "user_statement": "Visually confirmed",
+  "accepted_scope": "full window title and original title-bar icon task",
+  "expected_window_title": "The Need for Speed: Special Edition",
+  "title_and_icon_visual_task_acceptance": "passed",
+  "local_runtime_log_helper_version": 7,
+  "prior_window_border_and_size_task_acceptance": "passed per earlier user confirmation",
+  "automated_visual_check": false,
+  "broader_gameplay_input_exit_or_host_coverage_inferred": false
+}
