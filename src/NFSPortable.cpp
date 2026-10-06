@@ -7,6 +7,8 @@
 static HANDLE logFile = INVALID_HANDLE_VALUE;
 static decltype(&GlobalMemoryStatus) realMemoryStatus;
 static decltype(&CreateWindowExA) realCreateWindow;
+static decltype(&RegisterClassA) realRegisterClass;
+static WNDPROC gameWindowProc;
 static volatile LONG memoryLogCount;
 static BYTE* gameBase;
 static HANDLE windowReady;
@@ -16,6 +18,56 @@ static decltype(&LoadLibraryA) realDplayLoadLibrary;
 static decltype(&CreateFileA) realCreateFile;
 static decltype(&ReadFile) realReadFile;
 static void logMessage(const char* format, ...);
+
+static void releaseGameKeys(HWND window) {
+    // The original WM_KEYUP handler clears one entry in its 128-scan-code
+    // table. Release through that handler instead of editing game memory.
+    // A key released outside the window never reaches that handler normally.
+    for (UINT scan = 1; scan < 128; ++scan) {
+        const WPARAM key = MapVirtualKeyA(scan, MAPVK_VSC_TO_VK);
+        const LPARAM flags = static_cast<LPARAM>(0xc0000001u | (scan << 16));
+        CallWindowProcA(gameWindowProc, window, WM_KEYUP, key, flags);
+    }
+    // Clear this window thread's stale pressed state too. Otherwise Enter can
+    // remain a system key and cnc-ddraw consumes it as Alt+Enter. Retain the
+    // toggle bits for Caps Lock / Num Lock / Scroll Lock; no global input is sent.
+    BYTE keys[256];
+    if (GetKeyboardState(keys)) {
+        for (BYTE& key : keys) key &= 1;
+        SetKeyboardState(keys);
+    }
+    logMessage("Released stale keyboard state on focus transition\r\n");
+}
+
+static LRESULT CALLBACK portableWindowProc(HWND window, UINT message,
+    WPARAM key, LPARAM flags) {
+    if (message == WM_KILLFOCUS || message == WM_SETFOCUS) releaseGameKeys(window);
+    if (message == WM_SYSKEYDOWN && key == VK_F4 && (flags & (1u << 29))) {
+        // The original consumes system-key messages before DefWindowProc can
+        // turn Alt+F4 into SC_CLOSE. Match cnc-ddraw's immediate close behavior.
+        logMessage("Alt+F4: closing game\r\n");
+        ExitProcess(0);
+    }
+    return CallWindowProcA(gameWindowProc, window, message, key, flags);
+}
+
+static ATOM WINAPI portableRegisterClass(const WNDCLASSA* description) {
+    if (!description || reinterpret_cast<ULONG_PTR>(description->lpszClassName) <= 0xffff ||
+        strcmp(description->lpszClassName, "EACLibWindow") != 0) {
+        return realRegisterClass(description);
+    }
+    // This class is the supported game's message dispatcher. cnc-ddraw later
+    // wraps it, keeping its scaling, mouse handling and Alt+Enter hook intact.
+    if (description->lpfnWndProc != reinterpret_cast<WNDPROC>(gameBase + 0x9bb7c)) {
+        logMessage("Unexpected EACLibWindow message dispatcher\r\n");
+        SetLastError(ERROR_INVALID_DATA);
+        return 0;
+    }
+    WNDCLASSA portable = *description;
+    gameWindowProc = description->lpfnWndProc;
+    portable.lpfnWndProc = portableWindowProc;
+    return realRegisterClass(&portable);
+}
 
 static HANDLE WINAPI portableCreateFile(LPCSTR name, DWORD access, DWORD share,
     LPSECURITY_ATTRIBUTES security, DWORD disposition, DWORD flags, HANDLE templateFile) {
@@ -218,7 +270,7 @@ extern "C" __declspec(dllexport) BOOL WINAPI Initialize() {
 
     logFile = CreateFileW(L"portable-runtime.log", GENERIC_WRITE, FILE_SHARE_READ,
         nullptr, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, nullptr);
-    logMessage("NFSPortable 3; image=%p; executable-relative working directory established\r\n", base);
+    logMessage("NFSPortable 4; image=%p; executable-relative working directory established\r\n", base);
     gameBase = base;
     windowReady = CreateEventW(nullptr, TRUE, FALSE, nullptr);
     if (!windowReady) return FALSE;
@@ -247,6 +299,9 @@ extern "C" __declspec(dllexport) BOOL WINAPI Initialize() {
         reinterpret_cast<void**>(&realMemoryStatus))) return FALSE;
     if (!replaceImport(base, 0x1311a0, reinterpret_cast<void*>(&portableCreateWindow),
         reinterpret_cast<void**>(&realCreateWindow))) return FALSE;
+    if (!replaceImport(base, 0x1311e0, reinterpret_cast<void*>(&portableRegisterClass),
+        reinterpret_cast<void**>(&realRegisterClass))) return FALSE;
+    logMessage("Focus recovery and Alt+F4 window hook installed\r\n");
     for (DWORD slot : {0x1312e8u, 0x131504u}) {
         if (!replaceImport(base, slot, reinterpret_cast<void*>(&portableCreateFile),
             reinterpret_cast<void**>(&realCreateFile))) return FALSE;

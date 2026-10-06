@@ -153,6 +153,10 @@ try {
     if (-not [IO.File]::Exists($configPath)) { [IO.File]::WriteAllText($configPath, "YESSOUND HIGHVIDEO ENGLISH NOREMOTE `r`n", [Text.Encoding]::ASCII) }
     $graphicsPath = Join-Path $Destination 'ddraw.ini'
     if (-not [IO.File]::Exists($graphicsPath)) { [IO.File]::Copy((Join-Path $PSScriptRoot 'config\ddraw.ini'), $graphicsPath, $false) }
+    . (Join-Path $PSScriptRoot 'tools\GraphicsConfig.ps1')
+    if (Update-NfsseGraphicsConfig $graphicsPath) {
+        Write-Host 'Added missing Alt+Enter/mouse settings. Original ddraw.ini retained in a backup beside it.'
+    }
     [IO.File]::WriteAllText((Join-Path $Destination 'Run-NFS.cmd'), "@echo off`r`n`"%~dp0NFSSE.exe`"`r`n", [Text.Encoding]::ASCII)
     foreach ($name in @('USER_GUIDE.md', 'VALIDATION.md', 'LICENSE')) {
         Copy-ManagedFile (Join-Path $PSScriptRoot $name) (Join-Path $Destination $name)
@@ -164,7 +168,7 @@ try {
     $record | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $Destination 'nfsse-installation.json') -Encoding UTF8
     Write-Host "Installed: $exePath"
     Write-Host 'Double-click NFSSE.exe to play. Move the complete destination folder to relocate it.'
-    Write-Host 'Existing saves, nfs.cfg and ddraw.ini are preserved on reinstall.'
+    Write-Host 'Existing saves and settings are preserved; missing display compatibility keys are added with a backup.'
     if (-not $NonInteractive) { Read-Host 'Press Enter to close' | Out-Null }
 }
 catch {

@@ -1,5 +1,7 @@
 # NFSSE user guide
 
+This guide covers the [v0.1.2 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.2). Its keyboard and shortcut changes have passed automated checks and await in-game confirmation. [v0.1.1](https://github.com/Buyukcaglar/NFSSE/releases/latest) remains the latest stable release.
+
 ## Requirements
 
 - Modern Windows capable of running 32-bit desktop applications. The development host was Windows 11 IoT Enterprise LTSC, x64, build 26100. Other Windows editions and ARM emulation have not been exercised.
@@ -17,7 +19,7 @@ The media folder must contain `NFS_WIN.EXE`, `NFSICONN.ICO`, `IFORCE.DLL`, `FRON
 
 ## Installation
 
-1. Open [Releases](https://github.com/Buyukcaglar/NFSSE/releases/latest), download `NFSSE-v0.1.1-patch-kit.zip`, and extract it to a folder.
+1. Download `NFSSE-v0.1.2-patch-kit.zip` from the [prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.2), or `NFSSE-v0.1.1-patch-kit.zip` from the [stable release](https://github.com/Buyukcaglar/NFSSE/releases/latest), and extract it to a folder.
 2. Double-click `Install-NFSSE.cmd` inside the extracted kit. A console asks for the media folder and destination folder.
 3. Enter the folder directly containing `NFS_WIN.EXE`. Choose a new destination outside the media folder, such as `C:\Games\NFSSE`.
 4. Wait for the verified executable and game data to be written. Close the installer after its success message.
@@ -47,7 +49,9 @@ The default configuration scales the game's original image to a borderless fulls
 
 The tested combination in `ddraw.ini` is GDI rendering, `singlecpu=true`, `maintas=true`, an empty `aspect_ratio`, `minfps=5`, and `lock_surfaces=true`. Periodic redraws are needed for the observed menu and movie presentation problems. Keep these defaults when reporting a regression.
 
-The release also sets `toggle_borderless=true` and `adjmouse=true`. Alt+Enter is configured to toggle windowed/borderless presentation, but this shortcut's final behavior and exit-mode restoration were not confirmed during the session. Normal borderless startup was exercised without a desktop resolution change.
+Alt+Enter switches between a smaller window and borderless fullscreen presentation. The defaults set `toggle_borderless=true` and `adjmouse=true`. The v0.1.2 prerelease also adds either key when it is missing from an older installation, while preserving explicit overrides. Normal borderless startup was exercised with the earlier helper without a desktop resolution change; the prerelease's full shortcut behavior still awaits in-game confirmation.
+
+The v0.1.2 helper releases stale keyboard states when the window loses or regains focus, addressing Enter becoming unavailable after Alt+Tab. Alt+F4 closes the game immediately. Use the in-game quit flow when you need to save progress normally.
 
 Use the bundled **cnc-ddraw 7.1.0.0 DLL**. The helper synchronizes presentation through a verified location inside that exact build, so replacing `ddraw.dll` with another version requires a corresponding helper update.
 
@@ -63,9 +67,11 @@ The initial `nfs.cfg` is:
 
 There is a trailing space before the line ending. Preserve it when editing because the legacy option parser expects token separation.
 
-Running the installer again against a destination it created refreshes the managed executable, helper, support DLLs, path table and documentation. Existing game files, saves, `nfs.cfg` and `ddraw.ini` are preserved. It refuses an unrelated nonempty destination or an executable with unrecognized modifications. Close the game before reinstalling. To restore graphics defaults, back up your `ddraw.ini`, remove that file, and rerun the installer.
+Running the installer again against a destination it created refreshes the managed executable, helper, support DLLs, path table and documentation. Existing game files, saves and `nfs.cfg` are preserved. For `ddraw.ini`, the v0.1.2 prerelease adds only missing `toggle_borderless` and `adjmouse` keys; your existing settings and comments remain. If it changes the file, the original is saved beside it as `ddraw.ini.before-input-update.bak`, with a numeric suffix if that backup already exists. Explicit custom values remain in effect. It refuses an unrelated nonempty destination or an executable with unrecognized modifications. Close the game before reinstalling. To restore graphics defaults, back up your `ddraw.ini`, remove that file, and rerun the installer.
 
 To update a v0.1.0 installation, run the v0.1.1 installer with the same source media and destination. It adds the 11 missing race announcer clips beside `NFSSE.exe`. Keep these root `.EAS` files when moving the game; race announcements load them directly from the game folder.
+
+To try the new keyboard and shortcut changes, run the v0.1.2 prerelease installer with the same source media and destination. It includes the earlier announcer repair, updates the helper and adds any missing display-toggle settings. Check Enter after repeated Alt+Tab, Alt+Enter in both directions, and Alt+F4 in menus and gameplay. Report whether the desktop resolution stays unchanged after toggling and exit.
 
 ## Troubleshooting
 
@@ -80,6 +86,8 @@ To update a v0.1.0 installation, run the v0.1.1 installer with the same source m
 | `streamreader - ILLEGAL CHUNK SIZE` | Confirm the current helper is installed. Its buffered-read hook addresses the observed zero-byte legacy stream failure. Include the runtime log if it recurs. |
 | Stalled video, corrupted presentation or menus ignoring clicks | Restore the default `ddraw.ini`, especially GDI, `singlecpu=true` and `minfps=5`; use the exact bundled renderer. Report which clip or menu failed. |
 | Wrong video proportions | Keep `maintas=true` and `aspect_ratio=` empty so each original mode determines its proportions. |
+| Alt+Enter does nothing in an older installation | Use the v0.1.2 prerelease installer to add missing toggle settings, or set `toggle_borderless=true` in `[ddraw]`. An explicit custom hotkey or game-specific override can change the shortcut. |
+| Enter stops working after Alt+Tab | Use the v0.1.2 prerelease helper, which resets stale keyboard states on focus transitions. Report whether the issue remains after switching away and back several times. |
 | Settings or saves do not persist | Use a writable destination outside protected system folders and close the game before backing up files. |
 
 Open a [bug report](https://github.com/Buyukcaglar/NFSSE/issues/new/choose) with release version, Windows version, display setup, reproduction steps and `portable-runtime.log`. Review logs for personal folder names before attaching them. Do not attach original game files, video captures containing game assets or full process memory dumps.

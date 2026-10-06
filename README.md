@@ -4,11 +4,13 @@
 
 Modern Windows compatibility patch for **The Need for Speed Special Edition**, Windows version. It creates a portable installation from your own installation media, scales the original graphics in a borderless window, and fixes the startup, video and menu problems investigated in this project.
 
-[Download the patch kit](https://github.com/Buyukcaglar/NFSSE/releases/latest) · [User guide](docs/USER_GUIDE.md) · [Validation and limits](docs/VALIDATION.md) · [Report a problem](https://github.com/Buyukcaglar/NFSSE/issues/new/choose)
+[Stable patch kit](https://github.com/Buyukcaglar/NFSSE/releases/latest) · [v0.1.2 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.2) · [User guide](docs/USER_GUIDE.md) · [Validation and limits](docs/VALIDATION.md) · [Report a problem](https://github.com/Buyukcaglar/NFSSE/issues/new/choose)
+
+**v0.1.2 is a prerelease** for keyboard recovery after Alt+Tab, direct Alt+F4 close and Alt+Enter configuration upgrades. Build, input regression and installer checks passed; in-game confirmation is pending. **v0.1.1 remains the latest stable release.**
 
 ## Install and play
 
-1. Download `NFSSE-v0.1.1-patch-kit.zip` from Releases and extract the complete ZIP.
+1. Download `NFSSE-v0.1.2-patch-kit.zip` from the [prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.2), or `NFSSE-v0.1.1-patch-kit.zip` from the [stable release](https://github.com/Buyukcaglar/NFSSE/releases/latest), and extract the complete ZIP.
 2. Double-click `Install-NFSSE.cmd`.
 3. Select the folder containing your original `NFS_WIN.EXE`, `FRONTEND`, `SIMDATA`, `GAMEDATA`, `REDIST` and `DIRECTX3`. Choose a separate destination folder.
 4. Double-click `NFSSE.exe` in the destination. Move that complete folder to relocate the installation.
@@ -20,6 +22,7 @@ This release supports one verified English media executable: 1,069,056 bytes, SH
 ## Included changes
 
 - Borderless display scaling preserves each original mode's proportions and leaves the desktop resolution unchanged. Gameplay retains its original internal resolution.
+- v0.1.2 releases stale keyboard states after Alt+Tab and handles Alt+F4 directly. Its installer adds missing Alt+Enter/mouse settings to older configurations with an exact backup, preserving explicit custom values.
 - Executable-relative paths and locally copied assets allow play without the physical CD.
 - Race announcer clips are copied beside the executable, matching the original installer. Users of v0.1.0 can rerun the latest installer against their existing installation to add the missing clips.
 - Startup fixes cover legacy memory reporting, VGA scratch pointers, privileged instructions and graphics initialization timing.
@@ -28,7 +31,7 @@ This release supports one verified English media executable: 1,069,056 bytes, SH
 - The original `NFSICONN.ICO` is embedded in the generated `NFSSE.exe`.
 - Original I-Force code and `IFORCE.DLL` are retained. Modern USB device support is deferred; see the [backlog](docs/BACKLOG.md).
 
-Videos, menu clicks, attract mode and relocation were accepted during the development session on Windows 11. A complete manual race, save/reload cycle, multiplayer and modern force-feedback hardware remain unverified. Read the [validation record](docs/VALIDATION.md) before interpreting this as broad compatibility certification.
+Videos, menu clicks, attract mode and relocation were accepted with the earlier helper on Windows 11. The v0.1.2 input/display/exit changes still need in-game confirmation. A complete manual race, save/reload cycle, multiplayer and modern force-feedback hardware remain unverified. Read the [validation record](docs/VALIDATION.md) before interpreting this as broad compatibility certification.
 
 ## Project contents
 
@@ -37,6 +40,7 @@ Videos, menu clicks, attract mode and relocation were accepted during the develo
 | `src/` | Active 32-bit compatibility helper source |
 | `Install-NFSSE.ps1`, `config/` | Media-validated installer, patch recipe, relative paths and graphics defaults |
 | `tools/` | Build, release packaging, PE icon embedding and executable analysis |
+| `tests/` | Media-independent input and configuration migration regression checks |
 | `research/` | Static analysis, diagnostic variants, selected logs and measured validation results |
 | `docs/` | User guide, build guide, technical notes, session history, validation and backlog |
 | `licenses/` | Redistributed renderer's MIT license |

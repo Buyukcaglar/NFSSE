@@ -1,6 +1,6 @@
 # Validation record
 
-Release: **v0.1.1**, 2026-10-06. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
+Prerelease: **v0.1.2**, 2026-10-06. Latest stable release: **v0.1.1**. Runtime/user acceptance below describes the earlier helper; the new focus/shortcut changes require their own in-game confirmation. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
 
 ## Compilation and static checks
 
@@ -14,6 +14,12 @@ Release: **v0.1.1**, 2026-10-06. Evidence describes the specific tested media an
 - All 333 indexed frames and palettes of the sampled EA movie match the independent FFmpeg reference. Sampled surface copies show no differing pixels.
 
 Machine-readable records are in [research/validation](https://github.com/Buyukcaglar/NFSSE/tree/main/research/validation). These checks support specific byte/data conclusions; they do not certify all video timing, audio or gameplay.
+
+## v0.1.2 prerelease checks
+
+The updated x86 helper builds with MSVC without warnings. Native regression checks exercise its actual class-registration and window-procedure functions with a fake game dispatcher: missing releases are recovered on focus loss and gain, normal Enter/character/release messages pass through, lock-key toggle bits survive, unrelated classes remain untouched, unexpected game dispatchers are rejected, and an Alt+F4 test process exits with code 0. These checks do not load the game or renderer and do not prove the reported in-game symptom resolved.
+
+Configuration checks passed for legacy global-section migration, preservation of explicit values and other game sections, exact backups, repeated upgrades, ANSI comments, and UTF-8/UTF-16 BOM files. The packaged installer passed fresh installation, the existing preservation/rejection checks, an actual legacy display-config upgrade with backup, and idempotent reinstall. See [input-shortcut-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/input-shortcut-validation.json) and [input-installer-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/input-installer-validation.json). The game executable, original assets and bundled renderer retain their previous hashes. No v0.1.2 game launch or visual check was performed.
 
 ## Runtime and user acceptance
 
@@ -40,7 +46,7 @@ An installation made with the published v0.1.0 kit was upgraded to v0.1.1. The u
 ## Outstanding checks
 
 - Complete manual race, save/reload cycle and comprehensive audio/video coverage.
-- Exit and Alt+Enter behavior in the final release configuration; the final interactive check was stopped before completion.
+- v0.1.2 prerelease: Enter after repeated Alt+Tab, Alt+Enter in menus and a race, Alt+F4 from both presentation modes, and unchanged desktop mode after exit. No game launch was performed for the prerelease's automated checks.
 - Multiplayer, serial/modem links and contemporary USB I-Force devices.
 - Other Windows builds, display drivers, multi-monitor arrangements, ARM emulation and non-English or different media executables.
 

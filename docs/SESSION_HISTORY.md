@@ -16,3 +16,5 @@ This record summarizes the investigation that produced v0.1.0. Earlier diagnosti
 Original I-Force support was explicitly retained. Modern USB device support was moved to a low-priority backlog item at the user's request, with no implementation attempted.
 
 Final exit and Alt+Enter interaction checks were interrupted and remain open. Compilation, data comparisons and accepted visual results have distinct evidence boundaries; see [Validation](VALIDATION.md).
+
+On 2026-10-06 the user authorized changes for Enter after Alt+Tab, Alt+Enter window mode and direct Alt+F4 close, followed by a GitHub/documentation update. The v0.1.2 helper wraps the supported game class procedure, releases stale scan-code and thread keyboard states on focus transitions, and handles the close shortcut before the game consumes it. The installer adds missing display-toggle keys with a configuration backup. Native regression and installer checks passed, and the local game was updated with backups. v0.1.2 is published as a prerelease while in-game confirmation remains pending; v0.1.1 remains the latest stable release.

@@ -1,5 +1,5 @@
 param(
-    [string]$Version = '0.1.1',
+    [string]$Version = '0.1.2',
     [string]$RuntimeDll,
     [string]$CncArchive,
     [string]$OutputRoot
@@ -32,6 +32,7 @@ if ((Get-FileHash -LiteralPath $ddraw -Algorithm SHA256).Hash.ToLowerInvariant()
 foreach ($name in @('Install-NFSSE.cmd', 'Install-NFSSE.ps1', 'LICENSE')) { [IO.File]::Copy((Join-Path $repo $name), (Join-Path $kit $name), $false) }
 foreach ($name in @('patch-recipe.json', 'ddraw.ini')) { [IO.File]::Copy((Join-Path $repo "config\$name"), (Join-Path $kit "config\$name"), $false) }
 [IO.File]::Copy((Join-Path $repo 'tools\IconResources.cs'), (Join-Path $kit 'tools\IconResources.cs'), $false)
+[IO.File]::Copy((Join-Path $repo 'tools\GraphicsConfig.ps1'), (Join-Path $kit 'tools\GraphicsConfig.ps1'), $false)
 [IO.File]::Copy((Join-Path $repo 'licenses\cnc-ddraw-MIT.txt'), (Join-Path $kit 'licenses\cnc-ddraw-MIT.txt'), $false)
 foreach ($name in @('USER_GUIDE.md', 'VALIDATION.md')) { [IO.File]::Copy((Join-Path $repo "docs\$name"), (Join-Path $kit $name), $false) }
 [IO.File]::WriteAllText((Join-Path $kit 'README.txt'), "NFSSE v$Version compatibility patch kit`r`n`r`nExtract this complete ZIP, then double-click Install-NFSSE.cmd.`r`nSupply your own supported installation media and choose a new destination.`r`nAfter installation, double-click NFSSE.exe in the destination folder.`r`nRead USER_GUIDE.md and VALIDATION.md for details.`r`nGame media, the game executable and its icon are not included in this ZIP.`r`nhttps://github.com/Buyukcaglar/NFSSE`r`n", [Text.Encoding]::ASCII)

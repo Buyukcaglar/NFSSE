@@ -2,7 +2,7 @@
 
 ## IFORCE-001 — Modern USB I-Force support
 
-**Priority:** low. **Status:** deferred; no implementation in v0.1.0.
+**Priority:** low. **Status:** deferred; no implementation through v0.1.2.
 
 Tracked in [GitHub issue #1](https://github.com/Buyukcaglar/NFSSE/issues/1).
 
@@ -14,7 +14,7 @@ The current release copies the original DLL unchanged. It does not claim that US
 
 ## Validation follow-ups
 
-- Finish exit and Alt+Enter checks without desktop mode changes.
+- Confirm the v0.1.2 prerelease's focus recovery, Alt+Enter and Alt+F4 in-game without desktop mode changes; implementation is present, user acceptance is pending.
 - Exercise a complete race and save/reload with the public installer output.
 - Expand host/display coverage and assess multiplayer separately.
 

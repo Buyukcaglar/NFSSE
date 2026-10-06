@@ -24,6 +24,7 @@ The icon builder appends a seventh `.rsrc` section at RVA `0x142000`, file offse
 | Working directory | `GetModuleFileNameW` root followed by `SetCurrentDirectoryW` |
 | Memory reporting | `GlobalMemoryStatus` IAT RVA `0x13135C`; cap legacy signed 32-bit comparisons |
 | Initial window | IAT RVA `0x1311A0`, bounded initial size 640×480; fix 10,000-pixel initialization pushes at `0x7787D`/`0x77882` |
+| Window input | `RegisterClassA` IAT RVA `0x1311E0`; wrap only `EACLibWindow` with its verified dispatcher at RVA `0x9BB7C` |
 | VGA/debug scratch | Five verified `0xB0000`/`0xB00A0` references redirected to a private 64 KB allocation; similar physics constants remain intact |
 | Privileged instructions | `CLI; RET; STI; RET` at RVA `0x8ED2A` becomes `NOP; RET; NOP; RET` |
 | File reads | `CreateFileA` hooks remove `FILE_FLAG_NO_BUFFERING` for ordinary existing files while retaining overlapped behavior; `ReadFile` logs failures |
@@ -34,6 +35,16 @@ The icon builder appends a seventh `.rsrc` section at RVA `0x142000`, file offse
 The DirectPlay provider hook intercepts the call itself because a graphics wrapper can rebind imported `LoadLibraryA` slots. Recognized local providers are `dpwsock.dll`, `dpserial.dll`, `dpwsockx.dll` and `dpmodemx.dll`. These DLLs and their core DirectPlay companions are obtained from the user's media; system folders are not modified.
 
 The graphics synchronization uses private internals of the exact bundled cnc-ddraw DLL: timestamp `0x676FAADF`, image size `0x6C000`, `InitializeCriticalSection` argument at `0x694A`, and critical section RVA `0x5F190`. These are verified before use. **This is a build-specific dependency**, not a stable upstream API. A different renderer build needs fresh analysis and runtime validation.
+
+## Focus recovery and window shortcuts
+
+The v0.1.2 prerelease wraps the game class procedure when it is registered. cnc-ddraw subsequently wraps that procedure, preserving its original display, mouse and Alt+Enter handling. No game code or renderer offsets are changed for this hook. A different class dispatcher is rejected.
+
+The original keyboard-down handler at VA `0x49B954` sets a byte in the 128-entry scan-code table at `0x4C693C`; its key-up handler at `0x49BA1C` clears the corresponding byte. Both ordinary and system key messages use these handlers. Focus changes do not release those entries, so a key released outside the game can remain pressed. On `WM_KILLFOCUS` and `WM_SETFOCUS`, the helper calls the original procedure with release messages for scan codes 1–127, then clears high pressed-state bits in that window thread's keyboard state while retaining low toggle bits. It does not edit the table directly or send global keyboard input. This addresses a source-supported failure mechanism; the reported in-game Enter symptom still requires user confirmation.
+
+The original handler consumes `WM_SYSKEYDOWN`, preventing the normal conversion of Alt+F4 to a close command. The helper catches F4 with the Alt context bit and calls `ExitProcess(0)`, matching the bundled renderer's default `SC_CLOSE` path. This is an immediate close; use the game's normal quit flow when saving progress is required. Ordinary F4 and normal Enter/character messages continue to the original dispatcher.
+
+The older local configuration omitted `toggle_borderless=true`, which the renderer requires to leave its borderless fullscreen state through Alt+Enter. The installer now adds missing `toggle_borderless` and `adjmouse` keys only to the global `[ddraw]` section. It preserves explicit overrides and other sections, saves the original bytes as `ddraw.ini.before-input-update.bak` (with a numeric suffix if necessary), and is idempotent. It retains existing line endings and encoding, including ANSI comments and supported BOM encodings.
 
 ## Relative data paths
 

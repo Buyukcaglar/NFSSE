@@ -11,6 +11,9 @@ jobs:
       - name: Build 32-bit compatibility helper
         shell: cmd
         run: tools\build-runtime.cmd
+      - name: Check focus recovery, shortcuts and configuration upgrades
+        shell: cmd
+        run: tools\test-input.cmd
       - name: Parse installer scripts and compile icon tooling
         shell: powershell
         run: |
