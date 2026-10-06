@@ -25,6 +25,7 @@ The icon builder appends a seventh `.rsrc` section at RVA `0x142000`, file offse
 | Memory reporting | `GlobalMemoryStatus` IAT RVA `0x13135C`; cap legacy signed 32-bit comparisons |
 | Initial window | IAT RVA `0x1311A0`, bounded initial size 640×480; fix 10,000-pixel initialization pushes at `0x7787D`/`0x77882` |
 | Window input | `RegisterClassA` IAT RVA `0x1311E0`; wrap only `EACLibWindow` with its verified dispatcher at RVA `0x9BB7C` |
+| Window icon | Assign original embedded `RT_GROUP_ICON` 1 to the supported class using `LoadIconW` from the game module |
 | VGA/debug scratch | Five verified `0xB0000`/`0xB00A0` references redirected to a private 64 KB allocation; similar physics constants remain intact |
 | Privileged instructions | `CLI; RET; STI; RET` at RVA `0x8ED2A` becomes `NOP; RET; NOP; RET` |
 | File reads | `CreateFileA` hooks remove `FILE_FLAG_NO_BUFFERING` for ordinary existing files while retaining overlapped behavior; `ReadFile` logs failures |
@@ -63,6 +64,16 @@ The renderer reads configuration in [DllMain](https://github.com/FunkyFr3sh/cnc-
 | Resizable | `0x59704` | `0x1E2BD` | `0x1E2CC` |
 
 Regression checks map the hash-verified renderer using `DONT_RESOLVE_DLL_REFERENCES`, so its imports, DllMain, hooks and render loop do not execute. They exercise the production verifier and policy at 0, 720, 768, 959, 960, 961, 1080 and 1600 pixels, compare all mapped bytes outside the four fields, and reject a deliberately changed store operand before any writes. These checks establish the layout and height policy; title-bar dragging, mouse clicks and visible client dimensions still require user confirmation.
+
+The user subsequently confirmed the v0.1.3 window-presentation visual task passed. That report and the separately reported title-bar icon issue are recorded in [Validation](VALIDATION.md).
+
+## Title-bar icon
+
+The original registration at VA `0x49BF82` calls `LoadIconA` with the game module and resource ID `0x7F00` (32512), then stores the result in `WNDCLASSA.hIcon` at `0x49BF8F`. The portable executable contains the original media icon as group 1, with no group 32512. The failed legacy lookup leaves the class without an icon, causing Windows to supply its generic icon, as described by the [WNDCLASS documentation](https://learn.microsoft.com/en-us/windows/win32/api/winuser/ns-winuser-wndclassa).
+
+The v0.1.4 registration hook loads group 1 from the game module with `LoadIconW` and sets the copied class description's `hIcon` before registration. This is a shared resource icon with process lifetime; the caller's class structure is untouched. Missing resources fail registration with the loader's error rather than silently reverting to a generic icon. No icon pixels, resource IDs, executable bytes, window sizing or renderer hooks are changed. The existing class icon supplies the window caption through Windows' normal icon selection/scaling.
+
+Native checks cover the production class assignment and resource/module selection with a fake loader; a separate resource-only mapping exercises the actual Windows icon lookup against the unchanged game executable. Neither creates a window or launches the game. Visual confirmation of the icon remains a separate user check.
 
 ## Relative data paths
 

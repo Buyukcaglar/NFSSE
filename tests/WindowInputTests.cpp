@@ -8,6 +8,11 @@ static bool held[128];
 static unsigned keyDowns, characters;
 static const WNDCLASSA* registered;
 static WNDPROC registeredProc;
+static HICON registeredIcon;
+static unsigned iconLoads;
+static bool iconAvailable = true;
+static HINSTANCE iconInstance;
+static ULONG_PTR iconResource;
 
 static void check(bool condition, const char* message) {
     if (!condition) { std::fprintf(stderr, "%s\n", message); std::exit(1); }
@@ -24,7 +29,16 @@ static LRESULT CALLBACK fakeGameProc(HWND, UINT message, WPARAM, LPARAM flags) {
 static ATOM WINAPI fakeRegisterClass(const WNDCLASSA* description) {
     registered = description;
     registeredProc = description ? description->lpfnWndProc : nullptr;
+    registeredIcon = description ? description->hIcon : nullptr;
     return 42;
+}
+
+static HICON WINAPI fakeLoadIcon(HINSTANCE instance, LPCWSTR resource) {
+    ++iconLoads;
+    iconInstance = instance;
+    iconResource = reinterpret_cast<ULONG_PTR>(resource);
+    if (!iconAvailable) { SetLastError(ERROR_RESOURCE_NAME_NOT_FOUND); return nullptr; }
+    return reinterpret_cast<HICON>(42);
 }
 
 int main(int argc, char**) {
@@ -34,6 +48,7 @@ int main(int argc, char**) {
         return 9; // Alt+F4 must terminate the process with code 0 before here.
     }
     realRegisterClass = fakeRegisterClass;
+    loadWindowIcon = fakeLoadIcon;
     gameBase = static_cast<BYTE*>(VirtualAlloc(nullptr, 0x100000, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE));
     check(gameBase != nullptr, "Test allocation failed");
     WNDCLASSA description = {};
@@ -41,13 +56,22 @@ int main(int argc, char**) {
     description.lpfnWndProc = fakeGameProc;
     check(portableRegisterClass(&description) == 42 && registered == &description,
         "Unrelated window class was modified");
+    check(iconLoads == 0, "Unrelated window class loaded a game icon");
     description.lpszClassName = "EACLibWindow";
     check(portableRegisterClass(&description) == 0 && GetLastError() == ERROR_INVALID_DATA,
         "Unexpected game dispatcher was accepted");
     description.lpfnWndProc = reinterpret_cast<WNDPROC>(gameBase + 0x9bb7c);
+    iconAvailable = false;
+    check(portableRegisterClass(&description) == 0 && GetLastError() == ERROR_RESOURCE_NAME_NOT_FOUND,
+        "Missing embedded icon was silently accepted");
+    iconAvailable = true;
     check(portableRegisterClass(&description) == 42 && registeredProc == portableWindowProc,
         "Game message hook was not registered");
+    check(registeredIcon == reinterpret_cast<HICON>(42) && iconResource == 1 &&
+        iconInstance == reinterpret_cast<HINSTANCE>(gameBase),
+        "Game class did not use the embedded original icon group");
     check(description.lpfnWndProc != portableWindowProc, "Caller-owned class description was changed");
+    check(description.hIcon == nullptr, "Caller-owned class icon was changed");
     VirtualFree(gameBase, 0, MEM_RELEASE);
     gameWindowProc = fakeGameProc;
 

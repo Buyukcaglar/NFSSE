@@ -18,4 +18,6 @@ The v0.1.2 input records distinguish production helper functions exercised with 
 
 The v0.1.3 window records cover the production height/border policy against the exact renderer mapped without imports or DllMain, and a packaged installer upgrade from `border=false`. These establish the guarded field layout, strictly greater-than-960 cutoff and file preservation. They do not run the renderer's display or message loop and do not prove visible window size, dragging or mouse behavior.
 
+`window-user-acceptance.json` records the subsequent direct user confirmation that the v0.1.3 visual task passed. The title-bar icon was reported separately. `titlebar-icon-validation.json` covers the v0.1.4 class assignment and actual Windows resource lookup without a game launch or window creation. The icon's visible result still awaits confirmation; no screenshot or original icon payload is published.
+
 Use `tools/analyze_nfs_win.py` against your own original executable to regenerate the full local static inventory. The active installer and patch recipe supersede the session's exploratory assembly/copy scripts. Read [Session history](../docs/SESSION_HISTORY.md) for how each observation affected the final implementation and [Validation](../docs/VALIDATION.md) for its limits.

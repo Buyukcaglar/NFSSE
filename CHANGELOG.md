@@ -1,11 +1,17 @@
 # Changelog
 
+## 0.1.4 — Prerelease, 2026-10-06
+
+- Bind the original embedded icon to the game window class so the title bar uses the game icon. The legacy code requested nonexistent group 32512; the installer embeds the original media icon as group 1. The executable, icon artwork and renderer are unchanged.
+- Record the user's successful visual confirmation of v0.1.3's movable window and desktop-height sizing task. The title-bar icon was reported separately and still awaits confirmation of this fix.
+- Extend class-registration regression checks to verify the icon resource/module, unchanged unrelated classes and caller-owned structures, and missing-resource rejection. The original embedded icon loads through the Windows resource API without starting the game.
+
 ## 0.1.3 — Prerelease, 2026-10-06
 
 - Give the Alt+Enter window a standard Windows title bar and border so it can be dragged. Older `border=false` configurations are upgraded with an exact backup; other settings and game sections are preserved.
 - At each launch, read the primary desktop's current pixel height. Above 960 pixels, use a fixed 1280×960 window client area (2× the 640×480 gameplay image); at 960 or below, retain the configured smaller size. Desktop width does not affect this decision. Borderless fullscreen startup and original mode proportions remain unchanged.
 - Apply the policy to verified settings in the exact bundled cnc-ddraw build before window initialization. No game executable, assets or renderer binary changes are needed, and the runtime policy does not rewrite `ddraw.ini`.
-- Add cutoff and renderer-layout regression checks. Window dragging, size, mouse selection and display transitions await in-game confirmation.
+- Add cutoff and renderer-layout regression checks. The user subsequently confirmed the window-presentation visual task passed on 2026-10-06; the title-bar icon was reported as a separate issue addressed in v0.1.4.
 
 ## 0.1.2 — Prerelease, 2026-10-06
 

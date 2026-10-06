@@ -1,0 +1,16 @@
+{
+  "recorded_date": "2026-10-06",
+  "release_version": "0.1.3",
+  "helper_version": 5,
+  "helper_sha256": "8b0a3556fc84af570e1f9330ab8006a1e9d16890d5c8aebec49350e0ef7c4c19",
+  "evidence_kind": "direct user visual confirmation in this conversation",
+  "user_statement": "Visual confirmation for this task passed. Aside from that application icon is not being displayed on title bar.",
+  "accepted_scope": "movable window border and desktop-height window-sizing task",
+  "visual_task_acceptance": "passed",
+  "reported_separate_issue": "title bar shows generic application icon",
+  "existing_local_runtime_log_desktop_height": 1600,
+  "existing_local_runtime_log_window_client": "1280x960",
+  "screenshot_published": false,
+  "lower_desktop_height_behavior": "automated policy checks only; no separate user report",
+  "full_game_audio_hardware_or_other_host_acceptance_inferred": false
+}

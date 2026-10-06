@@ -2,7 +2,7 @@
 
 ## IFORCE-001 — Modern USB I-Force support
 
-**Priority:** low. **Status:** deferred; no implementation through v0.1.3.
+**Priority:** low. **Status:** deferred; no implementation through v0.1.4.
 
 Tracked in [GitHub issue #1](https://github.com/Buyukcaglar/NFSSE/issues/1).
 
@@ -14,8 +14,8 @@ The current release copies the original DLL unchanged. It does not claim that US
 
 ## Validation follow-ups
 
-- Confirm the v0.1.2 prerelease's focus recovery, Alt+Enter and Alt+F4 in-game without desktop mode changes; implementation is present, user acceptance is pending.
-- Confirm v0.1.3's movable title bar and border, fixed 1280×960 game area only above a desktop height of 960 pixels, smaller-desktop behavior and mouse selection after moving/toggling.
+- Complete the separate in-game focus-recovery and Alt+F4 checks without desktop mode changes. The window-presentation visual task is already accepted.
+- Confirm v0.1.4's title-bar icon. The user accepted v0.1.3's window-presentation visual task; smaller-desktop and broader host/transition coverage remain separate follow-ups.
 - Exercise a complete race and save/reload with the public installer output.
 - Expand host/display coverage and assess multiplayer separately.
 

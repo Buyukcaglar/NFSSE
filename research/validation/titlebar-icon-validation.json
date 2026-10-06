@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-06T10:57:52.6293114Z",
+  "candidate_version": "0.1.4",
+  "helper_version": 6,
+  "helper_sha256": "32f777353b2637997a4ccb869e2359a73845aac5bc30d02ac6dd2c050d905a61",
+  "executable_sha256": "a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd",
+  "original_icon_sha256": "b2ff38678651bcd20190d97185e002da5ea6cd02789bfff2159ce7e42677921a",
+  "embedded_icon_group_1_loads_with_windows_loadicon": true,
+  "legacy_icon_group_32512_present": false,
+  "executable_mapped_as_resource_data_without_execution": true,
+  "production_registration_hook_exercised_with_fake_loader_and_registrar": true,
+  "icon_loaded_from_game_module": true,
+  "embedded_icon_group_bound_to_game_class": true,
+  "unrelated_classes_preserved": true,
+  "caller_owned_wndclass_preserved": true,
+  "missing_icon_rejected": true,
+  "build_and_existing_input_window_config_checks_pass": true,
+  "game_launched": false,
+  "automated_visual_check": false,
+  "title_bar_icon_visual_acceptance": "pending",
+  "resource_lookup_checked_utc": "2026-10-06T10:52:34.0910088Z"
+}

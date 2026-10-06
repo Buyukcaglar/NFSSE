@@ -4,13 +4,13 @@
 
 Modern Windows compatibility patch for **The Need for Speed Special Edition**, Windows version. It creates a portable installation from your own installation media, scales the original graphics in fullscreen or a movable window, and fixes the startup, video and menu problems investigated in this project.
 
-[Stable patch kit](https://github.com/Buyukcaglar/NFSSE/releases/latest) · [v0.1.3 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.3) · [User guide](docs/USER_GUIDE.md) · [Validation and limits](docs/VALIDATION.md) · [Report a problem](https://github.com/Buyukcaglar/NFSSE/issues/new/choose)
+[Stable patch kit](https://github.com/Buyukcaglar/NFSSE/releases/latest) · [v0.1.4 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.4) · [User guide](docs/USER_GUIDE.md) · [Validation and limits](docs/VALIDATION.md) · [Report a problem](https://github.com/Buyukcaglar/NFSSE/issues/new/choose)
 
-**v0.1.3 is a prerelease** adding a movable title bar and border to Alt+Enter windowed mode. When desktop height exceeds 960 pixels, its game area is fixed at 1280×960. It includes v0.1.2's keyboard recovery and close shortcuts. Build, regression and installer checks passed; in-game confirmation is pending. **v0.1.1 remains the latest stable release.**
+**v0.1.4 is a prerelease** fixing the title-bar icon by using the original icon already embedded in the game executable. The user confirmed v0.1.3's movable window and desktop-height sizing visual task passed. The icon fix passes build and regression checks and awaits visual confirmation. **v0.1.1 remains the latest stable release.**
 
 ## Install and play
 
-1. Download `NFSSE-v0.1.3-patch-kit.zip` from the [prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.3), or `NFSSE-v0.1.1-patch-kit.zip` from the [stable release](https://github.com/Buyukcaglar/NFSSE/releases/latest), and extract the complete ZIP.
+1. Download `NFSSE-v0.1.4-patch-kit.zip` from the [prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.4), or `NFSSE-v0.1.1-patch-kit.zip` from the [stable release](https://github.com/Buyukcaglar/NFSSE/releases/latest), and extract the complete ZIP.
 2. Double-click `Install-NFSSE.cmd`.
 3. Select the folder containing your original `NFS_WIN.EXE`, `FRONTEND`, `SIMDATA`, `GAMEDATA`, `REDIST` and `DIRECTX3`. Choose a separate destination folder.
 4. Double-click `NFSSE.exe` in the destination. Move that complete folder to relocate the installation.
@@ -29,10 +29,10 @@ This release supports one verified English media executable: 1,069,056 bytes, SH
 - Startup fixes cover legacy memory reporting, VGA scratch pointers, privileged instructions and graphics initialization timing.
 - Legacy DirectPlay providers load from the game folder.
 - Buffered file reads, synchronized video presentation and periodic redraws address the observed video and menu failures.
-- The original `NFSICONN.ICO` is embedded in the generated `NFSSE.exe`.
+- The original `NFSICONN.ICO` is embedded in the generated `NFSSE.exe`; v0.1.4 also assigns that embedded icon to the game window class for the title bar.
 - Original I-Force code and `IFORCE.DLL` are retained. Modern USB device support is deferred; see the [backlog](docs/BACKLOG.md).
 
-Videos, menu clicks, attract mode and relocation were accepted with the earlier helper on Windows 11. The new input, window-border, sizing and exit changes still need in-game confirmation. A complete manual race, save/reload cycle, multiplayer and modern force-feedback hardware remain unverified. Read the [validation record](docs/VALIDATION.md) before interpreting this as broad compatibility certification.
+Videos, menu clicks, attract mode and relocation were accepted with the earlier helper on Windows 11. The v0.1.3 window-presentation visual task is accepted on the user's setup; the new icon fix and nonvisual input/exit checks remain open. A complete manual race, save/reload cycle, multiplayer and modern force-feedback hardware remain unverified. Read the [validation record](docs/VALIDATION.md) before interpreting this as broad compatibility certification.
 
 ## Project contents
 

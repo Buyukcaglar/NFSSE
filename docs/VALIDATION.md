@@ -1,6 +1,6 @@
 # Validation record
 
-Prerelease: **v0.1.3**, 2026-10-06. Latest stable release: **v0.1.1**. Runtime/user acceptance below describes the earlier helper; the new focus/shortcut and window-border/sizing changes require their own in-game confirmation. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
+Prerelease: **v0.1.4**, 2026-10-06. Latest stable release: **v0.1.1**. The user confirmed v0.1.3's window-presentation visual task passed. The title-bar icon fix and nonvisual focus/exit behavior have separate checks below. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
 
 ## Compilation and static checks
 
@@ -27,7 +27,13 @@ The helper builds without MSVC warnings, and the earlier focus/Enter/Alt+F4 test
 
 Configuration checks cover replacement of global `border=false` with `border=true`, missing border/toggle/mouse keys, inline comments, exact backups, other-section and preference preservation, repeated upgrades and encoding. The packaged installer passes fresh installation, legacy-border upgrade, idempotence and existing preservation/rejection cases. See [window-presentation-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/window-presentation-validation.json) and [window-installer-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/window-installer-validation.json). No game launch or automated visual check was performed for this change.
 
-The user reported a missing border and inability to move the v0.1.2 window. This is the issue addressed by v0.1.3; it is not acceptance of the new border, sizing, input or exit behavior.
+The user reported a missing border and inability to move the v0.1.2 window. After the v0.1.3 update, they stated that visual confirmation for the task passed, with the missing title-bar application icon reported separately. This accepts the window-presentation visual task on the observed setup. The existing local runtime log records desktop height 1600 and a 1280×960 client area. It does not add separate user coverage for smaller desktops, other hosts, nonvisual keyboard/exit behavior or a complete race. See [window-user-acceptance.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/window-user-acceptance.json). The supplied screenshot remains local.
+
+## v0.1.4 title-bar icon checks
+
+The helper compiles without warnings, and the existing focus, shortcut, window-policy and configuration tests pass. The production registration hook is exercised with a fake icon loader and registrar: it loads group 1 from the game module, assigns that handle to the game class, preserves the caller-owned class structure and unrelated classes, and rejects a missing icon. A separate Windows resource-only mapping confirms `LoadIconW` loads the original embedded group 1 and cannot load the legacy request for group 32512. The game executable, original icon and renderer hashes are unchanged. See [titlebar-icon-validation.json](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/titlebar-icon-validation.json).
+
+No game launch or automated visual check was performed for the icon fix. The class-icon binding has code/resource evidence; its visible title-bar result awaits user confirmation. The earlier window-presentation acceptance remains recorded separately.
 
 ## Accepted runtime observations
 
@@ -43,7 +49,7 @@ The user confirmed these outcomes during the session:
 - A relocated build without video-capture instrumentation keeps both clean videos and working menus.
 - Double-clicking `NFSSE.exe` works directly.
 
-The renderer settings accepted for these observations were GDI, single CPU, maintained mode proportions, locked surfaces and `minfps=5`. The release additionally declares mouse adjustment and borderless toggle configuration explicitly; final Alt+Enter testing did not finish.
+The renderer settings accepted for these earlier observations were GDI, single CPU, maintained mode proportions, locked surfaces and `minfps=5`. The later v0.1.3 window-presentation visual acceptance is recorded above; it does not replace the earlier evidence or infer broader input/device coverage.
 
 ## Release installer checks
 
@@ -54,8 +60,8 @@ An installation made with the published v0.1.0 kit was upgraded to v0.1.1. The u
 ## Outstanding checks
 
 - Complete manual race, save/reload cycle and comprehensive audio/video coverage.
-- v0.1.2 prerelease: Enter after repeated Alt+Tab, Alt+Enter in menus and a race, Alt+F4 from both presentation modes, and unchanged desktop mode after exit. No game launch was performed for the prerelease's automated checks.
-- v0.1.3 prerelease: title-bar dragging, fixed 1280×960 client dimensions on desktops taller than 960 pixels, smaller-window behavior at/below 960, mouse selection and repeated transitions through video/menu/race modes. No automated game launch or visual check was performed.
+- Input/exit checks: Enter after repeated Alt+Tab, Alt+F4 from both presentation modes, and unchanged desktop mode after exit. These have automated regression evidence but no separate user confirmation; the window-presentation visual task is already accepted.
+- v0.1.4 prerelease: visible title-bar icon after restarting with the updated helper. The v0.1.3 window-presentation visual task passed; smaller desktops and broader display-transition coverage still require separate host/runtime checks.
 - Multiplayer, serial/modem links and contemporary USB I-Force devices.
 - Other Windows builds, display drivers, multi-monitor arrangements, ARM emulation and non-English or different media executables.
 

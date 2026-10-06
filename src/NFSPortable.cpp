@@ -8,6 +8,7 @@ static HANDLE logFile = INVALID_HANDLE_VALUE;
 static decltype(&GlobalMemoryStatus) realMemoryStatus;
 static decltype(&CreateWindowExA) realCreateWindow;
 static decltype(&RegisterClassA) realRegisterClass;
+static decltype(&LoadIconW) loadWindowIcon = LoadIconW;
 static WNDPROC gameWindowProc;
 static volatile LONG memoryLogCount;
 static BYTE* gameBase;
@@ -105,6 +106,16 @@ static ATOM WINAPI portableRegisterClass(const WNDCLASSA* description) {
         return 0;
     }
     WNDCLASSA portable = *description;
+    // The legacy registration requests icon 32512 from the game module, but
+    // the installer embeds the original media icon as group 1. Bind that
+    // existing resource to the class so Windows uses it for the caption too.
+    portable.hIcon = loadWindowIcon(reinterpret_cast<HINSTANCE>(gameBase), MAKEINTRESOURCEW(1));
+    if (!portable.hIcon) {
+        const DWORD error = GetLastError();
+        logMessage("Could not load the embedded game window icon: error=%lu\r\n", error);
+        SetLastError(error);
+        return 0;
+    }
     gameWindowProc = description->lpfnWndProc;
     portable.lpfnWndProc = portableWindowProc;
     return realRegisterClass(&portable);
@@ -311,7 +322,7 @@ extern "C" __declspec(dllexport) BOOL WINAPI Initialize() {
 
     logFile = CreateFileW(L"portable-runtime.log", GENERIC_WRITE, FILE_SHARE_READ,
         nullptr, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, nullptr);
-    logMessage("NFSPortable 5; image=%p; executable-relative working directory established\r\n", base);
+    logMessage("NFSPortable 6; image=%p; executable-relative working directory established\r\n", base);
     gameBase = base;
     windowReady = CreateEventW(nullptr, TRUE, FALSE, nullptr);
     if (!windowReady) return FALSE;

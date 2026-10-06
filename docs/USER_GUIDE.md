@@ -1,6 +1,6 @@
 # NFSSE user guide
 
-This guide covers the [v0.1.3 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.3). Its window border, sizing, keyboard and shortcut changes have passed automated checks and await in-game confirmation. [v0.1.1](https://github.com/Buyukcaglar/NFSSE/releases/latest) remains the latest stable release.
+This guide covers the [v0.1.4 prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.4). The user confirmed the earlier window-border and sizing visual task passed. The title-bar icon fix has passed automated checks and awaits visual confirmation. [v0.1.1](https://github.com/Buyukcaglar/NFSSE/releases/latest) remains the latest stable release.
 
 ## Requirements
 
@@ -19,7 +19,7 @@ The media folder must contain `NFS_WIN.EXE`, `NFSICONN.ICO`, `IFORCE.DLL`, `FRON
 
 ## Installation
 
-1. Download `NFSSE-v0.1.3-patch-kit.zip` from the [prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.3), or `NFSSE-v0.1.1-patch-kit.zip` from the [stable release](https://github.com/Buyukcaglar/NFSSE/releases/latest), and extract it to a folder.
+1. Download `NFSSE-v0.1.4-patch-kit.zip` from the [prerelease](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.1.4), or `NFSSE-v0.1.1-patch-kit.zip` from the [stable release](https://github.com/Buyukcaglar/NFSSE/releases/latest), and extract it to a folder.
 2. Double-click `Install-NFSSE.cmd` inside the extracted kit. A console asks for the media folder and destination folder.
 3. Enter the folder directly containing `NFS_WIN.EXE`. Choose a new destination outside the media folder, such as `C:\Games\NFSSE`.
 4. Wait for the verified executable and game data to be written. Close the installer after its success message.
@@ -51,7 +51,9 @@ The tested combination in `ddraw.ini` is GDI rendering, `singlecpu=true`, `maint
 
 Alt+Enter switches between a bordered window and borderless fullscreen. Drag the title bar to move the window. Above a primary desktop height of **960 pixels**, the game area is fixed at **1280×960**, twice the 640×480 gameplay image. The title bar and border add to those dimensions. At exactly 960 pixels or below, the configured window size is retained (original mode size by default). Desktop width is not part of the check; the helper reads the current resolution at each launch. Resizing and maximizing are disabled for the fixed-size window; moving it remains available.
 
-The defaults set `border=true`, `toggle_borderless=true` and `adjmouse=true`. The installer enables the border in older configurations and adds missing toggle/mouse keys. The helper applies the launch sizing policy in memory without rewriting the file. Borderless startup still fills the desktop and preserves each original mode's proportions. Normal borderless startup was exercised with the earlier helper without a desktop resolution change; the new border and sizing behavior still awaits in-game confirmation.
+The defaults set `border=true`, `toggle_borderless=true` and `adjmouse=true`. The installer enables the border in older configurations and adds missing toggle/mouse keys. The helper applies the launch sizing policy in memory without rewriting the file. Borderless startup still fills the desktop and preserves each original mode's proportions. The user confirmed the v0.1.3 window-presentation visual task passed. Behavior on smaller desktops has separate automated policy checks.
+
+From v0.1.4, the game window uses the original icon already embedded in `NFSSE.exe`, addressing the generic application icon on the title bar. This fix updates the helper; it does not replace the icon artwork or require an external icon file beside the game. Its visible result still awaits confirmation.
 
 The v0.1.2 helper releases stale keyboard states when the window loses or regains focus, addressing Enter becoming unavailable after Alt+Tab. Alt+F4 closes the game immediately. Use the in-game quit flow when you need to save progress normally.
 
@@ -73,7 +75,7 @@ Running the installer again against a destination it created refreshes the manag
 
 To update a v0.1.0 installation, run the v0.1.1 installer with the same source media and destination. It adds the 11 missing race announcer clips beside `NFSSE.exe`. Keep these root `.EAS` files when moving the game; race announcements load them directly from the game folder.
 
-To try the new window, keyboard and shortcut changes, run the v0.1.3 prerelease installer with the same source media and destination. It includes the earlier announcer repair, updates the helper and enables the movable window border. Check title-bar dragging and the window size after Alt+Enter, then Enter after repeated Alt+Tab and Alt+F4 in menus and gameplay. Report whether the desktop resolution stays unchanged after toggling and exit.
+To apply the title-bar icon fix, run the v0.1.4 prerelease installer with the same source media and destination. It includes the earlier announcer, window and keyboard fixes. Relaunch the game and check the icon on the title bar after Alt+Enter. The window-presentation visual task is already accepted; keyboard recovery, immediate exit and broader display coverage retain their separate validation checks.
 
 ## Troubleshooting
 
@@ -89,6 +91,7 @@ To try the new window, keyboard and shortcut changes, run the v0.1.3 prerelease 
 | Stalled video, corrupted presentation or menus ignoring clicks | Restore the default `ddraw.ini`, especially GDI, `singlecpu=true` and `minfps=5`; use the exact bundled renderer. Report which clip or menu failed. |
 | Wrong video proportions | Keep `maintas=true` and `aspect_ratio=` empty so each original mode determines its proportions. |
 | Windowed mode has no title bar or cannot be moved | Use the v0.1.3 helper and installer, then drag the title bar after Alt+Enter. If the game captures the cursor, use Alt+Tab to switch away and back, or the renderer's Ctrl+Tab cursor-unlock shortcut. |
+| Title bar shows a generic application icon | Use the v0.1.4 helper, which assigns the original embedded icon to the window class. Restart the game after updating. |
 | Window is smaller than 1280×960 | The fixed size applies only when the primary desktop's current height is greater than 960 pixels. Relaunch after changing desktop resolution and check the `Window presentation` entry in `portable-runtime.log`. |
 | Alt+Enter does nothing in an older installation | Use the v0.1.2 prerelease installer to add missing toggle settings, or set `toggle_borderless=true` in `[ddraw]`. An explicit custom hotkey or game-specific override can change the shortcut. |
 | Enter stops working after Alt+Tab | Use the v0.1.2 prerelease helper, which resets stale keyboard states on focus transitions. Report whether the issue remains after switching away and back several times. |
