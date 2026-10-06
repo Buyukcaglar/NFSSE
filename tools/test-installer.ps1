@@ -14,7 +14,11 @@ if (Test-Path -LiteralPath $OutputRoot) { throw 'Use a fresh test output folder.
 [IO.Directory]::CreateDirectory($OutputRoot) | Out-Null
 $shell = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
 
-function Hash([string]$Path) { return (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToLowerInvariant() }
+function Hash([string]$Path) {
+    $stream=[IO.File]::OpenRead($Path); $sha=[Security.Cryptography.SHA256]::Create()
+    try { return ([BitConverter]::ToString($sha.ComputeHash($stream))).Replace('-','').ToLowerInvariant() }
+    finally { $stream.Dispose(); $sha.Dispose() }
+}
 function Assert([bool]$Condition, [string]$Message) { if (-not $Condition) { throw $Message } }
 function Run-Installer([string]$Package, [string]$Media, [string]$Target, [string]$TestName, [bool]$Success) {
     $savedPreference = $ErrorActionPreference

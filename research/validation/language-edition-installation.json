@@ -1,0 +1,18 @@
+{
+  "installed": "C:\\Projects\\NSFS\\NFSSE\\NFSSE",
+  "backup": "C:\\Projects\\NSFS\\NFSSE\\build\\language-install-backups\\language-edition-20261006-163321-30869762",
+  "original_files_preserved": 1262,
+  "public_executable": "C:\\Projects\\NSFS\\NFSSE\\NFSSE\\NFSSE.exe",
+  "engine_unchanged": true,
+  "game_launched": false,
+  "managed_files_added_or_updated": 445,
+  "user_acceptance": {
+    "date": "2026-10-06",
+    "user_statement": "Everything looks ok",
+    "scope": "Local English/German/Japanese flag selector and language integration, following the focused checklist in the language edition guide.",
+    "accepted_local_launcher_sha256": "588ddab53d3de0f41b8fe7fc2465e3ca16a6db1f15325bf6ca37b5a15610288f",
+    "accepted_engine_sha256": "a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd",
+    "patchkit_installer_validation": "Separate automated checks; neither game nor selector UI launched by those checks.",
+    "limits": "Collective confirmation does not independently establish every frame, audio sample, multiplayer path or Windows host."
+  }
+}

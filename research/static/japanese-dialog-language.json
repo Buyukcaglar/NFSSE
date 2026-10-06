@@ -1,0 +1,36 @@
+{
+  "source_executable": "japanese/NFS.EXE",
+  "source_sha256": "5c621492289e9b40188d7afec33d163ff552c2a434ea84c282d81a06f720bc4c",
+  "dialog_strings": [
+    {
+      "text": "Exit to system ?",
+      "file_offset": "0xc62ec",
+      "va": "0x4c7aec",
+      "active_code_refs": [
+        "0x43f541",
+        "0x440086",
+        "0x440210"
+      ]
+    },
+    {
+      "text": "ENTER NAME",
+      "file_offset": "0xc7524",
+      "va": "0x4c8d24",
+      "active_code_refs": [
+        "0x4619cc"
+      ]
+    },
+    {
+      "text": "Please Enter Name",
+      "file_offset": "0xc80c4",
+      "va": "0x4c98c4",
+      "active_code_refs": [
+        "0x479f55"
+      ]
+    }
+  ],
+  "localized_alternative": "German",
+  "japanese_dialog_branch_found": false,
+  "original_release_launched": false,
+  "evidence": "Binary strings and disassembly of active English/German dialog branches"
+}

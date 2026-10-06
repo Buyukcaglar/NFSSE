@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.2.0 — Optional language editions, 2026-10-06
+
+- Open a native English/German/Japanese flag window from NFSSE.exe and start the
+  unchanged accepted engine as NFSSE-Game.exe after selection. Preserve its
+  original icon, helper, renderer, shared saves and other settings.
+- Select the original German resource paths and engine branch, including all
+  eleven distinct German race-announcer recordings. Restore English recordings
+  for English/Japanese. Keep original Japanese name/exit dialogs in English.
+- Carry forward the source-derived Japanese compatibility resources after the
+  user reported the prototype checks looking OK. Add selection/integrity,
+  rollback, damaged-pack recovery and backed-up update checks. The native
+  selector and German gameplay checks were confirmed looking OK by the user.
+- Integrate the selector into the PatchKit as an optional feature. The standard
+  English installation stays the default; original English media supplies German,
+  and user-supplied Japanese media adds Japanese. Windows PowerShell/.NET builds
+  the verified resources without Python or additional player tools.
+- Preserve enabled features and selections on reinstall. Explicitly disabling the
+  selector backs up language state and restores direct English play. All 436 C#
+  Japanese outputs match the reference; basic and optional installer tests pass.
+
 ## 0.1.5 — 2026-10-06
 
 - Set the game window title to `The Need for Speed: Special Edition` through the existing window-creation hook. Other window classes retain their supplied captions. The executable, original icon, game data, renderer and accepted window-sizing policy are unchanged.

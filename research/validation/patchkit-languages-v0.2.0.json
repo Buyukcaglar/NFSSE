@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "checked_utc": "2026-10-06T14:12:36.727126+00:00",
+  "passed": true,
+  "game_launched": false,
+  "selector_ui_launched": false,
+  "shell": "Windows PowerShell 5.1",
+  "python_required_by_installer": false,
+  "cases": [
+    "fresh-english-german-option",
+    "reinstall-preserves-enabled-feature-and-german-selection",
+    "add-japanese-option",
+    "reinstall-preserves-japanese-without-source-media-argument",
+    "damaged-japanese-preserved",
+    "custom-paths-preserved",
+    "custom-announcer-preserved",
+    "disable-selector-restores-direct-english-play",
+    "reenable-preserves-installed-japanese-pack",
+    "unsupported-japanese-before-destination-write"
+  ],
+  "japanese_outputs_match_python_reference": 436,
+  "german_announcer_files_selected": 11,
+  "shared_saves_settings_preserved": true,
+  "engine_helper_renderer_unchanged": true,
+  "invalid_or_custom_inputs_rejected_before_destination_write": true,
+  "tested_zip_sha256": "9f1c030147b1a106c26dad920df63ef70edc0c7104a5db9582c322ffc243e4b1",
+  "tested_from_extracted_final_zip": true
+}

@@ -1,0 +1,86 @@
+﻿{
+    "profile":  "japanese-resource-prototype-1",
+    "checked_utc":  "2026-10-06T12:44:59.8118676Z",
+    "game_launched":  false,
+    "japanese_source_files":  435,
+    "output_resource_files":  436,
+    "unchanged_prototype_files":  1707,
+    "language_round_trip":  true,
+    "repeated_selection_idempotent":  true,
+    "original_path_backup_exact":  true,
+    "custom_paths_preserved_and_rejected":  true,
+    "german_config_preserved_and_rejected":  true,
+    "changed_resource_rejected":  true,
+    "english_recovery_with_changed_japanese_resource":  true,
+    "exclusive_game_lock_rejected":  true,
+    "save_and_settings_bytes_preserved":  true,
+    "final_language":  "Japanese",
+    "runtime_files":  [
+                          {
+                              "path":  "NFSSE.exe",
+                              "sha256":  "a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd"
+                          },
+                          {
+                              "path":  "NFSPortable.dll",
+                              "sha256":  "6cc562a54c8c861db79ff7ce55b8168570c176bb7840d77d1d0d1c045e386ff1"
+                          },
+                          {
+                              "path":  "ddraw.dll",
+                              "sha256":  "85e0f7d530dfda134793a57cb3e76b0287dcc96892ee57162dd68f47283b03a9"
+                          }
+                      ],
+    "resource_edits":  [
+                           {
+                               "target":  "LANG/JA/ART/OPTION/GRAPHICS",
+                               "japanese_source":  "FRONTEND/ART/OPTION/GRAPHICS.QFS",
+                               "english_source":  "FRONTEND/ART/OPTION/GRAPHICS.QFS",
+                               "restored_entries":  [
+                                                        "atld",
+                                                        "atll",
+                                                        "atmd",
+                                                        "atml"
+                                                    ],
+                               "resolution_entries":  [
+                                                          "320d",
+                                                          "320l",
+                                                          "320m"
+                                                      ],
+                               "pixel_or_palette_conversion":  false,
+                               "entries":  57
+                           },
+                           {
+                               "target":  "LANG/JA/ART/CHECK/GRAPHICS",
+                               "japanese_source":  "FRONTEND/ART/OPTION/GRAPHICS.QFS",
+                               "english_source":  "FRONTEND/ART/OPTION/GRAPHICS.QFS",
+                               "restored_entries":  [
+                                                        "atld",
+                                                        "atll",
+                                                        "atmd",
+                                                        "atml"
+                                                    ],
+                               "resolution_entries":  [
+                                                          "320d",
+                                                          "320l",
+                                                          "320m"
+                                                      ],
+                               "pixel_or_palette_conversion":  false,
+                               "entries":  57
+                           },
+                           {
+                               "target":  "LANG/JA/MISC/MASKHI.FSH",
+                               "entries":  192,
+                               "omitted_japanese_extra_entries":  0,
+                               "pixel_or_placement_changes":  false,
+                               "directory_order":  "English engine"
+                           },
+                           {
+                               "target":  "LANG/JA/MISC/MASKLO.FSH",
+                               "entries":  192,
+                               "omitted_japanese_extra_entries":  67,
+                               "pixel_or_placement_changes":  false,
+                               "directory_order":  "English engine"
+                           }
+                       ],
+    "police_movie_remapping":  "unnecessary: COP and GCOP originals are identical",
+    "runtime_visual_audio_acceptance":  "pending user test"
+}

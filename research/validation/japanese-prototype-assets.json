@@ -1,0 +1,52 @@
+{
+  "profile": "japanese-resource-prototype-1",
+  "checked_utc": "2026-10-06T12:45:26.645502+00:00",
+  "game_launched": false,
+  "runtime_components_identical": 3,
+  "original_installation_files_unchanged": 1262,
+  "cloned_original_files_unchanged": 1261,
+  "japanese_imports_exact": 430,
+  "output_resource_files": 436,
+  "graphics": [
+    {
+      "context": "OPTION",
+      "entries": 57,
+      "unchanged_japanese_blobs": 50,
+      "unchanged_english_control_blobs": 7,
+      "palette_exact": true
+    },
+    {
+      "context": "CHECK",
+      "entries": 57,
+      "unchanged_japanese_blobs": 50,
+      "unchanged_english_control_blobs": 7,
+      "palette_exact": true
+    }
+  ],
+  "hud": [
+    {
+      "archive": "MASKHI.FSH",
+      "entries": 192,
+      "pixels_and_placement_exact": true,
+      "extra_entries_omitted": 0
+    },
+    {
+      "archive": "MASKLO.FSH",
+      "entries": 192,
+      "pixels_and_placement_exact": true,
+      "extra_entries_omitted": 67
+    }
+  ],
+  "changed_path_records": [
+    2,
+    5,
+    9,
+    17,
+    18
+  ],
+  "shared_path_records_unchanged": 14,
+  "police_movies_identical": true,
+  "resource_pixels_synthesized_or_resampled": false,
+  "speech_transcoded": false,
+  "runtime_visual_audio_acceptance": "pending user test"
+}

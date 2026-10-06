@@ -1,0 +1,58 @@
+{
+  "created_utc": "2026-10-06T13:32:22.929498+00:00",
+  "passed": true,
+  "game_launched": false,
+  "selector_ui_launched": false,
+  "game_root": "C:\\Projects\\NSFS\\NFSSE\\build\\multilingual-game",
+  "original_base_files_preserved": 1262,
+  "japanese_source_derived_resources_verified": 436,
+  "original_engine_helper_renderer_unchanged": true,
+  "launcher_sha256": "588ddab53d3de0f41b8fe7fc2465e3ca16a6db1f15325bf6ca37b5a15610288f",
+  "original_icon_payloads_unchanged": true,
+  "selections_exercised": [
+    "English",
+    "German",
+    "Japanese",
+    "German",
+    "English"
+  ],
+  "german_path_records": {
+    "2": "frontend/gspeech/",
+    "5": "frontend/gart/",
+    "10": "simdata/gtrackfm/",
+    "12": "simdata/gslides/",
+    "16": "simdata/gdash/",
+    "18": "frontend/gshow/"
+  },
+  "all_eleven_german_announcements_distinct_and_selected": true,
+  "english_and_japanese_announcements_restored": true,
+  "other_configuration_tokens_preserved": true,
+  "complete_game_file_preservation": 1707,
+  "prior_selection_restored_exactly": true,
+  "japanese_prototype_user_report": "Checks looking OK",
+  "selector_and_german_gameplay_acceptance": "Local three-language integration reported OK by user, 2026-10-06; collective confirmation.",
+  "installed_game_root": "C:\\Projects\\NSFS\\NFSSE\\NFSSE",
+  "installed_managed_outputs_match_verified_build": 445,
+  "installed_original_files_preserved": 1262,
+  "exact_pre_upgrade_executable_backup_verified": true,
+  "unit_checks": [
+    "three language routing and configuration",
+    "eleven original announcer copies per selection",
+    "idempotence",
+    "custom path/config/audio rejection",
+    "selected resource integrity rejection",
+    "English recovery from damaged German pack",
+    "failed-write rollback",
+    "session exclusion",
+    "save preservation"
+  ],
+  "user_acceptance": {
+    "date": "2026-10-06",
+    "user_statement": "Everything looks ok",
+    "scope": "Local English/German/Japanese flag selector and language integration, following the focused checklist in the language edition guide.",
+    "accepted_local_launcher_sha256": "588ddab53d3de0f41b8fe7fc2465e3ca16a6db1f15325bf6ca37b5a15610288f",
+    "accepted_engine_sha256": "a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd",
+    "patchkit_installer_validation": "Separate automated checks; neither game nor selector UI launched by those checks.",
+    "limits": "Collective confirmation does not independently establish every frame, audio sample, multiplayer path or Windows host."
+  }
+}

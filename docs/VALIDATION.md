@@ -1,8 +1,31 @@
 # Validation record
 
-Latest full release: **v0.1.5**, 2026-10-06, promoted at the user's request with the existing patch kit unchanged. The user confirmed v0.1.3's window-presentation visual task passed. The user also visually confirmed the full window title and original title-bar icon with v0.1.5. Nonvisual focus/exit behavior retains its separate checks below. Evidence describes the specific tested media and host; it is not a guarantee for every Windows version, video driver or input device.
+Latest full release: **v0.2.0**, 2026-10-06. The user confirmed the local three-language integration with "Everything looks ok" and authorized optional PatchKit integration and publication. The accepted v0.1.5 engine/helper/renderer are retained. Earlier window-presentation, title and icon confirmations remain recorded separately. Automated checks below validate specific files and behavior; collective user confirmation does not establish every frame, audio sample, multiplayer path or Windows host.
+
+## v0.2.0 optional PatchKit checks
+
+The extracted kit passed the standard installer checks and ten optional-language cases in Windows PowerShell 5.1. Checks cover fresh English/German selection, adding Japanese, preserving German selection on reinstall, preserving Japanese without its source folder, disabling to direct English play, and re-enabling the retained Japanese pack. Modified Japanese assets, custom path tables, custom announcers and an unsupported Japanese executable were rejected before destination writes. Shared saves and settings survived.
+
+All 436 installed Japanese outputs are byte-identical to the Python reference builder. All eleven original German root announcers are selected for German; English and Japanese restore the original English recordings. The engine, compatibility helper and renderer retain their accepted hashes. The C# converter passed 33 synthetic reference cases, including malformed inputs and offset/size bounds. Native selection tests also cover unavailable Japanese selection, rollback and session locking. These automated checks launch neither the game nor selector UI.
+
+Records: [standard installer](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/patchkit-basic-v0.2.0.json), [optional languages](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/patchkit-languages-v0.2.0.json), and [local user acceptance](https://github.com/Buyukcaglar/NFSSE/blob/main/research/validation/language-user-acceptance.json). The release contains our code, resource profiles and cnc-ddraw; original game executables, icons, artwork and audio are generated or copied only from the user's media.
 
 ## Compilation and static checks
+
+The local three-language edition builds its native selector without warnings.
+Production-function tests cover all three path/config choices, original race
+voices, idempotence, configuration/save preservation, rejected custom/damaged
+data, English recovery from a damaged German pack, failed-write rollback and
+exclusive session locking. Real media-dependent selections passed English →
+German → Japanese → German → English without starting the game or selector UI.
+All 436 Japanese resource outputs and the original engine/helper/renderer/icon
+payloads were verified; all 1,262 base files were preserved, with the original
+executable retained as NFSSE-Game.exe. The backed-up updater passed on a separate
+installation copy. See `research/validation/language-edition-validation.json`
+and the [edition guide](LANGUAGE_EDITION.md). The user reported the Japanese
+prototype checks looking OK and subsequently confirmed the local three-language
+integration. These results and the new optional installer are included in v0.2.0;
+the published v0.1.5 ZIP remains unchanged.
 
 - Active x86 helper source compiles with MSVC, `/MT /O2 /W4 /EHsc`.
 - PowerShell installer parses and the C# icon tool compiles with Windows' built-in tooling.

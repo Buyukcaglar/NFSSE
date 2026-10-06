@@ -1,0 +1,2226 @@
+{
+  "schema": 1,
+  "id": "japanese-resource-prototype-1",
+  "status": "Japanese prototype and local three-language integration reported OK by user, 2026-10-06",
+  "japanese_executable_sha256": "5c621492289e9b40188d7afec33d163ff552c2a434ea84c282d81a06f720bc4c",
+  "runtime_sha256": {
+    "NFSSE.exe": "a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd",
+    "NFSPortable.dll": "6cc562a54c8c861db79ff7ce55b8168570c176bb7840d77d1d0d1c045e386ff1",
+    "ddraw.dll": "85e0f7d530dfda134793a57cb3e76b0287dcc96892ee57162dd68f47283b03a9"
+  },
+  "trees": [
+    {
+      "media": "FRONTEND/ART",
+      "target": "LANG/JA/ART",
+      "path_records": [
+        5
+      ]
+    },
+    {
+      "media": "FRONTEND/SHOW",
+      "target": "LANG/JA/SHOW",
+      "path_records": [
+        18
+      ]
+    },
+    {
+      "media": "FRONTEND/SPEECH",
+      "target": "LANG/JA/SPEECH",
+      "path_records": [
+        2
+      ]
+    },
+    {
+      "media": "SIMDATA/MISC",
+      "target": "LANG/JA/MISC",
+      "path_records": [
+        9,
+        17
+      ]
+    }
+  ],
+  "english_resource_sha256": {
+    "FRONTEND/ART/OPTION/GRAPHICS.QFS": "6619f27f87b0ae763f7599bb21a9b2cfa73448d5b8045c7c6aa8bb6185246ae2",
+    "FRONTEND/ART/CHECK/GRAPHICS.QFS": "6b94961aeeeafbb8179041134dd2c5ba4b7d0bdddd761fb06f5224965ed65a9e",
+    "SIMDATA/MISC/MASKHI.FSH": "86676563a27657895290d1814468f1f5b5aa9f96f463bbbb8f6f37caadb24a09",
+    "SIMDATA/MISC/MASKLO.FSH": "92f3a33184f5c0ea7807b95f9544acbfc26ef375f3781eab0914029a621f84c1"
+  },
+  "files": [
+    {
+      "path": "FRONTEND/ART/CHECK/AL1.QFS",
+      "target": "LANG/JA/ART/CHECK/AL1.QFS",
+      "sha256": "1096d1a8fb6da2f4b8cc726b6864877e16fc61c8c42b55b23b4192b1f749a4c7"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/AL2.QFS",
+      "target": "LANG/JA/ART/CHECK/AL2.QFS",
+      "sha256": "7329e7fd63931ea1b6efc7918e5585913642627d850070a232d37736a0e8049e"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/AL3.QFS",
+      "target": "LANG/JA/ART/CHECK/AL3.QFS",
+      "sha256": "4ec623a7396928f0c3777069a2c6b88b923f15a83a4acf394f9ebf99ef0c8d9e"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CHCONSET.INV",
+      "target": "LANG/JA/ART/CHECK/CHCONSET.INV",
+      "sha256": "1af2ff979034efc4bccfad7d6356220e7c79cfe0921c6c89451da8ae7d6baabc"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CHCONSET.QFS",
+      "target": "LANG/JA/ART/CHECK/CHCONSET.QFS",
+      "sha256": "3803a7ad787549d56090dda25fba5db88840005d8dca23b70c3e144d7335f5fa"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CHKCHAT.INV",
+      "target": "LANG/JA/ART/CHECK/CHKCHAT.INV",
+      "sha256": "e338cae28e59d26ddff3dfea7fee4df2f35aa7958fdbe26cdb20a8b1ef862d1e"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CHKCHAT.QFS",
+      "target": "LANG/JA/ART/CHECK/CHKCHAT.QFS",
+      "sha256": "179886202955553ea66c064aeac37379fe4947ef5302761990ef9e5d77d6005e"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CHKMENU.INV",
+      "target": "LANG/JA/ART/CHECK/CHKMENU.INV",
+      "sha256": "466bfafbcd964a05c28fe89c7355127b8e74baef7e8487458427728bb42c4b34"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CHKMENU.QFS",
+      "target": "LANG/JA/ART/CHECK/CHKMENU.QFS",
+      "sha256": "8ddb9b3c9500bf1eb61783d44378fe1ba8ffa4eb2869d058a037884843d4ce7b"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CHKOPTS.INV",
+      "target": "LANG/JA/ART/CHECK/CHKOPTS.INV",
+      "sha256": "1afc72a1d7c888eda1c74e0a56d3ee122dca442617b61081df7dc1be26003b19"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CHKOPTS.QFS",
+      "target": "LANG/JA/ART/CHECK/CHKOPTS.QFS",
+      "sha256": "28775c217213e071abc48b1f639c789e78d874645851d99cb8e9acf917a8cea3"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CL1.QFS",
+      "target": "LANG/JA/ART/CHECK/CL1.QFS",
+      "sha256": "2954c417da477ffa661315629ff240412d7afdf762473d9d7d9b27b1675ce2af"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CL2.QFS",
+      "target": "LANG/JA/ART/CHECK/CL2.QFS",
+      "sha256": "cb3044ce6a73595670cb1e7d739fdafb39678320630624e52a3669e5833229f3"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CL3.QFS",
+      "target": "LANG/JA/ART/CHECK/CL3.QFS",
+      "sha256": "a23c7775d28e5d403b778153b860e9dd797a41bfcbd0faf667e52328d48cc274"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CY1.QFS",
+      "target": "LANG/JA/ART/CHECK/CY1.QFS",
+      "sha256": "80e595acffbb902dd7ac332b186cd3789c54391e14e9d29edc51438837086d71"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CY2.QFS",
+      "target": "LANG/JA/ART/CHECK/CY2.QFS",
+      "sha256": "4e362e1a0508411bdb4b358bab513dd09610e35840e0878a9c67c0a19833330b"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/CY3.QFS",
+      "target": "LANG/JA/ART/CHECK/CY3.QFS",
+      "sha256": "e667a172e3a7ee71be7f2a6ccd8a8234006d8102a0a39cb34ec64a675bb6de59"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/FINMENU.INV",
+      "target": "LANG/JA/ART/CHECK/FINMENU.INV",
+      "sha256": "466bfafbcd964a05c28fe89c7355127b8e74baef7e8487458427728bb42c4b34"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/FINMENU.QFS",
+      "target": "LANG/JA/ART/CHECK/FINMENU.QFS",
+      "sha256": "bdb8d119683e6c8f5481743717733f5a3b134fb5f7245b9b3db44e1dfb1624cb"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/GRAPHICS.FSH",
+      "target": "LANG/JA/ART/CHECK/GRAPHICS.FSH",
+      "sha256": "5f81f24d0481d4a4cfed801a12c64ef5002004f4992e5609efd4aa05353559f7"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/GRAPHICS.INV",
+      "target": "LANG/JA/ART/CHECK/GRAPHICS.INV",
+      "sha256": "784d9c05d27eb32d7dacfc20337ad32fd43d23b205d355ea6513d84aa58f5a96"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/GRAPHICS.QFS",
+      "target": "LANG/JA/ART/CHECK/GRAPHICS.QFS",
+      "sha256": "fd395bbec328527f02927a3d9ea1156b7304a8b860b8c9c858c86ae7cc18d36c"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/LOADANIM.QFS",
+      "target": "LANG/JA/ART/CHECK/LOADANIM.QFS",
+      "sha256": "4a4e36cc6265194edc41044269af89a2abe4c79a9751b939ed6e9dcdc12e7926"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/LOADSAVE.INV",
+      "target": "LANG/JA/ART/CHECK/LOADSAVE.INV",
+      "sha256": "1c28feecf204e11af9e9f18c6793d7bbd52a9f001feb4b310c7778e4b3ac3774"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/LOADSAVE.QFS",
+      "target": "LANG/JA/ART/CHECK/LOADSAVE.QFS",
+      "sha256": "da14fce2010be5a0bf619a458d85e8a73cae0228e564528de7857d29c8d8cdb0"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/LOOP1.QFS",
+      "target": "LANG/JA/ART/CHECK/LOOP1.QFS",
+      "sha256": "a8b93900f5593f9aed3c39a2e74328ed39f22320be4a0a4007cc177e0a84dcd8"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/LOOP2.QFS",
+      "target": "LANG/JA/ART/CHECK/LOOP2.QFS",
+      "sha256": "b2886a8ae3aca4634e79ca8f236a4316828ea1aaf458ce37bafedd2f4cfba449"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/LOOP3.QFS",
+      "target": "LANG/JA/ART/CHECK/LOOP3.QFS",
+      "sha256": "7e623c059193d3c20816cb3785ea6de7b154bfd927ddcc9e4a2c2c0b5e81abd8"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/LOOP6.QFS",
+      "target": "LANG/JA/ART/CHECK/LOOP6.QFS",
+      "sha256": "54a8bc70ae945394768e65719806aa8ed88f1acc7d1463df34845d53e644adbb"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/LOOP7.QFS",
+      "target": "LANG/JA/ART/CHECK/LOOP7.QFS",
+      "sha256": "119c54212025bbccb71327d34a70c90bbcc955434c914d5a939a5867e02c1ec7"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/LOOPX.QFS",
+      "target": "LANG/JA/ART/CHECK/LOOPX.QFS",
+      "sha256": "3830f2522673080f6dd09debbfdf5853ab45d909477d40293355f9886db0772f"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/PAUSE.FSH",
+      "target": "LANG/JA/ART/CHECK/PAUSE.FSH",
+      "sha256": "b47c3263445138eac532030d3e6ce35956c267c45c2114af3654b72c95fc473a"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/PAUSE.INV",
+      "target": "LANG/JA/ART/CHECK/PAUSE.INV",
+      "sha256": "266768de3dee1d37638d30a145123b2947446ff04199a8ad5919df074e845b3a"
+    },
+    {
+      "path": "FRONTEND/ART/CHECK/PAUSE.QFS",
+      "target": "LANG/JA/ART/CHECK/PAUSE.QFS",
+      "sha256": "721ea75e1101f0d19d22994761eb959808900cee3031e25446cf0af419c91e2f"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/5121.QFS",
+      "target": "LANG/JA/ART/CONTROL/5121.QFS",
+      "sha256": "7d3217ba369bc8b3a0ee23d7d15f974856d22da0d971d022fa2a3e6f655e001d"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/5122.QFS",
+      "target": "LANG/JA/ART/CONTROL/5122.QFS",
+      "sha256": "b6cb732686f7ed0a96999344776d81ba3c539f93c5247f0b3eac6ab4b5926276"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/9111.QFS",
+      "target": "LANG/JA/ART/CONTROL/9111.QFS",
+      "sha256": "8344fb2f1f7fb17494f45c419dae7020d14d53943b5f71cbba76c9f5169d64fb"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/9112.QFS",
+      "target": "LANG/JA/ART/CONTROL/9112.QFS",
+      "sha256": "6797bd7ea3e000c1a6ec87aa56ec8c103783cacdc0279d290db9348aa97f73de"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/ALPINE.QFS",
+      "target": "LANG/JA/ART/CONTROL/ALPINE.QFS",
+      "sha256": "128fe2f1b6d5ced2efb9c4503ab94f0e6819cbfe10a56efb86f0e3f4971ceb5f"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/ALPINEM.QFS",
+      "target": "LANG/JA/ART/CONTROL/ALPINEM.QFS",
+      "sha256": "b2e22a4ab17c07f6088f8c912b40d85d542278fa337ee5ccd71b139b29b0f9d5"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/ALPINER.QFS",
+      "target": "LANG/JA/ART/CONTROL/ALPINER.QFS",
+      "sha256": "24870f2ed6fa45af0d70a702459a4d632187e85dbb3055c493804b2622c619b7"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/ANI.QFS",
+      "target": "LANG/JA/ART/CONTROL/ANI.QFS",
+      "sha256": "8fdd908dd6c109ee535108b6ff35841d8004fae63c88514ef2ac6ffffceb7081"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/AVALLEY.QFS",
+      "target": "LANG/JA/ART/CONTROL/AVALLEY.QFS",
+      "sha256": "a3c875ce909ba656085170354da1b2f0df3eee6c1d4e3e38b591114d102be7fd"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/AVALLEYM.QFS",
+      "target": "LANG/JA/ART/CONTROL/AVALLEYM.QFS",
+      "sha256": "5cbfac071a6049991250bca8d42c490bdebec1e50aaaa30415cef0bc69386ffd"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/AVALLEYR.QFS",
+      "target": "LANG/JA/ART/CONTROL/AVALLEYR.QFS",
+      "sha256": "160972a51c9b1509ebcd734d7eb29543057b53b3f653fb638710a5473efded29"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/BSIENNA.QFS",
+      "target": "LANG/JA/ART/CONTROL/BSIENNA.QFS",
+      "sha256": "f9e6279500a6301e131676682e492a96b44c4854be39a680550e9a1a98aaeb82"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/BSIENNAM.QFS",
+      "target": "LANG/JA/ART/CONTROL/BSIENNAM.QFS",
+      "sha256": "e87df372f1a1bdeb7cac0aa100217446321e1fb0e670f5287ee72fd445286bbd"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/BSIENNAR.QFS",
+      "target": "LANG/JA/ART/CONTROL/BSIENNAR.QFS",
+      "sha256": "1ca07181a606134ece20868b6669ce746e07dc3088beacee94d4ad91cfc03abc"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/CENTRAL.INV",
+      "target": "LANG/JA/ART/CONTROL/CENTRAL.INV",
+      "sha256": "93def573203c12f8335072d38c8f4adcd29a797799107c61a95ed785bdc7bf32"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/CENTRAL.QFS",
+      "target": "LANG/JA/ART/CONTROL/CENTRAL.QFS",
+      "sha256": "6eea7b7cfe29659d446fd4166b4bb379f528f017e008abd5129f08d3ac3abba7"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/CHAT.QFS",
+      "target": "LANG/JA/ART/CONTROL/CHAT.QFS",
+      "sha256": "3546fb200ad8f3b04a1ecd6ae5b51a416e205af16a5a1a3bddcdfaef1be55f27"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/CITY.QFS",
+      "target": "LANG/JA/ART/CONTROL/CITY.QFS",
+      "sha256": "fa1b6a89d77579fbd11dda0f095cf83a7480e69fe775b5ae61ed92ca332eb335"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/CITYM.QFS",
+      "target": "LANG/JA/ART/CONTROL/CITYM.QFS",
+      "sha256": "350a673f12bf8a114cc09278a5b75ee79623e6c4216a43e31f011d99553d7f8a"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/CITYR.QFS",
+      "target": "LANG/JA/ART/CONTROL/CITYR.QFS",
+      "sha256": "dc26b0f6b617f78ba90073aa1e4c853c6397d27a35f525636d311685c48613a2"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/COAST.QFS",
+      "target": "LANG/JA/ART/CONTROL/COAST.QFS",
+      "sha256": "a5cba342ad5a4020018e6f6494addfb83da446b7318bda244d1f59b5eb239d06"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/COASTM.QFS",
+      "target": "LANG/JA/ART/CONTROL/COASTM.QFS",
+      "sha256": "5e4afa3648d011aa49fb005c5a6fae56628752c202a86f30db0f9916cb51a99c"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/COASTR.QFS",
+      "target": "LANG/JA/ART/CONTROL/COASTR.QFS",
+      "sha256": "b147806a48b0cb5c3cd0839d64119c72d15103f998914375576a9e25706a0759"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/DIA1.QFS",
+      "target": "LANG/JA/ART/CONTROL/DIA1.QFS",
+      "sha256": "07748a01c8f38fc84b180d4bd65a3877b11b2b463f6a1bea03aac073a1c9d7d5"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/DIA2.QFS",
+      "target": "LANG/JA/ART/CONTROL/DIA2.QFS",
+      "sha256": "76c5d40c40b5fa25333d0d5f7da93a0ac6a7d54c176e9e907c2603e3e14e528a"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/GAMEMOD2.QFS",
+      "target": "LANG/JA/ART/CONTROL/GAMEMOD2.QFS",
+      "sha256": "352919fd138a54f42e37b64a31d006308c0bd580a7431366402b9284d0203b97"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/GAMEMODE.QFS",
+      "target": "LANG/JA/ART/CONTROL/GAMEMODE.QFS",
+      "sha256": "754ac023722bdf8c48372bc05a2c820953cef543f6e49f5fb231f43ac362acb9"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/HEADHEAD.QFS",
+      "target": "LANG/JA/ART/CONTROL/HEADHEAD.QFS",
+      "sha256": "3edf465684ff66d6fb21c70abed3562bfa70e0cea7a66cb1a5721d13e902572f"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/LVEGAS.QFS",
+      "target": "LANG/JA/ART/CONTROL/LVEGAS.QFS",
+      "sha256": "131bcb6ff678587ab43f98eea75288a5444bc5593186fca15498f370669cfa43"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/LVEGASM.QFS",
+      "target": "LANG/JA/ART/CONTROL/LVEGASM.QFS",
+      "sha256": "ed787b74d080280a29345a2ffc91aa83bac663f3ecc6e1ad4d03340ceebc7442"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/LVEGASR.QFS",
+      "target": "LANG/JA/ART/CONTROL/LVEGASR.QFS",
+      "sha256": "d3f229ff58d8a04dfa0b562e9055a4166c8f37503d7e22badfbc7894b0783c8a"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/NOMERCY.QFS",
+      "target": "LANG/JA/ART/CONTROL/NOMERCY.QFS",
+      "sha256": "d93e171bec006f24d3de6e8b18dfb56bd5d5f35f263f5855017f55566ab3fc19"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/NSX1.QFS",
+      "target": "LANG/JA/ART/CONTROL/NSX1.QFS",
+      "sha256": "bb14c0437b038f357c61961aca9cf70c8434ed30a7b599e211dca11a3ae92212"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/NSX2.QFS",
+      "target": "LANG/JA/ART/CONTROL/NSX2.QFS",
+      "sha256": "f8d55ad5dfbb3b08656a479582d0b1e0769638025111e973ddf3fc5423c518fc"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/RX71.QFS",
+      "target": "LANG/JA/ART/CONTROL/RX71.QFS",
+      "sha256": "96807a145fa339164343f51a65198db122d58d9c2e07bc0ca094f76bee96128e"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/RX72.QFS",
+      "target": "LANG/JA/ART/CONTROL/RX72.QFS",
+      "sha256": "5cf46b0cf73a4d7a9e79bd97e058fbfcd0508696e65f03ab1dcaddcb03d82cc7"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/SINGLE.QFS",
+      "target": "LANG/JA/ART/CONTROL/SINGLE.QFS",
+      "sha256": "a88a1882c61936e3790a8c8fca4560c205b87823df3347ba1b7b5932753c02a5"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/SLEW.QFS",
+      "target": "LANG/JA/ART/CONTROL/SLEW.QFS",
+      "sha256": "9c0fdb78e3ba77bb78fabddcd1e96b7df8bfa60d62faa98a3ef8f2a3c68c4465"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/SPRINGS.QFS",
+      "target": "LANG/JA/ART/CONTROL/SPRINGS.QFS",
+      "sha256": "2183dbf3a41a36086516ff1e42622518e8fda3f2f3042aad50582f295f091c90"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/SPRINGSM.QFS",
+      "target": "LANG/JA/ART/CONTROL/SPRINGSM.QFS",
+      "sha256": "4186e7e0b775065cb602c20b02d44fed5b24a727ad19ccdb6fa7ea2ccd966fbc"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/SPRINGSR.QFS",
+      "target": "LANG/JA/ART/CONTROL/SPRINGSR.QFS",
+      "sha256": "b83b2fe55a4cd1640d83e62f68d1a861ff2873034320b6d8ceb9784f0c9a2072"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/SUP1.QFS",
+      "target": "LANG/JA/ART/CONTROL/SUP1.QFS",
+      "sha256": "066806aadc7145f4c08eaa594416559fbc4942805344eea64bad32fb90964f04"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/SUP2.QFS",
+      "target": "LANG/JA/ART/CONTROL/SUP2.QFS",
+      "sha256": "e66af4f73ff5a4b7671ba37c315d5ba6d01be65c7e1a2ec80a061e9b6f3e285a"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/TOURNY.QFS",
+      "target": "LANG/JA/ART/CONTROL/TOURNY.QFS",
+      "sha256": "ef0921b8a289948b82c5c03c7529bd659fada36bd4c3fe3774b3fcc3a0623976"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/TOURNY1.QFS",
+      "target": "LANG/JA/ART/CONTROL/TOURNY1.QFS",
+      "sha256": "86483b4c0bacd06a754ea3e5fd5a16e6c9c268024fc7d445d4318c1c6015c6c8"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/TOURNY2.QFS",
+      "target": "LANG/JA/ART/CONTROL/TOURNY2.QFS",
+      "sha256": "b62e4c8f88551174b047c5ee98bb5aba3e6dbc3f0969f2ec1f8deec6716fe0a9"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/TOURNY3.QFS",
+      "target": "LANG/JA/ART/CONTROL/TOURNY3.QFS",
+      "sha256": "293030146f399a8ccb8aa187731c57266a60f0119b3fc5a4fff96a5e5b0a0639"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/TPOLIS.QFS",
+      "target": "LANG/JA/ART/CONTROL/TPOLIS.QFS",
+      "sha256": "a3ab2295139a20b3720658d3de3116dbc28689ea914c2b7bf7e6c61f4a6f36c0"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/TPOLISM.QFS",
+      "target": "LANG/JA/ART/CONTROL/TPOLISM.QFS",
+      "sha256": "180fbb9bb69f1d5d5b86dca3eb9cdc243ead8623e07f34a7e6e2b101c62bbd8f"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/TPOLISR.QFS",
+      "target": "LANG/JA/ART/CONTROL/TPOLISR.QFS",
+      "sha256": "be7879a4776f40d1b40fdf602ce58db07796aafebd8ac6e52fe9def55c9a4e78"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/VALLEYR.QFS",
+      "target": "LANG/JA/ART/CONTROL/VALLEYR.QFS",
+      "sha256": "f15fc1029cb0aab48c6f5e8309925fc5e8d764ada312f4600626d3ef9ca2f6d8"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/VET1.QFS",
+      "target": "LANG/JA/ART/CONTROL/VET1.QFS",
+      "sha256": "c0d9419def5575cf9bbcba7a497ec0b6de495a5a890c8e474e0c55e090fc0dd7"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/VET2.QFS",
+      "target": "LANG/JA/ART/CONTROL/VET2.QFS",
+      "sha256": "da5e3f5974a272ab7334368daad520e479cf1674c5d226d3972afdfc9d059a92"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/VIP1.QFS",
+      "target": "LANG/JA/ART/CONTROL/VIP1.QFS",
+      "sha256": "0c8332f6108a340cf98e0b215065ed143ab65088f4ae3c9c977f0d1e427879b2"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/VIP2.QFS",
+      "target": "LANG/JA/ART/CONTROL/VIP2.QFS",
+      "sha256": "54ff4da21460e00f3ec12ee303b031198d04c1edab98a69542ce605106d88921"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/VRIDGE.QFS",
+      "target": "LANG/JA/ART/CONTROL/VRIDGE.QFS",
+      "sha256": "8d5f59501b613b1cf155f9ba845630173f261a5f97a6766dff17becb92e36c15"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/VRIDGEM.QFS",
+      "target": "LANG/JA/ART/CONTROL/VRIDGEM.QFS",
+      "sha256": "ed4ddb73bbec8fde511003919de7af50434f0b5cd38afdbaadd6c4e35533b50a"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/VRIDGER.QFS",
+      "target": "LANG/JA/ART/CONTROL/VRIDGER.QFS",
+      "sha256": "7d2006e8741d20309ef3b63e440c33c3d67a429c4b8e0da06d4edba8a0d38564"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/WAR1.QFS",
+      "target": "LANG/JA/ART/CONTROL/WAR1.QFS",
+      "sha256": "d5c445f3cae3fc3e01e2239cdf30d12746a5f1df9a7413f4e49f8bf163e937c4"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/WAR2.QFS",
+      "target": "LANG/JA/ART/CONTROL/WAR2.QFS",
+      "sha256": "c456b7840c59a0a1bcd8b708f500b3632c80e64099270e4de32f0308e3982820"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/WATCH1.QFS",
+      "target": "LANG/JA/ART/CONTROL/WATCH1.QFS",
+      "sha256": "f6df43eb903972b08ab543aa53baa47041ef6b90e3b151ed0ea20b674af60808"
+    },
+    {
+      "path": "FRONTEND/ART/CONTROL/WATCH2.QFS",
+      "target": "LANG/JA/ART/CONTROL/WATCH2.QFS",
+      "sha256": "824cb3e0891b0cf100bd505a12c730c0e9882e044ffca21b4918d5e5f427485f"
+    },
+    {
+      "path": "FRONTEND/ART/CREDITS.FSH",
+      "target": "LANG/JA/ART/CREDITS.FSH",
+      "sha256": "5f2f42e758e16e36982b1efe1e644e2401d34ae2e3a6c489830209b2695af404"
+    },
+    {
+      "path": "FRONTEND/ART/CREDITS.QFS",
+      "target": "LANG/JA/ART/CREDITS.QFS",
+      "sha256": "a8c477529422454260134e31288c58aa0304e4c44410cff8a8e468c7c8e67c8f"
+    },
+    {
+      "path": "FRONTEND/ART/EATITLE.QFS",
+      "target": "LANG/JA/ART/EATITLE.QFS",
+      "sha256": "5ff60766888e65d0f0290789b5dce83db39dc1c3fb39294369becb602262ab4e"
+    },
+    {
+      "path": "FRONTEND/ART/FONTS/GRAVER18.FFN",
+      "target": "LANG/JA/ART/FONTS/GRAVER18.FFN",
+      "sha256": "38d99560cabd05d136ea21eed9a032d80db59a8d9d8d973bf7f36e9bcfcef3cd"
+    },
+    {
+      "path": "FRONTEND/ART/GMOUSE.FSH",
+      "target": "LANG/JA/ART/GMOUSE.FSH",
+      "sha256": "b704beb6e4f93e11860718dba2758c872b2e035e6b6532cf7e735cf74f3e99e2"
+    },
+    {
+      "path": "FRONTEND/ART/HELP.ENG",
+      "target": "LANG/JA/ART/HELP.ENG",
+      "sha256": "9a943330ccd9cbb49a5501e2bd9bbd9a0d5c61d1278afc90dcedc01f6166f3df"
+    },
+    {
+      "path": "FRONTEND/ART/HELP.GER",
+      "target": "LANG/JA/ART/HELP.GER",
+      "sha256": "5e4bdbbffbdcce8282f19b2ef0edfe669d40736cb231f7dc773477f9f10e5f7c"
+    },
+    {
+      "path": "FRONTEND/ART/HELP24.FFN",
+      "target": "LANG/JA/ART/HELP24.FFN",
+      "sha256": "8947e07fabdeb0ddfb596e3160435fb470c9434ec179914a2a382772f7c2d018"
+    },
+    {
+      "path": "FRONTEND/ART/IART/AUDIOPR.TXT",
+      "target": "LANG/JA/ART/IART/AUDIOPR.TXT",
+      "sha256": "5276b89eb12248cc725ad9ef1afaad4f4dd18d15951c7a69e53c90d7146e782c"
+    },
+    {
+      "path": "FRONTEND/ART/IART/CONTROLP.TXT",
+      "target": "LANG/JA/ART/IART/CONTROLP.TXT",
+      "sha256": "9aa8c7d75c137d699d0ff2a60daa81d721ecec103172ab86f7bf72c6cd5086b0"
+    },
+    {
+      "path": "FRONTEND/ART/IART/DOSINSPR.TXT",
+      "target": "LANG/JA/ART/IART/DOSINSPR.TXT",
+      "sha256": "5a91577ecb990867d97d7656fd8b08d944e8d36e360e52e3fb3eed6d30bc950a"
+    },
+    {
+      "path": "FRONTEND/ART/IART/HARDWARE.TXT",
+      "target": "LANG/JA/ART/IART/HARDWARE.TXT",
+      "sha256": "460ade750802a75f4c5ad04fdea52cfb6c65844db00bffed12fca3975482b947"
+    },
+    {
+      "path": "FRONTEND/ART/IART/HELP.TXT",
+      "target": "LANG/JA/ART/IART/HELP.TXT",
+      "sha256": "7d2c10a7843f0554b9160955b2b6542354a1ed173bc8172d02159e89d1679b04"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTALLH.TXT",
+      "target": "LANG/JA/ART/IART/INSTALLH.TXT",
+      "sha256": "564ffd4bbe4ea76358fb9aa80560da537506b761efd381d4f3b1abe641501d72"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTCARD.INV",
+      "target": "LANG/JA/ART/IART/INSTCARD.INV",
+      "sha256": "86563011ca62c349e9d41f6f780f2d0380025f57d255f59a6a66279f74bcf6b6"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTCARD.QFS",
+      "target": "LANG/JA/ART/IART/INSTCARD.QFS",
+      "sha256": "33850c90965571a90a02f80eb35e41e53a93b97c2ee63864c063d91eec0728a0"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTINST.INV",
+      "target": "LANG/JA/ART/IART/INSTINST.INV",
+      "sha256": "46c01b7517557cbac0bbf36b942e7a5fa393026bfbedd7f858798891830b7ad4"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTINST.QFS",
+      "target": "LANG/JA/ART/IART/INSTINST.QFS",
+      "sha256": "c02ae4efe39b1b9fde91f0f7c7e783737f1df04c5d6b039c77ecf2a77683afdd"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTLOAD.INV",
+      "target": "LANG/JA/ART/IART/INSTLOAD.INV",
+      "sha256": "fedb1f2859daf05d46cd0acb545505f58e3d361882b94a22641494ee46bc50e0"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTLOAD.QFS",
+      "target": "LANG/JA/ART/IART/INSTLOAD.QFS",
+      "sha256": "a951773852bcbc563531cc22b60f397911d167f5d7753b411fe4fab913a6d0e1"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTMENU.INV",
+      "target": "LANG/JA/ART/IART/INSTMENU.INV",
+      "sha256": "1c6fb5e209c6d758e07c998ccf900cb4b1462e4a82f99ceef58dd7a9ae888294"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTMENU.QFS",
+      "target": "LANG/JA/ART/IART/INSTMENU.QFS",
+      "sha256": "5aeac1971d45aa09a5d8e50eb51a67ce8640ce71f12cf6a3ad2c15852fa87bd4"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTPATH.INV",
+      "target": "LANG/JA/ART/IART/INSTPATH.INV",
+      "sha256": "3cbcb59fde5b60d893c17be7c96dd9b4538afb0bf74f9d713c8199641ae89117"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTPATH.QFS",
+      "target": "LANG/JA/ART/IART/INSTPATH.QFS",
+      "sha256": "09ed1d290625281a0ff765b4553d3ee2649285c33da2de85504c58e4441b3ded"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTREAD.INV",
+      "target": "LANG/JA/ART/IART/INSTREAD.INV",
+      "sha256": "1c6fb5e209c6d758e07c998ccf900cb4b1462e4a82f99ceef58dd7a9ae888294"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTREAD.QFS",
+      "target": "LANG/JA/ART/IART/INSTREAD.QFS",
+      "sha256": "26ffccdb29f65c3f0653bc440a218975cf71bb5d5cc262c03db41c9a6a8e0fab"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTUNIN.INV",
+      "target": "LANG/JA/ART/IART/INSTUNIN.INV",
+      "sha256": "46c01b7517557cbac0bbf36b942e7a5fa393026bfbedd7f858798891830b7ad4"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTUNIN.QFS",
+      "target": "LANG/JA/ART/IART/INSTUNIN.QFS",
+      "sha256": "b8203c3157fd1b424ccc7d992d31e345afe831e1a499aa3b45b7f5699211c476"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTVIDO.INV",
+      "target": "LANG/JA/ART/IART/INSTVIDO.INV",
+      "sha256": "2afdf25eec51fb9929af840179b581015e03790a2de36d93bf1479f782e12580"
+    },
+    {
+      "path": "FRONTEND/ART/IART/INSTVIDO.QFS",
+      "target": "LANG/JA/ART/IART/INSTVIDO.QFS",
+      "sha256": "548d6218d8b19d9fcaef72f7fa8af953035cb94fe1a273e2ec20551a5be00966"
+    },
+    {
+      "path": "FRONTEND/ART/IART/LEGALS.TXT",
+      "target": "LANG/JA/ART/IART/LEGALS.TXT",
+      "sha256": "d1e2a0a2f5c53ca5df87b6dbb856d883e37dab5fe73d314b382b003020fa140b"
+    },
+    {
+      "path": "FRONTEND/ART/IART/MEMORYPR.TXT",
+      "target": "LANG/JA/ART/IART/MEMORYPR.TXT",
+      "sha256": "641a15d145719c371297f45e24c9cfb61e4732fc390224367900a0477898f4a1"
+    },
+    {
+      "path": "FRONTEND/ART/IART/MODPLAYR.TXT",
+      "target": "LANG/JA/ART/IART/MODPLAYR.TXT",
+      "sha256": "3b6fb7c19b6379f58a851602fff6ef7c5eac2aa97618305f94893c78410ecf6b"
+    },
+    {
+      "path": "FRONTEND/ART/IART/NETPLAYP.TXT",
+      "target": "LANG/JA/ART/IART/NETPLAYP.TXT",
+      "sha256": "78083087f99b552de34135c840f3b2fc26be5d013a49972d8fbe6f356e9ce107"
+    },
+    {
+      "path": "FRONTEND/ART/IART/SUPPORTP.TXT",
+      "target": "LANG/JA/ART/IART/SUPPORTP.TXT",
+      "sha256": "c6c05a72dbf978d3e44644fe92ff5d2d4691d37583820b020c459a8721931e57"
+    },
+    {
+      "path": "FRONTEND/ART/IART/VERSION",
+      "target": "LANG/JA/ART/IART/VERSION",
+      "sha256": "af8fd466ae257dd60a160bd710a0c706a46b5d6734205e8bcd7c9c37337b66f4"
+    },
+    {
+      "path": "FRONTEND/ART/IART/VIDEOPR.TXT",
+      "target": "LANG/JA/ART/IART/VIDEOPR.TXT",
+      "sha256": "a1cbd9bcebd91a6a6090198beeb92e92c0585d913ac9a5211017b91005b39b82"
+    },
+    {
+      "path": "FRONTEND/ART/IART/WININSPR.TXT",
+      "target": "LANG/JA/ART/IART/WININSPR.TXT",
+      "sha256": "47fc29e2cfa84791e333c5558f891cdaec8c1878ac5e6d6545770eb9f5c5fd28"
+    },
+    {
+      "path": "FRONTEND/ART/JOYCAL.INV",
+      "target": "LANG/JA/ART/JOYCAL.INV",
+      "sha256": "956d9bd73cfcddede7bd3809e0064bbe7473fda141ca2e609b5d627f458442d8"
+    },
+    {
+      "path": "FRONTEND/ART/JOYCAL.QFS",
+      "target": "LANG/JA/ART/JOYCAL.QFS",
+      "sha256": "445c5ebe44cdc9056961f1a140502eb50355089135f93a331b25b48c8c3af20e"
+    },
+    {
+      "path": "FRONTEND/ART/JOYCHK.INV",
+      "target": "LANG/JA/ART/JOYCHK.INV",
+      "sha256": "07ccfc1a8d38a4bd6e634f13756c52fcc73106f68f085443e15971cca01393b8"
+    },
+    {
+      "path": "FRONTEND/ART/JOYCHK.QFS",
+      "target": "LANG/JA/ART/JOYCHK.QFS",
+      "sha256": "c448f79e5ecb7d5e932dcf041e544ebe8382bdf1cafc976391992054e3a402c8"
+    },
+    {
+      "path": "FRONTEND/ART/JOYCONF.FSH",
+      "target": "LANG/JA/ART/JOYCONF.FSH",
+      "sha256": "62f71671a9a6b2008b7703170f49efb30210632251623aaadadea68ba3f1cb7a"
+    },
+    {
+      "path": "FRONTEND/ART/JOYCONF.INV",
+      "target": "LANG/JA/ART/JOYCONF.INV",
+      "sha256": "c9654cbc46753eedd8bce6b9d5d9b1310002e84ef01a255958e49e31b8d13e32"
+    },
+    {
+      "path": "FRONTEND/ART/MAIN18.FFN",
+      "target": "LANG/JA/ART/MAIN18.FFN",
+      "sha256": "8938a2640250d9fe7a4d3f841fb0eb7eb6b8ca91ab889f1b73e0273bbd248a3b"
+    },
+    {
+      "path": "FRONTEND/ART/MAIN24.FFN",
+      "target": "LANG/JA/ART/MAIN24.FFN",
+      "sha256": "3d693d13ea92870287fd507d2d37437e0d61050bd753cbf8f21e7a10b8f8c0f0"
+    },
+    {
+      "path": "FRONTEND/ART/MOUSE.FSH",
+      "target": "LANG/JA/ART/MOUSE.FSH",
+      "sha256": "00808df8c7f00f61e3b945281e92d2d334b1af7a5a385e8f1d3e0697b46a7b5e"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/AUDIO.FSH",
+      "target": "LANG/JA/ART/OPTION/AUDIO.FSH",
+      "sha256": "7922694bb4ad161fcbde379c885ef8473d4c55934a49a5e1046c37791aed9448"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/AUDIO.INV",
+      "target": "LANG/JA/ART/OPTION/AUDIO.INV",
+      "sha256": "1c24b565421e7498c35d1a497129339470100a74ab6e38acf3aabe1b6d7c8f5b"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/AUDIO.QFS",
+      "target": "LANG/JA/ART/OPTION/AUDIO.QFS",
+      "sha256": "3cffff7af11406f209a5bfa86b00e4fc645b49e8d45a423f18309f7883ae8964"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/CNTRLSET.INV",
+      "target": "LANG/JA/ART/OPTION/CNTRLSET.INV",
+      "sha256": "e82c22c79057386f2510035c8322650efaddb83d9fcb002ada6c92fdb4d211b8"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/CNTRLSET.QFS",
+      "target": "LANG/JA/ART/OPTION/CNTRLSET.QFS",
+      "sha256": "6b35dec7f7e0872db923d8da9ae79ba847ef4a351ec626eae5a23d92726315a9"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/GRAPHICS.INV",
+      "target": "LANG/JA/ART/OPTION/GRAPHICS.INV",
+      "sha256": "74db580f0ff8c9603d563485f8dd862a25fb99f71b334331443e67da1f8d5edb"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/GRAPHICS.QFS",
+      "target": "LANG/JA/ART/OPTION/GRAPHICS.QFS",
+      "sha256": "ac6a04b7aa4f241af3f6ceaf5f8820c5b78778a64d674e1830378734c31ea6ad"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/LOADANIM.QFS",
+      "target": "LANG/JA/ART/OPTION/LOADANIM.QFS",
+      "sha256": "4483b289cb5bde8832a8874da76174dece0f63532fbaebbd9dda504143e5cbaf"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/LOADSAVE.INV",
+      "target": "LANG/JA/ART/OPTION/LOADSAVE.INV",
+      "sha256": "384cf0a8226f8201d9c036975c691429a5fc31066a225b12a238257a9fd8f51b"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/LOADSAVE.QFS",
+      "target": "LANG/JA/ART/OPTION/LOADSAVE.QFS",
+      "sha256": "67e078ba432919e3dca2b7bbc27ff0c38e0a836aa51bbc4e615151197e3091a1"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/MODCANIM.QFS",
+      "target": "LANG/JA/ART/OPTION/MODCANIM.QFS",
+      "sha256": "892a5dc564dcde4f386f3d718e26ce1ed67ee1672537b7312b15c4b72a011482"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/MODCONF.INV",
+      "target": "LANG/JA/ART/OPTION/MODCONF.INV",
+      "sha256": "9500f1c10d57c030ae2dda933e195310808b9daefe27cb6554d2fd54e060fd51"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/MODCONF.QFS",
+      "target": "LANG/JA/ART/OPTION/MODCONF.QFS",
+      "sha256": "7abd285d209495c9c6bda1b3f858bdf7c94a74ac10c3719a92c0be5d7ca035b1"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/MODEMSET.INV",
+      "target": "LANG/JA/ART/OPTION/MODEMSET.INV",
+      "sha256": "e7e5daf7d073922ce071012f3e807a833fb03cd053791a6261c72db24d9c06f6"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/MODEMSET.QFS",
+      "target": "LANG/JA/ART/OPTION/MODEMSET.QFS",
+      "sha256": "36335ce97c3ff71e61e168d5acab8481e4d2bc2efe3162a1744b373cb6ea0577"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/NETSET.QFS",
+      "target": "LANG/JA/ART/OPTION/NETSET.QFS",
+      "sha256": "ede7ebcefae3f0b5ac97fc5e6c46fd52fde01f2f0aabe661d3a6c6788db9977f"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/OPTIONS.INV",
+      "target": "LANG/JA/ART/OPTION/OPTIONS.INV",
+      "sha256": "fc34edb106db77e9223ebc5dca34433f75f9cc9fe001a254a658d7081ce703ee"
+    },
+    {
+      "path": "FRONTEND/ART/OPTION/OPTIONS.QFS",
+      "target": "LANG/JA/ART/OPTION/OPTIONS.QFS",
+      "sha256": "45593c19cf61c01657f993370c6ccaacb847800196405dca8ed84c79b73c2d37"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/FINSTND.INV",
+      "target": "LANG/JA/ART/STATS/FINSTND.INV",
+      "sha256": "bda20348cd92a1de518ecb49dd0982435c4042952d02bd5c9c1ea040369c8a48"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/FINSTND.QFS",
+      "target": "LANG/JA/ART/STATS/FINSTND.QFS",
+      "sha256": "4d22f8805b19ef0a6d03a029499a706253fa3be19724bb571ff358e6dcee1661"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/SGMTSTND.QFS",
+      "target": "LANG/JA/ART/STATS/SGMTSTND.QFS",
+      "sha256": "f1e85c8674a530740441711920222bed4c680d78616c601245e6838f4ac63516"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/STANDBST.INV",
+      "target": "LANG/JA/ART/STATS/STANDBST.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/STANDBST.QFS",
+      "target": "LANG/JA/ART/STATS/STANDBST.QFS",
+      "sha256": "5787a9c102b374b943efa1f902d80f7b5cf04d0614ec72965eea6d003a60f9a8"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/STANDLO1.INV",
+      "target": "LANG/JA/ART/STATS/STANDLO1.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/STANDLO1.QFS",
+      "target": "LANG/JA/ART/STATS/STANDLO1.QFS",
+      "sha256": "62ef25f861bcfe4eacdfa10d79189cb05bf80aaad2f6feb25e768115e73ba464"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/STANDLO2.INV",
+      "target": "LANG/JA/ART/STATS/STANDLO2.INV",
+      "sha256": "ae7a3a7a187195854378fce851a9ff97adcecf88749e2b9cfd968fcc5a29fc98"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/STANDLO2.QFS",
+      "target": "LANG/JA/ART/STATS/STANDLO2.QFS",
+      "sha256": "a897723112d0371064a746f24da4453955e78d745e47433021d3eb3aa59f8a41"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/STANDSEG.INV",
+      "target": "LANG/JA/ART/STATS/STANDSEG.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/STANDSEG.QFS",
+      "target": "LANG/JA/ART/STATS/STANDSEG.QFS",
+      "sha256": "6d4fda5d93b3dc6091208b45bc802cf39520e40c20c9cdb259c95f14e98d592a"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/STANDTRK.INV",
+      "target": "LANG/JA/ART/STATS/STANDTRK.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/STANDTRK.QFS",
+      "target": "LANG/JA/ART/STATS/STANDTRK.QFS",
+      "sha256": "6fbcc3124f2c87115f45b3c874df231a6fd62a0356736415d0861bb1be5ba0a9"
+    },
+    {
+      "path": "FRONTEND/ART/STATS/TRMTSTND.QFS",
+      "target": "LANG/JA/ART/STATS/TRMTSTND.QFS",
+      "sha256": "d1ce2a398a035e9a8efd5c49b6c3b6a3f7cdb3f4db80bb48cfa5cc3d0a10768f"
+    },
+    {
+      "path": "FRONTEND/ART/TICKET.QFS",
+      "target": "LANG/JA/ART/TICKET.QFS",
+      "sha256": "d0439e2b61975268703cd0e3f80d02a9143bddcd764e22a79574a852cacf43e7"
+    },
+    {
+      "path": "FRONTEND/ART/TITLE.QFS",
+      "target": "LANG/JA/ART/TITLE.QFS",
+      "sha256": "6b80daa1ff0d7ac0d9cb68feccd7523a4d8f12f530b44efb9f5052da49b296ba"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/ALPBST.INV",
+      "target": "LANG/JA/ART/TRACKSEL/ALPBST.INV",
+      "sha256": "b429fd5c8f9fbe77128c130585a2a23bd4c12f0b11f18b92c5f2ed812f53721b"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/ALPBST.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/ALPBST.QFS",
+      "sha256": "d989b6cda94e3669a121cb49a186e6fa94b1e1f4425db680972505f7ed13a3a1"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/ALPSEL.INV",
+      "target": "LANG/JA/ART/TRACKSEL/ALPSEL.INV",
+      "sha256": "4256d623bc80ce3db27b464ac3c8a4f3c3673badbae3b9b95ff6d93ffb9dc255"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/ALPSEL.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/ALPSEL.QFS",
+      "sha256": "c5c353cd708acbc240d1fa47712f8a671dcba18398514d26010e22617cdd50ad"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/AUTBST.INV",
+      "target": "LANG/JA/ART/TRACKSEL/AUTBST.INV",
+      "sha256": "14b9cebaf33ce0797208599d5433cd3e1cd01fbe6ee9168a17366ce2ccb790c0"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/AUTBST.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/AUTBST.QFS",
+      "sha256": "b361f9b2ecdac9ed670354167f7370a14fa072db77630bbbed2a2bffd53d73c1"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/AUTSEL.INV",
+      "target": "LANG/JA/ART/TRACKSEL/AUTSEL.INV",
+      "sha256": "8d1198d4a145daee0f16af32f226840fb39ecb36b07411428367a090ca6be29b"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/AUTSEL.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/AUTSEL.QFS",
+      "sha256": "d2235e32e7aa5b4f6ecf39569df3f0dac4cd5715cc4b040357f8fef282126b53"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/BRUNBST.INV",
+      "target": "LANG/JA/ART/TRACKSEL/BRUNBST.INV",
+      "sha256": "59a3783e7613e499bbec239ad88d9dd2268e22776ad22bae6f98a71c3b6797d9"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/BRUNBST.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/BRUNBST.QFS",
+      "sha256": "196da63630e7c880e898f50482d0de273f06ded4fe71c4c70286b73a7885cf82"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/BRUNSEL.INV",
+      "target": "LANG/JA/ART/TRACKSEL/BRUNSEL.INV",
+      "sha256": "fe6967a4ebfb21574d9c55b9badafa0594906d04db60ba68200341cf2088775c"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/BRUNSEL.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/BRUNSEL.QFS",
+      "sha256": "093b11497ecbcaefa0e68594e14a8a74dbf939872173b960ff51491c5b601a7e"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/CITYBST.INV",
+      "target": "LANG/JA/ART/TRACKSEL/CITYBST.INV",
+      "sha256": "497d66afa9145dd8264233af406568725a9a5db2ccaa466ead64a30cd18956fb"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/CITYBST.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/CITYBST.QFS",
+      "sha256": "b3872c98ee95bd6dd729245c506485739dd03afb11a9c4eb7fa88ba3e9856145"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/CITYSEL.INV",
+      "target": "LANG/JA/ART/TRACKSEL/CITYSEL.INV",
+      "sha256": "fe6967a4ebfb21574d9c55b9badafa0594906d04db60ba68200341cf2088775c"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/CITYSEL.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/CITYSEL.QFS",
+      "sha256": "7b039fc2c0766a477f23b0cabcd08921514fb16f4837aaf6167129bffcc36b0d"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/COASTBST.INV",
+      "target": "LANG/JA/ART/TRACKSEL/COASTBST.INV",
+      "sha256": "8ac0e2230fc9ee940a2373f0435e22a01fbcf6bd34a5f93a631c99c2c0e0d470"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/COASTBST.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/COASTBST.QFS",
+      "sha256": "eb14c49ba2661ae55bda4ca098a9bf5bd5484d25c1d7f5126b01ca2a33737aae"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/COASTSEL.INV",
+      "target": "LANG/JA/ART/TRACKSEL/COASTSEL.INV",
+      "sha256": "ab860cfbf41e79393d465999735c2eb3ada2dd12ff9ae87d40437ee89627fff8"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/COASTSEL.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/COASTSEL.QFS",
+      "sha256": "acf600ac814a28fb7fbfcaad3d7e765f27de047a2aaa59fcc8012abadae2e033"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/LOSTBST.INV",
+      "target": "LANG/JA/ART/TRACKSEL/LOSTBST.INV",
+      "sha256": "59a3783e7613e499bbec239ad88d9dd2268e22776ad22bae6f98a71c3b6797d9"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/LOSTBST.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/LOSTBST.QFS",
+      "sha256": "694ac8b6ea153599a740fef7214c866ec8afccbd567ebc1ede2863f156173c2f"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/LOSTSEL.INV",
+      "target": "LANG/JA/ART/TRACKSEL/LOSTSEL.INV",
+      "sha256": "edb3f0ac54419791bcf3e2accf7a15bd7f8852f21ec3e011f7b5d7790b386738"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/LOSTSEL.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/LOSTSEL.QFS",
+      "sha256": "996d7e8cc3d978c2afc62a9fe0f9aff4b6066fc4abc539f356cd075ba653d768"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/RUSTBST.INV",
+      "target": "LANG/JA/ART/TRACKSEL/RUSTBST.INV",
+      "sha256": "b6db622342b6f93143584c9f0634d11d06149313971abe5b9e41d43bf2ab4110"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/RUSTBST.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/RUSTBST.QFS",
+      "sha256": "7932a99c23b39e7c14d55f8d18f367bfe477750d9a08c87bc3299a11cfe9a278"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/RUSTSEL.INV",
+      "target": "LANG/JA/ART/TRACKSEL/RUSTSEL.INV",
+      "sha256": "1bf093f5176d0f82b8c12898f51d4cc77a70e1e3a26489a9cf2b2311127f8954"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/RUSTSEL.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/RUSTSEL.QFS",
+      "sha256": "6398ecc6b109e0764ace5d317033cb96fb58ec86e9758455e81b6f8b121caf62"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/TROPBST.INV",
+      "target": "LANG/JA/ART/TRACKSEL/TROPBST.INV",
+      "sha256": "59a3783e7613e499bbec239ad88d9dd2268e22776ad22bae6f98a71c3b6797d9"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/TROPBST.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/TROPBST.QFS",
+      "sha256": "782dedda4507638f3cabfdd0465e362c6b1ff6af4f0ebb32014fdfe021e9a57e"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/TROPSEL.INV",
+      "target": "LANG/JA/ART/TRACKSEL/TROPSEL.INV",
+      "sha256": "fe6967a4ebfb21574d9c55b9badafa0594906d04db60ba68200341cf2088775c"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/TROPSEL.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/TROPSEL.QFS",
+      "sha256": "881e9932f9f7175f847a5b4639cb1625fe0e21080c4dfff43fa5a220e2a2aa6f"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/VERTBST.INV",
+      "target": "LANG/JA/ART/TRACKSEL/VERTBST.INV",
+      "sha256": "d5a171dfb209178a90115434fdad514d736c7be3292240c783440eddb3866906"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/VERTBST.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/VERTBST.QFS",
+      "sha256": "eb471018c9e51efa6c20e6c93ac94303c52f12015339017773842c38a01b0610"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/VERTSEL.INV",
+      "target": "LANG/JA/ART/TRACKSEL/VERTSEL.INV",
+      "sha256": "c3b60848626611ff1fb90ccda6085cf595dc15b83292636e75c1071b49276b31"
+    },
+    {
+      "path": "FRONTEND/ART/TRACKSEL/VERTSEL.QFS",
+      "target": "LANG/JA/ART/TRACKSEL/VERTSEL.QFS",
+      "sha256": "d22abf3d60ed999d62f236ca2f13963769fc09e5057c071e09af4ba4d7c7a2d8"
+    },
+    {
+      "path": "FRONTEND/ART/WINNER.QFS",
+      "target": "LANG/JA/ART/WINNER.QFS",
+      "sha256": "b6a1c99a7dc455c66d2f16851d7f5cba27872a6e68f4554b29c68354802c80cb"
+    },
+    {
+      "path": "FRONTEND/SHOW/512GEN.QFS",
+      "target": "LANG/JA/SHOW/512GEN.QFS",
+      "sha256": "940c2212d900df6aee8e818082609c432c63f869dd34ea790fe6dbd4fe62eff8"
+    },
+    {
+      "path": "FRONTEND/SHOW/512HIS.QFS",
+      "target": "LANG/JA/SHOW/512HIS.QFS",
+      "sha256": "a25001bf636f1fd5e894fbf614a547ece31dbc105b6f40b4f5a1e7c8f3a445d3"
+    },
+    {
+      "path": "FRONTEND/SHOW/512MEC.QFS",
+      "target": "LANG/JA/SHOW/512MEC.QFS",
+      "sha256": "7094ad671323f1b0a1f17aea8a63ff9c918a004be3843f7a194268450438e93d"
+    },
+    {
+      "path": "FRONTEND/SHOW/512PER.QFS",
+      "target": "LANG/JA/SHOW/512PER.QFS",
+      "sha256": "b654b0d50e7b5dc3b3c7d8d63ca3a5e2620afc1bcebb357d49fda57d2cd6a228"
+    },
+    {
+      "path": "FRONTEND/SHOW/512TR.QFS",
+      "target": "LANG/JA/SHOW/512TR.QFS",
+      "sha256": "1a578a6e4e76d282570ea518724c9f7a8cda9460c15e74f6a30de9a6d2a6946f"
+    },
+    {
+      "path": "FRONTEND/SHOW/911.QFS",
+      "target": "LANG/JA/SHOW/911.QFS",
+      "sha256": "9d8114f0346c5d234cd2e685d80a4e1dcab501852ea6a0931931dc8a051e78bf"
+    },
+    {
+      "path": "FRONTEND/SHOW/911GEN.QFS",
+      "target": "LANG/JA/SHOW/911GEN.QFS",
+      "sha256": "d287e404b29c7b22277c963be377cb07e4e7ce6397ed4c65183d6d7a03ceb947"
+    },
+    {
+      "path": "FRONTEND/SHOW/911HIS.QFS",
+      "target": "LANG/JA/SHOW/911HIS.QFS",
+      "sha256": "ecb3bfa980925c89deeaef11baa70ead6c431886613f4b0e4a2e9553f5613a02"
+    },
+    {
+      "path": "FRONTEND/SHOW/911MEC.QFS",
+      "target": "LANG/JA/SHOW/911MEC.QFS",
+      "sha256": "eb257986ac230d494123be40017004ed2b1f3556fa876f895140c4e57eea6c2f"
+    },
+    {
+      "path": "FRONTEND/SHOW/911PER.QFS",
+      "target": "LANG/JA/SHOW/911PER.QFS",
+      "sha256": "e0bee835d542042a79d97c95a3ae5b4c9cce4f7e372328a2d5689f82c4bffee6"
+    },
+    {
+      "path": "FRONTEND/SHOW/DIABLO.QFS",
+      "target": "LANG/JA/SHOW/DIABLO.QFS",
+      "sha256": "051834db1119948f52beccfaedd5570be322696afb83097c66b48d18bd00ec78"
+    },
+    {
+      "path": "FRONTEND/SHOW/DIAGEN.QFS",
+      "target": "LANG/JA/SHOW/DIAGEN.QFS",
+      "sha256": "d20278221b95257bb6a417d0c30a0442b093cc58fb3ab5f3319c31a688c4bfdc"
+    },
+    {
+      "path": "FRONTEND/SHOW/DIAHIS.QFS",
+      "target": "LANG/JA/SHOW/DIAHIS.QFS",
+      "sha256": "f0ca09f1f0fcb5cd1faab764cdd9b244b58cd0796367ddcce94a2de5afce6fba"
+    },
+    {
+      "path": "FRONTEND/SHOW/DIAMEC.QFS",
+      "target": "LANG/JA/SHOW/DIAMEC.QFS",
+      "sha256": "09459aa083a602669395c5df2fec78a510d6be150f80d998a9f967cca5fd9500"
+    },
+    {
+      "path": "FRONTEND/SHOW/DIAPER.QFS",
+      "target": "LANG/JA/SHOW/DIAPER.QFS",
+      "sha256": "8742594f2d70c7797a77a0411c34d6756edd452e70fedc1c2112dc35f8e158cf"
+    },
+    {
+      "path": "FRONTEND/SHOW/NSX.QFS",
+      "target": "LANG/JA/SHOW/NSX.QFS",
+      "sha256": "74a9f50e76ab5581b8ccc30eca22f7f4b723c30d989e51295be46d0a9ddbac35"
+    },
+    {
+      "path": "FRONTEND/SHOW/NSXGEN.QFS",
+      "target": "LANG/JA/SHOW/NSXGEN.QFS",
+      "sha256": "9b23f527ce6e08d9e649ac0ae58fd99d2523684d2be605ed0381cb94487954d5"
+    },
+    {
+      "path": "FRONTEND/SHOW/NSXHIS.QFS",
+      "target": "LANG/JA/SHOW/NSXHIS.QFS",
+      "sha256": "6479df7f92bf96088cef395355a3b7fff9f52d1d7ccb26c1b8471c307f82b356"
+    },
+    {
+      "path": "FRONTEND/SHOW/NSXMEC.QFS",
+      "target": "LANG/JA/SHOW/NSXMEC.QFS",
+      "sha256": "25e0c41cbb9e5bb5985346be519bdf01c694ccce26b951c57ff7ad94f48978f3"
+    },
+    {
+      "path": "FRONTEND/SHOW/NSXPER.QFS",
+      "target": "LANG/JA/SHOW/NSXPER.QFS",
+      "sha256": "aca03ebd1723bc6d114000078ff63aaa571019b9896fff0a6cfd451106ac0815"
+    },
+    {
+      "path": "FRONTEND/SHOW/RX7.QFS",
+      "target": "LANG/JA/SHOW/RX7.QFS",
+      "sha256": "ee103fbc6f7af9534f357bf8856fc9cc8f4a98ab52d200ac407d3e0b73fadcdb"
+    },
+    {
+      "path": "FRONTEND/SHOW/RX7GEN.QFS",
+      "target": "LANG/JA/SHOW/RX7GEN.QFS",
+      "sha256": "131fde996210b02a4f4fa9a0d3471ffde34ea6536abe7d89ec75e056cf6235bb"
+    },
+    {
+      "path": "FRONTEND/SHOW/RX7HIS.QFS",
+      "target": "LANG/JA/SHOW/RX7HIS.QFS",
+      "sha256": "e36e580f6259c0a75f4092344d9704559a51dfffd27372cd10a8ab2fac9faeba"
+    },
+    {
+      "path": "FRONTEND/SHOW/RX7MEC.QFS",
+      "target": "LANG/JA/SHOW/RX7MEC.QFS",
+      "sha256": "3a4b306f05907738470d2799c1e13be1c0b69364e124d3edad13f0b1b652ba14"
+    },
+    {
+      "path": "FRONTEND/SHOW/RX7PER.QFS",
+      "target": "LANG/JA/SHOW/RX7PER.QFS",
+      "sha256": "cc3fd513a0b19577d4096ef3641c973d23f085ded43150d5328a50ce6cde4160"
+    },
+    {
+      "path": "FRONTEND/SHOW/SUPGEN.QFS",
+      "target": "LANG/JA/SHOW/SUPGEN.QFS",
+      "sha256": "27454b20613ee182c3a565a18216388534f5d1eb38f43845cd0c51e90a56657e"
+    },
+    {
+      "path": "FRONTEND/SHOW/SUPHIS.QFS",
+      "target": "LANG/JA/SHOW/SUPHIS.QFS",
+      "sha256": "882b3ffe63cc85dfafcea174a3b35cb119fe94285aa1a814e3f9ddf6101b89f4"
+    },
+    {
+      "path": "FRONTEND/SHOW/SUPMEC.QFS",
+      "target": "LANG/JA/SHOW/SUPMEC.QFS",
+      "sha256": "1a12c794bb9a6805baae45313af5490a10ec1167a702d95962cc800473ea52e5"
+    },
+    {
+      "path": "FRONTEND/SHOW/SUPPER.QFS",
+      "target": "LANG/JA/SHOW/SUPPER.QFS",
+      "sha256": "96210a22107258d4435eb1bd3136777c17bee767de94969bf03d7f4edf1b1efc"
+    },
+    {
+      "path": "FRONTEND/SHOW/SUPRA.QFS",
+      "target": "LANG/JA/SHOW/SUPRA.QFS",
+      "sha256": "4af56890cb909214964847dcce433e80f3f280fe4b41fcd3998d41a31c029609"
+    },
+    {
+      "path": "FRONTEND/SHOW/VETTE.QFS",
+      "target": "LANG/JA/SHOW/VETTE.QFS",
+      "sha256": "62042b112f0abae0bb49d9c06c48ad93ef2f893291bc52429128e391e2b6d4cd"
+    },
+    {
+      "path": "FRONTEND/SHOW/VIPER.QFS",
+      "target": "LANG/JA/SHOW/VIPER.QFS",
+      "sha256": "3c7bfe884e0652455cbe6e3f3c1375b94a99ff782a4e333a557b60f6a0ff964a"
+    },
+    {
+      "path": "FRONTEND/SHOW/VIPGEN.QFS",
+      "target": "LANG/JA/SHOW/VIPGEN.QFS",
+      "sha256": "473f43019a03fc12fe501d9deebb070f593a7ffa71556ed50d98f1a96d3fbac6"
+    },
+    {
+      "path": "FRONTEND/SHOW/VIPHIS.QFS",
+      "target": "LANG/JA/SHOW/VIPHIS.QFS",
+      "sha256": "a8db784eccdef3ce6236619bdb2711ea5bff6ebd2c972a240283e0c58e5a2bf8"
+    },
+    {
+      "path": "FRONTEND/SHOW/VIPMEC.QFS",
+      "target": "LANG/JA/SHOW/VIPMEC.QFS",
+      "sha256": "ed5a7934f39a34b9dddb54f031e8e7913f9da849ee1f713434999b5bbafb06f4"
+    },
+    {
+      "path": "FRONTEND/SHOW/VIPPER.QFS",
+      "target": "LANG/JA/SHOW/VIPPER.QFS",
+      "sha256": "d388f88c2ff0c67fbfb518ccc56b1baa7feb36f6d4476f9669fc74c37a65cff5"
+    },
+    {
+      "path": "FRONTEND/SHOW/ZR1GEN.QFS",
+      "target": "LANG/JA/SHOW/ZR1GEN.QFS",
+      "sha256": "fcf05864bd799be5446607283f257653f5e10fa09a9912da90e62c3756f98902"
+    },
+    {
+      "path": "FRONTEND/SHOW/ZR1HIS.QFS",
+      "target": "LANG/JA/SHOW/ZR1HIS.QFS",
+      "sha256": "a29b12c0252212be2d946d11cc5d8e6865f3a0cbbd3170581298fa0fc21723d7"
+    },
+    {
+      "path": "FRONTEND/SHOW/ZR1MEC.QFS",
+      "target": "LANG/JA/SHOW/ZR1MEC.QFS",
+      "sha256": "aa6a654106d47513cc28e08c14613f3ffb84193db2cdb8aa7b893683560e40ca"
+    },
+    {
+      "path": "FRONTEND/SHOW/ZR1PER.QFS",
+      "target": "LANG/JA/SHOW/ZR1PER.QFS",
+      "sha256": "af758273bb0ff9a5b6f059751765011b41482dc6ffbeee89054464b3f322d13e"
+    },
+    {
+      "path": "FRONTEND/SPEECH/512GEN16.EAS",
+      "target": "LANG/JA/SPEECH/512GEN16.EAS",
+      "sha256": "178d9920986181a7654c7e6c65cab59f88babc936d009437e356645d805cd2fe"
+    },
+    {
+      "path": "FRONTEND/SPEECH/512HIS16.EAS",
+      "target": "LANG/JA/SPEECH/512HIS16.EAS",
+      "sha256": "495882e48d798d469aac10592d8bb2da4e6b1c0b9fe45b47df64ca75f2c5a940"
+    },
+    {
+      "path": "FRONTEND/SPEECH/512MEC16.EAS",
+      "target": "LANG/JA/SPEECH/512MEC16.EAS",
+      "sha256": "65f0d5bd15f776a6459157cdd80b556b1f697a9dcd73f2f54da5e29a3153532a"
+    },
+    {
+      "path": "FRONTEND/SPEECH/512PER16.EAS",
+      "target": "LANG/JA/SPEECH/512PER16.EAS",
+      "sha256": "50a7a1e9ce5f636bfc146f599ad1bd12d309b014653e173b677b590239cc2679"
+    },
+    {
+      "path": "FRONTEND/SPEECH/911GEN16.EAS",
+      "target": "LANG/JA/SPEECH/911GEN16.EAS",
+      "sha256": "32ad017c04f983eb0175715552bd9e8a5d5af679640ea1488ed6b82afbf0a420"
+    },
+    {
+      "path": "FRONTEND/SPEECH/911HIS16.EAS",
+      "target": "LANG/JA/SPEECH/911HIS16.EAS",
+      "sha256": "88ccb4a14dd80701d97844297061daa35b4d693ad0e5df47f1d612dd43a83bf8"
+    },
+    {
+      "path": "FRONTEND/SPEECH/911MEC16.EAS",
+      "target": "LANG/JA/SPEECH/911MEC16.EAS",
+      "sha256": "2c9392500f55e53ff750660ce9ab7c435c65d783a1975c16476b6ed8c1fd5e70"
+    },
+    {
+      "path": "FRONTEND/SPEECH/911PER16.EAS",
+      "target": "LANG/JA/SPEECH/911PER16.EAS",
+      "sha256": "1b9a4ab344cda34fa759a3c898d26fe0157795f6bf5e1c0e7f22ccec74305661"
+    },
+    {
+      "path": "FRONTEND/SPEECH/ALPINE.EAS",
+      "target": "LANG/JA/SPEECH/ALPINE.EAS",
+      "sha256": "ce2a26a2aca5f0d6a23784afd551e5767b6b04ff3463c6053f616f0b963c34e4"
+    },
+    {
+      "path": "FRONTEND/SPEECH/ARCMODE.EAS",
+      "target": "LANG/JA/SPEECH/ARCMODE.EAS",
+      "sha256": "2c916c37983cce17d0a436d951fbdcc94bae18bbf78f34d638a22ddd4611e523"
+    },
+    {
+      "path": "FRONTEND/SPEECH/BESTLAST.EAS",
+      "target": "LANG/JA/SPEECH/BESTLAST.EAS",
+      "sha256": "3e4a525631cd6c46a410a4b20b9d595a1d588176a14d60df7f45b2d215d23e53"
+    },
+    {
+      "path": "FRONTEND/SPEECH/BESTTIME.EAS",
+      "target": "LANG/JA/SPEECH/BESTTIME.EAS",
+      "sha256": "f19b327834ebd3b7bbef113618649180b172ad99232a210af0ae0dde38789d6b"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CITY.EAS",
+      "target": "LANG/JA/SPEECH/CITY.EAS",
+      "sha256": "1c1b199aab0c71e402527ffcffb68d6ca841c3ce422dc9767a6901893b3103ae"
+    },
+    {
+      "path": "FRONTEND/SPEECH/COASTAL.EAS",
+      "target": "LANG/JA/SPEECH/COASTAL.EAS",
+      "sha256": "94babce700ffbb00fa9d7b56f24d9ba585d0be2ac4c982207342aab09a49a36e"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON1_A16.EAS",
+      "target": "LANG/JA/SPEECH/CON1_A16.EAS",
+      "sha256": "dbb0d0872107fa2a36e8b32f8a9218e4c49842076cd548989a9cfea6efc0d166"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON1_B16.EAS",
+      "target": "LANG/JA/SPEECH/CON1_B16.EAS",
+      "sha256": "2fe76243dd8e961ff12ecf8c8c8661930cf197b309e3ead269eb90e5dabd24e9"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON1_C16.EAS",
+      "target": "LANG/JA/SPEECH/CON1_C16.EAS",
+      "sha256": "64278805f8c5f492089bcf6ea26e0a0aa2cb121a2201a3c98b50ecc35f079f6d"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON2_A16.EAS",
+      "target": "LANG/JA/SPEECH/CON2_A16.EAS",
+      "sha256": "675fd43dd355858446570c6ae39c03fd71a407bf27997a042d6af65f6da49134"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON2_B16.EAS",
+      "target": "LANG/JA/SPEECH/CON2_B16.EAS",
+      "sha256": "2f1c01d3bd5357134db88d58868bbade0b4d441c85d213b7554a7bff86f207ba"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON2_C16.EAS",
+      "target": "LANG/JA/SPEECH/CON2_C16.EAS",
+      "sha256": "3c5b62169c50d4b700c94f1690e321593abdafa06db37088793ee330e1a8ecf9"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON2_D16.EAS",
+      "target": "LANG/JA/SPEECH/CON2_D16.EAS",
+      "sha256": "75617edf1db2c36ed2924596b5c3159330e0ab9e8d00e75412b716162697880d"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON4_A16.EAS",
+      "target": "LANG/JA/SPEECH/CON4_A16.EAS",
+      "sha256": "70ae3d5df39d1230b7d90ad3c9af8315b1f15010a98d09cc8603739fa59328e3"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON4_B16.EAS",
+      "target": "LANG/JA/SPEECH/CON4_B16.EAS",
+      "sha256": "c6e619d567777928ebaa02dac4ad322753a23ddc9abcc580707590117684c3d3"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON4_C16.EAS",
+      "target": "LANG/JA/SPEECH/CON4_C16.EAS",
+      "sha256": "27a129e0bfe20ecf5c992498cdf3e82852b2f02fdbaceab7e81d460360fad16a"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON4_D16.EAS",
+      "target": "LANG/JA/SPEECH/CON4_D16.EAS",
+      "sha256": "18b7ce2f53d7c8464f60f3f4a1da144e8fd2b103bc857fc6a3099be40e92a794"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON4_E16.EAS",
+      "target": "LANG/JA/SPEECH/CON4_E16.EAS",
+      "sha256": "d89d7487a27778f1e655ef59a2e70031b311bd9923aa4b07ddd53cc5d1145c55"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON4_F16.EAS",
+      "target": "LANG/JA/SPEECH/CON4_F16.EAS",
+      "sha256": "a4f12763158f8899c5dd16af4bc82ca57c9d06b73be6df4e8dcc091786ae89d2"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON4_G16.EAS",
+      "target": "LANG/JA/SPEECH/CON4_G16.EAS",
+      "sha256": "cb7237047f2ad00b22d983a0dfac6e161e31ba0f5d99ca23b45403060add923f"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON5_A16.EAS",
+      "target": "LANG/JA/SPEECH/CON5_A16.EAS",
+      "sha256": "70d0de9694d47ece7f3de25f939530825cc96686ef375b4a06c937c0d42375d0"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON5_B16.EAS",
+      "target": "LANG/JA/SPEECH/CON5_B16.EAS",
+      "sha256": "ed958a7cef9ed84fb29b4b35ea5e749c28bfd952d31cacbc25e433c0f5c5807a"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON5_C16.EAS",
+      "target": "LANG/JA/SPEECH/CON5_C16.EAS",
+      "sha256": "b4dceb49a10cc71a335a07ad2a79f4d4076324b2e013f23df950e1976ad42b9a"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON5_D16.EAS",
+      "target": "LANG/JA/SPEECH/CON5_D16.EAS",
+      "sha256": "28ea909410bfcb5dd9f1579e246da2f949f7c19d718616d0f3f0a6ab7c142fc9"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON6_A16.EAS",
+      "target": "LANG/JA/SPEECH/CON6_A16.EAS",
+      "sha256": "7fbb4f612e3754abc80e19dbd8bb380b2ce854aa60204759aa0e9672c2c677b2"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON6_C16.EAS",
+      "target": "LANG/JA/SPEECH/CON6_C16.EAS",
+      "sha256": "2fb9b1e74de2422b11e2c23e4c0540d425cc0eb2b1e435e6ff0236a5ad1965e5"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON6_E16.EAS",
+      "target": "LANG/JA/SPEECH/CON6_E16.EAS",
+      "sha256": "d905dba52beea7aa83b9489b018ead065d9c918b177900fde5dda26fe8749720"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON6_F16.EAS",
+      "target": "LANG/JA/SPEECH/CON6_F16.EAS",
+      "sha256": "c5897e7152e29b41e069417acb3b124f059d692295603de1996d24a1566761d6"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON7_A16.EAS",
+      "target": "LANG/JA/SPEECH/CON7_A16.EAS",
+      "sha256": "1d4288126def0eaff884bea02603d43619861a81fd77d57155b99a0c97bd48cc"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON7_D16.EAS",
+      "target": "LANG/JA/SPEECH/CON7_D16.EAS",
+      "sha256": "bae05a572e07d078a20c22262e19c5d2da4827dbf1f9a35e260d216621d2bcb6"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON7_G16.EAS",
+      "target": "LANG/JA/SPEECH/CON7_G16.EAS",
+      "sha256": "a618a0efb31e8453805c34d72fe148810263f2f776a635c3018142708135d824"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON7_H16.EAS",
+      "target": "LANG/JA/SPEECH/CON7_H16.EAS",
+      "sha256": "c051c049b101fd5d333fd4674a2b2026319b30774e5abb9ecd705e5a110da7f6"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON8_A16.EAS",
+      "target": "LANG/JA/SPEECH/CON8_A16.EAS",
+      "sha256": "fc9e911d3e7bfdbbe44f29c71eee60b631fdba88aca435012f90510505e52bb7"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON8_D16.EAS",
+      "target": "LANG/JA/SPEECH/CON8_D16.EAS",
+      "sha256": "61f24a0afc46f86c9682a3f6bac568459a97b3f8f7ac03662dce9ecb5051bc2c"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON8_G16.EAS",
+      "target": "LANG/JA/SPEECH/CON8_G16.EAS",
+      "sha256": "9be5bd5f23084b52772f41a34aba854df3c685530a54767430e148a6ddfcdb88"
+    },
+    {
+      "path": "FRONTEND/SPEECH/CON8_H16.EAS",
+      "target": "LANG/JA/SPEECH/CON8_H16.EAS",
+      "sha256": "4f25d086f8177c3112ddf08f51fc2b1fd16fc892a488315d18d18b3c089a7ad7"
+    },
+    {
+      "path": "FRONTEND/SPEECH/DIAGEN16.EAS",
+      "target": "LANG/JA/SPEECH/DIAGEN16.EAS",
+      "sha256": "1aac45b10f5b77d3c4b31a9ae09daab78d27e6bb7910f77e98ec5ab65f498e52"
+    },
+    {
+      "path": "FRONTEND/SPEECH/DIAHIS16.EAS",
+      "target": "LANG/JA/SPEECH/DIAHIS16.EAS",
+      "sha256": "c323f69e01f85453835c34039069c780d63c597a664cec70ad61249403b13a05"
+    },
+    {
+      "path": "FRONTEND/SPEECH/DIAMEC16.EAS",
+      "target": "LANG/JA/SPEECH/DIAMEC16.EAS",
+      "sha256": "ec9c6a86fe5146c0eb2ddb98f630d8767a560582f4c3c3c348df9f3861c6043d"
+    },
+    {
+      "path": "FRONTEND/SPEECH/DIAPER16.EAS",
+      "target": "LANG/JA/SPEECH/DIAPER16.EAS",
+      "sha256": "8742c0c016f1996f7fcdf7e27c634149f3eef799650d901dec1d1e6a760f4fbd"
+    },
+    {
+      "path": "FRONTEND/SPEECH/DISQUALI.EAS",
+      "target": "LANG/JA/SPEECH/DISQUALI.EAS",
+      "sha256": "b200579cb5bc002dc7f3a2f8ba3087d328492e79d777677a5e8be679ff17a3f8"
+    },
+    {
+      "path": "FRONTEND/SPEECH/EIGHTH.EAS",
+      "target": "LANG/JA/SPEECH/EIGHTH.EAS",
+      "sha256": "6ab9247f784eddcdb41c2d262b0865bc9e79ee3b1355a14ee4120dcf3583b7c7"
+    },
+    {
+      "path": "FRONTEND/SPEECH/FIFTH.EAS",
+      "target": "LANG/JA/SPEECH/FIFTH.EAS",
+      "sha256": "3fc3cdb0ba763b499c494eeb264bc7866a7e8d49803d60bb3a89df87a9da9740"
+    },
+    {
+      "path": "FRONTEND/SPEECH/FINALLAP.EAS",
+      "target": "LANG/JA/SPEECH/FINALLAP.EAS",
+      "sha256": "1ef942e210166d942e1c76d4c05a061d85d2582b78b00b66b85f53513fa45fda"
+    },
+    {
+      "path": "FRONTEND/SPEECH/FIRST.EAS",
+      "target": "LANG/JA/SPEECH/FIRST.EAS",
+      "sha256": "68410ec719c3cf53bb3dc69ec963c88bc8f01c4b7e3a98e4c5dfa4f8c2968963"
+    },
+    {
+      "path": "FRONTEND/SPEECH/FOURTH.EAS",
+      "target": "LANG/JA/SPEECH/FOURTH.EAS",
+      "sha256": "f7dc1ff1f8a46d525abbc4d68edcbeba3a5212ef8e01e71adebb943105e98556"
+    },
+    {
+      "path": "FRONTEND/SPEECH/GOLDRASH.EAS",
+      "target": "LANG/JA/SPEECH/GOLDRASH.EAS",
+      "sha256": "1bfc702b81d7d20aab0cd0b941b8a7845755b60d1fa4b7e67278a101ce314f42"
+    },
+    {
+      "path": "FRONTEND/SPEECH/INDUSTRI.EAS",
+      "target": "LANG/JA/SPEECH/INDUSTRI.EAS",
+      "sha256": "7f8a92b3fd047141a636ef5789ebc6fe9a0fe2462800aca9cdf61af76a41f844"
+    },
+    {
+      "path": "FRONTEND/SPEECH/LOOP1.EAS",
+      "target": "LANG/JA/SPEECH/LOOP1.EAS",
+      "sha256": "c218b574f49719e71dca809015bb046c713861410cf5bcf169c9d04180792389"
+    },
+    {
+      "path": "FRONTEND/SPEECH/LOOP2.EAS",
+      "target": "LANG/JA/SPEECH/LOOP2.EAS",
+      "sha256": "8ec8b369ad11c1812fb1c121211c1493874c36768bcea1302e33e59fba17f8f0"
+    },
+    {
+      "path": "FRONTEND/SPEECH/LOOP3.EAS",
+      "target": "LANG/JA/SPEECH/LOOP3.EAS",
+      "sha256": "a17799da74f0c2eca54465f67b8d2dd9246b75c0d5f7cc2fca59c99e3b91c247"
+    },
+    {
+      "path": "FRONTEND/SPEECH/LOOPX.EAS",
+      "target": "LANG/JA/SPEECH/LOOPX.EAS",
+      "sha256": "9ad10d7f2d6cfc270814bf70c0aa9fe86db8b94fa504a93232a68520c87643e6"
+    },
+    {
+      "path": "FRONTEND/SPEECH/LOST.EAS",
+      "target": "LANG/JA/SPEECH/LOST.EAS",
+      "sha256": "7614ba62b2ebaf214809332e0d4a7bd46026fdea5060092bb461b9270e066cd7"
+    },
+    {
+      "path": "FRONTEND/SPEECH/LOSTVEGA.EAS",
+      "target": "LANG/JA/SPEECH/LOSTVEGA.EAS",
+      "sha256": "ec0126aa57e30aa095d395d42966dedbdcb641a74efbd2b49d3e92fb3cb7b6b0"
+    },
+    {
+      "path": "FRONTEND/SPEECH/LUNARGOL.EAS",
+      "target": "LANG/JA/SPEECH/LUNARGOL.EAS",
+      "sha256": "5964a86e2e80b043506ed795cc6d2394b3ce87a12a92cc0af2671115adb390af"
+    },
+    {
+      "path": "FRONTEND/SPEECH/LUNARWEL.EAS",
+      "target": "LANG/JA/SPEECH/LUNARWEL.EAS",
+      "sha256": "7cae1216c1b910bb61cd8d26426aed0b9f208c63a8eab130f1c102b1f57bf12d"
+    },
+    {
+      "path": "FRONTEND/SPEECH/LUNSPRIN.EAS",
+      "target": "LANG/JA/SPEECH/LUNSPRIN.EAS",
+      "sha256": "f919835a0b1f40b22b8851535487fbf316e9244d0ce375cdd9df1cefb84f352f"
+    },
+    {
+      "path": "FRONTEND/SPEECH/MACHGUN.EAS",
+      "target": "LANG/JA/SPEECH/MACHGUN.EAS",
+      "sha256": "e02a6e682e8ba817eca6696612545bdc5058a5569612ba72beebc9b1e78a774e"
+    },
+    {
+      "path": "FRONTEND/SPEECH/MIRMODE.EAS",
+      "target": "LANG/JA/SPEECH/MIRMODE.EAS",
+      "sha256": "47fd2d55d1d06aee7c23a6eb4aa00883e8036b7e6962217a79872afb6738f085"
+    },
+    {
+      "path": "FRONTEND/SPEECH/NFS_SE.EAS",
+      "target": "LANG/JA/SPEECH/NFS_SE.EAS",
+      "sha256": "c424427d65bf68a321e1090df5af1dd63fd3a67a97d2d111045b6c3b26bde472"
+    },
+    {
+      "path": "FRONTEND/SPEECH/NSXGEN16.EAS",
+      "target": "LANG/JA/SPEECH/NSXGEN16.EAS",
+      "sha256": "5fb82ccba103512f9d035742f0407836d5abc29070f5b361610796facd800149"
+    },
+    {
+      "path": "FRONTEND/SPEECH/NSXHIS16.EAS",
+      "target": "LANG/JA/SPEECH/NSXHIS16.EAS",
+      "sha256": "bda6eb23ee10f0e23b8110596033b3cd1ff069cca52d6f3131bfc32c746549af"
+    },
+    {
+      "path": "FRONTEND/SPEECH/NSXMEC16.EAS",
+      "target": "LANG/JA/SPEECH/NSXMEC16.EAS",
+      "sha256": "6f06f315e8ec571d27ecc65164e42431159546afee3d5fa62f2c72935f1dd469"
+    },
+    {
+      "path": "FRONTEND/SPEECH/NSXPER16.EAS",
+      "target": "LANG/JA/SPEECH/NSXPER16.EAS",
+      "sha256": "a016edbe060536b2ce6d777e9b0e4b82401c110beeb39bda3893ee76e2206cf0"
+    },
+    {
+      "path": "FRONTEND/SPEECH/RLYMODE.EAS",
+      "target": "LANG/JA/SPEECH/RLYMODE.EAS",
+      "sha256": "6e28a9149fc20950ea06e43d2751a81ae1645193eff9da635ce034995b4977e5"
+    },
+    {
+      "path": "FRONTEND/SPEECH/RUREDY.EAS",
+      "target": "LANG/JA/SPEECH/RUREDY.EAS",
+      "sha256": "ee374d90824a7df6df6b521779226e47dc53730ce7ba9f57d0e2618570ee547e"
+    },
+    {
+      "path": "FRONTEND/SPEECH/RX7GEN16.EAS",
+      "target": "LANG/JA/SPEECH/RX7GEN16.EAS",
+      "sha256": "6e5c5334daa46c3e8f25cc97cb56cccb2dc9ced603aff961d93139c836f2b6ac"
+    },
+    {
+      "path": "FRONTEND/SPEECH/RX7HIS16.EAS",
+      "target": "LANG/JA/SPEECH/RX7HIS16.EAS",
+      "sha256": "b1a9968aa616ca3f5f806d2cfc43b5090187d9300f456470b78291e920957b95"
+    },
+    {
+      "path": "FRONTEND/SPEECH/RX7MEC16.EAS",
+      "target": "LANG/JA/SPEECH/RX7MEC16.EAS",
+      "sha256": "3dced4d15eed0d73d9857bf4fdba3ce5aa4e13751ec9d013e9a5c8ce698d5943"
+    },
+    {
+      "path": "FRONTEND/SPEECH/RX7PER16.EAS",
+      "target": "LANG/JA/SPEECH/RX7PER16.EAS",
+      "sha256": "522898db3be60d454c488a246a61ddb0c6266c7573dfb6edb292f372587ee224"
+    },
+    {
+      "path": "FRONTEND/SPEECH/SECOND.EAS",
+      "target": "LANG/JA/SPEECH/SECOND.EAS",
+      "sha256": "25c7b680d933593a770d7e60c5897f9c3280597bd0aae65f81a86a96503fa055"
+    },
+    {
+      "path": "FRONTEND/SPEECH/SEVENTH.EAS",
+      "target": "LANG/JA/SPEECH/SEVENTH.EAS",
+      "sha256": "6d88e76177539b299886c3496f3739ad0a13fed9b93bd91753fa9eb6989b6ff0"
+    },
+    {
+      "path": "FRONTEND/SPEECH/SIXTH.EAS",
+      "target": "LANG/JA/SPEECH/SIXTH.EAS",
+      "sha256": "04e64e860806f6427a1e2b680c4d64775d7f7e9dd0bfc24435f5909508ebe767"
+    },
+    {
+      "path": "FRONTEND/SPEECH/SUPGEN16.EAS",
+      "target": "LANG/JA/SPEECH/SUPGEN16.EAS",
+      "sha256": "f391a77597cd37820733528f024a50b85f0ab4b854b02bb00322f8f041439039"
+    },
+    {
+      "path": "FRONTEND/SPEECH/SUPHIS16.EAS",
+      "target": "LANG/JA/SPEECH/SUPHIS16.EAS",
+      "sha256": "2ead395db23659bba0f1e1b42738f339823a070b4422955aea05864abf1062ea"
+    },
+    {
+      "path": "FRONTEND/SPEECH/SUPMEC16.EAS",
+      "target": "LANG/JA/SPEECH/SUPMEC16.EAS",
+      "sha256": "b2582bb040422d0f0026fb851c92725c41a8b1136ea44bfddb2e1eefc1fe5441"
+    },
+    {
+      "path": "FRONTEND/SPEECH/SUPPER16.EAS",
+      "target": "LANG/JA/SPEECH/SUPPER16.EAS",
+      "sha256": "6a8a1500ed60ac2d5ec6f9ea277a77942e314d366c74a9e33338c00b4048bbb9"
+    },
+    {
+      "path": "FRONTEND/SPEECH/THIRD.EAS",
+      "target": "LANG/JA/SPEECH/THIRD.EAS",
+      "sha256": "e3b86fa4569ff3e0299c03ae9eddc5da2aa32c640343bacaabc09ebf03152ced"
+    },
+    {
+      "path": "FRONTEND/SPEECH/VIPGEN16.EAS",
+      "target": "LANG/JA/SPEECH/VIPGEN16.EAS",
+      "sha256": "5fc1526402248cd3cb7cd521cd6997508323403138fc9bb2aa3dd5a50a225600"
+    },
+    {
+      "path": "FRONTEND/SPEECH/VIPHIS16.EAS",
+      "target": "LANG/JA/SPEECH/VIPHIS16.EAS",
+      "sha256": "198ca1aa3557b81c2bad5316c71b98e745428e506be53e9bb8f1c2a89e7383ce"
+    },
+    {
+      "path": "FRONTEND/SPEECH/VIPMEC16.EAS",
+      "target": "LANG/JA/SPEECH/VIPMEC16.EAS",
+      "sha256": "eb1074104806d0af6c4a0a9813259f1f8e98e62c7dc632f5e2c290c2a9cc4d14"
+    },
+    {
+      "path": "FRONTEND/SPEECH/VIPPER16.EAS",
+      "target": "LANG/JA/SPEECH/VIPPER16.EAS",
+      "sha256": "aa71c8f7262bf505599a3135be32c2643f35b3036bea4a23b248d7ebc4c58d43"
+    },
+    {
+      "path": "FRONTEND/SPEECH/WARRIOR.EAS",
+      "target": "LANG/JA/SPEECH/WARRIOR.EAS",
+      "sha256": "76c17f4653c909c9edc9d9a66f0032918c7f291c6cae443a15c48aebabdc66b4"
+    },
+    {
+      "path": "FRONTEND/SPEECH/WINNER.EAS",
+      "target": "LANG/JA/SPEECH/WINNER.EAS",
+      "sha256": "aa2708ab66014a75b02fe37b6f9eb9d67fac9f8eb09eab72696b6eb52ea07f80"
+    },
+    {
+      "path": "FRONTEND/SPEECH/ZR1GEN16.EAS",
+      "target": "LANG/JA/SPEECH/ZR1GEN16.EAS",
+      "sha256": "c6689e6bf3ecf1d6530b31d748794a05a55276b9eada2573f1b4879e42ffcd00"
+    },
+    {
+      "path": "FRONTEND/SPEECH/ZR1HIS16.EAS",
+      "target": "LANG/JA/SPEECH/ZR1HIS16.EAS",
+      "sha256": "5f1314b768ffdbd61cfc5864410d6b04efe26a22f7aa41667414f4772bec2e12"
+    },
+    {
+      "path": "FRONTEND/SPEECH/ZR1MEC16.EAS",
+      "target": "LANG/JA/SPEECH/ZR1MEC16.EAS",
+      "sha256": "29bdc43e91950def4e1a79d2d6faf0be3cb3c3b48131a3df8d31136014af4371"
+    },
+    {
+      "path": "FRONTEND/SPEECH/ZR1PER16.EAS",
+      "target": "LANG/JA/SPEECH/ZR1PER16.EAS",
+      "sha256": "5fbf9d00265e1720c6608d6ae5b77aab568680f0fa5ce2d9ce95207eeaad9f60"
+    },
+    {
+      "path": "SIMDATA/MISC/AL1.TRI",
+      "target": "LANG/JA/MISC/AL1.TRI",
+      "sha256": "31c8ebf838807a21c5f3a9e9ddb08ca19ba42808601d05da7cae5c0c30095565"
+    },
+    {
+      "path": "SIMDATA/MISC/AL1INFO",
+      "target": "LANG/JA/MISC/AL1INFO",
+      "sha256": "cf2f9b1da0c814e4d18c4867ef82844e80ab1342069b4a5dc6626fc4965d29de"
+    },
+    {
+      "path": "SIMDATA/MISC/AL2.TRI",
+      "target": "LANG/JA/MISC/AL2.TRI",
+      "sha256": "ab76830d49ca6361a68047ec2a3b84b575061a29049d86346c5745ffb225411d"
+    },
+    {
+      "path": "SIMDATA/MISC/AL22.TRI",
+      "target": "LANG/JA/MISC/AL22.TRI",
+      "sha256": "d626b99fa120cab33cf5daaf77ebc3473fbde759bf49a674f0c40755e2aec84a"
+    },
+    {
+      "path": "SIMDATA/MISC/AL2INFO",
+      "target": "LANG/JA/MISC/AL2INFO",
+      "sha256": "c23053d9d815eead40dbcb1cff17d66958925487516b13ae8682e85487b2e102"
+    },
+    {
+      "path": "SIMDATA/MISC/AL3.TRI",
+      "target": "LANG/JA/MISC/AL3.TRI",
+      "sha256": "cdcead40ce61384f0151b40d7482300aa8f60bbf1f945d59597d5fba24597e05"
+    },
+    {
+      "path": "SIMDATA/MISC/AL3INFO",
+      "target": "LANG/JA/MISC/AL3INFO",
+      "sha256": "26f47c4e4f55862607580257e3e7f948d2e2c55a16a3071d09891e175608210a"
+    },
+    {
+      "path": "SIMDATA/MISC/CL1.TRI",
+      "target": "LANG/JA/MISC/CL1.TRI",
+      "sha256": "609a46efc663dc75a52962e54ea5132400c6e7c6062d29429a3eaa7ab1e28b5b"
+    },
+    {
+      "path": "SIMDATA/MISC/CL1INFO",
+      "target": "LANG/JA/MISC/CL1INFO",
+      "sha256": "6f1c00ff7710a23cc6b99205abd8c84786728783cf8b58d1d4326e5b061b9492"
+    },
+    {
+      "path": "SIMDATA/MISC/CL2.TRI",
+      "target": "LANG/JA/MISC/CL2.TRI",
+      "sha256": "29a1daa2102b7f466a32f8360982b4aa197eb8b9abf3713a5923b561b77a0a33"
+    },
+    {
+      "path": "SIMDATA/MISC/CL2INFO",
+      "target": "LANG/JA/MISC/CL2INFO",
+      "sha256": "a745da4ba5affe5437d55daea3d8d67f1927290985b25ba3ab6f30c3dabce42b"
+    },
+    {
+      "path": "SIMDATA/MISC/CL3.TRI",
+      "target": "LANG/JA/MISC/CL3.TRI",
+      "sha256": "1ad91c5bc3cbb049022c7c942756c296952236f596dfb500b2b1aae7b090a55e"
+    },
+    {
+      "path": "SIMDATA/MISC/CL3INFO",
+      "target": "LANG/JA/MISC/CL3INFO",
+      "sha256": "e236f792a2fb321b2657facb682a74cb384f6be17d4b1c7911d15603cab8d477"
+    },
+    {
+      "path": "SIMDATA/MISC/CY1.TRI",
+      "target": "LANG/JA/MISC/CY1.TRI",
+      "sha256": "581f6f9cfcfca94fd184ed249aff8564bb29b25e3b7e2b96b4a983195389b422"
+    },
+    {
+      "path": "SIMDATA/MISC/CY1INFO",
+      "target": "LANG/JA/MISC/CY1INFO",
+      "sha256": "4e43d927a0285221a10d30b5cc8e973f8218644cf82d73c2101b8ba69f626f93"
+    },
+    {
+      "path": "SIMDATA/MISC/CY2.TRI",
+      "target": "LANG/JA/MISC/CY2.TRI",
+      "sha256": "896645bf1a6227dba181de2d556506403fe2ed5e5ebd1076d437975cdcd9f46e"
+    },
+    {
+      "path": "SIMDATA/MISC/CY2INFO",
+      "target": "LANG/JA/MISC/CY2INFO",
+      "sha256": "14107027e4adb9e8842471ea86774720826d8d4078cfdbd363778f4bdbeb17cd"
+    },
+    {
+      "path": "SIMDATA/MISC/CY3.TRI",
+      "target": "LANG/JA/MISC/CY3.TRI",
+      "sha256": "fa53ec4502abfe28944a6805dcd05e2c50958579df3aad08054749e68d6c495d"
+    },
+    {
+      "path": "SIMDATA/MISC/CY3INFO",
+      "target": "LANG/JA/MISC/CY3INFO",
+      "sha256": "199fc20b3311d83d24ce81bb521205c7f8945b000ffcb83a7823f7c97b534871"
+    },
+    {
+      "path": "SIMDATA/MISC/GWARNDH.QFS",
+      "target": "LANG/JA/MISC/GWARNDH.QFS",
+      "sha256": "d972fc7f5cf7ba3a73aaeb9f6d7eaeaa03e4018e77cd592ad7c49db8c60ac508"
+    },
+    {
+      "path": "SIMDATA/MISC/GWARNDL.QFS",
+      "target": "LANG/JA/MISC/GWARNDL.QFS",
+      "sha256": "05ab9a6e93281e7e3c457c83eda82f44b71d16375bda8cb81f2d9ec1b8925dda"
+    },
+    {
+      "path": "SIMDATA/MISC/GWARNRH.QFS",
+      "target": "LANG/JA/MISC/GWARNRH.QFS",
+      "sha256": "e72f403c184f56f31d800aff513531e51cfbc6630f29e2e7359d9f058595250a"
+    },
+    {
+      "path": "SIMDATA/MISC/GWARNRL.QFS",
+      "target": "LANG/JA/MISC/GWARNRL.QFS",
+      "sha256": "0d3187039219c47352ac8521e9599f51035143b0d9939390447f3d84e352a259"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.B00",
+      "target": "LANG/JA/MISC/MASKHI.B00",
+      "sha256": "09ecebd0f40042bd30194e182093388636350072e404d2b53542b825b5837224"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.B01",
+      "target": "LANG/JA/MISC/MASKHI.B01",
+      "sha256": "4b72eb4027b501c5ca26e74459d6cb8d46d51c4032a77bf5f97ecf7984fc8903"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.B02",
+      "target": "LANG/JA/MISC/MASKHI.B02",
+      "sha256": "f604cf3abfbd83e60f801423fc917c757fa718acf8cb612f7eb0a44d3a47c738"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.B03",
+      "target": "LANG/JA/MISC/MASKHI.B03",
+      "sha256": "28ef54b3f0c59fcbb7b6c1d6f987c8a0aa56c50357ab889f094d3d2918ab56e0"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.B10",
+      "target": "LANG/JA/MISC/MASKHI.B10",
+      "sha256": "46dc2ab7b907c2a0c02b7164931f385bd3b5baf1ba3679f9260e3cf5db3d3bf2"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.B11",
+      "target": "LANG/JA/MISC/MASKHI.B11",
+      "sha256": "57d3ca866de224e27d5c830adbb6db1408bbd26b0231dd9c3b8bd440a744c4d0"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.B12",
+      "target": "LANG/JA/MISC/MASKHI.B12",
+      "sha256": "2fe25e56516e805231277b7b48ab546a1214afcd546716da9174d20caf122546"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.B13",
+      "target": "LANG/JA/MISC/MASKHI.B13",
+      "sha256": "17651573d9b28dbe2d0988da3feacc75749a441d4d718c02988c2d5121fbb2c9"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.B20",
+      "target": "LANG/JA/MISC/MASKHI.B20",
+      "sha256": "2272e8da161ba990cd8e1b3b9fe8d91510ea443b1affed69ebd4d705e76987f2"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.B21",
+      "target": "LANG/JA/MISC/MASKHI.B21",
+      "sha256": "d0e12ddcc1436dfa4278b244015ee9a303c23eb29db807ce431497f280ecd315"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.B22",
+      "target": "LANG/JA/MISC/MASKHI.B22",
+      "sha256": "70eaac0c04369b257814372e24d4a67619e8f11aee0fb859818f4da25c55232a"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.B23",
+      "target": "LANG/JA/MISC/MASKHI.B23",
+      "sha256": "422a7c512e45d4013cdab5259a68974007f27d54cac468acd8352a658ca67637"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.FSB",
+      "target": "LANG/JA/MISC/MASKHI.FSB",
+      "sha256": "a48468a98d9b05efced99ebd4295e4cd49f1768c01dba5a65e2947ee2794b23d"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.FSH",
+      "target": "LANG/JA/MISC/MASKHI.FSH",
+      "sha256": "c0542197bcca728f10e149902f33302e592b208a46d21c89077a3addaade8106"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHI.MMB",
+      "target": "LANG/JA/MISC/MASKHI.MMB",
+      "sha256": "99bb4ebd95b9b750ec18a1b538909bda82234307a4f7d976e38d20a6ed047bdc"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHIG.FSB",
+      "target": "LANG/JA/MISC/MASKHIG.FSB",
+      "sha256": "e3ad3e4d3d66be4c9aaa87bd03110d52c483be9e9d452d329eea4cff5ec6bb0c"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKHIG.FSH",
+      "target": "LANG/JA/MISC/MASKHIG.FSH",
+      "sha256": "c0542197bcca728f10e149902f33302e592b208a46d21c89077a3addaade8106"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.B00",
+      "target": "LANG/JA/MISC/MASKLO.B00",
+      "sha256": "43b28bc76bf03562881d249830809ce2288ccc410348b0dba63a9d1d6d77470b"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.B01",
+      "target": "LANG/JA/MISC/MASKLO.B01",
+      "sha256": "1d6e11838261aa44ba9a10f8b902691f5d969fcc594dc4db323a5eb900bb3b31"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.B02",
+      "target": "LANG/JA/MISC/MASKLO.B02",
+      "sha256": "4c563169d9204bc26e8942bce95cc01260b9fc5ee42755ea1a37a63047d6c542"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.B03",
+      "target": "LANG/JA/MISC/MASKLO.B03",
+      "sha256": "c8da4789dcc1583b962ff4d0e979189061f94f1d7136926348123685fcba5241"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.B10",
+      "target": "LANG/JA/MISC/MASKLO.B10",
+      "sha256": "1883824a26d65007d9fb806b6294ab79bf1a5481462255242d03d374714c05b6"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.B11",
+      "target": "LANG/JA/MISC/MASKLO.B11",
+      "sha256": "c1c793b342b060a89cb7f22681a1c7ae890c95aa1e7ad001f0cfc9dbb9c4a700"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.B12",
+      "target": "LANG/JA/MISC/MASKLO.B12",
+      "sha256": "f12e0d0908a813ff2dc8ef934d0cd8250e88aa8b5464804d90b484f030a6239c"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.B13",
+      "target": "LANG/JA/MISC/MASKLO.B13",
+      "sha256": "526ab4d92ec47af0917400e40e3ba805c7c0eb2161d9a6f3dd9a19460a33e220"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.B20",
+      "target": "LANG/JA/MISC/MASKLO.B20",
+      "sha256": "24ceace16deddd955afa012463c28857f25ec29f34a8263d824ceb11d644966f"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.B21",
+      "target": "LANG/JA/MISC/MASKLO.B21",
+      "sha256": "152f681862acf54c4c06e46a428c48633718d3eddf6b60f132e0bcd8971e9781"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.B22",
+      "target": "LANG/JA/MISC/MASKLO.B22",
+      "sha256": "c595f46f419e7bb1cf58a0aec887ce7bc0bcc46c1adab94c0d55fc7e966f1403"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.B23",
+      "target": "LANG/JA/MISC/MASKLO.B23",
+      "sha256": "084d7915c4728e93ba2e82b7ba1bf73ccb0d2fd69e68e19b889944409a7465a4"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.FSB",
+      "target": "LANG/JA/MISC/MASKLO.FSB",
+      "sha256": "4036afcc077ae98ccf7cbd1bf379e28cb9575e4cebf8edf9c1a299059bc44f73"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.FSH",
+      "target": "LANG/JA/MISC/MASKLO.FSH",
+      "sha256": "8c94f00eb63d46f99f2dfb88e9ca4a2327d138c76b8bdfc1256df2563dff70bc"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLO.MMB",
+      "target": "LANG/JA/MISC/MASKLO.MMB",
+      "sha256": "090d1f5b31b46f073b08f71717d3ae2188960b5fab834a622443b4c5ae413268"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLOG.FSB",
+      "target": "LANG/JA/MISC/MASKLOG.FSB",
+      "sha256": "e4aade07ee91844be57562a47bda9120a2e266d9860fe991a1e153e6826f48ed"
+    },
+    {
+      "path": "SIMDATA/MISC/MASKLOG.FSH",
+      "target": "LANG/JA/MISC/MASKLOG.FSH",
+      "sha256": "c959907dcbe7eb6eb32bb3333a6b45f9c1b160135742833c4e185cfdb1eb5f0c"
+    },
+    {
+      "path": "SIMDATA/MISC/SMOKE.QFS",
+      "target": "LANG/JA/MISC/SMOKE.QFS",
+      "sha256": "fed5203115274bb8cade9713f67b4e2da13e4eb3854d8bd4e14b9751700a0b4e"
+    },
+    {
+      "path": "SIMDATA/MISC/TICKEGDH.QFS",
+      "target": "LANG/JA/MISC/TICKEGDH.QFS",
+      "sha256": "d7b2f8991d9a1c639f31ef13a140b63b4e1d61500e7b2997bcf29a17a7f0b586"
+    },
+    {
+      "path": "SIMDATA/MISC/TICKEGDL.QFS",
+      "target": "LANG/JA/MISC/TICKEGDL.QFS",
+      "sha256": "0d818d5d31b38d13c9b54637a7991dc69cfb1ec71f8e6c4dbe59add87a76b583"
+    },
+    {
+      "path": "SIMDATA/MISC/TICKEGRH.QFS",
+      "target": "LANG/JA/MISC/TICKEGRH.QFS",
+      "sha256": "e9948fd2037177ab507568c1dadbcc715b154776d0e55ac5064c4346eae9f7e8"
+    },
+    {
+      "path": "SIMDATA/MISC/TICKEGRL.QFS",
+      "target": "LANG/JA/MISC/TICKEGRL.QFS",
+      "sha256": "7d006e67eb4e062e41cc720dc7c48bdc3a7356e39ef826e3e0aedb9af9cbc070"
+    },
+    {
+      "path": "SIMDATA/MISC/TICKETDH.QFS",
+      "target": "LANG/JA/MISC/TICKETDH.QFS",
+      "sha256": "d7b2f8991d9a1c639f31ef13a140b63b4e1d61500e7b2997bcf29a17a7f0b586"
+    },
+    {
+      "path": "SIMDATA/MISC/TICKETDL.QFS",
+      "target": "LANG/JA/MISC/TICKETDL.QFS",
+      "sha256": "0d818d5d31b38d13c9b54637a7991dc69cfb1ec71f8e6c4dbe59add87a76b583"
+    },
+    {
+      "path": "SIMDATA/MISC/TICKETRH.QFS",
+      "target": "LANG/JA/MISC/TICKETRH.QFS",
+      "sha256": "e9948fd2037177ab507568c1dadbcc715b154776d0e55ac5064c4346eae9f7e8"
+    },
+    {
+      "path": "SIMDATA/MISC/TICKETRL.QFS",
+      "target": "LANG/JA/MISC/TICKETRL.QFS",
+      "sha256": "7d006e67eb4e062e41cc720dc7c48bdc3a7356e39ef826e3e0aedb9af9cbc070"
+    },
+    {
+      "path": "SIMDATA/MISC/TR1.TRI",
+      "target": "LANG/JA/MISC/TR1.TRI",
+      "sha256": "95b21da61a2467f87fd7347079cad8c2d5e9a651e2d981ce36ff6810e924b501"
+    },
+    {
+      "path": "SIMDATA/MISC/TR1INFO",
+      "target": "LANG/JA/MISC/TR1INFO",
+      "sha256": "3956988c1bb43c208c360e9c6191e1035686be3ce8e6c53289fa431abad17835"
+    },
+    {
+      "path": "SIMDATA/MISC/TR2.TRI",
+      "target": "LANG/JA/MISC/TR2.TRI",
+      "sha256": "cd5547cfe66fd0c1f9b8487ff445e0a66c3c282a31fd7e77bf3a6ceb9f8a0fb0"
+    },
+    {
+      "path": "SIMDATA/MISC/TR2INFO",
+      "target": "LANG/JA/MISC/TR2INFO",
+      "sha256": "30a23f73038d50fbeb5873af4ea5c8d147f0cd86a3831677477cb202fd7e9eb5"
+    },
+    {
+      "path": "SIMDATA/MISC/TR3.TRI",
+      "target": "LANG/JA/MISC/TR3.TRI",
+      "sha256": "f7af0f515b729c4c6effd60de05c3cfd3554ea26d927d1a7dca1c3b16041eacd"
+    },
+    {
+      "path": "SIMDATA/MISC/TR3INFO",
+      "target": "LANG/JA/MISC/TR3INFO",
+      "sha256": "7b51bb34462859abee959a93ad3511a2b3d1c6ea755f673f3523b1db4ef5f541"
+    },
+    {
+      "path": "SIMDATA/MISC/TR4.TRI",
+      "target": "LANG/JA/MISC/TR4.TRI",
+      "sha256": "2cd098a8f53f80573bd6a43716901443d980c0c0d8f4c018c32fae3157987020"
+    },
+    {
+      "path": "SIMDATA/MISC/TR4INFO",
+      "target": "LANG/JA/MISC/TR4INFO",
+      "sha256": "da840c0dc8110824182997c50ca32546018b2b47e13343459432d454dbbd0161"
+    },
+    {
+      "path": "SIMDATA/MISC/TR5.TRI",
+      "target": "LANG/JA/MISC/TR5.TRI",
+      "sha256": "210ea80043580a11d9cebd9c7ba0535367c8cafe8a2e5455b732b01c8613d446"
+    },
+    {
+      "path": "SIMDATA/MISC/TR5INFO",
+      "target": "LANG/JA/MISC/TR5INFO",
+      "sha256": "daa81a426d48b80f32e68ddc16cf76d7cf672260b2f90d7fc9fd5509011d7529"
+    },
+    {
+      "path": "SIMDATA/MISC/TR6.TRI",
+      "target": "LANG/JA/MISC/TR6.TRI",
+      "sha256": "57c07ab1f93bf0aebdddeba0846e5ff93395e6a64d3ceebc2cb36a02938d9f71"
+    },
+    {
+      "path": "SIMDATA/MISC/TR6INFO",
+      "target": "LANG/JA/MISC/TR6INFO",
+      "sha256": "165703288592f937fdf95a728d2b94a61abb0b95f7c76b6de3f5c3e773240131"
+    },
+    {
+      "path": "SIMDATA/MISC/TR7.TRI",
+      "target": "LANG/JA/MISC/TR7.TRI",
+      "sha256": "f746312567a9a43818380fe043381790e464303af4331160ed58218424eeba62"
+    },
+    {
+      "path": "SIMDATA/MISC/TR7INFO",
+      "target": "LANG/JA/MISC/TR7INFO",
+      "sha256": "808cc8d65f147066cb82e7b4532e5187f54ff1f5a7a2887ffd9624222bbf057a"
+    },
+    {
+      "path": "SIMDATA/MISC/TRXINFO",
+      "target": "LANG/JA/MISC/TRXINFO",
+      "sha256": "affb7ea3154ae2ee8a8d86b75d97a9eabaf7acbc53c0ce660a9c7aadae0e4b00"
+    },
+    {
+      "path": "SIMDATA/MISC/WARNDH.QFS",
+      "target": "LANG/JA/MISC/WARNDH.QFS",
+      "sha256": "d972fc7f5cf7ba3a73aaeb9f6d7eaeaa03e4018e77cd592ad7c49db8c60ac508"
+    },
+    {
+      "path": "SIMDATA/MISC/WARNDL.QFS",
+      "target": "LANG/JA/MISC/WARNDL.QFS",
+      "sha256": "05ab9a6e93281e7e3c457c83eda82f44b71d16375bda8cb81f2d9ec1b8925dda"
+    },
+    {
+      "path": "SIMDATA/MISC/WARNRH.QFS",
+      "target": "LANG/JA/MISC/WARNRH.QFS",
+      "sha256": "e72f403c184f56f31d800aff513531e51cfbc6630f29e2e7359d9f058595250a"
+    },
+    {
+      "path": "SIMDATA/MISC/WARNRL.QFS",
+      "target": "LANG/JA/MISC/WARNRL.QFS",
+      "sha256": "0d3187039219c47352ac8521e9599f51035143b0d9939390447f3d84e352a259"
+    }
+  ],
+  "police_movies": "Japanese GCOP1-3 are byte-identical to COP1-3; keep existing English-branch movie paths."
+}

@@ -1,5 +1,30 @@
 # Technical notes
 
+## Native language edition
+
+`src/LanguageLauncher.cpp` supplies the new public NFSSE.exe for the local
+three-language edition. It displays three flag buttons and starts the exact
+accepted game bytes under the NFSSE-Game.exe name. The helper/renderer and their
+build-specific guards remain unchanged. A held Windows file handle excludes
+other selectors until the child exits; closing the initial window changes no
+game files. The executable contains the unchanged original media icon.
+
+Selections validate the runtime and chosen resource inventory before updating
+the nineteen-record path table, the third nfs.cfg token, and eleven root race
+speech files. Each file replacement is atomic; failed selection restores the
+previous bytes. A brief retry handles transient Windows file-sharing failures.
+Custom tables/configurations/announcements are rejected. Saves, config.dat,
+replays, other nfs.cfg tokens and ddraw.ini are preserved.
+
+German follows the six directories in the original default path loader at
+VA 0x42a188, sets GERMAN, and installs the distinct original GSPEECH announcements.
+The existing paths.dat takes precedence over that loader's default paths, so
+changing only nfs.cfg would leave English resource paths. Japanese uses five
+prototype overrides and the ENGLISH engine branch. Original police movies stay
+on their shared path; the engine selects German GCOP clips. See
+`research/static/german-language-routing.json` and
+`research/static/japanese-dialog-language.json` for static evidence.
+
 ## Supported image and disk patches
 
 The original is a Watcom-built PE32 x86 image, preferred base `0x400000`, timestamp `0x31C4F35C`, entry RVA `0x8C802`. Its five sections have zero `VirtualSize` fields. The `.bss` section has no file-backed data; PE tooling must not treat its in-memory size as bytes present in the executable. The initial analysis is preserved in [research/static](../research/static/).

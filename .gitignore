@@ -1,5 +1,7 @@
 # Original media, installed games, captures, and local session caches.
 /install/
+/japanese/
+/_temp/
 /NFSSE/
 /portable/
 /portable relocation test/

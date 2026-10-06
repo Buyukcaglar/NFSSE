@@ -26,7 +26,21 @@ jobs:
           Add-Type -Path tools\IconResources.cs
           try { [NfsseIconResources]::Embed((New-Object byte[] 256), (New-Object byte[] 6)); throw 'Invalid input accepted' }
           catch [System.Management.Automation.MethodInvocationException] { }
+      - name: Check bounded resource decoding and source-derived Japanese prototype edits
+        shell: powershell
+        run: python -m unittest discover -s tests -p test_nfs_resources.py
+      - name: Check Windows installer resource conversion against reference fixtures
+        shell: powershell
+        run: tests\LanguageResources.Tests.ps1
+      - name: Build native language selector and check selection, voices and preservation
+        shell: cmd
+        run: |
+          call tools\build-language-launcher.cmd
+          if errorlevel 1 exit /b 1
+          call tools\test-languages.cmd
       - uses: actions/upload-artifact@v7
         with:
           name: NFSPortable-x86
-          path: build/NFSPortable.dll
+          path: |
+            build/NFSPortable.dll
+            build/NFSSE-Language.exe

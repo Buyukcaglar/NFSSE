@@ -1,0 +1,190 @@
+{
+  "source_executable_sha256": "ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b",
+  "config_branch": "GERMAN",
+  "original_default_path_loader_va": "0x42a188",
+  "german_flag_va": "0x52b31c",
+  "german_path_records": {
+    "2": "frontend/gspeech/",
+    "5": "frontend/gart/",
+    "10": "simdata/gtrackfm/",
+    "12": "simdata/gslides/",
+    "16": "simdata/gdash/",
+    "18": "frontend/gshow/"
+  },
+  "existing_paths_dat_takes_precedence": true,
+  "race_speech_uses_bare_filenames": true,
+  "race_speech": [
+    {
+      "filename": "FINALLAP.EAS",
+      "english": {
+        "bytes": 5168,
+        "sha256": "1ef942e210166d942e1c76d4c05a061d85d2582b78b00b66b85f53513fa45fda",
+        "header_hex": "45414353803e0000020102ff20280000ffffffff000000002000000027020000"
+      },
+      "german": {
+        "bytes": 11168,
+        "sha256": "85af303dbc1a86fd25a8fa5a265d00e0d095e299fa97294af83ce29dc5568f0f",
+        "header_hex": "45414353803e0000020102ff00570000ffffffff000000002000000027020000"
+      },
+      "different": true
+    },
+    {
+      "filename": "BESTTIME.EAS",
+      "english": {
+        "bytes": 8206,
+        "sha256": "f19b327834ebd3b7bbef113618649180b172ad99232a210af0ae0dde38789d6b",
+        "header_hex": "45414353803e0000020102ffdb3f0000ffffffff000000002000000027020000"
+      },
+      "german": {
+        "bytes": 7904,
+        "sha256": "ba4b84e933bc8e0e3988d1fd7650da7f84d0f03447f3c74339d1ffbeddfc91df",
+        "header_hex": "45414353803e0000020102ff803d0000ffffffff000000002000000027020000"
+      },
+      "different": true
+    },
+    {
+      "filename": "FIRST.EAS",
+      "english": {
+        "bytes": 10296,
+        "sha256": "68410ec719c3cf53bb3dc69ec963c88bc8f01c4b7e3a98e4c5dfa4f8c2968963",
+        "header_hex": "45414353803e0000020102ff2f500000ffffffff000000002000000027020000"
+      },
+      "german": {
+        "bytes": 10528,
+        "sha256": "898ebb29d4ce65b19333692d12d0de9400c74faf914fed6c94c4f653f56133a9",
+        "header_hex": "45414353803e0000020102ff00520000ffffffff000000002000000027020000"
+      },
+      "different": true
+    },
+    {
+      "filename": "SECOND.EAS",
+      "english": {
+        "bytes": 13221,
+        "sha256": "25c7b680d933593a770d7e60c5897f9c3280597bd0aae65f81a86a96503fa055",
+        "header_hex": "45414353803e0000020102ff0a670000ffffffff000000002000000027020000"
+      },
+      "german": {
+        "bytes": 11008,
+        "sha256": "28d8c83d602c303037dea479d34ec329dbdfe5cb1f7bf70548cb89c6e83db699",
+        "header_hex": "45414353803e0000020102ffc0550000ffffffff000000002000000027020000"
+      },
+      "different": true
+    },
+    {
+      "filename": "THIRD.EAS",
+      "english": {
+        "bytes": 12525,
+        "sha256": "e3b86fa4569ff3e0299c03ae9eddc5da2aa32c640343bacaabc09ebf03152ced",
+        "header_hex": "45414353803e0000020102ff99610000ffffffff000000002000000027020000"
+      },
+      "german": {
+        "bytes": 10848,
+        "sha256": "42517dffa86c647eec547a16ed6c8037290f10d6bd3fd6719e48895b7c3cd2ec",
+        "header_hex": "45414353803e0000020102ff80540000ffffffff000000002000000027020000"
+      },
+      "different": true
+    },
+    {
+      "filename": "FOURTH.EAS",
+      "english": {
+        "bytes": 11526,
+        "sha256": "f7dc1ff1f8a46d525abbc4d68edcbeba3a5212ef8e01e71adebb943105e98556",
+        "header_hex": "45414353803e0000020102ffcc590000ffffffff000000002000000027020000"
+      },
+      "german": {
+        "bytes": 12128,
+        "sha256": "8c4cb354f6ea154d312d6dc57dc2a4837171b9541053dec302f2154a3ea0dd89",
+        "header_hex": "45414353803e0000020102ff805e0000ffffffff000000002000000027020000"
+      },
+      "different": true
+    },
+    {
+      "filename": "FIFTH.EAS",
+      "english": {
+        "bytes": 11132,
+        "sha256": "3fc3cdb0ba763b499c494eeb264bc7866a7e8d49803d60bb3a89df87a9da9740",
+        "header_hex": "45414353803e0000020102ffb7560000ffffffff000000002000000027020000"
+      },
+      "german": {
+        "bytes": 12320,
+        "sha256": "8b4a5b2a7661be31e3970b6286b43ae10ed9ca510cbad88cae08003005c0c055",
+        "header_hex": "45414353803e0000020102ff00600000ffffffff000000002000000027020000"
+      },
+      "different": true
+    },
+    {
+      "filename": "SIXTH.EAS",
+      "english": {
+        "bytes": 11921,
+        "sha256": "04e64e860806f6427a1e2b680c4d64775d7f7e9dd0bfc24435f5909508ebe767",
+        "header_hex": "45414353803e0000020102ffe25c0000ffffffff000000002000000027020000"
+      },
+      "german": {
+        "bytes": 13248,
+        "sha256": "78fe725e2790afacb34d57a295e65f97b2263b9643b1d7899adcb34199a37249",
+        "header_hex": "45414353803e0000020102ff40670000ffffffff000000002000000027020000"
+      },
+      "different": true
+    },
+    {
+      "filename": "SEVENTH.EAS",
+      "english": {
+        "bytes": 11712,
+        "sha256": "6d88e76177539b299886c3496f3739ad0a13fed9b93bd91753fa9eb6989b6ff0",
+        "header_hex": "45414353803e0000020102ff405b0000ffffffff000000002000000027020000"
+      },
+      "german": {
+        "bytes": 9920,
+        "sha256": "0bf975d77559afdc03c4c1ad605332ec9859870e8210e539f2e6c00aa20a8ba1",
+        "header_hex": "45414353803e0000020102ff404d0000ffffffff000000002000000027020000"
+      },
+      "different": true
+    },
+    {
+      "filename": "EIGHTH.EAS",
+      "english": {
+        "bytes": 12432,
+        "sha256": "6ab9247f784eddcdb41c2d262b0865bc9e79ee3b1355a14ee4120dcf3583b7c7",
+        "header_hex": "45414353803e0000020102ffdf600000ffffffff000000002000000027020000"
+      },
+      "german": {
+        "bytes": 12064,
+        "sha256": "11d0a0f158c88884236e8ad4bce31e823417e4dedd9ad612a9a76d910c6a59d9",
+        "header_hex": "45414353803e0000020102ff005e0000ffffffff000000002000000027020000"
+      },
+      "different": true
+    },
+    {
+      "filename": "BESTLAST.EAS",
+      "english": {
+        "bytes": 13899,
+        "sha256": "3e4a525631cd6c46a410a4b20b9d595a1d588176a14d60df7f45b2d215d23e53",
+        "header_hex": "45414353803e0000020102ff556c0000ffffffff000000002000000027020000"
+      },
+      "german": {
+        "bytes": 19040,
+        "sha256": "5f591dc837cbac7f8913cdcbd90881076d46b7748f34c7ead983b24474331861",
+        "header_hex": "45414353803e0000020102ff80940000ffffffff000000002000000027020000"
+      },
+      "different": true
+    }
+  ],
+  "all_eleven_german_recordings_differ": true,
+  "playback_auditioned": false,
+  "original_german_police_movies_differ_from_english": [
+    "GCOP1.TGV",
+    "GCOP2.TGV",
+    "GCOP3.TGV"
+  ],
+  "german_graphics_resources": {
+    "OPTION": {
+      "entries": 57,
+      "english_tags_missing": []
+    },
+    "CHECK": {
+      "entries": 58,
+      "english_tags_missing": [],
+      "extra_tag": "temp"
+    }
+  }
+}

@@ -1,0 +1,5292 @@
+{
+  "schema": 1,
+  "id": "english-german-language-media-1",
+  "source_executable_sha256": "ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b",
+  "files": [
+    {
+      "group": "C",
+      "path": "DPLAY.dll",
+      "sha256": "7f3978149dd401c33ab0cf34bf776d794005dccf8307cce5006710976c6df545"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/512TR.TGV",
+      "sha256": "be2bc942428d46f369836dab40773c87da639dc9716f6a242ffd9cd28be77426"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/911.TGV",
+      "sha256": "df60da247a6c918816c12c53334e83209ecc0a7d03031daeeb9a8606f3a53d82"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/ATTRACT1.TGV",
+      "sha256": "6a00c009d73d18cf31670745c2f11512e715689c35d33c9750b0dfd51636c336"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/ATTRACT2.TGV",
+      "sha256": "1fdf96d12932e847ffe35e6caa8d7548c5282357a64c5dc8ca93362544a244a3"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/ATTRACT3.TGV",
+      "sha256": "bd30c4730d40526b879a1d41c44da24f546141421e35d0bd5753858cdb367301"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/COP1.TGV",
+      "sha256": "97752d7e7ef3d94811d8e79ab1ca0d4ba999db715064987118274e9b78b0f9ad"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/COP2.TGV",
+      "sha256": "360b341ccf8a5c7adb40cf9ed0f5734c3a72a16119ec696b7e66a7ca4593f708"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/COP3.TGV",
+      "sha256": "6f71c8037843facab235c8e3369ff95329d545ac4ba81e2989a64b51288836e6"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/DIABLO.TGV",
+      "sha256": "cedf67db20fb3d8aa7b0a13e7670b3c139a56588431e2ca3d6823a63b208b377"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/EA.TGV",
+      "sha256": "a4166b688012a41e24ee5cdcc9dc5a7e766c4f342154f18e810b38199fa3ec12"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/GCOP1.TGV",
+      "sha256": "24fe76844efa8a37827d3b1c62326ef6f7204fb13123217f6ae8d20df9f1f25b"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/GCOP2.TGV",
+      "sha256": "641638d3118e3f1d71edf8b5e00e2f56b0aa7277af78f0a10302f0e16f28885f"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/GCOP3.TGV",
+      "sha256": "128cc45ab8f71111006b0aaad40517b2736af3d431858f43e244fa3e56b06cd7"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/NSX.TGV",
+      "sha256": "d4f1e05de7c116a69d6848fcf7302defe5dd91e4bbe2814c40c3ab5c1048bd36"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/RX7.TGV",
+      "sha256": "a92bb6d39e0286bdf86ef137dbc90fd0d3859075cc667c388e83bbe5c588528c"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/SUPRA.TGV",
+      "sha256": "27dae43fff8175d84be1f4b8132bb90ee2f191c9af1f3626683cb14ada4f33f4"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/TITLE.TGV",
+      "sha256": "e09bd02ffc8267555358fac85b1a02867e5dfa89f1ed50a82d73389f4b7867e1"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/VETTE.TGV",
+      "sha256": "7296b6bae8fd85b3f854f07653c527556b168677a952a34cfd40740c0f1e9c22"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/VIPER.TGV",
+      "sha256": "ce9bc2cf903fe094b4dd48bcabacfa565d5f3eaf3cfa6d16a3274cd68ee0d381"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/WIN#1.TGV",
+      "sha256": "e3ad81b705d57c48f839116a4c18cece2eb26f5f5151c198d96846697e59679c"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/WIN#2.TGV",
+      "sha256": "59374ce8712fa30abbc504c692b27a746458144c9a560677a430560a9f0f908f"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/WIN#3.TGV",
+      "sha256": "c0673560030c3c15d1a638fdcea81a43bd9245b028477e9e5061b827123f73b7"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/WIN#4.TGV",
+      "sha256": "414ddfde51ced4eb52c3d078e78f84b6860503a567ababbebc4c8856179d18e4"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/WIN#5.TGV",
+      "sha256": "1ad02e7aa95e54458e2f18c905a7a96b85864df6748d36d005dc381da0fc6edc"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/WIN#6.TGV",
+      "sha256": "fb8ddac0731fd77e89a822d6b9b74c7385fcac3630d784224237f9b51cd86390"
+    },
+    {
+      "group": "C",
+      "path": "FRONTEND/MOVIE/WIN#7.TGV",
+      "sha256": "23f6ab636307cebf83287a19cd085cb3c2dfd980bcc3f5c6a0f7278c0f200a5d"
+    },
+    {
+      "group": "C",
+      "path": "IFORCE.DLL",
+      "sha256": "c6bc16517ef7a451e4bc171a67ff248d6cb357ea666a21a4d7e4ca4c91fd4db1"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/AL1.TRI",
+      "sha256": "31c8ebf838807a21c5f3a9e9ddb08ca19ba42808601d05da7cae5c0c30095565"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/AL1INFO",
+      "sha256": "cf2f9b1da0c814e4d18c4867ef82844e80ab1342069b4a5dc6626fc4965d29de"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/AL2.TRI",
+      "sha256": "ab76830d49ca6361a68047ec2a3b84b575061a29049d86346c5745ffb225411d"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/AL22.TRI",
+      "sha256": "d626b99fa120cab33cf5daaf77ebc3473fbde759bf49a674f0c40755e2aec84a"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/AL2INFO",
+      "sha256": "c23053d9d815eead40dbcb1cff17d66958925487516b13ae8682e85487b2e102"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/AL3.TRI",
+      "sha256": "cdcead40ce61384f0151b40d7482300aa8f60bbf1f945d59597d5fba24597e05"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/AL3INFO",
+      "sha256": "26f47c4e4f55862607580257e3e7f948d2e2c55a16a3071d09891e175608210a"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/CL1.TRI",
+      "sha256": "609a46efc663dc75a52962e54ea5132400c6e7c6062d29429a3eaa7ab1e28b5b"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/CL1INFO",
+      "sha256": "6f1c00ff7710a23cc6b99205abd8c84786728783cf8b58d1d4326e5b061b9492"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/CL2.TRI",
+      "sha256": "29a1daa2102b7f466a32f8360982b4aa197eb8b9abf3713a5923b561b77a0a33"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/CL2INFO",
+      "sha256": "a745da4ba5affe5437d55daea3d8d67f1927290985b25ba3ab6f30c3dabce42b"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/CL3.TRI",
+      "sha256": "1ad91c5bc3cbb049022c7c942756c296952236f596dfb500b2b1aae7b090a55e"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/CL3INFO",
+      "sha256": "e236f792a2fb321b2657facb682a74cb384f6be17d4b1c7911d15603cab8d477"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/CY1.TRI",
+      "sha256": "581f6f9cfcfca94fd184ed249aff8564bb29b25e3b7e2b96b4a983195389b422"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/CY1INFO",
+      "sha256": "4e43d927a0285221a10d30b5cc8e973f8218644cf82d73c2101b8ba69f626f93"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/CY2.TRI",
+      "sha256": "896645bf1a6227dba181de2d556506403fe2ed5e5ebd1076d437975cdcd9f46e"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/CY2INFO",
+      "sha256": "14107027e4adb9e8842471ea86774720826d8d4078cfdbd363778f4bdbeb17cd"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/CY3.TRI",
+      "sha256": "fa53ec4502abfe28944a6805dcd05e2c50958579df3aad08054749e68d6c495d"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/CY3INFO",
+      "sha256": "199fc20b3311d83d24ce81bb521205c7f8945b000ffcb83a7823f7c97b534871"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/GWARNDH.QFS",
+      "sha256": "54ca0c08ac4d5d08fb914d58bab46e796affe4fc21ec776da94c9bffecabba9c"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/GWARNDL.QFS",
+      "sha256": "91db42cfeec8682058540bcda3645b533895492bff365569c42947f70a90da0b"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/GWARNRH.QFS",
+      "sha256": "ab07efa83cb265064ce26e9f5a47c7fd57b2dad9679b2c09fb66be646f06503f"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/GWARNRL.QFS",
+      "sha256": "b522e77b1c8f8ded364e46d7f06735e6c453390389b927fc218896f9364ce09f"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.B00",
+      "sha256": "09ecebd0f40042bd30194e182093388636350072e404d2b53542b825b5837224"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.B01",
+      "sha256": "4b72eb4027b501c5ca26e74459d6cb8d46d51c4032a77bf5f97ecf7984fc8903"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.B02",
+      "sha256": "f604cf3abfbd83e60f801423fc917c757fa718acf8cb612f7eb0a44d3a47c738"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.B03",
+      "sha256": "28ef54b3f0c59fcbb7b6c1d6f987c8a0aa56c50357ab889f094d3d2918ab56e0"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.B10",
+      "sha256": "46dc2ab7b907c2a0c02b7164931f385bd3b5baf1ba3679f9260e3cf5db3d3bf2"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.B11",
+      "sha256": "57d3ca866de224e27d5c830adbb6db1408bbd26b0231dd9c3b8bd440a744c4d0"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.B12",
+      "sha256": "2fe25e56516e805231277b7b48ab546a1214afcd546716da9174d20caf122546"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.B13",
+      "sha256": "17651573d9b28dbe2d0988da3feacc75749a441d4d718c02988c2d5121fbb2c9"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.B20",
+      "sha256": "2272e8da161ba990cd8e1b3b9fe8d91510ea443b1affed69ebd4d705e76987f2"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.B21",
+      "sha256": "d0e12ddcc1436dfa4278b244015ee9a303c23eb29db807ce431497f280ecd315"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.B22",
+      "sha256": "70eaac0c04369b257814372e24d4a67619e8f11aee0fb859818f4da25c55232a"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.B23",
+      "sha256": "422a7c512e45d4013cdab5259a68974007f27d54cac468acd8352a658ca67637"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.FSB",
+      "sha256": "a48468a98d9b05efced99ebd4295e4cd49f1768c01dba5a65e2947ee2794b23d"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.FSH",
+      "sha256": "86676563a27657895290d1814468f1f5b5aa9f96f463bbbb8f6f37caadb24a09"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHI.MMB",
+      "sha256": "99bb4ebd95b9b750ec18a1b538909bda82234307a4f7d976e38d20a6ed047bdc"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHIG.FSB",
+      "sha256": "e3ad3e4d3d66be4c9aaa87bd03110d52c483be9e9d452d329eea4cff5ec6bb0c"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKHIG.FSH",
+      "sha256": "29d7697b97789e564754f61c7467d1f04ed840bb4fc9c84f09767c8b6ffbfd5e"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.B00",
+      "sha256": "43b28bc76bf03562881d249830809ce2288ccc410348b0dba63a9d1d6d77470b"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.B01",
+      "sha256": "1d6e11838261aa44ba9a10f8b902691f5d969fcc594dc4db323a5eb900bb3b31"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.B02",
+      "sha256": "4c563169d9204bc26e8942bce95cc01260b9fc5ee42755ea1a37a63047d6c542"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.B03",
+      "sha256": "c8da4789dcc1583b962ff4d0e979189061f94f1d7136926348123685fcba5241"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.B10",
+      "sha256": "1883824a26d65007d9fb806b6294ab79bf1a5481462255242d03d374714c05b6"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.B11",
+      "sha256": "c1c793b342b060a89cb7f22681a1c7ae890c95aa1e7ad001f0cfc9dbb9c4a700"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.B12",
+      "sha256": "f12e0d0908a813ff2dc8ef934d0cd8250e88aa8b5464804d90b484f030a6239c"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.B13",
+      "sha256": "526ab4d92ec47af0917400e40e3ba805c7c0eb2161d9a6f3dd9a19460a33e220"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.B20",
+      "sha256": "24ceace16deddd955afa012463c28857f25ec29f34a8263d824ceb11d644966f"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.B21",
+      "sha256": "152f681862acf54c4c06e46a428c48633718d3eddf6b60f132e0bcd8971e9781"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.B22",
+      "sha256": "c595f46f419e7bb1cf58a0aec887ce7bc0bcc46c1adab94c0d55fc7e966f1403"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.B23",
+      "sha256": "084d7915c4728e93ba2e82b7ba1bf73ccb0d2fd69e68e19b889944409a7465a4"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.FSB",
+      "sha256": "4036afcc077ae98ccf7cbd1bf379e28cb9575e4cebf8edf9c1a299059bc44f73"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.FSH",
+      "sha256": "92f3a33184f5c0ea7807b95f9544acbfc26ef375f3781eab0914029a621f84c1"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLO.MMB",
+      "sha256": "090d1f5b31b46f073b08f71717d3ae2188960b5fab834a622443b4c5ae413268"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLOG.FSB",
+      "sha256": "e4aade07ee91844be57562a47bda9120a2e266d9860fe991a1e153e6826f48ed"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/MASKLOG.FSH",
+      "sha256": "85ff4f05752a1c089bd50cfc4bd9dd8b53535a9ec60fb9cc7f7a4c59db23fbc3"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/SMOKE.QFS",
+      "sha256": "fed5203115274bb8cade9713f67b4e2da13e4eb3854d8bd4e14b9751700a0b4e"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TICKEGDH.QFS",
+      "sha256": "c5392437fe9887052035325ff443ab1c929d489bc4ed6f800595567f766bc8c3"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TICKEGDL.QFS",
+      "sha256": "3f9e0b22a0f8e49a41279e4f44a7c335fce4ab9bf17bb8cbe3fd6f887ca04892"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TICKEGRH.QFS",
+      "sha256": "12d9636453629db817fd4dbe59e20b07becc830957e229aed3d2379e177c3dde"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TICKEGRL.QFS",
+      "sha256": "2bac5f042e595631b502f3e1a748440f4e764367a38a8d6235c68dc675a7fd91"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TICKETDH.QFS",
+      "sha256": "d7b2f8991d9a1c639f31ef13a140b63b4e1d61500e7b2997bcf29a17a7f0b586"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TICKETDL.QFS",
+      "sha256": "0d818d5d31b38d13c9b54637a7991dc69cfb1ec71f8e6c4dbe59add87a76b583"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TICKETRH.QFS",
+      "sha256": "e9948fd2037177ab507568c1dadbcc715b154776d0e55ac5064c4346eae9f7e8"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TICKETRL.QFS",
+      "sha256": "7d006e67eb4e062e41cc720dc7c48bdc3a7356e39ef826e3e0aedb9af9cbc070"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR1.TRI",
+      "sha256": "95b21da61a2467f87fd7347079cad8c2d5e9a651e2d981ce36ff6810e924b501"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR1INFO",
+      "sha256": "3956988c1bb43c208c360e9c6191e1035686be3ce8e6c53289fa431abad17835"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR2.TRI",
+      "sha256": "cd5547cfe66fd0c1f9b8487ff445e0a66c3c282a31fd7e77bf3a6ceb9f8a0fb0"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR2INFO",
+      "sha256": "30a23f73038d50fbeb5873af4ea5c8d147f0cd86a3831677477cb202fd7e9eb5"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR3.TRI",
+      "sha256": "f7af0f515b729c4c6effd60de05c3cfd3554ea26d927d1a7dca1c3b16041eacd"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR3INFO",
+      "sha256": "7b51bb34462859abee959a93ad3511a2b3d1c6ea755f673f3523b1db4ef5f541"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR4.TRI",
+      "sha256": "2cd098a8f53f80573bd6a43716901443d980c0c0d8f4c018c32fae3157987020"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR4INFO",
+      "sha256": "da840c0dc8110824182997c50ca32546018b2b47e13343459432d454dbbd0161"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR5.TRI",
+      "sha256": "210ea80043580a11d9cebd9c7ba0535367c8cafe8a2e5455b732b01c8613d446"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR5INFO",
+      "sha256": "daa81a426d48b80f32e68ddc16cf76d7cf672260b2f90d7fc9fd5509011d7529"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR6.TRI",
+      "sha256": "57c07ab1f93bf0aebdddeba0846e5ff93395e6a64d3ceebc2cb36a02938d9f71"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR6INFO",
+      "sha256": "165703288592f937fdf95a728d2b94a61abb0b95f7c76b6de3f5c3e773240131"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR7.TRI",
+      "sha256": "f746312567a9a43818380fe043381790e464303af4331160ed58218424eeba62"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TR7INFO",
+      "sha256": "808cc8d65f147066cb82e7b4532e5187f54ff1f5a7a2887ffd9624222bbf057a"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/TRXINFO",
+      "sha256": "affb7ea3154ae2ee8a8d86b75d97a9eabaf7acbc53c0ce660a9c7aadae0e4b00"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/WARNDH.QFS",
+      "sha256": "d972fc7f5cf7ba3a73aaeb9f6d7eaeaa03e4018e77cd592ad7c49db8c60ac508"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/WARNDL.QFS",
+      "sha256": "05ab9a6e93281e7e3c457c83eda82f44b71d16375bda8cb81f2d9ec1b8925dda"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/WARNRH.QFS",
+      "sha256": "e72f403c184f56f31d800aff513531e51cfbc6630f29e2e7359d9f058595250a"
+    },
+    {
+      "group": "C",
+      "path": "SIMDATA/MISC/WARNRL.QFS",
+      "sha256": "0d3187039219c47352ac8521e9599f51035143b0d9939390447f3d84e352a259"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/AL1.QFS",
+      "sha256": "186c4da6aca17592577e0b22c53be42dd9419078d64bd40bb45c27e28c7c1712"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/AL2.QFS",
+      "sha256": "a89c82985d1e80274e420c7159cd70ec0f32b6dd8280ab39db85e48232ee1715"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/AL3.QFS",
+      "sha256": "e69f72cc7a449dc09c2f14aa23adc22dfd049151e534fbca3b382d6fb1e4929a"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CHCONSET.INV",
+      "sha256": "1fb036794d838949a847a26c4e8f951d89ffa2debae2cdbdfe4aaccc9b726057"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CHCONSET.QFS",
+      "sha256": "e08081455d8b746898c7989b1658b4cf697669a033ded2b5155c07b1ad583b9e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CHKCHAT.INV",
+      "sha256": "385421f1f6db29348ab19166cc30cb80d2cb735e69bdc68e2655bc0b83abb03e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CHKCHAT.QFS",
+      "sha256": "b756be20496b94c9635f7ecb6f12c1d58cc5c79bd77c64290ef2b894dfb3b291"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CHKMENU.INV",
+      "sha256": "96ead8667ebdbb5b6ec5a5d77712de2994626988ffb6904ebb87b0d7d3cf3c90"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CHKMENU.QFS",
+      "sha256": "cbdbd32996d36ba727c53278293dcdccf130144ceba8d97247f08f475014bee5"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CHKOPTS.INV",
+      "sha256": "1afc72a1d7c888eda1c74e0a56d3ee122dca442617b61081df7dc1be26003b19"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CHKOPTS.QFS",
+      "sha256": "17771813b0bf0aa1327def1471afc695957124d6c74d8f310418e34d3d88ab37"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CL1.QFS",
+      "sha256": "312afbbc86f7cec143fc7ef4caeb576c43a7b962b923b95fd00652b567f6b96b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CL2.QFS",
+      "sha256": "6d693680282608726b6dc2efd2e5798b0a3b45623f0ba1657e4ab5c7eb29cc56"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CL3.QFS",
+      "sha256": "ad8276ea5c65130e8016901255ba1292e81831cbc39ad1524f61792cbaac5cdc"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CY1.QFS",
+      "sha256": "f7a00c617e9240c3397decec8cfb2fc0512d39dc836892ff92f5bd57c5e7bcd2"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CY2.QFS",
+      "sha256": "ff0a7a9f8bd11378d15c3ca33369fd1ef8c4cf16eb3786c023a12cdaad64e016"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/CY3.QFS",
+      "sha256": "c193890582dd43839cf10485e3de014815a1be0658a86040b3d281a8e3fcb01b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/FINMENU.INV",
+      "sha256": "96ead8667ebdbb5b6ec5a5d77712de2994626988ffb6904ebb87b0d7d3cf3c90"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/FINMENU.QFS",
+      "sha256": "2b85f25da317ce72c8ff325daf12ab912f5cd0d1031a6ed8139e4d7367baf952"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/GRAPHICS.FSH",
+      "sha256": "094cb52a449a41a229a4335c7bfbdbe23cd497755735b80ef121bf36dd86e69a"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/GRAPHICS.INV",
+      "sha256": "45bf2a793f6ea29c09ad758dbda2a3e30be94ed555b66718e81bc43987e05345"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/GRAPHICS.QFS",
+      "sha256": "243026e7cad11557e0b330d4fcadb2a7d6a7c783554830ce165eb15f74f8be01"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/LOADANIM.QFS",
+      "sha256": "b935b80759b626d793c35e89b3102e4c4ea40b77686ef4e75ed96bb7b5f0add3"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/LOADSAVE.INV",
+      "sha256": "749235156bca35714c53017fa68f1b0cb95ceb988df0a84dd337236f1970ae59"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/LOADSAVE.QFS",
+      "sha256": "c6a839ef73111c5c2fa0add10fa0b50608f31f6aad55a1d8f4144b7d53492a5d"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/LOOP1.QFS",
+      "sha256": "68942e64382dfeb427cdec318854d9f50f11e01a0c5eb7d29f71732ec575d55f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/LOOP2.QFS",
+      "sha256": "3bab1cbc40a0bb0aedcb43cdf9e38e376a6bd3c747643b0ddb5d944246ec42f3"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/LOOP3.QFS",
+      "sha256": "21a4b76d0b30f839e1543772f21f117bbd4cfc36dd16e5490375580805b5fe84"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/LOOP6.QFS",
+      "sha256": "1b14ae88f9364ba23d5cd694c14362be41168ab9ae8bd42a8498b0765210142f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/LOOP7.QFS",
+      "sha256": "a8bd80e47a54e35f35da276fc5d99f2e39217915eea55a7a33352be6c9fe1595"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/LOOPX.QFS",
+      "sha256": "8b8d703538dc9aa8fea6dca8419f1e7b16bcda38e93d8094ba37ca3852e5ee28"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/PAUSE.FSH",
+      "sha256": "4dcce592b6abe0d653bbcfaaa503862b520256e03cc34b66921862da9969fcaa"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/PAUSE.INV",
+      "sha256": "ee879bcbfe0a9195c6048c11be05d450e0090f131fa79042cb305661c99f1902"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CHECK/PAUSE.QFS",
+      "sha256": "1f98be81a8f6aa946a710edc6e96f5a8916ee6a2703a5396a627759b546e769e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/5121.QFS",
+      "sha256": "7d3217ba369bc8b3a0ee23d7d15f974856d22da0d971d022fa2a3e6f655e001d"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/5122.QFS",
+      "sha256": "b6cb732686f7ed0a96999344776d81ba3c539f93c5247f0b3eac6ab4b5926276"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/9111.QFS",
+      "sha256": "8344fb2f1f7fb17494f45c419dae7020d14d53943b5f71cbba76c9f5169d64fb"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/9112.QFS",
+      "sha256": "6797bd7ea3e000c1a6ec87aa56ec8c103783cacdc0279d290db9348aa97f73de"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/ALPINE.QFS",
+      "sha256": "0ce50ae7eded2087b63bda18654bf92f150416dbea2e21ea1327d2ed7b501afc"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/ALPINEM.QFS",
+      "sha256": "2d93a60ff4c49b3588a4d3a3565f6d28e8f2456b462af151f9b3e0b31fa6dbfc"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/ALPINER.QFS",
+      "sha256": "eb597a1e1ca26f73aa43497878f884f6804658fa0e884c76c711bf9297a2bcf8"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/ANI.QFS",
+      "sha256": "8fdd908dd6c109ee535108b6ff35841d8004fae63c88514ef2ac6ffffceb7081"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/AVALLEY.QFS",
+      "sha256": "b1e0d4dc006a7e432bd459d9ce80d36a870cb933c6a92e2beb36fd7b92466041"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/AVALLEYM.QFS",
+      "sha256": "1f844a1f98f96b9445f7cca2d4400a9263604ca39486a828b6be0f52bb6d8968"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/AVALLEYR.QFS",
+      "sha256": "2977cc683a6f13fa31dd1af64f50d45f64cdb8e9691910c867b2c55e7ee67a0a"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/BSIENNA.QFS",
+      "sha256": "c117bc9d26141b6044c1d6bc7db4dfc7cd4e48c336dcff7b895f19ab2724b53b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/BSIENNAM.QFS",
+      "sha256": "0a9ab34d543fe97b1f5b128bd32aad55698954a6017cabe5f32f4018c2679b50"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/BSIENNAR.QFS",
+      "sha256": "f0f03de2b7a4d6da6f722ef086f3ee25172ffba52447bd59a8067b6f3f1273a6"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/CENTRAL.INV",
+      "sha256": "93def573203c12f8335072d38c8f4adcd29a797799107c61a95ed785bdc7bf32"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/CENTRAL.QFS",
+      "sha256": "45f2da6cebd5149a297f9d8500cbb234913efd999e1e6371022be48e806422d9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/CHAT.QFS",
+      "sha256": "54bdde14325b74b575f3c70b774bda9b3ab318cf22e3ff118c3595b1db9b0182"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/CITY.QFS",
+      "sha256": "51c8c6f8b4a87b24c2e57bb8aefd8a7daa78a1f4a6155a13f746e043be86aed6"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/CITYM.QFS",
+      "sha256": "2f0ef67e7fb8bafd77c3f7187454205c04c5941acce88ce3895360002ebc6884"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/CITYR.QFS",
+      "sha256": "77080999796a98bff1259fd5ed98a24633f19740bcfc683ca2a3a0fb5a47c395"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/COAST.QFS",
+      "sha256": "e87f12cc9482a49a672b431a5935a517c08156958fd62c1591168c2b5bb312ad"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/COASTM.QFS",
+      "sha256": "b81338c6c4857afcc449c83c5f82c1b9c22feb53ac83806c5d24382320fa079b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/COASTR.QFS",
+      "sha256": "0e87451eab19ddd4962bbd06402189081cd569a36ceb902fcc2574c37a2975cd"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/DIA1.QFS",
+      "sha256": "07748a01c8f38fc84b180d4bd65a3877b11b2b463f6a1bea03aac073a1c9d7d5"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/DIA2.QFS",
+      "sha256": "76c5d40c40b5fa25333d0d5f7da93a0ac6a7d54c176e9e907c2603e3e14e528a"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/GAMEMOD2.QFS",
+      "sha256": "a9ce0016c4e80eb3a355002a90b2124f65c7ee759f5d3237fe1770aa51e29434"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/GAMEMODE.QFS",
+      "sha256": "59419f14b2a12727a7137a0681bfdf2139cd4dfdf5bb20c1edace924ebcd8da4"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/HEADHEAD.QFS",
+      "sha256": "a44df633959e01f65c79d527548803b731b9e6e2505afdd9b32b7d174d0b4a81"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/LVEGAS.QFS",
+      "sha256": "53a6687b2ce9cd0e4ad8f3ef8446e65f837cb925841f4cf61519b4103ba8abbb"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/LVEGASM.QFS",
+      "sha256": "ee235e1ad468a713ed2038939c4172b9a56b91c48a0faa5e8bd603049e2d3445"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/LVEGASR.QFS",
+      "sha256": "43bf23b8fecfb976936d329aeeeb4b3a57a80d6bde8921f4061815de31e54316"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/MOON.QFS",
+      "sha256": "f4b765760ab24d236a1a9aace988ae6ba7669ed4e4b7e92a38f64a8cb272eb1d"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/NOMERCY.QFS",
+      "sha256": "5f2f28467b8ce756ba0ce163649b5b6002fed1e3b4a0c0c0b0ac08ce3023fd87"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/NSX1.QFS",
+      "sha256": "bb14c0437b038f357c61961aca9cf70c8434ed30a7b599e211dca11a3ae92212"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/NSX2.QFS",
+      "sha256": "f8d55ad5dfbb3b08656a479582d0b1e0769638025111e973ddf3fc5423c518fc"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/RX71.QFS",
+      "sha256": "96807a145fa339164343f51a65198db122d58d9c2e07bc0ca094f76bee96128e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/RX72.QFS",
+      "sha256": "5cf46b0cf73a4d7a9e79bd97e058fbfcd0508696e65f03ab1dcaddcb03d82cc7"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/SINGLE.QFS",
+      "sha256": "df91eda2648f46e21f98b8d748e350cc25377e7e39c0b66c071c30631f03aec8"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/SLEW.QFS",
+      "sha256": "9c0fdb78e3ba77bb78fabddcd1e96b7df8bfa60d62faa98a3ef8f2a3c68c4465"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/SPRINGS.QFS",
+      "sha256": "93989a7a6421f3cddd3ed0f1e9682f8826c6b314595cdddd620927cdbaba1109"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/SPRINGSM.QFS",
+      "sha256": "b6ac1c30a3dea586159ebc915ddd3916d417e77c41b8f242aa59a865d00d7c29"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/SPRINGSR.QFS",
+      "sha256": "8f3752c3e45a7a078cc1d9d3c556fa6c45d6edcb53ac4526370a1700b5ad1dad"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/SUP1.QFS",
+      "sha256": "066806aadc7145f4c08eaa594416559fbc4942805344eea64bad32fb90964f04"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/SUP2.QFS",
+      "sha256": "e66af4f73ff5a4b7671ba37c315d5ba6d01be65c7e1a2ec80a061e9b6f3e285a"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/TOURNY.QFS",
+      "sha256": "43fe82b9fab6f1879c3892e50c4b392eeb8dfabbcb6543d39441b8a6eb4d6106"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/TOURNY1.QFS",
+      "sha256": "8c4f22d6e5f6498ae834544081b24e72ea109b4e3240d5ea854101d5792ed7b5"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/TOURNY2.QFS",
+      "sha256": "634fe6430b15dc7f7268e5dd1507a700d2ec2e72a38f02789393e84c9d50cf6f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/TOURNY3.QFS",
+      "sha256": "2d6f85fcab8c5c1835504f10b3a055e3b8367b0a7ea144e478d0b65270c6326a"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/TPOLIS.QFS",
+      "sha256": "7dc5f7b79f38d4521a59a9336931ba135043877aae3af09c598bdba361a8f136"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/TPOLISM.QFS",
+      "sha256": "f3fac38b8aa833fb3a53cd14e05dfea57c4ed2ac8a52090f640c0da7fa8e61df"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/TPOLISR.QFS",
+      "sha256": "b837659c9151b0052a29dc7a39d58ef24a9923efeb3999513e9b8efee4644d58"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/VALLEYR.QFS",
+      "sha256": "f15fc1029cb0aab48c6f5e8309925fc5e8d764ada312f4600626d3ef9ca2f6d8"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/VET1.QFS",
+      "sha256": "c0d9419def5575cf9bbcba7a497ec0b6de495a5a890c8e474e0c55e090fc0dd7"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/VET2.QFS",
+      "sha256": "da5e3f5974a272ab7334368daad520e479cf1674c5d226d3972afdfc9d059a92"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/VIP1.QFS",
+      "sha256": "0c8332f6108a340cf98e0b215065ed143ab65088f4ae3c9c977f0d1e427879b2"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/VIP2.QFS",
+      "sha256": "54ff4da21460e00f3ec12ee303b031198d04c1edab98a69542ce605106d88921"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/VRIDGE.QFS",
+      "sha256": "2d415056cb2731c41c307cfa3a1cb91d1c8d0f8b2e1bfcd0a946886df6ec6561"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/VRIDGEM.QFS",
+      "sha256": "04fda35cb9312411f14b7a007b1a0063879cfdc3c9ebf6c4c4ebce66ceff9b50"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/VRIDGER.QFS",
+      "sha256": "6976c63052559ae64d771f5f4852a2933ef2dfd36e948ffa37f8a221d17fd06c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/WAR1.QFS",
+      "sha256": "d5c445f3cae3fc3e01e2239cdf30d12746a5f1df9a7413f4e49f8bf163e937c4"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/WAR2.QFS",
+      "sha256": "c456b7840c59a0a1bcd8b708f500b3632c80e64099270e4de32f0308e3982820"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/WATCH1.QFS",
+      "sha256": "25e4528be063e68adf092afe38bc0baa8b90dadb9c02c751b3a3a132b3ffbec2"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CONTROL/WATCH2.QFS",
+      "sha256": "2a6883b6babc6c17236abbbad9019866bff0fec31d7179b4417b610db5d6fa06"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CREDITS.FSH",
+      "sha256": "727dbb2c42104d0ab373c4257264c7e1d54ef497fcaf0505fd2d110768bdbac7"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/CREDITS.QFS",
+      "sha256": "ae32f6ade6816ca28e3d7cd1c8ac22708936a094432037c1769201faae984ada"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/EATITLE.QFS",
+      "sha256": "5ff60766888e65d0f0290789b5dce83db39dc1c3fb39294369becb602262ab4e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/FONTS/GRAVER18.FFN",
+      "sha256": "38d99560cabd05d136ea21eed9a032d80db59a8d9d8d973bf7f36e9bcfcef3cd"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/GMOUSE.FSH",
+      "sha256": "b704beb6e4f93e11860718dba2758c872b2e035e6b6532cf7e735cf74f3e99e2"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/HELP.ENG",
+      "sha256": "9a943330ccd9cbb49a5501e2bd9bbd9a0d5c61d1278afc90dcedc01f6166f3df"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/HELP.GER",
+      "sha256": "5e4bdbbffbdcce8282f19b2ef0edfe669d40736cb231f7dc773477f9f10e5f7c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/HELP24.FFN",
+      "sha256": "8947e07fabdeb0ddfb596e3160435fb470c9434ec179914a2a382772f7c2d018"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/AUDIOPR.TXT",
+      "sha256": "ec9e368e9096ba1a8a3f26a3fde75de52e00ffb1479718f781c3714557ff9c60"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/AUDIOPRG.TXT",
+      "sha256": "2d3c77ade6c4aefb5027ec4039abe4161149a4444ac30fea3111882798d46ac1"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/CONTROL.TXT",
+      "sha256": "23448fefcc79f0a9d1dbb7efcab57121c1f47129e705cf35e2d4e54339b79960"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/CONTROLG.TXT",
+      "sha256": "97d88db240bb537eedff44c677cd0af6884b4c24c55ae5fbb63341641f1f3842"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/CONTROLP.TXT",
+      "sha256": "e37c98a01dcede1f843636e6fb2c38466180b76d2f7246e4ed3f2de02cc12e28"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/DOSINSPR.TXT",
+      "sha256": "437221799aa52a60e9c668a39cfa3a690a628120e2f0741f70f6e512092c0a3b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/HARDWARE.TXT",
+      "sha256": "39943cb005fbd219098e6b618078e3ee3b1577ac4053d3d7fc2593471299f225"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/HARDWARG.TXT",
+      "sha256": "b3a794de950187df68e3ea63e225573684d8a79fb53e4abe0d6059525c2ea7c7"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/HELP.TXT",
+      "sha256": "c5307b7145ef771e202d6d04fcceef8e7b99ed2212d045bd7377679b6b2d4a0c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTALLG.TXT",
+      "sha256": "46a46bddbb6f86cdc5659975d8bfcd0bf02e5565e9c19b411bf8f1205fa26914"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTALLH.TXT",
+      "sha256": "f0ed6c0afb56436b26a7f0501feb1bd58480d491dfb00d8d8a499956efd75da6"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTCARD.INV",
+      "sha256": "86563011ca62c349e9d41f6f780f2d0380025f57d255f59a6a66279f74bcf6b6"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTCARD.QFS",
+      "sha256": "12a3092cc169796578e5d17e131207212f2ffbbd25fc0d8178a098e87e7ff3f6"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTINST.INV",
+      "sha256": "46c01b7517557cbac0bbf36b942e7a5fa393026bfbedd7f858798891830b7ad4"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTINST.QFS",
+      "sha256": "98f85475cfa23d0b0610692eaff57274746caeac2ded2869ee531087c946cf3b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTLOAD.INV",
+      "sha256": "fedb1f2859daf05d46cd0acb545505f58e3d361882b94a22641494ee46bc50e0"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTLOAD.QFS",
+      "sha256": "96c6fd72eb9a2820c48289d3dd4c689976c1ad8ce418bbe3bc050e4186320b65"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTMENU.INV",
+      "sha256": "1c6fb5e209c6d758e07c998ccf900cb4b1462e4a82f99ceef58dd7a9ae888294"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTMENU.QFS",
+      "sha256": "f2d4f75907013e493d239dab7149f2e9c15f0977ab0611a27e57bf9cf6eca5b4"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTPATH.INV",
+      "sha256": "3cbcb59fde5b60d893c17be7c96dd9b4538afb0bf74f9d713c8199641ae89117"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTPATH.QFS",
+      "sha256": "2c2033bd2a083239d6f4eb0efe20ba3b1b71b4128cde94314fd88ccb6360f78d"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTREAD.INV",
+      "sha256": "1c6fb5e209c6d758e07c998ccf900cb4b1462e4a82f99ceef58dd7a9ae888294"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTREAD.QFS",
+      "sha256": "4891212a419d33ec34e6211f363772aba7bf2851c89200d46fcba687725b8e92"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTUNIN.INV",
+      "sha256": "46c01b7517557cbac0bbf36b942e7a5fa393026bfbedd7f858798891830b7ad4"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTUNIN.QFS",
+      "sha256": "673aa90367ff6325eec9faaf51944aa57aa203f4229b4d02ec2e6c744cc7cf1c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTVIDO.INV",
+      "sha256": "2afdf25eec51fb9929af840179b581015e03790a2de36d93bf1479f782e12580"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/INSTVIDO.QFS",
+      "sha256": "9127ea668ca207a4f0732de7f40e00d107e311b82d9a6d2f9257cf4fcb3b9344"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/LEGALS.TXT",
+      "sha256": "d1e2a0a2f5c53ca5df87b6dbb856d883e37dab5fe73d314b382b003020fa140b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/MEMORYPG.TXT",
+      "sha256": "40c9c4032869f623f318349d7e6e0c075545b30307268657ee4beef51cd9909c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/MEMORYPR.TXT",
+      "sha256": "ffad232afb3f9d9a26bd12a51e0a818ffcd9c06644b0c94c2707b37e570945dd"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/MODPLAYG.TXT",
+      "sha256": "34c81c6224a6431777067bb668684fb14f53e87098c46b12811801bae21e4e92"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/MODPLAYR.TXT",
+      "sha256": "360f36626cc4cac847707f0f23ad1d595b07199a357117fe899fd10849f76b9d"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/NETPLAYG.TXT",
+      "sha256": "f9276329b7df3bb5418f33e0558d6e51b988edb0832acc47e8d3c6b7ad6f8b7c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/NETPLAYP.TXT",
+      "sha256": "3bdf6cc89a6b52671595e72ccd069209c4aaf23ffd6c7fa9cbd11c02698beeb3"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/SUPPORT.TXT",
+      "sha256": "abc148d57359338b4e060e46cba68f05f5642687584f0e84af3974f4dbee7cf1"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/SUPPORTG.TXT",
+      "sha256": "6bb8219a7a82b239e771174c21bf8cb46818e35cf094b71777a0847430f9e404"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/SUPPORTP.TXT",
+      "sha256": "53c346d2265725c9899736e81687a899430373a47bcade9c601c681fe07ff425"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/VERSION",
+      "sha256": "36be14aaa0625582266f629d1fc842ab17f33736c2aa5a3f4b7d9cf225371b8c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/VIDEOPR.TXT",
+      "sha256": "8903edf8340a4d735c0431c7253ea49901171fc6a72f8afd48cd3bdcd552ca9b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/VIDEOPRG.TXT",
+      "sha256": "62589ffbc21cf5c54f15a1b6de351f9644bdea4ee554b8f5ce281e9b47a3effc"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/WININSPG.TXT",
+      "sha256": "00c286bce5a44986626f4bd1ac5ed1a1d544e1834785bd717070fe0814d04d82"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/IART/WININSPR.TXT",
+      "sha256": "9eec08f8ece5b3e435727cf5ec8d8bacaf970d9305c059938fa4859106166612"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/JOYCAL.INV",
+      "sha256": "14a13dba7890ce39a858c88fe4f4087cf94c050f432986b019a7ac83d1ef2ec7"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/JOYCAL.QFS",
+      "sha256": "b11d22ba1e4fc5fd90295b59aefb27cbe5e8f7f022ab8d61eb72c7c86d0c52c7"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/JOYCHK.INV",
+      "sha256": "fca9214b3d20510a44bf25ecd7dba0e254ec29837d675ac2546e2cde42822443"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/JOYCHK.QFS",
+      "sha256": "e2f888b87b2b1d6e35c5dbf3ef53d3890015fbfadbc1e68a7fd87e045d22b22b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/JOYCONF.FSH",
+      "sha256": "62f71671a9a6b2008b7703170f49efb30210632251623aaadadea68ba3f1cb7a"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/JOYCONF.INV",
+      "sha256": "c9654cbc46753eedd8bce6b9d5d9b1310002e84ef01a255958e49e31b8d13e32"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/MAIN18.FFN",
+      "sha256": "8938a2640250d9fe7a4d3f841fb0eb7eb6b8ca91ab889f1b73e0273bbd248a3b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/MAIN24.FFN",
+      "sha256": "3d693d13ea92870287fd507d2d37437e0d61050bd753cbf8f21e7a10b8f8c0f0"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/MOUSE.FSH",
+      "sha256": "00808df8c7f00f61e3b945281e92d2d334b1af7a5a385e8f1d3e0697b46a7b5e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/AUDIO.FSH",
+      "sha256": "3f83bd7a3cec3b9c5285d52c3698db2acac054d1015e8d98c90e4185470961ac"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/AUDIO.INV",
+      "sha256": "adc3fb472d11a2521bf62ab1882c4976ef40ced0d8fe80bbb04b78df28a017ff"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/AUDIO.QFS",
+      "sha256": "6ccc5ae1e6b4cb3dd184c4e3437321be148863937d50b52c66e712c52a9c9895"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/CNTRLSET.INV",
+      "sha256": "a51e3ae5b4fa3a9047af8571c5f1b195d94fbc62681de39f08c00466e3579033"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/CNTRLSET.QFS",
+      "sha256": "1b1fd309bb0897eb486d2a76e52b18ef9f137a45099e9017fa8ce391966fc5dd"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/GRAPHICS.INV",
+      "sha256": "1c1facd1c1911df2bd8573fe007a99e7c1cb2444de9bdeeed28f26846340a658"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/GRAPHICS.QFS",
+      "sha256": "f5e383664e51511c9c98ea2a9570189da86ae8a5e9e66b0810cdeb2376c61692"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/LOADANIM.QFS",
+      "sha256": "53e1e3b30d5b5e0aac910bbf0ff0e0bfb4ee44a98ad094e5b8ba9abc5d5dd1bb"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/LOADSAVE.INV",
+      "sha256": "384cf0a8226f8201d9c036975c691429a5fc31066a225b12a238257a9fd8f51b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/LOADSAVE.QFS",
+      "sha256": "5c5681690de250f14fa31fde15b1d293ed1d79a3e1a6dc92597dd806c6aebae1"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/MODCANIM.QFS",
+      "sha256": "390f55e350ec0889348abd4d4ea20212ab33f537bdc662c447995406b3ccf3e9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/MODCONF.INV",
+      "sha256": "17217ca60da479b71fcc46215dcb5a06bea05a02d00589e27ed8f22898d64a95"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/MODCONF.QFS",
+      "sha256": "ef8db5249f61f74406e76ae5e2d05af7aa9043b71b1a7ca42c7ac1d21090c045"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/MODEMSET.INV",
+      "sha256": "dbd670f0f1cf22ffd2281f4461283d905c4b586cd12c7164914458907d0f5bd0"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/MODEMSET.QFS",
+      "sha256": "cbc36df7b774783eb1e81b2afb5115681c64593ce75db9f971a022b5f8fff182"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/NETSET.QFS",
+      "sha256": "3ad0b91a2cbc5f5762f8c55a065cd405bbd3b52efebf4a9f143b8e4544195d12"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/OPTIONS.INV",
+      "sha256": "aeeb270698c151965d6307bdccbd589c8c145ba78d24a399d6b14111719d8c45"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/OPTION/OPTIONS.QFS",
+      "sha256": "f09e9533bd5244b44612e85d2bd53117ae2eb72e04569ba04556808f6c24ff6f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/FINSTND.INV",
+      "sha256": "bda20348cd92a1de518ecb49dd0982435c4042952d02bd5c9c1ea040369c8a48"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/FINSTND.QFS",
+      "sha256": "76ec98aa3e6a155e83f1c524406b1410bb992c5f8d07abd9ed2bbcf5b8125ec3"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/SGMTSTND.QFS",
+      "sha256": "94df3b79fbafc2bccc61da50de457c733b10dafd1fdca2ad1420df95b8727764"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/STANDBST.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/STANDBST.QFS",
+      "sha256": "4185fcf44977ad980a374e5ef3cbb222af762ac5b6701224d240586e9fcebd4f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/STANDLO1.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/STANDLO1.QFS",
+      "sha256": "362f9f3252d27e41923bfa55c2b70f647fe9e6f0e45075410a7a9314cd193637"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/STANDLO2.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/STANDLO2.QFS",
+      "sha256": "fed3d64d73a8fc1872eb8e43589ca8b9207328628f9b4eaabee39f3f5c6ad95d"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/STANDSEG.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/STANDSEG.QFS",
+      "sha256": "b5f5bb9ebfd113bbd70a852313cefa0d850be34c87ecac6d67ec274ac6fbecfa"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/STANDTRK.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/STANDTRK.QFS",
+      "sha256": "10138dbba76f6274d7b7caef8f0e3d50c632b146679b0c09d0b058b3194bfe23"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/STATS/TRMTSTND.QFS",
+      "sha256": "a3ce23249845469dd64abd88329b2dd00cfb91e0049394e52d6e6f81ecfb5054"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TICKET.QFS",
+      "sha256": "8911622e786425a878aedf89791baad4adb9194dec5aab930b9a04f5f40c0d76"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TITLE.QFS",
+      "sha256": "77aa52d687ed217addda5e120b9458d5f851982c08b576125ed8f9c4407a8fee"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/ALPBST.INV",
+      "sha256": "56b5ff035ae700f52a3479b1aa4475d81f44b0e93221be9c46374af21895fd1b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/ALPBST.QFS",
+      "sha256": "7fad43f8a2ebba97cfc06c66698786869e93c0a050ab88acb8601d8494e1ba23"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/ALPSEL.INV",
+      "sha256": "cd786fdc5980337f28a2622195c8f37496a6afc3a39857ec5bd2758cba420814"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/ALPSEL.QFS",
+      "sha256": "9195041278c090066570050640b091ec7df9cd9927c0b560f75b0e93bb8098d8"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/AUTBST.INV",
+      "sha256": "14b9cebaf33ce0797208599d5433cd3e1cd01fbe6ee9168a17366ce2ccb790c0"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/AUTBST.QFS",
+      "sha256": "610b382a0566ad94a0f7e5c7592a9c3d60cf1e4ffe21e1ca5eb4d55a2dc3f235"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/AUTSEL.INV",
+      "sha256": "8d1198d4a145daee0f16af32f226840fb39ecb36b07411428367a090ca6be29b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/AUTSEL.QFS",
+      "sha256": "bdb90d6ab5fbebe9ba772eecd9eb529806ee2e11225e81c9f385e8959421ce7f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/BRUNBST.INV",
+      "sha256": "59a3783e7613e499bbec239ad88d9dd2268e22776ad22bae6f98a71c3b6797d9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/BRUNBST.QFS",
+      "sha256": "7faa83bd0e8535d84b30a321bbc58942714827cdd08cb030ab27ce3bfc692028"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/BRUNSEL.INV",
+      "sha256": "fe6967a4ebfb21574d9c55b9badafa0594906d04db60ba68200341cf2088775c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/BRUNSEL.QFS",
+      "sha256": "5b0909739a43a576a016902518a0676c575194f45df96cd93b6a80a2b4761ba2"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/CITYBST.INV",
+      "sha256": "497d66afa9145dd8264233af406568725a9a5db2ccaa466ead64a30cd18956fb"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/CITYBST.QFS",
+      "sha256": "f9bd126d1d37dcea79293d0e17b41214e9664d5cd8451f31dee83c0ff8b9577c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/CITYSEL.INV",
+      "sha256": "06011f07f28b6f5328abb77f8898cdc54f2b55e89edb303f1ecdeb851df98e6e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/CITYSEL.QFS",
+      "sha256": "a495d5ac80ba16da0f89fdeaaab56976bbcb636b2bbcea343dc56babef679a4e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/COASTBST.INV",
+      "sha256": "8ac0e2230fc9ee940a2373f0435e22a01fbcf6bd34a5f93a631c99c2c0e0d470"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/COASTBST.QFS",
+      "sha256": "1f3a367eb3c826793d24f7ec9e3a60a999e30cdbf938f349cb89e449ea5ce8ce"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/COASTSEL.INV",
+      "sha256": "a0867ebf5059bed2b346ce92eeec3117185f449c2b95a4875d28c5fcd1d28842"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/COASTSEL.QFS",
+      "sha256": "e2d954f37e62a82e126616cdd31d022059dcc1ad8524afbfd898d9d9adad3d72"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/LOSTBST.INV",
+      "sha256": "6dedc5aa915183ab05339ba58e352b9c5d2c65e9c497d7c6c412758e09a24ed2"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/LOSTBST.QFS",
+      "sha256": "3754cb834c74828a132c460683edbe47122df88ff09b36d957a87d2c12b11f6f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/LOSTSEL.INV",
+      "sha256": "1321a25d8f0f4d8c37c25a4f903bfbb484a1386ee0b014d13251be689d4a41a5"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/LOSTSEL.QFS",
+      "sha256": "5ef511694a763c775c475d4db48eaf28479bc47943ebfbb7fc0ce124127f508b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/RUSTBST.INV",
+      "sha256": "b6db622342b6f93143584c9f0634d11d06149313971abe5b9e41d43bf2ab4110"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/RUSTBST.QFS",
+      "sha256": "65d47564344254ed3693473a2f7d9d599bb5a8c43fb26550a62edd1eb4c5218d"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/RUSTSEL.INV",
+      "sha256": "1bf093f5176d0f82b8c12898f51d4cc77a70e1e3a26489a9cf2b2311127f8954"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/RUSTSEL.QFS",
+      "sha256": "f80b75ad21de41c76d868bfa18d78ce4b16143af57bf6d781ad98fa7fd277748"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/TROPBST.INV",
+      "sha256": "59a3783e7613e499bbec239ad88d9dd2268e22776ad22bae6f98a71c3b6797d9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/TROPBST.QFS",
+      "sha256": "e784840f35d153bca50e81439c0ebbc0d13011e99cb207dbf842587a466a9f3c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/TROPSEL.INV",
+      "sha256": "fe6967a4ebfb21574d9c55b9badafa0594906d04db60ba68200341cf2088775c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/TROPSEL.QFS",
+      "sha256": "303b6f95d142962932d68e139b657ad4bbb87ef2c5cb69b49a79ea46d0e855aa"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/VERTBST.INV",
+      "sha256": "87e6eac60cdd167717f86a54421fc060da2309ddff36229da0037af67d00343c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/VERTBST.QFS",
+      "sha256": "4061c70890ffc97ce4e8c505b0a9f08257e3a07563c22b8085c770cb01f82cb9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/VERTSEL.INV",
+      "sha256": "0b52178b2743aa9cb38702db0c08253a7ccdfdcd51c4d7b99208ecd2a6962ea7"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/TRACKSEL/VERTSEL.QFS",
+      "sha256": "a0d212c083d67096fa5b91832d03654b26f227600ca503656748fecbc3bffe11"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GART/WINNER.QFS",
+      "sha256": "8911622e786425a878aedf89791baad4adb9194dec5aab930b9a04f5f40c0d76"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/512GEN.QFS",
+      "sha256": "33bcae046ae388d0bdea281e7bdb3bfb334bc3a0e7e272b6d5260c4396c89c4e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/512HIS.QFS",
+      "sha256": "f83466250a3ad43baac05be88b36c7413039cb96c89463c7e5e6bec97dedf52b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/512MEC.QFS",
+      "sha256": "5e61f3a03f9b34ac4c65b4502036469c30eb99ce2d6b271e0e2a57ed749bffb1"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/512PER.QFS",
+      "sha256": "bb1b2921d63a5a007c29861d86a90f023f2962f64ad6dae68eb2c6388116ea9b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/512TR.QFS",
+      "sha256": "08358a95115c637d70af6b53bbe11cef9839b346f1e08eb5caec20e999e39c8e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/911.QFS",
+      "sha256": "9abcd47070cac3b582df8091b9e43a691edbba5c161e5109f46140ec5f37a06e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/911GEN.QFS",
+      "sha256": "819b20f42d02c5f4651f7829f4ee488648594c1fb8a78b4899d8fe6e059a3aac"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/911HIS.QFS",
+      "sha256": "1d90fffd9833c4288186da99ba90427fcb1471f34e3eaff5fd735000ec0b6708"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/911MEC.QFS",
+      "sha256": "fa29d7d804a6cbb8388689fab690514e78f3662b4513971ed4e5f21096667c54"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/911PER.QFS",
+      "sha256": "e3ff5d65c1f2df1c54dad994bcffbf417de52cab33d64b844e0dc3b900e7d203"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/DIABLO.QFS",
+      "sha256": "874f4dfa680e2237f2cd7d70fe0947bf3addf47826173904822e38a326d94002"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/DIAGEN.QFS",
+      "sha256": "831d5940eb58f9644dd11cda25f7ac2bf5e64851c07637b3d825a1f0dd2cdec9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/DIAHIS.QFS",
+      "sha256": "055b1a708ac0967ddea4be8a7ecee073076d95be20b4a7bed01cad1d5b015600"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/DIAMEC.QFS",
+      "sha256": "b1ab0463a4a7cbfe86ae5f147d0d0717d5c73a27caf37d348f017fb285afc103"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/DIAPER.QFS",
+      "sha256": "b8c316a93250fb60fbdccdb2a96ba76acfaeb12a886ea03c8539280d35ed2969"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/NSX.QFS",
+      "sha256": "d641739f241bd651e9357c6ab34ff94bbe39e86ff0ffb3024b526051811826be"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/NSXGEN.QFS",
+      "sha256": "b9ef893ca8b88d9dff6cf0703cffd75793c7b124217d7c651194210cc90d6af2"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/NSXHIS.QFS",
+      "sha256": "c6acc72af67b16969963642d862633f7a1d53bfee3b1b745f78dfd7729b4926b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/NSXMEC.QFS",
+      "sha256": "874d57b9e9d6decd85f5f546cea28d79073f4730bb75df146deff1917c92c9c0"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/NSXPER.QFS",
+      "sha256": "8abf4bf08f6214be94973ad78978cb7b1e6e60e5662e891aa07636be2f3f000e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/RX7.QFS",
+      "sha256": "486f71609d0f2f175cf6d65c92e176b28ddff4a09118ed24b418124eaa64edbb"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/RX7GEN.QFS",
+      "sha256": "9fa1adda21dad225ea8882714478dec0ae4a7098d7705b145f612dc7c3c55e62"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/RX7HIS.QFS",
+      "sha256": "38f145e1e3520a446c5a09d0e37539caaa172913f31fcce906705ad8e5bfc32d"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/RX7MEC.QFS",
+      "sha256": "e8a467457ce175b9d58332960331a4fd882fea89ce616168f63c1ed466d313c9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/RX7PER.QFS",
+      "sha256": "c39859d24cdddc05bbcb4b3b99d8a03dd076a3fec1a1e0d5f8cde89da996a764"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/SUPGEN.QFS",
+      "sha256": "f376b413a1a068b975546c89b031fb24503367f39e17d2c02acd9d061df8295e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/SUPHIS.QFS",
+      "sha256": "f52f8b1447978b698cb8c02008cc4be4a74796c04d196dc95af17f7162bdc4a2"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/SUPMEC.QFS",
+      "sha256": "3e8b4c08d81bf2c82ed929cf7580309993385aa836e99857927fdd893f37a0cc"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/SUPPER.QFS",
+      "sha256": "d69712e54836d4df644cbd474cb6c34fd067f932ce7f4cbf0baaa82cdf0112ee"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/SUPRA.QFS",
+      "sha256": "9710fb05364002b9ae7a7405c64f3a0ec866f73fc6bf07e7e98e55ab9874c360"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/VETTE.QFS",
+      "sha256": "7f8ed9e1aa223356f63dbba2b34abf2cb11507d49e8b62c686a1c8b2cd4bf86b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/VIPER.QFS",
+      "sha256": "910e51b5cff269350cbdba043bf3af9900fc90e4f50371144b2cf94862c8436d"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/VIPGEN.QFS",
+      "sha256": "d96cf6f0b9d1ad972ba823317e9281e6548830945a4bb1613e2b95126d2643ba"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/VIPHIS.QFS",
+      "sha256": "fc053e5661a150c5cd687fa140c1d8db74279a434a180f63f4ca7023abfa6d55"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/VIPMEC.QFS",
+      "sha256": "1b280acc66f56583559ffe89043126800813f7e787914c49a89381c1bd2f5c3b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/VIPPER.QFS",
+      "sha256": "af11142ade60e6dd75aa4424ad1b615a211736958097f764c8b7a42c173d008f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/ZR1GEN.QFS",
+      "sha256": "da8c6410adcba5f029e3309518707bb59dc5eae0893851aa94bb47cf705d7bee"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/ZR1HIS.QFS",
+      "sha256": "38afad8865566e18a7be54767ea2b3673b4e586778aba935d707376e80ed1bc1"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/ZR1MEC.QFS",
+      "sha256": "67dd7344d3c88ef38502e52b924448d9435876e13bf5abbfdae6b0cdbc845f44"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSHOW/ZR1PER.QFS",
+      "sha256": "c4e2c9e0db4533dc396c2c98b7dbdc284e8cfacc28e11957593eeefbc6b899b7"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/512GEN16.EAS",
+      "sha256": "de03b531514170b754e3173ca4d45f4e839cdd501adf0d8c1641b584001c781c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/512HIS16.EAS",
+      "sha256": "c179c628f2a2d89f967227e6bcb9dd4379393afa100361b9f85367bcf630d909"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/512MEC16.EAS",
+      "sha256": "0c8f7916df1580c6652db2e80252ec429af43362fd02581cfe77aff8f59ba718"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/512PER16.EAS",
+      "sha256": "bd873586c55e6c46b5c9f60310f4860784b4961be64b9994752047543d64a692"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/911GEN16.EAS",
+      "sha256": "2e764a9e0ea644c30a2a502d5ee49167005b53aa71131fdb451876133e7b4304"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/911HIS16.EAS",
+      "sha256": "10c36b5606559d55d919e072ef0cdf73f4e38009a70fffad79999894c170783f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/911MEC16.EAS",
+      "sha256": "15d044a5eb13dea392c156f2b8f626a6a8b3cd677164ad0c6bf3c5b84b63a56b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/911PER16.EAS",
+      "sha256": "ff30c9401df2af946f7de53c4c69126ac8f43731b1ec1582b69abbdf550e03ea"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/ALPINE.EAS",
+      "sha256": "da4cca2165d53109210b1f7f5937f9bb6689bf28233286bed7fec8d5a8cd1087"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/ARCMODE.EAS",
+      "sha256": "7931fbcdadb66d7cee67ed27d9929fcfd2b3fdb593f1d0b8151b204bfd004247"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/BESTLAST.EAS",
+      "sha256": "5f591dc837cbac7f8913cdcbd90881076d46b7748f34c7ead983b24474331861"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/BESTTIME.EAS",
+      "sha256": "ba4b84e933bc8e0e3988d1fd7650da7f84d0f03447f3c74339d1ffbeddfc91df"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CITY.EAS",
+      "sha256": "d4d5bacffabee3dd5a1bbf1eef65084cbaa7241bd13b1a48fb7fc86a53e91130"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/COASTAL.EAS",
+      "sha256": "657688391a78ca4bb05635213c8a8f7fc9307e615e7a946d80db79de90d045a1"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON1_A16.EAS",
+      "sha256": "b395dd4f42a85e929749bfa98421b277f3969ad52aa57ded9b51aed0721296f6"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON1_B16.EAS",
+      "sha256": "db5a24ee4b26708022471b61dc5dc0a9bb9bc8f7daf5862c03087897463d4b03"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON1_C16.EAS",
+      "sha256": "9448e800fc410edaf77a68ae17080d5b8aac61f81a34701e7e56619a80807b93"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON2_A16.EAS",
+      "sha256": "78b9613d5d02cd8a34303e148126fe7e6e2205356e6c13164a2a913ff0e25456"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON2_B16.EAS",
+      "sha256": "dee81aea7c79f737458db12b34de4331d30aff10f650de4172a9e89e091eed0f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON2_C16.EAS",
+      "sha256": "d36507219fce23999885d4c69f7172395dd70170bd17cb56463f16308dcd13b3"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON2_D16.EAS",
+      "sha256": "99da3b429e900c5579be159771545882e439fe8a4740c17c33535f67e6663bba"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON4_A16.EAS",
+      "sha256": "a0c69c5337faf0ccf6e883d6c4a711dcdf29c9588d5d404b1178c4e3bbbee8d4"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON4_B16.EAS",
+      "sha256": "3cb43d4c4dbeb01a351eaa74b0795183c0e8d4b7e8343aa5e5e4d3b6c0d2cbd2"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON4_C16.EAS",
+      "sha256": "fcfab85a5218abde8679764d6909c30a22c3f0db1fd8f0c1fc24658ce9d0e5a9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON4_D16.EAS",
+      "sha256": "bce6cee95c2da13f2ce5921d8cee2b39447264ff644e8b5d97e85f073c3b6f9b"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON4_E16.EAS",
+      "sha256": "ab15df1595395f1080bbb8593adb8e8be88db7d62c5af741d629ada8bc61e867"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON4_F16.EAS",
+      "sha256": "41fa6c832a4dd8cd8353d3eafaa1d3d57647316a5fdb695d0f1487f3a104bc6a"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON4_G16.EAS",
+      "sha256": "558bacce7c0075e7897816b5c957b9ae4ffc7192b4fc4df68139430ce0cac121"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON5_A16.EAS",
+      "sha256": "64dca4d731b500a60872c90274a9a23055f8c0306c54ff99b7a0807cd35f19f6"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON5_B16.EAS",
+      "sha256": "48c08fe306abaedb1d0259641bd5fe323e0327e6dfa3e838a7deb18e3654b099"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON5_C16.EAS",
+      "sha256": "d900e3ef6669f9460cc1aaf1f6577303e1be4490221418b95c5700ac8d635a46"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON5_D16.EAS",
+      "sha256": "616d9948eb271168c7a0587f078bd7354983dd9c984d5e57554330bdd3167cf9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON6_A16.EAS",
+      "sha256": "c165ff18d929095fb397745992067314bd44bef533941c6078fc9f9bf42d7638"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON6_C16.EAS",
+      "sha256": "21d6ed1056668932d328d86afd3999b761cf05357a03d1c00c7a23c178e01b38"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON6_E16.EAS",
+      "sha256": "44a422ce039e935c273538f89c5e48a09984ab8719611a4d2bdf4956274849fb"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON6_F16.EAS",
+      "sha256": "a396b371df2abea99df84596b3db487184f0e8111c2e2a62a1a27a91e74181f0"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON7_A16.EAS",
+      "sha256": "73ce8f9e625ebc12208d38de9f358a6eef7dfc7710a5c99f617108e7d76284c3"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON7_D16.EAS",
+      "sha256": "ec88f39a7b89c7456bba2a69eb16fb53bfd488a98e7c4bce94fd319283d9ee92"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON7_G16.EAS",
+      "sha256": "4b650d0da8fc8972ef69480ddb65e6b31baf918c17e84794f1e5032487f68139"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON7_H16.EAS",
+      "sha256": "e0507b70b02536693b3a0c6a85bcdaf3c13e2030c147152910b54e3f783a786a"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON8_A16.EAS",
+      "sha256": "abbcb926f81fa5d2d01879290695b208ee71c1c7e2c32b196c05d395ac6b6d52"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON8_D16.EAS",
+      "sha256": "9899c4d31c5958b1f7cd149c09b74d43129cd04b828dfcd4ed0bcb951fd0db83"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON8_G16.EAS",
+      "sha256": "a3d310fa16517e248074ec02e22317e6604443965ff3197d9693fc008fdc08fd"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/CON8_H16.EAS",
+      "sha256": "4e9451f69aa300815ffb8526df4f20205f926a770f50851845d49f743281ba4e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/DIAGEN16.EAS",
+      "sha256": "38ec5209824c8e6f1f1c295eaf6ebea3710e381fcb437135b372d0830ec55007"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/DIAHIS16.EAS",
+      "sha256": "edba4f20c16abd888192b31b40b4fbf96417d4fb60296eea7128e251e9af27ad"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/DIAMEC16.EAS",
+      "sha256": "9128f3be9d630fc785e2f055c14c7ea4df625589b9e6274d0e0bd06c6351a8e5"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/DIAPER16.EAS",
+      "sha256": "41882f86cd3e49dc12c714d8673c1a31f6cd0a9c08d4306849fbe08790de0e97"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/DISQUALI.EAS",
+      "sha256": "31dfdac34797e88959e8f81e4f6b306a3c211cce22fd017bf89b76186e497287"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/EIGHTH.EAS",
+      "sha256": "11d0a0f158c88884236e8ad4bce31e823417e4dedd9ad612a9a76d910c6a59d9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/FIFTH.EAS",
+      "sha256": "8b4a5b2a7661be31e3970b6286b43ae10ed9ca510cbad88cae08003005c0c055"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/FINALLAP.EAS",
+      "sha256": "85af303dbc1a86fd25a8fa5a265d00e0d095e299fa97294af83ce29dc5568f0f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/FINLBEST.EAS",
+      "sha256": "db00b8dc7f099c88a1f19e3fc7277573817d0dc49f1fa6ac8087f7cc04a0b119"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/FIRST.EAS",
+      "sha256": "898ebb29d4ce65b19333692d12d0de9400c74faf914fed6c94c4f653f56133a9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/FOURTH.EAS",
+      "sha256": "8c4cb354f6ea154d312d6dc57dc2a4837171b9541053dec302f2154a3ea0dd89"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/GOLDRASH.EAS",
+      "sha256": "7f2df870ef9d1a68ca80230cc7e4f3a22d7c0afedf2cd669bdc427991a767eca"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/INDUSTRI.EAS",
+      "sha256": "88b1e14d8b858da3f26dde368fbc880909f1a42cb675f2b8d4d7adcbaaf742bc"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/LOOP1.EAS",
+      "sha256": "5b90fd7e2395fe4ddc9fac56cc27bd5c656edde565c48db16ba4850e61898bc9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/LOOP2.EAS",
+      "sha256": "7f69f72e459917e51499e0fe44a7159fd75dfc45b983347afdc039e1dd05d541"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/LOOP3.EAS",
+      "sha256": "6e89027a8452d364c2e229aa038ef2b35dd297cdc04b2a2b6ec5a3c88b9428b0"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/LOOPX.EAS",
+      "sha256": "021f0d50e01acfc0f7d311ea3980378073c8de69a6909a9386e6a80046b7bbdf"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/LOST.EAS",
+      "sha256": "20f1e08af7cc78ef8690edac62cb709840b5b5d44411d8116e9f67b836c758a1"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/LOSTVEGA.EAS",
+      "sha256": "a7c2fa4d1013313a2591cb31dc21461d323af78abe7081bb8ea3c061a0602b3f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/LUNARGOL.EAS",
+      "sha256": "ea8a45e9d1874dab7fb655e6e25b6d55357ed8e6282d002b1fd823fdfcdcf78a"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/LUNARWEL.EAS",
+      "sha256": "e1d18c33faaea1226a3fe1d3fc04f28ef596f2b2bb785e0d711bb177afab473f"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/LUNSPRIN.EAS",
+      "sha256": "1da6e0cd6220c6f02acc280d755d6e954b240cafc7879019e3cfb80ac8ccdc6d"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/MACHGUN.EAS",
+      "sha256": "a257562a009041856837b1be76029f7536ddd994bf644aeea72dd0a95e8ff269"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/MIRMODE.EAS",
+      "sha256": "75ae8fc8b2b07038cf172b6fd771cf768e47559695260ec2b82a11e664e6353c"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/NFS_SE.EAS",
+      "sha256": "885eb894d90a52ee1d16b6754f217be0bc4929f5f4488f8044c0179e22a6174e"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/NSXGEN16.EAS",
+      "sha256": "2cc74e254036525bba8680657af23bf9dfd2cb7bbfa9ec04754e7b09d88866ab"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/NSXHIS16.EAS",
+      "sha256": "6e9081871d24e068e4e6a9640eebc13b3cd6e6cd725ba9c042c6d4a4ae7affcd"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/NSXMEC16.EAS",
+      "sha256": "89f9eb2b6c9400b501161e680bbea17f0b370c94acbb2237cf7c94e26547cc12"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/NSXPER16.EAS",
+      "sha256": "d9396e92051228e354d30690179be3451ef26ed6409cda14a95d7dd1d13c40c9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/RLYMODE.EAS",
+      "sha256": "b96d60f26063d46c19d86675fff09d1760e35572a7ee141ba3636b78f4875577"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/RUREDY.EAS",
+      "sha256": "73b6349b6e9567ea5cd6310474e373010f52a6a7c7211b9d03c60b327b10d796"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/RX7GEN16.EAS",
+      "sha256": "85681ed0a45cbddfdffbd472e94185e8be36397830375831d2caafc11021c464"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/RX7HIS16.EAS",
+      "sha256": "138f6ee5d067f6f4a33af9cb2f3ce2a647337f49be570925c23b1a60810bcba4"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/RX7MEC16.EAS",
+      "sha256": "a3d887c13c650f208cc8e9647349465ad1f2c784ee5e6cec55404b3b4c75a986"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/RX7PER16.EAS",
+      "sha256": "7b6d8d2f2a42c4dd0f0ffc2e519e8ad84ddc6b8a6d76c82020d0b7e90d57f1e9"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/SECOND.EAS",
+      "sha256": "28d8c83d602c303037dea479d34ec329dbdfe5cb1f7bf70548cb89c6e83db699"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/SEVENTH.EAS",
+      "sha256": "0bf975d77559afdc03c4c1ad605332ec9859870e8210e539f2e6c00aa20a8ba1"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/SIXTH.EAS",
+      "sha256": "78fe725e2790afacb34d57a295e65f97b2263b9643b1d7899adcb34199a37249"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/SUPGEN16.EAS",
+      "sha256": "0995f3f8b3d2bab3de935fa241ce458af62e4107e7b5a1dd0ad09a07192d57b1"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/SUPHIS16.EAS",
+      "sha256": "de4549ca050cd3454a10f7737b08dd241ec3f6c1dfb94a0507f5c44a40c186dd"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/SUPMEC16.EAS",
+      "sha256": "b46ccf573ce1ac6837f81837ef472198fa82162bbd53493855c046eb0f1af325"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/SUPPER16.EAS",
+      "sha256": "a48bad75cef14bea79f4c18669fe60f5419765a063c5f887d2d38f8fcbe112c2"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/THIRD.EAS",
+      "sha256": "42517dffa86c647eec547a16ed6c8037290f10d6bd3fd6719e48895b7c3cd2ec"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/VIPGEN16.EAS",
+      "sha256": "ac632b6290d0e1923351511c62e80ef7318bb14830517621b134dc85a5e63165"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/VIPHIS16.EAS",
+      "sha256": "7c4bf9a03674cc1e505288780aa2bd85610d3cac88f9327dc7fb60592bb40308"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/VIPMEC16.EAS",
+      "sha256": "84ba32bdb9479d726f7be38befd6463053c1d773be6c87a4a0029de9ed1ec42a"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/VIPPER16.EAS",
+      "sha256": "4e7500830a3508951f5d6dcc4ed24b79ed8d87a375d5db06621062139fcdab07"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/WARRIOR.EAS",
+      "sha256": "d3332c84b4b0edd581f39175a17290e3981decbffdca4789ad9c184bfd95c855"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/WINNER.EAS",
+      "sha256": "24d71787fb9ae961f48efab58de9917438c98c7a93b282cb25c2ff80e2642a20"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/ZR1GEN16.EAS",
+      "sha256": "c2cf757ade60ea9b77c624eb1e58cd9e682d06649085e01855ed660fea258b0d"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/ZR1HIS16.EAS",
+      "sha256": "e72c39e1e4f90aacfa3a630503d94fcf3253a9a901d2f78e014a69903b7d83c3"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/ZR1MEC16.EAS",
+      "sha256": "968fc90633d5d2378a6c2e4ace4c650209175b3f1c1c8146f73c1b6da8c4e10a"
+    },
+    {
+      "group": "D",
+      "path": "FRONTEND/GSPEECH/ZR1PER16.EAS",
+      "sha256": "3bfc2e2a19df76df927d3eb5eb9e9863e2edad6e56d4a2dd0446b7b2a44e4a00"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/ANSXDH.FMM",
+      "sha256": "f819b88324773e60fae9039bba8d0fab3d276a6514284e63aaa2bd77067cd1ed"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/ANSXDH.FSH",
+      "sha256": "0911367d58be1a40456719a4ce8ccc3630d18fdcd7aa7fe1ee1e11c9c48fc565"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/ANSXDL.FMM",
+      "sha256": "3583492c2968d8d4a6fa6c92e2b267ddb084737633893d97d546a400c62bcdfa"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/ANSXDL.FSH",
+      "sha256": "c913b182cbee3acefa3ea3c0a3bbc39fe57a2bb0be3d85bb3aab63e93178babd"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/CZR1DH.FMM",
+      "sha256": "67a9b85b5ad5528f39cdd78aec76f1dabe74558749232a7e1d8ca76baeeff0ee"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/CZR1DH.FSH",
+      "sha256": "a069ee890ba130a47c97b4a3d98887162230576cdd8f4c19475a11d96d42cb17"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/CZR1DL.FMM",
+      "sha256": "b15cb35086ed6df65bf4b8934f30cd8fac2d7a0efe47281c8e45ea3cab69f0b6"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/CZR1DL.FSH",
+      "sha256": "7e2bf7159564966758f867dff8cdc6ced4e3cfc8dc5df9bf17d3d23a36da1e1c"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/DVIPERDH.FMM",
+      "sha256": "77484ca7a01b1bdf82eb37ca924d4800074a448fc61b4317cab5fb7763ba9c65"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/DVIPERDH.FSH",
+      "sha256": "1e344d671d0972c8239356a694da7ca38e220b8dc4bbef4167556e805f8a4ba9"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/DVIPERDL.FMM",
+      "sha256": "c329f33a8f47bf39099db9916b9f8e4236cb5f77d6e92f6e54bbe39d63b97aac"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/DVIPERDL.FSH",
+      "sha256": "0305dbf2c3981ae8e0df28a111a8a544e1130ddfe9a509ae914351b88c00c05a"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/F512TRDH.FMM",
+      "sha256": "e548b2fdcacaa008fcd701037416756dd34cd95b0fea0bd3c25182ae2961195c"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/F512TRDH.FSH",
+      "sha256": "b3235d1bee763535f54ba9445d8ef84c5e628e0f950eb503b0efea4e5da90e38"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/F512TRDL.FMM",
+      "sha256": "1cbbc6e76f5e0cfd1ee4b190e317118cf6bd21a5704c96fba52f1f2219b92f3f"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/F512TRDL.FSH",
+      "sha256": "f210bbb8c3846f41e9cca8899178647475d231edd5979c13bad3f00e240f5537"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/LDIABLDH.FMM",
+      "sha256": "cba81e1492f12383a0854c1dfbe80fdf6a9177e97e8f7ba906215a9e5dbd8967"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/LDIABLDH.FSH",
+      "sha256": "685253d6faa59ecb6f7727efa03063d77f219a6cbfde15132e1c95306c0cb076"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/LDIABLDL.FMM",
+      "sha256": "f376fbe8af410fe6d52988ef6934d73010ba6323b6c3b89c4b07c0f727087b90"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/LDIABLDL.FSH",
+      "sha256": "00ee4ee2e370a2e99ff8aea10b36c6f107dae12cf62375abaa6dd86ef80ab8f3"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/MRX7DH.FMM",
+      "sha256": "15ec048f32675c0fa73a6c2eacdb6846d4c0b074ac91c75d2c9e8328afd77f29"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/MRX7DH.FSH",
+      "sha256": "5a26d5c3044eddc5738ca72467e6b1e8b5f0ec7dd9b22f78a0c725c5b902e771"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/MRX7DL.FMM",
+      "sha256": "10de5dafe3f96bcedef99645985a28225d60834cc83a79e818117570f075409b"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/MRX7DL.FSH",
+      "sha256": "6e85b75e21f1b10bc71bc55b31544a5e58d20522c430d9ba44ca5b30146f805d"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/P911DH.FMM",
+      "sha256": "1fdb4a42d086a3eedaee34d4401bcddad247571615400a5576076fc225b81c06"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/P911DH.FSH",
+      "sha256": "821b197ccb6959471c6948df94993207ff0ae82ddb779916a2148df70a072382"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/P911DL.FMM",
+      "sha256": "6cd29a9714fbe09ca83ca0033c1e5d8cdc4a248c00d0e5801d7947e032bc5fdb"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/P911DL.FSH",
+      "sha256": "97d2d6c82c2fea8ddd9274d9b570e2003858873b47808bf68083d262de2f0abe"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/TRAFFCDH.FMM",
+      "sha256": "b39e7e9870bdb2b9f11826184a4a5cf2763f5fe43831ec6ae19128268e009b6b"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/TRAFFCDH.FSH",
+      "sha256": "cb5807d9da7281dfda20e4dcff790f7b2ef923a811d73ee84ab720ad5f17bc20"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/TRAFFCDL.FMM",
+      "sha256": "973a283f65f634382cefc6a1c48080f7d333df22b1418a37d07655b57e08eeaf"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/TRAFFCDL.FSH",
+      "sha256": "f8b6456a3fdc37f5cf39d80edaca91c35b3cbca7bb00ddbf0f044974b2aa7446"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/TSUPRADH.FMM",
+      "sha256": "87330bc7460fb8bcd4b6044a7930a76d81839533b6a88f3c74b432e743eabff7"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/TSUPRADH.FSH",
+      "sha256": "f0203c83f18b457d7ea3981eee6aa3518c564c2a8c002573d5e7bf4589c4dae4"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/TSUPRADL.FMM",
+      "sha256": "4287b131fd2818023d05283f846f07302e6d27706b9107fbdcd0c181abefe9a6"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GDASH/TSUPRADL.FSH",
+      "sha256": "f1433b9b8ba91980a8b128d35172609a428b941ec78cab07afc4a495c3c83c75"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/ANSXS0.QFS",
+      "sha256": "671b9cc0241cf326c7c4f88eba42b541c947cd6b22a75b9a1745569c6bf70b85"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/ANSXS1.QFS",
+      "sha256": "1ad875c3476d8d23fcda09749a53fbd690b218e46ffeb14e113d2ac7f4bbb3f0"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/ANSXS2.QFS",
+      "sha256": "330c6477f29daa5b0c264b87c445d4bd3f210903ef5f80b9fdac7d0d5f3e0914"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/ANSXS3.QFS",
+      "sha256": "071aaf332e95b37ebeef174912e9c48ff178e216d8f1898c1c4ada959d6cab0f"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/ANSXS4.QFS",
+      "sha256": "2bc2ef4fd85e10e719bbea23ad4d30abb77a953ba40ad66211ab382e200ebd44"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/ANSXS5.QFS",
+      "sha256": "5954a482251bf2112dc5e10fdabc58b6bc44e286d006dc2dc0c2ab3bd4c93a9e"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/ANSXS6.QFS",
+      "sha256": "c173d7422718ef2cfe381d6e8f15aee8fe56624f6f9eb429440be0886371eb49"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/CZR1S0.QFS",
+      "sha256": "ee59f3d8a1ce6356fadd49407984091d28959cc4712110b299d1817f44c11053"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/CZR1S1.QFS",
+      "sha256": "c24e095c9e9fc3a1053ef5a0d6641ac871a5abf2808ba20d7b3ef1231ede6039"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/CZR1S2.QFS",
+      "sha256": "d62418e781e9cdeb77c6cfb9c26d32a2f2050e77ad21159f72b80eb8df837e0a"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/CZR1S3.QFS",
+      "sha256": "dec64922a27f4b47d8a17b10d685e5c1de5d16880f31508b49173924f51b1dd3"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/CZR1S4.QFS",
+      "sha256": "afb8eea42342d39cf7d541e2727a55f78db52d75856e1f04fbac4eb0898a8cfe"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/CZR1S5.QFS",
+      "sha256": "eac089a3fe7a5d2dbb459911c37c7dc9a54bd8f759eca6194f4558c69b2251da"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/CZR1S6.QFS",
+      "sha256": "98c24954f9b5c2cb0c1d03e5ddfb4fd45c7bf12a5927277d2a7fcfa270514711"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/DVIPERS0.QFS",
+      "sha256": "bc3455a0fce26f192a454a3be869b7addc8b1e56eda3806d028c7df9e482d0e4"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/DVIPERS1.QFS",
+      "sha256": "ab2aefa68bf160796c53dbf2bb72bfa653260edf0cd8b3dd65fdaba7b51103a7"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/DVIPERS2.QFS",
+      "sha256": "a45c88f6883e441e9fdce448c0298fa9e9606fa18658534c5bd09f6a18f49177"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/DVIPERS3.QFS",
+      "sha256": "6189d4e7b515d9962bb81d77aea7fd87d0e6b9cb0a9380523d3b95fa62e6a6cf"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/DVIPERS4.QFS",
+      "sha256": "308d5f7c1a63bab28166e796846b75f6f2a4b4dce825066e010b864846c4bacb"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/DVIPERS5.QFS",
+      "sha256": "10c330ef494ae2abcb6448e6439934003be23c3bbb7f2982df0ae75c276a2021"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/DVIPERS6.QFS",
+      "sha256": "9bd6e0ec232d01ed6ae83ae7c70eee6cfffc7d15af99875a7a0b0bfab6499b59"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/F512TRS0.QFS",
+      "sha256": "bbd0867ad5e48dfa0aa31315590e252e6b56a8f319d3531cd08873cf21243dff"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/F512TRS1.QFS",
+      "sha256": "b3b2713131b882879b597684d02710c21c24c6234fb7a86b19cda102ee2df018"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/F512TRS2.QFS",
+      "sha256": "03510b27aad5b128675f75be3ac781b3b5922e1aaca6c614e9ed195c91739432"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/F512TRS3.QFS",
+      "sha256": "3179cd8b9f908a3581abd93f7301bbc24d12d5808f0350658b1a777bcd4a3a7e"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/F512TRS4.QFS",
+      "sha256": "88831e11cb87b9aa664b43253d0ff896c41052718298045e8b7e53f83b1f7de2"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/F512TRS5.QFS",
+      "sha256": "09657df78535c3720de456ca03e8bfb4fad7bf26c0356488c887250b0d5b5e42"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/F512TRS6.QFS",
+      "sha256": "98d264923bbd03548fd978ab50cf0cb9b9a51278baa349a4377005f774c42cbd"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/LDIABLS0.QFS",
+      "sha256": "16e39a88904ff6bfdc90b60a48bf8cd5cc8f5f7ad44e53fe282c9d0f3449d7f9"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/LDIABLS1.QFS",
+      "sha256": "74b8deef81c561a9b999662591376e158c98bf7444cacddfca87b7056217334a"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/LDIABLS2.QFS",
+      "sha256": "dcba7348f0931583176f839aeda8ffb54a65dc1e142471c0fba63ef30d9456ea"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/LDIABLS3.QFS",
+      "sha256": "0075428eb94aa627c2fe258436b99bd7599cb697d7ed65b5ddd484b81bae2f02"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/LDIABLS4.QFS",
+      "sha256": "7681732cd736dac533a8cb851a95186510e7ce1ac55eff529036c23cc846534c"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/LDIABLS5.QFS",
+      "sha256": "f6828f8ad57e5a83d88e3cec33d15c3a3bf92797afe2d5bb0238bea6242070a7"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/LDIABLS6.QFS",
+      "sha256": "cb2675819121b4dfd10c12458324616229c89c3fcc556faec31c5824dffe032c"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/MRX7S0.QFS",
+      "sha256": "fb6eb6b1e326ea144b2bb856f8d4726f5792da70c1e219069872a6c28278b508"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/MRX7S1.QFS",
+      "sha256": "c0d77187c63d92753d202b7becf4bfd155021236a8f65568e5356e3fc12f428f"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/MRX7S2.QFS",
+      "sha256": "527c0ee5afd56d60efb4a63d146eddceccb98b6d21b45e9ce41328c466e8c445"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/MRX7S3.QFS",
+      "sha256": "c256aa7718ea6d511c6e8ebf0901316ed35d663ffa84f9e4a35069b781e9625e"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/MRX7S4.QFS",
+      "sha256": "085ac75ff1a836d8bb742696ab80b8323f73e8854fd6328d898d17e269be41c1"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/MRX7S5.QFS",
+      "sha256": "e568db2193165fecd299d13e1ec7bc5b1f538a93b62122826982083a08dab335"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/MRX7S6.QFS",
+      "sha256": "61f2d2272db8f4ce483075ff2056e43678f28c8f050fabdb7f49de35704b3341"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/P911S0.QFS",
+      "sha256": "1bfc09ab7c6a07040331ae3ef93b16e946b3bddd0c98093f5462b264fefe0469"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/P911S1.QFS",
+      "sha256": "61418efbfce4902c6fbec7459be22a79fed8225be4cba5e73e1619878c128639"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/P911S2.QFS",
+      "sha256": "ae667596a0d4e21442039315af92f717e10a6f35a28a3f5e1deaeda392a165a7"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/P911S3.QFS",
+      "sha256": "400ccd8cbbbfb4f09b1f5cf0968738ec10742755960d48ecb225220231ef0f7a"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/P911S4.QFS",
+      "sha256": "f519b9c4bb43406282fbf3853488a4ba588b15c2e917a2367b79e21c02ab3b85"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/P911S5.QFS",
+      "sha256": "120b2ac79cd22963f82077462c82e0b0ac21e3f8da628781ce401cc16810e662"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/P911S6.QFS",
+      "sha256": "7f02a500442cb21b547466d0db01e8dbf721bbdf78890f8abf7caf9d834467a3"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TRAFFCS0.QFS",
+      "sha256": "07070a4b0606389eb4827128f361bbab5fdc353521aba3f35cead4554cb4d8eb"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TRAFFCS1.QFS",
+      "sha256": "36d31753dec3c30af5a716a17021468a4ce7f892bffa7bb8d656a73ab3ea98d7"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TRAFFCS2.QFS",
+      "sha256": "7d8a0eb90f6ae5f6fd7c25264de0e30f6dd3419bb10e465ca2066509c34c2b6d"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TRAFFCS3.QFS",
+      "sha256": "07070a4b0606389eb4827128f361bbab5fdc353521aba3f35cead4554cb4d8eb"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TRAFFCS4.QFS",
+      "sha256": "36d31753dec3c30af5a716a17021468a4ce7f892bffa7bb8d656a73ab3ea98d7"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TRAFFCS5.QFS",
+      "sha256": "7d8a0eb90f6ae5f6fd7c25264de0e30f6dd3419bb10e465ca2066509c34c2b6d"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TRAFFCS6.QFS",
+      "sha256": "07070a4b0606389eb4827128f361bbab5fdc353521aba3f35cead4554cb4d8eb"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TSUPRAS0.QFS",
+      "sha256": "62ae0f17c6318b97fe694ac5b43695eea38ccb1a416d059afd8215c75b761edb"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TSUPRAS1.QFS",
+      "sha256": "54633d2b9119c22c734b557a8b4fe96d4b83a69e329504907bc3849f3b10e493"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TSUPRAS2.QFS",
+      "sha256": "768ff520e586930d5edc57f04832400dde0f7c82934bddc9cb2d7c5320830e06"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TSUPRAS3.QFS",
+      "sha256": "79f8ba7ef6b3891135fc3181058ac693bc14a002ae16cff094f1e0de4dc755fe"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TSUPRAS4.QFS",
+      "sha256": "57d9dffdf04a252d6a17bf814831580fe0ec1a99020320db85d134c844b30c74"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TSUPRAS5.QFS",
+      "sha256": "25a50d1f9908854d9188532f15143263ebf555622e28113b824b14d51b7daf96"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GSLIDES/TSUPRAS6.QFS",
+      "sha256": "d85e015023b9da5a2876deb40549bdb269a3f58148455da0f6a4a69e2445a818"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/AL1_001.FAM",
+      "sha256": "a99f621d05cd99aad35009da44c5433d19e3e95744ce94cd972a8b36a56e18d2"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/AL2_001.FAM",
+      "sha256": "a200229880efdf168d8d0aedfa1cfd99b5a2b1a48cf29d206d9a6c09e71fa142"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/AL3_001.FAM",
+      "sha256": "f39be8b46008be49dafdd01076d0050c5811352fa4244db657817539383ca6f3"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/CL1_001.FAM",
+      "sha256": "9d9ec66f38445e36269e2160f067b7086f9cb7bb1100ee64ffdab7b5a6342130"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/CL2_001.FAM",
+      "sha256": "87b744cf05203b59494386527d049173949a075005d005784a025caf5a98891c"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/CL3_001.FAM",
+      "sha256": "f7a33fdea2b0116af3b785dfbc2754e5d859172a75a3e5782751779441bfff55"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/CY1_001.FAM",
+      "sha256": "c1a7fef44ec55fd59dfe20aa17dbe1be46400b3500003e6c3519a9939d490fdf"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/CY2_001.FAM",
+      "sha256": "065f43a46bfbf6527bfd374628284f166410ddd5afeaa13d5fa4c890912ea1a6"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/CY3_001.FAM",
+      "sha256": "47b413c39587530c6d2720d5603732d5fe91f1f0ecf28369d744310451c47bf2"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/TR1_001.FAM",
+      "sha256": "3819e366601bd6b01c5ebe8694f4c2d4bfaf72456bbe42db15d71081cc028a54"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/TR2_001.FAM",
+      "sha256": "eaccf94be83342988f3b0e12e2c6d15f8dfdb77b876d8b93f2a61a2458e812db"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/TR3_001.FAM",
+      "sha256": "21608aa2939921c8e7d8a2c0d7144f8247fc4cc6a92aaeef7ba6694f68396085"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/TR4_001.FAM",
+      "sha256": "c1abf70390631f496da11006c63cb3c08f4bc3e8b6fb2cf14fc025d583b7492f"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/TR5_001.FAM",
+      "sha256": "1c571d4bdba3619eee1be68e10e148150867bc2393eca7ac11849fd650716cf9"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/TR6_001.FAM",
+      "sha256": "484f40efe85eeeb5d131acaa215912825321224e855a7519e14746b1d53c7118"
+    },
+    {
+      "group": "D",
+      "path": "SIMDATA/GTRACKFM/TR7_001.FAM",
+      "sha256": "05abc9a9009b8eefb82e38194cb3c401e537a3a83043e1993162313b1a67de0b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/AL1.QFS",
+      "sha256": "1096d1a8fb6da2f4b8cc726b6864877e16fc61c8c42b55b23b4192b1f749a4c7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/AL2.QFS",
+      "sha256": "7329e7fd63931ea1b6efc7918e5585913642627d850070a232d37736a0e8049e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/AL3.QFS",
+      "sha256": "4ec623a7396928f0c3777069a2c6b88b923f15a83a4acf394f9ebf99ef0c8d9e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CHCONSET.INV",
+      "sha256": "1af2ff979034efc4bccfad7d6356220e7c79cfe0921c6c89451da8ae7d6baabc"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CHCONSET.QFS",
+      "sha256": "ca0ef05e6386201785ef00a2c686fb72357b35f49026a135297e13234d65c84b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CHKCHAT.INV",
+      "sha256": "e338cae28e59d26ddff3dfea7fee4df2f35aa7958fdbe26cdb20a8b1ef862d1e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CHKCHAT.QFS",
+      "sha256": "79c8e9dd9f3cf4a7b44f2f7c684dafaa7cc96b48fe45ea64e1720ca992cb373b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CHKMENU.INV",
+      "sha256": "466bfafbcd964a05c28fe89c7355127b8e74baef7e8487458427728bb42c4b34"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CHKMENU.QFS",
+      "sha256": "bb8d9de87d7106940241119a98c86057592c2e0e4689fcc5ab0842c8eb120e5b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CHKOPTS.INV",
+      "sha256": "1afc72a1d7c888eda1c74e0a56d3ee122dca442617b61081df7dc1be26003b19"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CHKOPTS.QFS",
+      "sha256": "a321fc8fe8dbb58de6d97d5d30df1eb5f13effd6d6bd0d0dd979022da9981129"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CL1.QFS",
+      "sha256": "2954c417da477ffa661315629ff240412d7afdf762473d9d7d9b27b1675ce2af"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CL2.QFS",
+      "sha256": "cb3044ce6a73595670cb1e7d739fdafb39678320630624e52a3669e5833229f3"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CL3.QFS",
+      "sha256": "a23c7775d28e5d403b778153b860e9dd797a41bfcbd0faf667e52328d48cc274"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CY1.QFS",
+      "sha256": "80e595acffbb902dd7ac332b186cd3789c54391e14e9d29edc51438837086d71"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CY2.QFS",
+      "sha256": "4e362e1a0508411bdb4b358bab513dd09610e35840e0878a9c67c0a19833330b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/CY3.QFS",
+      "sha256": "e667a172e3a7ee71be7f2a6ccd8a8234006d8102a0a39cb34ec64a675bb6de59"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/FINMENU.INV",
+      "sha256": "466bfafbcd964a05c28fe89c7355127b8e74baef7e8487458427728bb42c4b34"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/FINMENU.QFS",
+      "sha256": "15f5721b8525e1ccf0e85e986d2a38634626b660a1d7ee4056b881bce5a9ae6a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/GRAPHICS.FSH",
+      "sha256": "111e4980ab4cbe55c9fe35f1e14d4c4cd15f8970b5865e530884e7cad8d73178"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/GRAPHICS.INV",
+      "sha256": "784d9c05d27eb32d7dacfc20337ad32fd43d23b205d355ea6513d84aa58f5a96"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/GRAPHICS.QFS",
+      "sha256": "6b94961aeeeafbb8179041134dd2c5ba4b7d0bdddd761fb06f5224965ed65a9e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/LOADANIM.QFS",
+      "sha256": "98ffc952719501521c1f57fe69fde0f336f781f4d7d95d6161f7092739031222"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/LOADSAVE.INV",
+      "sha256": "1c28feecf204e11af9e9f18c6793d7bbd52a9f001feb4b310c7778e4b3ac3774"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/LOADSAVE.QFS",
+      "sha256": "f8a89a04089464bdd21b5879cbd020d206d01a00720366dc1595b59729e2d799"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/LOOP1.QFS",
+      "sha256": "ef173938d1e936121fc622fe4054b128fc9525c8739de042dc996c1a09057df9"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/LOOP2.QFS",
+      "sha256": "ead841151105228ac80b8567ab7191642d0319ba6d4c12f5facb9f2e47f60e06"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/LOOP3.QFS",
+      "sha256": "973b5097c307d097c5c8fd8452d6833ffc040e312e32165254593be6b1ab2a18"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/LOOP6.QFS",
+      "sha256": "1b14ae88f9364ba23d5cd694c14362be41168ab9ae8bd42a8498b0765210142f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/LOOP7.QFS",
+      "sha256": "a8bd80e47a54e35f35da276fc5d99f2e39217915eea55a7a33352be6c9fe1595"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/LOOPX.QFS",
+      "sha256": "a1f436eb061c2a734b2547b31a740419ec2cb964a6cc27414fb5f70dbfd0beb2"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/PAUSE.FSH",
+      "sha256": "267014f7caef2481d8bacf5592c06aef78004d0a1b63d1c3785d2dfbd87e4948"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/PAUSE.INV",
+      "sha256": "ee879bcbfe0a9195c6048c11be05d450e0090f131fa79042cb305661c99f1902"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CHECK/PAUSE.QFS",
+      "sha256": "6cbcc6a92bf0686dec4033e982ea7e61331e7e76ae72524bc518021738e47f9c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/5121.QFS",
+      "sha256": "7d3217ba369bc8b3a0ee23d7d15f974856d22da0d971d022fa2a3e6f655e001d"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/5122.QFS",
+      "sha256": "b6cb732686f7ed0a96999344776d81ba3c539f93c5247f0b3eac6ab4b5926276"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/9111.QFS",
+      "sha256": "8344fb2f1f7fb17494f45c419dae7020d14d53943b5f71cbba76c9f5169d64fb"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/9112.QFS",
+      "sha256": "6797bd7ea3e000c1a6ec87aa56ec8c103783cacdc0279d290db9348aa97f73de"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/ALPINE.QFS",
+      "sha256": "128fe2f1b6d5ced2efb9c4503ab94f0e6819cbfe10a56efb86f0e3f4971ceb5f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/ALPINEM.QFS",
+      "sha256": "b2e22a4ab17c07f6088f8c912b40d85d542278fa337ee5ccd71b139b29b0f9d5"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/ALPINER.QFS",
+      "sha256": "24870f2ed6fa45af0d70a702459a4d632187e85dbb3055c493804b2622c619b7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/ANI.QFS",
+      "sha256": "8fdd908dd6c109ee535108b6ff35841d8004fae63c88514ef2ac6ffffceb7081"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/AVALLEY.QFS",
+      "sha256": "a3c875ce909ba656085170354da1b2f0df3eee6c1d4e3e38b591114d102be7fd"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/AVALLEYM.QFS",
+      "sha256": "5cbfac071a6049991250bca8d42c490bdebec1e50aaaa30415cef0bc69386ffd"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/AVALLEYR.QFS",
+      "sha256": "160972a51c9b1509ebcd734d7eb29543057b53b3f653fb638710a5473efded29"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/BSIENNA.QFS",
+      "sha256": "f9e6279500a6301e131676682e492a96b44c4854be39a680550e9a1a98aaeb82"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/BSIENNAM.QFS",
+      "sha256": "e87df372f1a1bdeb7cac0aa100217446321e1fb0e670f5287ee72fd445286bbd"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/BSIENNAR.QFS",
+      "sha256": "1ca07181a606134ece20868b6669ce746e07dc3088beacee94d4ad91cfc03abc"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/CENTRAL.INV",
+      "sha256": "93def573203c12f8335072d38c8f4adcd29a797799107c61a95ed785bdc7bf32"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/CENTRAL.QFS",
+      "sha256": "e0128d625919992a473424eaf543ee9dd76c465a58c76add5e0e63965d71f196"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/CHAT.QFS",
+      "sha256": "0b26008affc303e8c687e879d50e8c1f765a7f6a160bdabaa367dd5d1c223ea7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/CITY.QFS",
+      "sha256": "fa1b6a89d77579fbd11dda0f095cf83a7480e69fe775b5ae61ed92ca332eb335"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/CITYM.QFS",
+      "sha256": "350a673f12bf8a114cc09278a5b75ee79623e6c4216a43e31f011d99553d7f8a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/CITYR.QFS",
+      "sha256": "dc26b0f6b617f78ba90073aa1e4c853c6397d27a35f525636d311685c48613a2"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/COAST.QFS",
+      "sha256": "a5cba342ad5a4020018e6f6494addfb83da446b7318bda244d1f59b5eb239d06"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/COASTM.QFS",
+      "sha256": "5e4afa3648d011aa49fb005c5a6fae56628752c202a86f30db0f9916cb51a99c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/COASTR.QFS",
+      "sha256": "b147806a48b0cb5c3cd0839d64119c72d15103f998914375576a9e25706a0759"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/DIA1.QFS",
+      "sha256": "07748a01c8f38fc84b180d4bd65a3877b11b2b463f6a1bea03aac073a1c9d7d5"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/DIA2.QFS",
+      "sha256": "76c5d40c40b5fa25333d0d5f7da93a0ac6a7d54c176e9e907c2603e3e14e528a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/GAMEMOD2.QFS",
+      "sha256": "352919fd138a54f42e37b64a31d006308c0bd580a7431366402b9284d0203b97"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/GAMEMODE.QFS",
+      "sha256": "ee1172f612d152bf8af8cd1f5dab4aef5c5ce346aeedffc57b95883e1bc0abf9"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/HEADHEAD.QFS",
+      "sha256": "3edf465684ff66d6fb21c70abed3562bfa70e0cea7a66cb1a5721d13e902572f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/LVEGAS.QFS",
+      "sha256": "131bcb6ff678587ab43f98eea75288a5444bc5593186fca15498f370669cfa43"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/LVEGASM.QFS",
+      "sha256": "ed787b74d080280a29345a2ffc91aa83bac663f3ecc6e1ad4d03340ceebc7442"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/LVEGASR.QFS",
+      "sha256": "d3f229ff58d8a04dfa0b562e9055a4166c8f37503d7e22badfbc7894b0783c8a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/NOMERCY.QFS",
+      "sha256": "d93e171bec006f24d3de6e8b18dfb56bd5d5f35f263f5855017f55566ab3fc19"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/NSX1.QFS",
+      "sha256": "bb14c0437b038f357c61961aca9cf70c8434ed30a7b599e211dca11a3ae92212"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/NSX2.QFS",
+      "sha256": "f8d55ad5dfbb3b08656a479582d0b1e0769638025111e973ddf3fc5423c518fc"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/RX71.QFS",
+      "sha256": "96807a145fa339164343f51a65198db122d58d9c2e07bc0ca094f76bee96128e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/RX72.QFS",
+      "sha256": "5cf46b0cf73a4d7a9e79bd97e058fbfcd0508696e65f03ab1dcaddcb03d82cc7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/SINGLE.QFS",
+      "sha256": "a88a1882c61936e3790a8c8fca4560c205b87823df3347ba1b7b5932753c02a5"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/SLEW.QFS",
+      "sha256": "9c0fdb78e3ba77bb78fabddcd1e96b7df8bfa60d62faa98a3ef8f2a3c68c4465"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/SPRINGS.QFS",
+      "sha256": "2183dbf3a41a36086516ff1e42622518e8fda3f2f3042aad50582f295f091c90"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/SPRINGSM.QFS",
+      "sha256": "4186e7e0b775065cb602c20b02d44fed5b24a727ad19ccdb6fa7ea2ccd966fbc"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/SPRINGSR.QFS",
+      "sha256": "b83b2fe55a4cd1640d83e62f68d1a861ff2873034320b6d8ceb9784f0c9a2072"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/SUP1.QFS",
+      "sha256": "066806aadc7145f4c08eaa594416559fbc4942805344eea64bad32fb90964f04"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/SUP2.QFS",
+      "sha256": "e66af4f73ff5a4b7671ba37c315d5ba6d01be65c7e1a2ec80a061e9b6f3e285a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/TOURNY.QFS",
+      "sha256": "ef0921b8a289948b82c5c03c7529bd659fada36bd4c3fe3774b3fcc3a0623976"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/TOURNY1.QFS",
+      "sha256": "86483b4c0bacd06a754ea3e5fd5a16e6c9c268024fc7d445d4318c1c6015c6c8"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/TOURNY2.QFS",
+      "sha256": "b62e4c8f88551174b047c5ee98bb5aba3e6dbc3f0969f2ec1f8deec6716fe0a9"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/TOURNY3.QFS",
+      "sha256": "293030146f399a8ccb8aa187731c57266a60f0119b3fc5a4fff96a5e5b0a0639"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/TPOLIS.QFS",
+      "sha256": "a3ab2295139a20b3720658d3de3116dbc28689ea914c2b7bf7e6c61f4a6f36c0"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/TPOLISM.QFS",
+      "sha256": "180fbb9bb69f1d5d5b86dca3eb9cdc243ead8623e07f34a7e6e2b101c62bbd8f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/TPOLISR.QFS",
+      "sha256": "be7879a4776f40d1b40fdf602ce58db07796aafebd8ac6e52fe9def55c9a4e78"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/VALLEYR.QFS",
+      "sha256": "f15fc1029cb0aab48c6f5e8309925fc5e8d764ada312f4600626d3ef9ca2f6d8"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/VET1.QFS",
+      "sha256": "c0d9419def5575cf9bbcba7a497ec0b6de495a5a890c8e474e0c55e090fc0dd7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/VET2.QFS",
+      "sha256": "da5e3f5974a272ab7334368daad520e479cf1674c5d226d3972afdfc9d059a92"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/VIP1.QFS",
+      "sha256": "0c8332f6108a340cf98e0b215065ed143ab65088f4ae3c9c977f0d1e427879b2"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/VIP2.QFS",
+      "sha256": "54ff4da21460e00f3ec12ee303b031198d04c1edab98a69542ce605106d88921"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/VRIDGE.QFS",
+      "sha256": "8d5f59501b613b1cf155f9ba845630173f261a5f97a6766dff17becb92e36c15"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/VRIDGEM.QFS",
+      "sha256": "ed4ddb73bbec8fde511003919de7af50434f0b5cd38afdbaadd6c4e35533b50a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/VRIDGER.QFS",
+      "sha256": "7d2006e8741d20309ef3b63e440c33c3d67a429c4b8e0da06d4edba8a0d38564"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/WAR1.QFS",
+      "sha256": "d5c445f3cae3fc3e01e2239cdf30d12746a5f1df9a7413f4e49f8bf163e937c4"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/WAR2.QFS",
+      "sha256": "c456b7840c59a0a1bcd8b708f500b3632c80e64099270e4de32f0308e3982820"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/WATCH1.QFS",
+      "sha256": "f6df43eb903972b08ab543aa53baa47041ef6b90e3b151ed0ea20b674af60808"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CONTROL/WATCH2.QFS",
+      "sha256": "824cb3e0891b0cf100bd505a12c730c0e9882e044ffca21b4918d5e5f427485f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CREDITS.FSH",
+      "sha256": "de2757a2a103cc132c38d65299bf610e5ccac95149aca158a7b2fce0fffff90e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/CREDITS.QFS",
+      "sha256": "c7539ef2f3ab938a9960396dcba19697911881051e66b0542beadffc1c942a45"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/EATITLE.QFS",
+      "sha256": "5ff60766888e65d0f0290789b5dce83db39dc1c3fb39294369becb602262ab4e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/FONTS/GRAVER18.FFN",
+      "sha256": "38d99560cabd05d136ea21eed9a032d80db59a8d9d8d973bf7f36e9bcfcef3cd"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/GMOUSE.FSH",
+      "sha256": "b704beb6e4f93e11860718dba2758c872b2e035e6b6532cf7e735cf74f3e99e2"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/HELP.ENG",
+      "sha256": "9a943330ccd9cbb49a5501e2bd9bbd9a0d5c61d1278afc90dcedc01f6166f3df"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/HELP.GER",
+      "sha256": "5e4bdbbffbdcce8282f19b2ef0edfe669d40736cb231f7dc773477f9f10e5f7c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/HELP24.FFN",
+      "sha256": "8947e07fabdeb0ddfb596e3160435fb470c9434ec179914a2a382772f7c2d018"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/AUDIOPR.TXT",
+      "sha256": "5276b89eb12248cc725ad9ef1afaad4f4dd18d15951c7a69e53c90d7146e782c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/CONTROLP.TXT",
+      "sha256": "9aa8c7d75c137d699d0ff2a60daa81d721ecec103172ab86f7bf72c6cd5086b0"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/DOSINSPR.TXT",
+      "sha256": "5a91577ecb990867d97d7656fd8b08d944e8d36e360e52e3fb3eed6d30bc950a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/HARDWARE.TXT",
+      "sha256": "460ade750802a75f4c5ad04fdea52cfb6c65844db00bffed12fca3975482b947"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/HELP.TXT",
+      "sha256": "7d2c10a7843f0554b9160955b2b6542354a1ed173bc8172d02159e89d1679b04"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTALLH.TXT",
+      "sha256": "564ffd4bbe4ea76358fb9aa80560da537506b761efd381d4f3b1abe641501d72"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTCARD.INV",
+      "sha256": "86563011ca62c349e9d41f6f780f2d0380025f57d255f59a6a66279f74bcf6b6"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTCARD.QFS",
+      "sha256": "5f70d818b012043c1f445187ce62d7dd67f7f77e77742b992b6f861bfb06df06"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTINST.INV",
+      "sha256": "46c01b7517557cbac0bbf36b942e7a5fa393026bfbedd7f858798891830b7ad4"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTINST.QFS",
+      "sha256": "790119f58003511e52abd0e0b0f4d7f5d8dfacb4d851b07bb636770de33d67e3"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTLOAD.INV",
+      "sha256": "fedb1f2859daf05d46cd0acb545505f58e3d361882b94a22641494ee46bc50e0"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTLOAD.QFS",
+      "sha256": "1f35f9e1607422910b6ec21595356e1f3c4d898ebaa798ba37da74e6055c1c29"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTMENU.INV",
+      "sha256": "1c6fb5e209c6d758e07c998ccf900cb4b1462e4a82f99ceef58dd7a9ae888294"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTMENU.QFS",
+      "sha256": "4d90f6b73bf83c71a770ad070028754b16f538d5fff8b7c3b52154148ac4184e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTPATH.INV",
+      "sha256": "3cbcb59fde5b60d893c17be7c96dd9b4538afb0bf74f9d713c8199641ae89117"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTPATH.QFS",
+      "sha256": "a8c82cce88cf6a886756eb823b4c1a9b89eb6dbe924e7ab65d5c7faa86f3d751"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTREAD.INV",
+      "sha256": "1c6fb5e209c6d758e07c998ccf900cb4b1462e4a82f99ceef58dd7a9ae888294"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTREAD.QFS",
+      "sha256": "42396c8b1f622ee811ac1fe077573b4cb006f09d295332a7591437b23d0be85e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTUNIN.INV",
+      "sha256": "46c01b7517557cbac0bbf36b942e7a5fa393026bfbedd7f858798891830b7ad4"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTUNIN.QFS",
+      "sha256": "a9ada2b67fd6f10c9a22609e123496313e887bfd8018c3b42120c16f59e238e2"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTVIDO.INV",
+      "sha256": "2afdf25eec51fb9929af840179b581015e03790a2de36d93bf1479f782e12580"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/INSTVIDO.QFS",
+      "sha256": "c6761b04c455cd9eb80b1e0c9cfa2241ac03bdb225eaa95ac231f7713accad07"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/LEGALS.TXT",
+      "sha256": "d1e2a0a2f5c53ca5df87b6dbb856d883e37dab5fe73d314b382b003020fa140b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/MEMORYPR.TXT",
+      "sha256": "641a15d145719c371297f45e24c9cfb61e4732fc390224367900a0477898f4a1"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/MODPLAYR.TXT",
+      "sha256": "3b6fb7c19b6379f58a851602fff6ef7c5eac2aa97618305f94893c78410ecf6b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/NETPLAYP.TXT",
+      "sha256": "78083087f99b552de34135c840f3b2fc26be5d013a49972d8fbe6f356e9ce107"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/SUPPORTP.TXT",
+      "sha256": "c6c05a72dbf978d3e44644fe92ff5d2d4691d37583820b020c459a8721931e57"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/VERSION",
+      "sha256": "af8fd466ae257dd60a160bd710a0c706a46b5d6734205e8bcd7c9c37337b66f4"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/VIDEOPR.TXT",
+      "sha256": "a1cbd9bcebd91a6a6090198beeb92e92c0585d913ac9a5211017b91005b39b82"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/IART/WININSPR.TXT",
+      "sha256": "47fc29e2cfa84791e333c5558f891cdaec8c1878ac5e6d6545770eb9f5c5fd28"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/JOYCAL.INV",
+      "sha256": "ef5ce24fd00c41256ecc6c711acc9f965e23421758478366f7b812736cbfa921"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/JOYCAL.QFS",
+      "sha256": "91cc0c0fdab46b3a10e6499543645389ebb6aaecb353e12be46609aa36e3d21e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/JOYCHK.INV",
+      "sha256": "07ccfc1a8d38a4bd6e634f13756c52fcc73106f68f085443e15971cca01393b8"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/JOYCHK.QFS",
+      "sha256": "8b947a2f1b2edd4fc1f970226cf5cb9975293d57d604ce8b08353d480ddfd28f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/JOYCONF.FSH",
+      "sha256": "62f71671a9a6b2008b7703170f49efb30210632251623aaadadea68ba3f1cb7a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/JOYCONF.INV",
+      "sha256": "c9654cbc46753eedd8bce6b9d5d9b1310002e84ef01a255958e49e31b8d13e32"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/MAIN18.FFN",
+      "sha256": "8938a2640250d9fe7a4d3f841fb0eb7eb6b8ca91ab889f1b73e0273bbd248a3b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/MAIN24.FFN",
+      "sha256": "3d693d13ea92870287fd507d2d37437e0d61050bd753cbf8f21e7a10b8f8c0f0"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/MOUSE.FSH",
+      "sha256": "00808df8c7f00f61e3b945281e92d2d334b1af7a5a385e8f1d3e0697b46a7b5e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/AUDIO.FSH",
+      "sha256": "00b649999f8fbd97fc9419ea3d3c8c8c1722cf001232917f5e258c754a4efb0c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/AUDIO.INV",
+      "sha256": "adc3fb472d11a2521bf62ab1882c4976ef40ced0d8fe80bbb04b78df28a017ff"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/AUDIO.QFS",
+      "sha256": "eaa786dc6323e009bad96b18ec1f2cc4265ffaeda142f1326ac45976df2c4d16"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/CNTRLSET.INV",
+      "sha256": "e82c22c79057386f2510035c8322650efaddb83d9fcb002ada6c92fdb4d211b8"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/CNTRLSET.QFS",
+      "sha256": "3ef32d8869849646e713a598cea0deb592e2077c34adb1d7694f66b1c54af7f2"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/GRAPHICS.INV",
+      "sha256": "74db580f0ff8c9603d563485f8dd862a25fb99f71b334331443e67da1f8d5edb"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/GRAPHICS.QFS",
+      "sha256": "6619f27f87b0ae763f7599bb21a9b2cfa73448d5b8045c7c6aa8bb6185246ae2"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/LOADANIM.QFS",
+      "sha256": "9cc7814a2570dc431caf6393908ebba0cdad7e0aab20333f2ebbf38d1fb91575"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/LOADSAVE.INV",
+      "sha256": "384cf0a8226f8201d9c036975c691429a5fc31066a225b12a238257a9fd8f51b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/LOADSAVE.QFS",
+      "sha256": "e2c839791792959759a6f7ba5852a40f5da95bfd9f6c5b8f4559e0ecc1db9aec"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/MODCANIM.QFS",
+      "sha256": "3490a5a422306fde59a9d3c6f21f292f434edc980e23dbc638e3c8b2e458ee43"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/MODCONF.INV",
+      "sha256": "3f2298f8d1c55d2e7549c38c4eee7bebb6354d497870c8473ef2695f1db4e70f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/MODCONF.QFS",
+      "sha256": "b641fa5c845db5ade6bd7d8606933a20c8016458731b06ed029e0e85b7cc5e69"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/MODEMSET.INV",
+      "sha256": "e7e5daf7d073922ce071012f3e807a833fb03cd053791a6261c72db24d9c06f6"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/MODEMSET.QFS",
+      "sha256": "2c9590cf3394431fb4af7be1ab29cf7185dbace61078b08536969e13b1ede655"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/NETSET.QFS",
+      "sha256": "3f64b0bcb5c0b94e36f16d76800b799c6fe816799e6c4dae1a3174942b22d84d"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/OPTIONS.INV",
+      "sha256": "fc34edb106db77e9223ebc5dca34433f75f9cc9fe001a254a658d7081ce703ee"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/OPTION/OPTIONS.QFS",
+      "sha256": "f09801278a6a84b4d7ed7ba7ff7cb04dc535d3d49970de13054dba4d11c62d86"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/FINSTND.INV",
+      "sha256": "bda20348cd92a1de518ecb49dd0982435c4042952d02bd5c9c1ea040369c8a48"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/FINSTND.QFS",
+      "sha256": "c3c883240c017ec039dfb9ad5638f86a3d74934bfbd85f19916dba83a19a4ebc"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/SGMTSTND.QFS",
+      "sha256": "c85aea3f117cdb239c331012a3dcac795e1787f96bfc34604611aba257775e5b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/STANDBST.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/STANDBST.QFS",
+      "sha256": "5d3a536cc35a11a1b56309ec0317731b159c2be7c16040efc2c59d01f4f1b8ed"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/STANDLO1.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/STANDLO1.QFS",
+      "sha256": "6c0df6f68c7ad09d41ae7cebeb3a7e5b151a19d66aa4016eba801de142765469"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/STANDLO2.INV",
+      "sha256": "ae7a3a7a187195854378fce851a9ff97adcecf88749e2b9cfd968fcc5a29fc98"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/STANDLO2.QFS",
+      "sha256": "0b6194600b0a718503a0864cff71359ca09dba9ecc5f63a3237db444c6c925b4"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/STANDSEG.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/STANDSEG.QFS",
+      "sha256": "ec51891c41e018993d1653782c560e033f93a1e8685c1d8440f7fc4e1f21629b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/STANDTRK.INV",
+      "sha256": "466d2256aa18952900bc0ce460e2e7bf83990c7e1be699b4e1180e32eb8bd843"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/STANDTRK.QFS",
+      "sha256": "1ba7b94c8f82700c28a89f9c06f8d29ef172057b5ba4380b7703d6d37d21c6e2"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/STATS/TRMTSTND.QFS",
+      "sha256": "bfeb248b1584337124b5b37597c806e4ff76b365213b16caf99e9981b86137e1"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TICKET.QFS",
+      "sha256": "d0439e2b61975268703cd0e3f80d02a9143bddcd764e22a79574a852cacf43e7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TITLE.QFS",
+      "sha256": "f0df7c97e928ebe811256136060dbce5261228ba93b4f0f91566ffa7000b4293"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/ALPBST.INV",
+      "sha256": "b429fd5c8f9fbe77128c130585a2a23bd4c12f0b11f18b92c5f2ed812f53721b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/ALPBST.QFS",
+      "sha256": "933390d05a450b19fb97b1dfaef75f1ab93a628d79d0e3ab38da39c088ded104"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/ALPSEL.INV",
+      "sha256": "4256d623bc80ce3db27b464ac3c8a4f3c3673badbae3b9b95ff6d93ffb9dc255"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/ALPSEL.QFS",
+      "sha256": "2f960acd9cd69b3ccb9f3ed5bfab16a60d813973f22b538c73cb95cd7b481725"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/AUTBST.INV",
+      "sha256": "14b9cebaf33ce0797208599d5433cd3e1cd01fbe6ee9168a17366ce2ccb790c0"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/AUTBST.QFS",
+      "sha256": "614b83eda64ae1076fcc204bbfe2f2f91c1e167146e418835d343eb833a49637"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/AUTSEL.INV",
+      "sha256": "8d1198d4a145daee0f16af32f226840fb39ecb36b07411428367a090ca6be29b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/AUTSEL.QFS",
+      "sha256": "a5808f82b5de61597e07463144f3434db81c4828e040cbafbde4d873f2cfafe7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/BRUNBST.INV",
+      "sha256": "59a3783e7613e499bbec239ad88d9dd2268e22776ad22bae6f98a71c3b6797d9"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/BRUNBST.QFS",
+      "sha256": "1c90f6b2899ff07365f814cb58488c8b5afecd48f90c23d458aafc72f0e22d6e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/BRUNSEL.INV",
+      "sha256": "fe6967a4ebfb21574d9c55b9badafa0594906d04db60ba68200341cf2088775c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/BRUNSEL.QFS",
+      "sha256": "6818d36ae5be5d285935126440d9d9a5517b35558c54a9123b9d3997e40f6ea9"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/CITYBST.INV",
+      "sha256": "497d66afa9145dd8264233af406568725a9a5db2ccaa466ead64a30cd18956fb"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/CITYBST.QFS",
+      "sha256": "bc121c4599fedb34a547b489acdbb16cc2537abb86ffab816a515c27a1ffc921"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/CITYSEL.INV",
+      "sha256": "fe6967a4ebfb21574d9c55b9badafa0594906d04db60ba68200341cf2088775c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/CITYSEL.QFS",
+      "sha256": "3d32660d43314223bdb7d191afd8a1ef754cda43c0eb0387c2e3197f3d6dabd8"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/COASTBST.INV",
+      "sha256": "8ac0e2230fc9ee940a2373f0435e22a01fbcf6bd34a5f93a631c99c2c0e0d470"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/COASTBST.QFS",
+      "sha256": "cb735959bcb9b857ada9a84eb8f1bd6aca2990412975840a352ddd102e330bfd"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/COASTSEL.INV",
+      "sha256": "ab860cfbf41e79393d465999735c2eb3ada2dd12ff9ae87d40437ee89627fff8"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/COASTSEL.QFS",
+      "sha256": "3ae40454c49dfe5416def6ebf1d92c90e68f9dd7c59385c54d28b6e06688c510"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/LOSTBST.INV",
+      "sha256": "59a3783e7613e499bbec239ad88d9dd2268e22776ad22bae6f98a71c3b6797d9"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/LOSTBST.QFS",
+      "sha256": "a144bae39d604751838ba7d5278c2d30098be143800a023ba6a43e19a012a620"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/LOSTSEL.INV",
+      "sha256": "edb3f0ac54419791bcf3e2accf7a15bd7f8852f21ec3e011f7b5d7790b386738"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/LOSTSEL.QFS",
+      "sha256": "276aad5a29df0bd0168594b7d0655823a4a70fb5fabddf2cebf3a1cb2a25402c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/RUSTBST.INV",
+      "sha256": "b6db622342b6f93143584c9f0634d11d06149313971abe5b9e41d43bf2ab4110"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/RUSTBST.QFS",
+      "sha256": "a1bbe0c468861f484c26cb00cc4df24d80cb2ca5c2fdfcd676a92a058dccc338"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/RUSTSEL.INV",
+      "sha256": "1bf093f5176d0f82b8c12898f51d4cc77a70e1e3a26489a9cf2b2311127f8954"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/RUSTSEL.QFS",
+      "sha256": "436143b064a3375c5b70bafde0d1a40e37ea9528cfedaa7c82deb26342b60cac"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/TROPBST.INV",
+      "sha256": "59a3783e7613e499bbec239ad88d9dd2268e22776ad22bae6f98a71c3b6797d9"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/TROPBST.QFS",
+      "sha256": "fad9420904e1069b08b5bf3543f8f12e94318a310a0e1dd62e91f5fde20189d8"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/TROPSEL.INV",
+      "sha256": "fe6967a4ebfb21574d9c55b9badafa0594906d04db60ba68200341cf2088775c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/TROPSEL.QFS",
+      "sha256": "e3a3046e1f749f84ca9fa57838e949b252e62a2d131fe7c642579333d46ca783"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/VERTBST.INV",
+      "sha256": "d5a171dfb209178a90115434fdad514d736c7be3292240c783440eddb3866906"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/VERTBST.QFS",
+      "sha256": "d654280b2b0f6ef31f456191dc061ca7755d0355137bea791492fb47daf385b8"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/VERTSEL.INV",
+      "sha256": "c3b60848626611ff1fb90ccda6085cf595dc15b83292636e75c1071b49276b31"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/TRACKSEL/VERTSEL.QFS",
+      "sha256": "d7ba56410ee22faa9f7703511f15f92bdf60cd23e00c97575ebb38805f2798d2"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/ART/WINNER.QFS",
+      "sha256": "b6a1c99a7dc455c66d2f16851d7f5cba27872a6e68f4554b29c68354802c80cb"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/512GEN.QFS",
+      "sha256": "a45de55678f1e24ce640eac7f57a6141ca1fba596e6ffff425f919619cd6972e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/512HIS.QFS",
+      "sha256": "15aab049143d477dfd0fa3166839bbd3fb8cdfcfe21523251bb6f78546242a41"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/512MEC.QFS",
+      "sha256": "9f6de94f102c10e31ff7d77ca6964ab04c973c75426b32c6b207e995167bdcb9"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/512PER.QFS",
+      "sha256": "80486e7df76cc9bf5b1508b239d9ed8d21c31d465aafe7e8f6e2d30500c2b86c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/512TR.QFS",
+      "sha256": "126c2e1d705cfd1af031d38a06510cb1196643ee46e42465f5ecc2199a4de23a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/911.QFS",
+      "sha256": "61fbb8d2f03da8459fec66393686f229ccf9b5e182825808747e999bdea16171"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/911GEN.QFS",
+      "sha256": "d64aef97772ec8ebbbb42919139aefe58ba8acefbf2ffab611411fa78575c8aa"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/911HIS.QFS",
+      "sha256": "c70bee7fdf7a16047037ddb82ea6b9cd6d28fd4670ead318237d8051602de0d3"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/911MEC.QFS",
+      "sha256": "e69324acac896715d524b3f9eecb9d9819e000a46a8ce4cbf4f0f6e0e7312657"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/911PER.QFS",
+      "sha256": "092a7fdefae2f37a9b0773604caed49fb0bd1da675058b84b1ce6e184891fead"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/DIABLO.QFS",
+      "sha256": "dae28453ec0773a393c46791a1027b1138852d58fab6472c509d374efbd78169"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/DIAGEN.QFS",
+      "sha256": "f46e5884688c8f3bc5439e9ff61201527dfa55c2f75fa5e7fa4c36511139edab"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/DIAHIS.QFS",
+      "sha256": "04f80754458c950af050abd4b58e17f0e7f6bf7d206e7aad2e751ee68ab6001f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/DIAMEC.QFS",
+      "sha256": "4fab4f771b85a424d38bdf62b53846a8e536ccccec8002f720eabcab8c4bb381"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/DIAPER.QFS",
+      "sha256": "9e2818191712435b6e777da3c9c3395e0286e9285261a9671dd87f0e704feb15"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/NSX.QFS",
+      "sha256": "ab4f094dada9b947c2061e5bf6344fa27e91f059d87c804026eaeb4ad7ecd89b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/NSXGEN.QFS",
+      "sha256": "a5b16d558d3e99603fabaac62d5777073d2798315abf99c8074a3a7d5ab5cc42"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/NSXHIS.QFS",
+      "sha256": "6fa7f9b4d64248ad040200c70102aa8554865be1823bfcd5d39a442e362473f5"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/NSXMEC.QFS",
+      "sha256": "09391bd5f0c94ecacba9dd8b2d20ffd53377adf33135db4d1f7c7240889c96a8"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/NSXPER.QFS",
+      "sha256": "e2db9acd126136cd9ffda25bee6ea1f39d6b3e3565231db0896977842441f66e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/RX7.QFS",
+      "sha256": "db91f1004d22c1b3de647674103e8c561571c322273f2d2d56bad68c378c3853"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/RX7GEN.QFS",
+      "sha256": "42d4f044dadf34a735591f4d8875fffe24dd1d71d7a6adcd8e8c4839ae0853af"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/RX7HIS.QFS",
+      "sha256": "1452676a66b14f0155ab1583bfc29fd7ea9d931b01de6b1bf3b90869212a2b34"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/RX7MEC.QFS",
+      "sha256": "196c8b5593300288090168c3ac71a8573caa67a15d471e0634b09f2f9bc56bd7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/RX7PER.QFS",
+      "sha256": "f64a6b7cd5ca785933a9e77550703fe3640397ffdab63695e083a9e64bc30dfe"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/SUPGEN.QFS",
+      "sha256": "dca5e48a09e7c7fa587dab450a6d05cb5837fc9fcde1ae2ec069a9f8c6e8c56e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/SUPHIS.QFS",
+      "sha256": "9b40cd9896184a73245bab3cb2442fe4db578f6b4f503a4e407291070104ba48"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/SUPMEC.QFS",
+      "sha256": "be6aaf4dff83a2fc11d5a4b65055b678f827bab33fe6621de19c67eba0cbeff1"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/SUPPER.QFS",
+      "sha256": "b709aedd536f9494b37b096caf1623b9a4c5b923717d34b0300db8d5ecdffb3f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/SUPRA.QFS",
+      "sha256": "be33ca53c8e208c8771257754c3d845050ac9ed0ee4b6f1fd2155b48aecd3c96"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/VETTE.QFS",
+      "sha256": "b2a9b5bdb0c2a64df20641d957d778d65ef6468a924dbe3599ad534dd9607d72"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/VIPER.QFS",
+      "sha256": "eac41f922ffc94c708215aa162bff83d7b7782707efdd2acb74cb49cec58aff1"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/VIPGEN.QFS",
+      "sha256": "0eacdfd6a6ac01d8989f19c494597e6625044c78efd8188b2234679ff89146c1"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/VIPHIS.QFS",
+      "sha256": "66a06ba0b8df96ffe0563b9c5b9f32d71644025b57911d8cdd22243ff1c6a492"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/VIPMEC.QFS",
+      "sha256": "65efe897e719f6b6e85b042fe5cadfae98b7e3129b0b5271148e57e7c34f632f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/VIPPER.QFS",
+      "sha256": "ab8acbb79ec163ed25703335156daa52e9500017b9bb5453cf709854b12f06f1"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/ZR1GEN.QFS",
+      "sha256": "bc0db6fb01840a9b8bc2bbec82bf24ffd61519729ebb7644503af6d601a29272"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/ZR1HIS.QFS",
+      "sha256": "530cba16bc55a8f22702839f19ac477136e8d0a762910cdc5cc6442d8f90c295"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/ZR1MEC.QFS",
+      "sha256": "c4a50e62e34bad5f5b28b5466906f62d0f200f0d44428061f926cc0b8f2ac76d"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SHOW/ZR1PER.QFS",
+      "sha256": "5b3b55f1c8ed5171cf587299dd0ff82c5ad5d8231a6cd09fac7da6fb71299f2f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/512GEN16.EAS",
+      "sha256": "9952319c7ed6429a445174993cfa30262074ac4dc6f986bd65be39f9daf3eeca"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/512HIS16.EAS",
+      "sha256": "1a682d5642da6702d37425b7cc120f29acb63473558b669ff3dd786e0f6214a3"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/512MEC16.EAS",
+      "sha256": "b9696a7ae1986df7706c85f1be5eeda9236f41370593676786c8f2d57bd8b353"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/512PER16.EAS",
+      "sha256": "e4364faefbb053ef4ad3d9e70954ae651f0389ca65227ed1d800a697e1cb2522"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/911GEN16.EAS",
+      "sha256": "9a57d2e91cc21fa8820d2c3bdf4b4cf65d9431c40d98d480a5c5760b93f762b8"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/911HIS16.EAS",
+      "sha256": "8ccce9bee259b78894c0c415e37ce6a10010394d4d967bd04a73a1a795e874de"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/911MEC16.EAS",
+      "sha256": "9891844fd9edc723a9e67e3485e9640690a94e905967723288b9d5e8e51d5193"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/911PER16.EAS",
+      "sha256": "3200e63756a7273ae94042b9c02b82fd735f57125460c57aa3ddfdc62230e8ba"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/ALPINE.EAS",
+      "sha256": "c282efe9dd8609f5dc6b2cf3ccbf17a249369842b9d523d00ca9d446537c626f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/ARCMODE.EAS",
+      "sha256": "2c916c37983cce17d0a436d951fbdcc94bae18bbf78f34d638a22ddd4611e523"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/BESTLAST.EAS",
+      "sha256": "3e4a525631cd6c46a410a4b20b9d595a1d588176a14d60df7f45b2d215d23e53"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/BESTTIME.EAS",
+      "sha256": "f19b327834ebd3b7bbef113618649180b172ad99232a210af0ae0dde38789d6b"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CITY.EAS",
+      "sha256": "e37585ff5093032386a21588ecfbc3af5cd9caac9a2629f12f484d686fa59ea5"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/COASTAL.EAS",
+      "sha256": "c883c401d7db4f674c995a7eeea4617e918186d9291fd78d2930786e07744bbc"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON1_A16.EAS",
+      "sha256": "dbb0d0872107fa2a36e8b32f8a9218e4c49842076cd548989a9cfea6efc0d166"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON1_B16.EAS",
+      "sha256": "2fe76243dd8e961ff12ecf8c8c8661930cf197b309e3ead269eb90e5dabd24e9"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON1_C16.EAS",
+      "sha256": "64278805f8c5f492089bcf6ea26e0a0aa2cb121a2201a3c98b50ecc35f079f6d"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON2_A16.EAS",
+      "sha256": "675fd43dd355858446570c6ae39c03fd71a407bf27997a042d6af65f6da49134"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON2_B16.EAS",
+      "sha256": "2f1c01d3bd5357134db88d58868bbade0b4d441c85d213b7554a7bff86f207ba"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON2_C16.EAS",
+      "sha256": "3c5b62169c50d4b700c94f1690e321593abdafa06db37088793ee330e1a8ecf9"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON2_D16.EAS",
+      "sha256": "75617edf1db2c36ed2924596b5c3159330e0ab9e8d00e75412b716162697880d"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON4_A16.EAS",
+      "sha256": "70ae3d5df39d1230b7d90ad3c9af8315b1f15010a98d09cc8603739fa59328e3"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON4_B16.EAS",
+      "sha256": "c6e619d567777928ebaa02dac4ad322753a23ddc9abcc580707590117684c3d3"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON4_C16.EAS",
+      "sha256": "27a129e0bfe20ecf5c992498cdf3e82852b2f02fdbaceab7e81d460360fad16a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON4_D16.EAS",
+      "sha256": "18b7ce2f53d7c8464f60f3f4a1da144e8fd2b103bc857fc6a3099be40e92a794"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON4_E16.EAS",
+      "sha256": "d89d7487a27778f1e655ef59a2e70031b311bd9923aa4b07ddd53cc5d1145c55"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON4_F16.EAS",
+      "sha256": "a4f12763158f8899c5dd16af4bc82ca57c9d06b73be6df4e8dcc091786ae89d2"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON4_G16.EAS",
+      "sha256": "cb7237047f2ad00b22d983a0dfac6e161e31ba0f5d99ca23b45403060add923f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON5_A16.EAS",
+      "sha256": "70d0de9694d47ece7f3de25f939530825cc96686ef375b4a06c937c0d42375d0"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON5_B16.EAS",
+      "sha256": "ed958a7cef9ed84fb29b4b35ea5e749c28bfd952d31cacbc25e433c0f5c5807a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON5_C16.EAS",
+      "sha256": "b4dceb49a10cc71a335a07ad2a79f4d4076324b2e013f23df950e1976ad42b9a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON5_D16.EAS",
+      "sha256": "28ea909410bfcb5dd9f1579e246da2f949f7c19d718616d0f3f0a6ab7c142fc9"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON6_A16.EAS",
+      "sha256": "7fbb4f612e3754abc80e19dbd8bb380b2ce854aa60204759aa0e9672c2c677b2"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON6_C16.EAS",
+      "sha256": "2fb9b1e74de2422b11e2c23e4c0540d425cc0eb2b1e435e6ff0236a5ad1965e5"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON6_E16.EAS",
+      "sha256": "d905dba52beea7aa83b9489b018ead065d9c918b177900fde5dda26fe8749720"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON6_F16.EAS",
+      "sha256": "c5897e7152e29b41e069417acb3b124f059d692295603de1996d24a1566761d6"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON7_A16.EAS",
+      "sha256": "1d4288126def0eaff884bea02603d43619861a81fd77d57155b99a0c97bd48cc"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON7_D16.EAS",
+      "sha256": "bae05a572e07d078a20c22262e19c5d2da4827dbf1f9a35e260d216621d2bcb6"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON7_G16.EAS",
+      "sha256": "a618a0efb31e8453805c34d72fe148810263f2f776a635c3018142708135d824"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON7_H16.EAS",
+      "sha256": "c051c049b101fd5d333fd4674a2b2026319b30774e5abb9ecd705e5a110da7f6"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON8_A16.EAS",
+      "sha256": "fc9e911d3e7bfdbbe44f29c71eee60b631fdba88aca435012f90510505e52bb7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON8_D16.EAS",
+      "sha256": "61f24a0afc46f86c9682a3f6bac568459a97b3f8f7ac03662dce9ecb5051bc2c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON8_G16.EAS",
+      "sha256": "9be5bd5f23084b52772f41a34aba854df3c685530a54767430e148a6ddfcdb88"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/CON8_H16.EAS",
+      "sha256": "4f25d086f8177c3112ddf08f51fc2b1fd16fc892a488315d18d18b3c089a7ad7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/DIAGEN16.EAS",
+      "sha256": "0c881d441720f2e49150b181dc0df8eae0c757d6bd675a0e26c2c47ffd5c52ba"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/DIAHIS16.EAS",
+      "sha256": "927227ca1f4cc6314bd893b7b9c77b0adfa6d714d95279bee8696898ed647f44"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/DIAMEC16.EAS",
+      "sha256": "6d18fc6ecdea504604bff80985fea603922bbdbaa7ed80a5d99dd504f2398990"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/DIAPER16.EAS",
+      "sha256": "3171e55438e19339cceb80f2891e8a54877bd8f9ab7921c9c67f3e0cbab39b6d"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/DISQUALI.EAS",
+      "sha256": "b200579cb5bc002dc7f3a2f8ba3087d328492e79d777677a5e8be679ff17a3f8"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/EIGHTH.EAS",
+      "sha256": "6ab9247f784eddcdb41c2d262b0865bc9e79ee3b1355a14ee4120dcf3583b7c7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/FIFTH.EAS",
+      "sha256": "3fc3cdb0ba763b499c494eeb264bc7866a7e8d49803d60bb3a89df87a9da9740"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/FINALLAP.EAS",
+      "sha256": "1ef942e210166d942e1c76d4c05a061d85d2582b78b00b66b85f53513fa45fda"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/FIRST.EAS",
+      "sha256": "68410ec719c3cf53bb3dc69ec963c88bc8f01c4b7e3a98e4c5dfa4f8c2968963"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/FOURTH.EAS",
+      "sha256": "f7dc1ff1f8a46d525abbc4d68edcbeba3a5212ef8e01e71adebb943105e98556"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/GOLDRASH.EAS",
+      "sha256": "148bf4d7bfb3188f1127babcd5950efef16dd8baa2e299fbc15c306a58aa70c0"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/INDUSTRI.EAS",
+      "sha256": "e7814c387a7656855beec4039cd21fb462bbe5e0e294db936f470e4c7f480530"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/LOOP1.EAS",
+      "sha256": "3463db8bea11b67d02c70be2e4cf364d43d33f33b92249c020d69ca93392599c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/LOOP2.EAS",
+      "sha256": "121e053eb69cce4163efd2402f5e4a85e6f4698a0d214b8e766916a2392c5cb1"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/LOOP3.EAS",
+      "sha256": "d5ecc07d53d36faee2871a463c09fab5aa993f532db25922154f31d521521cd6"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/LOOPX.EAS",
+      "sha256": "21ede0beaa4e3662a5ebad4cedba1bce4ce7f17a159232b3cc624816eba841df"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/LOST.EAS",
+      "sha256": "7614ba62b2ebaf214809332e0d4a7bd46026fdea5060092bb461b9270e066cd7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/LOSTVEGA.EAS",
+      "sha256": "ec0126aa57e30aa095d395d42966dedbdcb641a74efbd2b49d3e92fb3cb7b6b0"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/LUNARGOL.EAS",
+      "sha256": "5964a86e2e80b043506ed795cc6d2394b3ce87a12a92cc0af2671115adb390af"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/LUNARWEL.EAS",
+      "sha256": "7cae1216c1b910bb61cd8d26426aed0b9f208c63a8eab130f1c102b1f57bf12d"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/LUNSPRIN.EAS",
+      "sha256": "f919835a0b1f40b22b8851535487fbf316e9244d0ce375cdd9df1cefb84f352f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/MACHGUN.EAS",
+      "sha256": "e02a6e682e8ba817eca6696612545bdc5058a5569612ba72beebc9b1e78a774e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/MIRMODE.EAS",
+      "sha256": "47fd2d55d1d06aee7c23a6eb4aa00883e8036b7e6962217a79872afb6738f085"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/NFS_SE.EAS",
+      "sha256": "c424427d65bf68a321e1090df5af1dd63fd3a67a97d2d111045b6c3b26bde472"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/NSXGEN16.EAS",
+      "sha256": "256b495312a7dad13f399f5abd0ea05d1b882b1d3a6d7606f02b715059fe5aef"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/NSXHIS16.EAS",
+      "sha256": "cc1f607f67dae9eb69d22ff18f8835ff4b665ab2130bfbb3900ddea076b11960"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/NSXMEC16.EAS",
+      "sha256": "56e77fb9586e9626ef69ac685ce0c953c1f560a92f64c45d99e78397b4e9aabb"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/NSXPER16.EAS",
+      "sha256": "4b4db353262d1a9c9102380dd18d4f6adf82f9e95a6bac2ed682afe59c378602"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/RLYMODE.EAS",
+      "sha256": "6e28a9149fc20950ea06e43d2751a81ae1645193eff9da635ce034995b4977e5"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/RUREDY.EAS",
+      "sha256": "ee374d90824a7df6df6b521779226e47dc53730ce7ba9f57d0e2618570ee547e"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/RX7GEN16.EAS",
+      "sha256": "e5eddf8ac736fe0d5dd1e9450fa8b341631290c0e22e310be087f2fb9d041911"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/RX7HIS16.EAS",
+      "sha256": "76580c456a1abe0f983eb971be557fc1367a71cb642d043cb86e28647d21ecf6"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/RX7MEC16.EAS",
+      "sha256": "f8d60b3264d565063b56e7f87a613dd1deda5cd2806a7803d2ceafc39fd62479"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/RX7PER16.EAS",
+      "sha256": "c46a17eddc695d1a92aac420a796979d583e5fe634fa3f52e950ff2560ee4c30"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/SECOND.EAS",
+      "sha256": "25c7b680d933593a770d7e60c5897f9c3280597bd0aae65f81a86a96503fa055"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/SEVENTH.EAS",
+      "sha256": "6d88e76177539b299886c3496f3739ad0a13fed9b93bd91753fa9eb6989b6ff0"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/SIXTH.EAS",
+      "sha256": "04e64e860806f6427a1e2b680c4d64775d7f7e9dd0bfc24435f5909508ebe767"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/SUPGEN16.EAS",
+      "sha256": "b31c5672bd572a01a5b1bef38c10819eb45cd75edc4129c21260940c76967f9d"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/SUPHIS16.EAS",
+      "sha256": "f6f59b1be07f36ba600420f48f415eeb6df86eb57e57e940232c90cad63fb196"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/SUPMEC16.EAS",
+      "sha256": "189d763414ad4cfed104bf874c59e5b53db13a9280dca065e8a5063e9dd76cad"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/SUPPER16.EAS",
+      "sha256": "f35f504185585f82f0ecaf9bdea5cde6e4ffd2a3f16e49e0de97fe69764db223"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/THIRD.EAS",
+      "sha256": "e3b86fa4569ff3e0299c03ae9eddc5da2aa32c640343bacaabc09ebf03152ced"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/VIPGEN16.EAS",
+      "sha256": "61571b5ca036e496e9bb810e3f35bfb893247c5a7c685bf718cfa8b352cdf10c"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/VIPHIS16.EAS",
+      "sha256": "b9364dbfe603ae2b6bb6bf1e0b4854d9ae5d72e26886692dadad90973d9b6d5a"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/VIPMEC16.EAS",
+      "sha256": "dda0bb8bd75e01fc4e5ae5b9a7001747f2c93c444759ebd347cb67054c6f821f"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/VIPPER16.EAS",
+      "sha256": "7f69853fcc527fef0faceb23493270fb5f7493016437dec88814fc984d101bed"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/WARRIOR.EAS",
+      "sha256": "76c17f4653c909c9edc9d9a66f0032918c7f291c6cae443a15c48aebabdc66b4"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/WINNER.EAS",
+      "sha256": "aa2708ab66014a75b02fe37b6f9eb9d67fac9f8eb09eab72696b6eb52ea07f80"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/ZR1GEN16.EAS",
+      "sha256": "96b57ea9f464af2e98bf0187b82f39e7be71d9f498e7fdca43dcc5c982bbc244"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/ZR1HIS16.EAS",
+      "sha256": "5f28f1d027f752a208554a2693f4915cd681743b73d4e5b635b4f5da6e46d3b7"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/ZR1MEC16.EAS",
+      "sha256": "7c4231b9c167c4196066b17b3cfa3c8b29b5f27e3b981069aec5ed9e0cdcf7a6"
+    },
+    {
+      "group": "E",
+      "path": "FRONTEND/SPEECH/ZR1PER16.EAS",
+      "sha256": "a2d593520906cfce05f4f1d91b7d024de2900c543db9c65be0e3d3b20327c171"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/ANSXDH.FMM",
+      "sha256": "f819b88324773e60fae9039bba8d0fab3d276a6514284e63aaa2bd77067cd1ed"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/ANSXDH.FSH",
+      "sha256": "58cc2b4a3a7f5df1372b6bdaf5f1a1331973bc87db4b92e2022144e81b48a621"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/ANSXDL.FMM",
+      "sha256": "3583492c2968d8d4a6fa6c92e2b267ddb084737633893d97d546a400c62bcdfa"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/ANSXDL.FSH",
+      "sha256": "5c62ed58e14ed80916cac465870218bba9df06509ef73c016486731902da324f"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/CZR1DH.FMM",
+      "sha256": "67a9b85b5ad5528f39cdd78aec76f1dabe74558749232a7e1d8ca76baeeff0ee"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/CZR1DH.FSH",
+      "sha256": "a069ee890ba130a47c97b4a3d98887162230576cdd8f4c19475a11d96d42cb17"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/CZR1DL.FMM",
+      "sha256": "b15cb35086ed6df65bf4b8934f30cd8fac2d7a0efe47281c8e45ea3cab69f0b6"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/CZR1DL.FSH",
+      "sha256": "7e2bf7159564966758f867dff8cdc6ced4e3cfc8dc5df9bf17d3d23a36da1e1c"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/DVIPERDH.FMM",
+      "sha256": "77484ca7a01b1bdf82eb37ca924d4800074a448fc61b4317cab5fb7763ba9c65"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/DVIPERDH.FSH",
+      "sha256": "fdb2632717829e12054970ac4e4cdf586e597fe7619b62bdfe917f40abb764c6"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/DVIPERDL.FMM",
+      "sha256": "c329f33a8f47bf39099db9916b9f8e4236cb5f77d6e92f6e54bbe39d63b97aac"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/DVIPERDL.FSH",
+      "sha256": "f3f29906b0352422312041ad2bbb6b2b19e3f90be44201019200dacabbdc7cb0"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/F512TRDH.FMM",
+      "sha256": "e548b2fdcacaa008fcd701037416756dd34cd95b0fea0bd3c25182ae2961195c"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/F512TRDH.FSH",
+      "sha256": "c6c62bab675e6f60d34e3dff3762a459f2f498ff4e2a79cf5b9b82d6317d2269"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/F512TRDL.FMM",
+      "sha256": "1cbbc6e76f5e0cfd1ee4b190e317118cf6bd21a5704c96fba52f1f2219b92f3f"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/F512TRDL.FSH",
+      "sha256": "0bf4fdb88d4e8c77aa6349fbf9684947fd2bf85333d6a3f59525c9c495261b99"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/LDIABLDH.FMM",
+      "sha256": "cba81e1492f12383a0854c1dfbe80fdf6a9177e97e8f7ba906215a9e5dbd8967"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/LDIABLDH.FSH",
+      "sha256": "ce5d69b52e20791d1e8443cde4ddb734cd02f8dca8e2d56b2d6ff891157e236f"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/LDIABLDL.FMM",
+      "sha256": "f376fbe8af410fe6d52988ef6934d73010ba6323b6c3b89c4b07c0f727087b90"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/LDIABLDL.FSH",
+      "sha256": "430a52a10e7270a795224747b2b9cc27448d98a3389444096a9cdc80bedf1395"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/MRX7DH.FMM",
+      "sha256": "15ec048f32675c0fa73a6c2eacdb6846d4c0b074ac91c75d2c9e8328afd77f29"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/MRX7DH.FSH",
+      "sha256": "b047ea9cdaa1686b26083e665417094f21f4c80abccb9ca407cf5618008f97ec"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/MRX7DL.FMM",
+      "sha256": "10de5dafe3f96bcedef99645985a28225d60834cc83a79e818117570f075409b"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/MRX7DL.FSH",
+      "sha256": "92fa7676f99c94fee30b4e0d4d247ed210a8e4471b18cfdae4790d811fc36592"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/P911DH.FMM",
+      "sha256": "1fdb4a42d086a3eedaee34d4401bcddad247571615400a5576076fc225b81c06"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/P911DH.FSH",
+      "sha256": "e6fc983c078f919d607f75ec5efab13c11b6f3fdcb82d0b37407fd9437f4da32"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/P911DL.FMM",
+      "sha256": "6cd29a9714fbe09ca83ca0033c1e5d8cdc4a248c00d0e5801d7947e032bc5fdb"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/P911DL.FSH",
+      "sha256": "b75ef94e115a2950e32561b2fe7bc217b7793f1483ba2df6d68beb11ddebecd8"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/TRAFFCDH.FMM",
+      "sha256": "b39e7e9870bdb2b9f11826184a4a5cf2763f5fe43831ec6ae19128268e009b6b"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/TRAFFCDH.FSH",
+      "sha256": "cb5807d9da7281dfda20e4dcff790f7b2ef923a811d73ee84ab720ad5f17bc20"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/TRAFFCDL.FMM",
+      "sha256": "973a283f65f634382cefc6a1c48080f7d333df22b1418a37d07655b57e08eeaf"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/TRAFFCDL.FSH",
+      "sha256": "f8b6456a3fdc37f5cf39d80edaca91c35b3cbca7bb00ddbf0f044974b2aa7446"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/TSUPRADH.FMM",
+      "sha256": "87330bc7460fb8bcd4b6044a7930a76d81839533b6a88f3c74b432e743eabff7"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/TSUPRADH.FSH",
+      "sha256": "86be421f554980788f456a57457d7dc383b876af42415c6d7f31b22da75a6167"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/TSUPRADL.FMM",
+      "sha256": "4287b131fd2818023d05283f846f07302e6d27706b9107fbdcd0c181abefe9a6"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/DASH/TSUPRADL.FSH",
+      "sha256": "5a9d3062462176478f8b9a735ebfa4830a49d48e221e47ab763263c914febd77"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/AL1_001.FAM",
+      "sha256": "6f01462f8882923de762c35ef246ea47b399b6a1485343121669cb64a7165f7c"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/AL2_001.FAM",
+      "sha256": "8781946700fd04a6bc5ab5f7fccdc070a197c6e6ee605bac51fbfa75632eb0e5"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/AL3_001.FAM",
+      "sha256": "c7a2f2100164cada5b75e6ac37e4c971ca793f96ddb6dab44a90896dd4bd4a3f"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/CL1_001.FAM",
+      "sha256": "b88c66362531960c65b744d4d03bda53ffd9ea4b60b611ae27e4f607e703d6ae"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/CL2_001.FAM",
+      "sha256": "42b735170b3f8abc2fce6b78582f6d63502319dbc1ea4fa6ef56ea339f65f5cb"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/CL3_001.FAM",
+      "sha256": "23fdc82e95adf696853d09ec643cac7ad3a492f7ff346d8140787a35f696f53f"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/CY1_001.FAM",
+      "sha256": "bdb951ba514de8b49df93a0f04d0f5cbd46ae6bfc78c6228010391a9e5750000"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/CY2_001.FAM",
+      "sha256": "348a38a7fb3a7e61602edc412ce82ffd3a53314725cdf85cc5d23a8abc74b980"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/CY3_001.FAM",
+      "sha256": "137ac09d053f013aa8455b3e6ccffc35e44a31b7f6a2c036d835f4709cad8791"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/TR1_001.FAM",
+      "sha256": "3819e366601bd6b01c5ebe8694f4c2d4bfaf72456bbe42db15d71081cc028a54"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/TR2_001.FAM",
+      "sha256": "eaccf94be83342988f3b0e12e2c6d15f8dfdb77b876d8b93f2a61a2458e812db"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/TR3_001.FAM",
+      "sha256": "3b570662a0a971684e30672ba40ee3f8fd493a7778b95f26ad0e85b5129e0708"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/TR4_001.FAM",
+      "sha256": "c1abf70390631f496da11006c63cb3c08f4bc3e8b6fb2cf14fc025d583b7492f"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/TR5_001.FAM",
+      "sha256": "1c571d4bdba3619eee1be68e10e148150867bc2393eca7ac11849fd650716cf9"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/TR6_001.FAM",
+      "sha256": "dd7e4d29a37d3b13359fbe33a6f7b110341b004e225060d9d2e21ef9ee0d09c1"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/ETRACKFM/TR7_001.FAM",
+      "sha256": "05abc9a9009b8eefb82e38194cb3c401e537a3a83043e1993162313b1a67de0b"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/ANSXS0.QFS",
+      "sha256": "593656054e643fa996f4534a14c4b1b074866ef1d64d075ab75b61a7088cdad3"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/ANSXS1.QFS",
+      "sha256": "7b760af66af59c02959c0851bcb722f7c5066049a16b6e5dc432211e8ebbf1c7"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/ANSXS2.QFS",
+      "sha256": "3e14b173f1f319ca379b74a6e09a0edd2ea0dc221687b0c1ef54bc9e9389206a"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/ANSXS3.QFS",
+      "sha256": "f0901f68aa4b4d40786319445d4b30b13e61052ee6f6d7a2aa1a489c308edfaa"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/ANSXS4.QFS",
+      "sha256": "0085d87161f1086fb2dced3488dac33266cc45a9664204ecf15d5d17d1a378ec"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/ANSXS5.QFS",
+      "sha256": "b825d99ca3dc744e74fb75ac5cfc200b77f0c723d7f9fc067e845387561bbfcb"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/ANSXS6.QFS",
+      "sha256": "f8060a3df6ee27c66686b5bfbdb882448a51287dc898b4f3465ef37669521aab"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/CZR1S0.QFS",
+      "sha256": "30b6f3a00756e40c584a4e7ddf53bf11facd1ccd47f7f48e012cf67db16ae631"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/CZR1S1.QFS",
+      "sha256": "fa6da979a4fe87774f47385d940380f1c83a8e8343547a83e58cb40cf5894e2d"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/CZR1S2.QFS",
+      "sha256": "61c44e65a19dfb186e7054bacd05bc3d16d3fa0528cad7d3f9eca559482a3431"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/CZR1S3.QFS",
+      "sha256": "e40d4721f9a0732f65a3c24a462d59fc8b09ad4dfb7b7b218056b3ef2e92ac57"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/CZR1S4.QFS",
+      "sha256": "faacf29304a5d9f0436f395e5fbae0b58d63a72659fc5572ed3e508422c4952c"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/CZR1S5.QFS",
+      "sha256": "abf60d04e2997b48167d0b37fecf8573dfed0d220430e4002863f7f47ca01c5d"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/CZR1S6.QFS",
+      "sha256": "35646d855e191bcfb1095fe44ae59eb318db06443519a447f369688b3b944601"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/DVIPERS0.QFS",
+      "sha256": "d606e8e5ab3e2c9b5eeac004bbe73a1195c646b8d212471bff6b917c4f26e99a"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/DVIPERS1.QFS",
+      "sha256": "4c7f0b84e5f37e77191327e3f53f0bf36170b2ae5dd88ec32f59820193009cdf"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/DVIPERS2.QFS",
+      "sha256": "28312a317e59dafa03a11cb480e0c11bf78d1dc68a48fe19a35d357c62c48a46"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/DVIPERS3.QFS",
+      "sha256": "6103f412d1abe20c8be5f770a3df0c25f76675f799daa1222a24bf8be016a4ce"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/DVIPERS4.QFS",
+      "sha256": "647670f9131f4f1725e309b8f6f13abe2ff48467c9ddfbd7c511df4f3b61532d"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/DVIPERS5.QFS",
+      "sha256": "e5379d6bee619eb0ae677578fabcb3251375dfd132ec75b7f87602387bd68981"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/DVIPERS6.QFS",
+      "sha256": "ebe2254d3bcb90be8f1148cc78f0f2668446d7c9b2adebb426ebc06e26f0477d"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/F512TRS0.QFS",
+      "sha256": "04604a11d20ee0b14c93c034f5479404f7d10fe5b82edc4008d6cb7f72ed02be"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/F512TRS1.QFS",
+      "sha256": "7f03d858c03e50d5d0008652e020c2f0bff63cf0b745f0e89ab82db901238dd3"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/F512TRS2.QFS",
+      "sha256": "6d904b5a053c0654539102250645516507135cd7da9778767364766db76c7074"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/F512TRS3.QFS",
+      "sha256": "a1477fd1d0672a5e47ed581d129bd6ba059d42f6a6ecdfbd39309da8df56a998"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/F512TRS4.QFS",
+      "sha256": "e9ab6b2739813428ce375433c55a2f253a4da30d1e8b5a3026014a564c0fd88c"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/F512TRS5.QFS",
+      "sha256": "5a3b45d8dac47cc1b17f341cc8d85b1b3705201ec272bf6c85c31b607c1efdbe"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/F512TRS6.QFS",
+      "sha256": "d38ead793c75cab83a767275e4233d47d8e1336d46fea8387fd48baba5508fe6"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/LDIABLS0.QFS",
+      "sha256": "b74df4678528b322a8e23bad5cbf3697193638bf38afb61bf8c0718d50e11b68"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/LDIABLS1.QFS",
+      "sha256": "a50db2a53f561e60ae236151b31de17eb4ff8f8432ae8aa37d2f977476aa6c21"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/LDIABLS2.QFS",
+      "sha256": "7550b05616a30a69d6fbb1fb5f2488f759dbccf82bb8d3d211b89dd51859b8b4"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/LDIABLS3.QFS",
+      "sha256": "d7d48313b57c064072b036723fe136cbffa769e000f93e6e18d8db298b3a6482"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/LDIABLS4.QFS",
+      "sha256": "3b2bd57dfbe49994efd5717fbb02a3820a8dd4208d4b28615e3c20b474f1e8f0"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/LDIABLS5.QFS",
+      "sha256": "bcf222b6e0babe636ca4a84738afe7d52916875bfdefe9c023bf4d71c2e45ada"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/LDIABLS6.QFS",
+      "sha256": "1c635d527dbf55d135f27d66ae20ab1905db4dd91ea95e2328e944984627c0c4"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/MRX7S0.QFS",
+      "sha256": "1853c073a3deb166fc9d673c71d55edd11bcc7bccf7a9c453d1b11be21bb9b53"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/MRX7S1.QFS",
+      "sha256": "4d21220edd9159f1a457c9a38f6ac9b2c20ed4807db1ed251a17bf5976f517ab"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/MRX7S2.QFS",
+      "sha256": "9f74d6204bece7af2b084907eacce2f815d8e46fc1b06cec02e73a0ec8b3e2ed"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/MRX7S3.QFS",
+      "sha256": "c68f01a473ac76b189ea7bb7e788ae3552372795c58f682caa2881367b7b70ad"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/MRX7S4.QFS",
+      "sha256": "f32a3c662c67117077a0ae7fc36db6cf1ab4645bbb7ffcc8235fd0818f2f8618"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/MRX7S5.QFS",
+      "sha256": "a2633b9a2892f8318321b4eb5b8fd43c0d39231f3b72b3bdbdf1d0d690fb7bc8"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/MRX7S6.QFS",
+      "sha256": "2866f73dafcf15bab26f220398b672b32b0cbef1dc41ddf6fb1aaae1d1e5a5c8"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/P911S0.QFS",
+      "sha256": "415299ec5f5dc69ba6db15fb0a73336c9aa8197306a8e0921569b6016693b63c"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/P911S1.QFS",
+      "sha256": "509a2cd5fb156fb04fa7de45c9814636b2faeb5d4d7471b484618a757ceba73e"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/P911S2.QFS",
+      "sha256": "e4f5d5b209452c3ae4ab9dfe87dbd0f260e6384f83e9af425eeac6389784844d"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/P911S3.QFS",
+      "sha256": "a53b65540e046cc558fd5119ac1bb857119432baccb12dab67a68399e3f0f52b"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/P911S4.QFS",
+      "sha256": "d47ba8d4b94e8b3bdaa3645db0a0f5d7f525e7ebd73f9fa443b30fb896e2c91c"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/P911S5.QFS",
+      "sha256": "e339197488ea68016736c67319e594f79ca469f2cc24d624e7c690c777304278"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/P911S6.QFS",
+      "sha256": "847b04dfe730f6b74fc5cc1656ef68e4f6847a2132e7b58c39b10e246b2a12e9"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TRAFFCS0.QFS",
+      "sha256": "261e3f16ef169430c75eeae7451b5fb453c21a7cb0d5c341d2fbb772bb902c0a"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TRAFFCS1.QFS",
+      "sha256": "e37b79b6f83e8348a5ba1bdadbb612d4b0012148bac0b77112e5ff739d3fdd6c"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TRAFFCS2.QFS",
+      "sha256": "dc642680537008fbf4e67d339bd6d50f78acc9d84d23b8cbd5e2384ac0e05e22"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TRAFFCS3.QFS",
+      "sha256": "261e3f16ef169430c75eeae7451b5fb453c21a7cb0d5c341d2fbb772bb902c0a"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TRAFFCS4.QFS",
+      "sha256": "e37b79b6f83e8348a5ba1bdadbb612d4b0012148bac0b77112e5ff739d3fdd6c"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TRAFFCS5.QFS",
+      "sha256": "dc642680537008fbf4e67d339bd6d50f78acc9d84d23b8cbd5e2384ac0e05e22"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TRAFFCS6.QFS",
+      "sha256": "e37b79b6f83e8348a5ba1bdadbb612d4b0012148bac0b77112e5ff739d3fdd6c"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TSUPRAS0.QFS",
+      "sha256": "f6cb23aba2edf915460c9ca24d5f6dd9194a60d279f8b449d1eb3d351c9fd892"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TSUPRAS1.QFS",
+      "sha256": "55408f99829addaaa82cb73fab44f9898da569201557c18c76063ff5823fe63f"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TSUPRAS2.QFS",
+      "sha256": "46543c9c053e65bf97dc675e69a42044083a7a1463aac60db9df82446e48fe32"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TSUPRAS3.QFS",
+      "sha256": "87bc5d9c76462c1b88fea1201b33c102d27c507e21479be432f9fc384d115219"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TSUPRAS4.QFS",
+      "sha256": "745d2ccbdbf6b95352cc595a63e660b15092f472aeb1b029fdb1877749a281ab"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TSUPRAS5.QFS",
+      "sha256": "4785c88184ec8569bb340c47421eec5d000a588123022f8c03cbd75b45463216"
+    },
+    {
+      "group": "E",
+      "path": "SIMDATA/SLIDES/TSUPRAS6.QFS",
+      "sha256": "e1c9a4b646ba2ffeb782fb42b3c4efbd4e12831049c7f87d2306ad70fad2fd72"
+    }
+  ]
+}
