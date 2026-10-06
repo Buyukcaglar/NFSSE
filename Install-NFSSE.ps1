@@ -83,6 +83,13 @@ try {
     }
     $icon = [IO.File]::ReadAllBytes((Join-Path $SourceMedia 'NFSICONN.ICO'))
     if ((Get-ByteHash $icon) -ne $recipe.icon_sha256) { throw 'The media icon does not match this supported release.' }
+    foreach ($name in $recipe.race_speech_files) {
+        if ([IO.Path]::GetFileName($name) -ne $name -or [IO.Path]::GetExtension($name) -ne '.EAS') {
+            throw 'Invalid race speech filename in patch recipe.'
+        }
+        $speechSource = Join-Path $SourceMedia "FRONTEND\SPEECH\$name"
+        if (-not [IO.File]::Exists($speechSource)) { throw "Missing media file: FRONTEND\SPEECH\$name" }
+    }
     if ([IO.Directory]::Exists($Destination) -and @(Get-ChildItem -LiteralPath $Destination -Force).Count -gt 0 -and
         -not [IO.File]::Exists((Join-Path $Destination 'nfsse-installation.json'))) {
         throw 'Destination is not empty and was not created by this installer. Choose a new folder.'
@@ -115,6 +122,15 @@ try {
     foreach ($name in @('FRONTEND', 'SIMDATA', 'GAMEDATA')) {
         Copy-MissingTree (Join-Path $SourceMedia $name) (Join-Path $Destination $name)
     }
+    # The original installer puts these announcer clips beside the executable.
+    # Race speech opens bare filenames; menu narration uses FRONTEND\SPEECH.
+    foreach ($name in $recipe.race_speech_files) {
+        $speechTarget = Join-Path $Destination $name
+        if (-not [IO.File]::Exists($speechTarget)) {
+            [IO.File]::Copy((Join-Path $SourceMedia "FRONTEND\SPEECH\$name"), $speechTarget, $false)
+            [IO.File]::SetAttributes($speechTarget, ([IO.File]::GetAttributes($speechTarget) -band (-bnot [IO.FileAttributes]::ReadOnly)))
+        }
+    }
     $copies = @{
         'IFORCE.DLL' = 'IFORCE.DLL'; 'NFSICONN.ICO' = 'NFSICONN.ICO';
         'REDIST\DIRECTX\DPLAY.DLL' = 'DPLAY.dll'; 'REDIST\DIRECTX\DPWSOCK.DLL' = 'DPWSOCK.DLL';
@@ -143,7 +159,8 @@ try {
     }
     Copy-ManagedFile (Join-Path $PSScriptRoot 'licenses\cnc-ddraw-MIT.txt') (Join-Path $Destination 'cnc-ddraw-LICENSE.txt')
     $record = [ordered]@{ version = $release.version; original_sha256 = $sourceHash; patched_sha256 = $recipe.final_executable_sha256;
-        media_files_distributed = $false; relative_paths = 19; icon_embedded = $true; created_utc = [DateTime]::UtcNow.ToString('o') }
+        media_files_distributed = $false; relative_paths = 19; root_race_speech_files = $recipe.race_speech_files.Count;
+        icon_embedded = $true; created_utc = [DateTime]::UtcNow.ToString('o') }
     $record | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $Destination 'nfsse-installation.json') -Encoding UTF8
     Write-Host "Installed: $exePath"
     Write-Host 'Double-click NFSSE.exe to play. Move the complete destination folder to relocate it.'

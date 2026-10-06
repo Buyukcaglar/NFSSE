@@ -41,6 +41,8 @@ The installer writes 19 null-padded, 80-byte ASCII records to `GAMEDATA/CONFIG/P
 
 The installer copies original `FRONTEND`, `SIMDATA` and `GAMEDATA` trees into the destination. On reinstall it copies only missing tree files to preserve saves and settings, then refreshes the managed path table and compatibility components. No game-media binary is distributed by this repository or release.
 
+Race speech uses a separate original installation step. The original `INFSW.EXE` copy tables map 11 English files from `FRONTEND/SPEECH` to bare filenames in the destination root. The game's loader at VA `0x4646CC` formats those names with `%s`; menu narration at `0x464788` instead prefixes the speech path. The v0.1.0 portable installer omitted the root copies, leaving the assets present under `FRONTEND/SPEECH` but unavailable to race announcements. From v0.1.1, `race_speech_files` in the recipe supplies the required names, the installer checks their presence before destination writes, and copies missing root clips without overwriting existing ones. The executable's speech triggers and loaders are unchanged.
+
 ## Video investigation and selected renderer settings
 
 Video streaming originally encountered zero-byte unbuffered reads. Removing the unbuffered flag fixed the observed illegal-chunk abort. Later stalls occurred during graphics mode transitions; GDI rendering and single-CPU affinity avoided the observed deadlock. Synchronizing palette/frame presentation addressed concurrent access. It did not, by itself, eliminate every reported artifact.

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 — 2026-10-06
+
+- Fix missing race announcements by copying the 11 original announcer clips from `FRONTEND/SPEECH` beside `NFSSE.exe`, matching the original Windows installer.
+- Reinstall adds missing announcer clips while preserving existing game files, saves and settings. Missing source clips are rejected before any destination write.
+- Add installer checks for the root announcer clips, repair on reinstall, preservation and missing-media rejection. The game executable and compatibility helper are unchanged.
+- In-race voice playback remains pending user verification; this release validates installation and file identity.
+
 ## 0.1.0 — 2026-10-05
 
 - Initial public compatibility patch kit for the verified English Windows Special Edition media.

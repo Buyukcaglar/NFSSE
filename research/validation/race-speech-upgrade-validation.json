@@ -1,0 +1,58 @@
+{
+  "checked_utc": "2026-10-06T06:08:13.1635929Z",
+  "previous_kit_sha256": "fcb21b80620f32d6931167cf813ede22cf0f8f3c9a428c383da060a1aace8b35",
+  "upgrade_from": "0.1.0",
+  "upgrade_to": "0.1.1",
+  "original_release_missing_root_clips": 11,
+  "identical_added_root_race_speech_files": 11,
+  "existing_game_and_configuration_files_preserved": 1250,
+  "saves_and_configuration_preserved": true,
+  "executable_and_runtime_dlls_unchanged": true,
+  "game_launched": false,
+  "clip_hashes": [
+    {
+      "filename": "FINALLAP.EAS",
+      "sha256": "1ef942e210166d942e1c76d4c05a061d85d2582b78b00b66b85f53513fa45fda"
+    },
+    {
+      "filename": "BESTTIME.EAS",
+      "sha256": "f19b327834ebd3b7bbef113618649180b172ad99232a210af0ae0dde38789d6b"
+    },
+    {
+      "filename": "FIRST.EAS",
+      "sha256": "68410ec719c3cf53bb3dc69ec963c88bc8f01c4b7e3a98e4c5dfa4f8c2968963"
+    },
+    {
+      "filename": "SECOND.EAS",
+      "sha256": "25c7b680d933593a770d7e60c5897f9c3280597bd0aae65f81a86a96503fa055"
+    },
+    {
+      "filename": "THIRD.EAS",
+      "sha256": "e3b86fa4569ff3e0299c03ae9eddc5da2aa32c640343bacaabc09ebf03152ced"
+    },
+    {
+      "filename": "FOURTH.EAS",
+      "sha256": "f7dc1ff1f8a46d525abbc4d68edcbeba3a5212ef8e01e71adebb943105e98556"
+    },
+    {
+      "filename": "FIFTH.EAS",
+      "sha256": "3fc3cdb0ba763b499c494eeb264bc7866a7e8d49803d60bb3a89df87a9da9740"
+    },
+    {
+      "filename": "SIXTH.EAS",
+      "sha256": "04e64e860806f6427a1e2b680c4d64775d7f7e9dd0bfc24435f5909508ebe767"
+    },
+    {
+      "filename": "SEVENTH.EAS",
+      "sha256": "6d88e76177539b299886c3496f3739ad0a13fed9b93bd91753fa9eb6989b6ff0"
+    },
+    {
+      "filename": "EIGHTH.EAS",
+      "sha256": "6ab9247f784eddcdb41c2d262b0865bc9e79ee3b1355a14ee4120dcf3583b7c7"
+    },
+    {
+      "filename": "BESTLAST.EAS",
+      "sha256": "3e4a525631cd6c46a410a4b20b9d595a1d588176a14d60df7f45b2d215d23e53"
+    }
+  ]
+}

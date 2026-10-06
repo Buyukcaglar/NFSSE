@@ -17,7 +17,7 @@ The GitHub Actions workflow builds the helper on Windows and checks PowerShell p
 After building, run in Windows PowerShell:
 
 ```powershell
-.\tools\package-release.ps1 -Version 0.1.0
+.\tools\package-release.ps1 -Version 0.1.1
 ```
 
 This downloads the exact [cnc-ddraw 7.1.0.0 archive](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/v7.1.0.0), checks its hash and the renderer DLL hash, then creates the kit ZIP and `SHA256SUMS.txt` under `build/releases`. A fresh output root is required for repeated packaging; it will not overwrite an existing staging directory.
@@ -25,10 +25,10 @@ This downloads the exact [cnc-ddraw 7.1.0.0 archive](https://github.com/FunkyFr3
 For an existing archive or an explicitly selected helper:
 
 ```powershell
-.\tools\package-release.ps1 -Version 0.1.0 -RuntimeDll "C:\Builds\NFSPortable.dll" -CncArchive "C:\Downloads\cnc-ddraw.zip" -OutputRoot "C:\Builds\NFSSE-release"
+.\tools\package-release.ps1 -Version 0.1.1 -RuntimeDll "C:\Builds\NFSPortable.dll" -CncArchive "C:\Downloads\cnc-ddraw.zip" -OutputRoot "C:\Builds\NFSSE-release"
 ```
 
-The published v0.1.0 kit uses the helper binary accepted during the session. Rebuilding the same source with another compiler or timestamp may produce a different DLL hash; compilation alone does not validate its gameplay behavior. The kit manifest records whichever helper is packaged. The original game executable is generated only by the installer from the user's verified media.
+The published v0.1.0 and v0.1.1 kits use the same helper binary accepted during the session. Rebuilding the same source with another compiler or timestamp may produce a different DLL hash; compilation alone does not validate its gameplay behavior. The kit manifest records whichever helper is packaged. The original game executable is generated only by the installer from the user's verified media.
 
 Pinned input hashes:
 
@@ -48,7 +48,7 @@ Use a separate destination for development. Keep the supported original executab
 The media-dependent installation checks can be reproduced without launching the game:
 
 ```powershell
-.\tools\test-installer.ps1 -Kit "C:\Builds\NFSSE-release\NFSSE-v0.1.0-patch-kit" -SourceMedia "C:\Media"
+.\tools\test-installer.ps1 -Kit "C:\Builds\NFSSE-release\NFSSE-v0.1.1-patch-kit" -SourceMedia "C:\Media"
 ```
 
 This creates a fresh ignored test directory, checks copied asset hashes, exercises reinstall preservation and rejected-input cases, and writes a JSON result. It leaves the test outputs in place for inspection.

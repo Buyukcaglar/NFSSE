@@ -6,6 +6,19 @@
   "base_patched_sha256": "d9a171f640c6f7e9860edce383b5f73f27cd4a8a389a2c6832d86a399c977c91",
   "icon_sha256": "b2ff38678651bcd20190d97185e002da5ea6cd02789bfff2159ce7e42677921a",
   "final_executable_sha256": "a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd",
+  "race_speech_files": [
+    "FINALLAP.EAS",
+    "BESTTIME.EAS",
+    "FIRST.EAS",
+    "SECOND.EAS",
+    "THIRD.EAS",
+    "FOURTH.EAS",
+    "FIFTH.EAS",
+    "SIXTH.EAS",
+    "SEVENTH.EAS",
+    "EIGHTH.EAS",
+    "BESTLAST.EAS"
+  ],
   "writes": [
     {
       "offset": 170021,

@@ -17,7 +17,7 @@ The media folder must contain `NFS_WIN.EXE`, `NFSICONN.ICO`, `IFORCE.DLL`, `FRON
 
 ## Installation
 
-1. Open [Releases](https://github.com/Buyukcaglar/NFSSE/releases/latest), download `NFSSE-v0.1.0-patch-kit.zip`, and extract it to a folder.
+1. Open [Releases](https://github.com/Buyukcaglar/NFSSE/releases/latest), download `NFSSE-v0.1.1-patch-kit.zip`, and extract it to a folder.
 2. Double-click `Install-NFSSE.cmd` inside the extracted kit. A console asks for the media folder and destination folder.
 3. Enter the folder directly containing `NFS_WIN.EXE`. Choose a new destination outside the media folder, such as `C:\Games\NFSSE`.
 4. Wait for the verified executable and game data to be written. Close the installer after its success message.
@@ -65,6 +65,8 @@ There is a trailing space before the line ending. Preserve it when editing becau
 
 Running the installer again against a destination it created refreshes the managed executable, helper, support DLLs, path table and documentation. Existing game files, saves, `nfs.cfg` and `ddraw.ini` are preserved. It refuses an unrelated nonempty destination or an executable with unrecognized modifications. Close the game before reinstalling. To restore graphics defaults, back up your `ddraw.ini`, remove that file, and rerun the installer.
 
+To update a v0.1.0 installation, run the v0.1.1 installer with the same source media and destination. It adds the 11 missing race announcer clips beside `NFSSE.exe`. Keep these root `.EAS` files when moving the game; race announcements load them directly from the game folder.
+
 ## Troubleshooting
 
 | Symptom | Action |
@@ -72,6 +74,7 @@ Running the installer again against a destination it created refreshes the manag
 | Unsupported executable or icon | Confirm the selected folder contains unmodified supported English media. Compare its SHA-256; this release has no recipe for other builds. |
 | Patch-kit integrity check fails | Extract the complete release ZIP again. Keep its folders together. |
 | `DPLAY.dll` missing | Launch from the completed destination, and confirm the media included the required `REDIST` and `DIRECTX3` files. Rerun the installer. |
+| Missing “best time”, “final lap” or finishing-position voices | Update with the latest installer. It adds `BESTTIME.EAS`, `BESTLAST.EAS`, `FINALLAP.EAS` and `FIRST.EAS` through `EIGHTH.EAS` beside `NFSSE.exe`. |
 | Portable compatibility initialization failed | Keep `NFSPortable.dll`, the bundled `ddraw.dll`, and local DirectPlay DLLs beside `NFSSE.exe`. Read `portable-runtime.log` and report the first failing initialization step. |
 | `dpserial.dll` service error | Confirm local `DPSERIAL.DLL` is present. The helper should log a local provider load; restore the matching support files with the installer. |
 | `streamreader - ILLEGAL CHUNK SIZE` | Confirm the current helper is installed. Its buffered-read hook addresses the observed zero-byte legacy stream failure. Include the runtime log if it recurs. |

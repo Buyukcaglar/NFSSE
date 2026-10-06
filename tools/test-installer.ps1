@@ -42,6 +42,11 @@ foreach ($folder in @('FRONTEND', 'SIMDATA')) {
     }
 }
 Assert ($assetCount -eq 1228) 'Unexpected number of media assets.'
+$raceSpeech = @('FINALLAP.EAS', 'BESTTIME.EAS', 'FIRST.EAS', 'SECOND.EAS', 'THIRD.EAS',
+    'FOURTH.EAS', 'FIFTH.EAS', 'SIXTH.EAS', 'SEVENTH.EAS', 'EIGHTH.EAS', 'BESTLAST.EAS')
+foreach ($name in $raceSpeech) {
+    Assert ((Hash (Join-Path $SourceMedia "FRONTEND\SPEECH\$name")) -eq (Hash (Join-Path $destination $name))) "Missing or incorrect root race speech: $name"
+}
 Assert ((Hash (Join-Path $SourceMedia 'IFORCE.DLL')) -eq (Hash (Join-Path $destination 'IFORCE.DLL'))) 'I-Force DLL changed.'
 Assert ((Hash (Join-Path $Kit 'runtime\NFSPortable.dll')) -eq (Hash (Join-Path $destination 'NFSPortable.dll'))) 'Helper mismatch.'
 Assert ((Hash (Join-Path $Kit 'runtime\ddraw.dll')) -eq (Hash (Join-Path $destination 'ddraw.dll'))) 'Renderer mismatch.'
@@ -58,14 +63,26 @@ $savePath = Join-Path $destination 'GAMEDATA\SAVEGAME\NFSSE-SMOKE.SAV'
 [IO.File]::WriteAllText($savePath, 'Installer preservation sentinel')
 [IO.File]::AppendAllText((Join-Path $destination 'ddraw.ini'), "`r`n; Installer test sentinel`r`n")
 [IO.File]::WriteAllText((Join-Path $destination 'nfs.cfg'), "NOSOUND HIGHVIDEO ENGLISH NOREMOTE `r`n")
+$existingSpeech = Join-Path $destination 'FIRST.EAS'
+[IO.File]::WriteAllText($existingSpeech, 'Existing race speech preservation sentinel')
+# Model an older installation missing announcer clips, while retaining one
+# existing clip to verify reinstall preserves existing game data.
+foreach ($name in $raceSpeech) {
+    if ($name -ne 'FIRST.EAS') { [IO.File]::Delete((Join-Path $destination $name)) }
+}
 $preserved = @{}
-foreach ($path in @($savePath, (Join-Path $destination 'nfs.cfg'), (Join-Path $destination 'ddraw.ini'))) { $preserved[$path] = Hash $path }
+foreach ($path in @($savePath, (Join-Path $destination 'nfs.cfg'), (Join-Path $destination 'ddraw.ini'), $existingSpeech)) { $preserved[$path] = Hash $path }
 foreach ($name in @('IFORCE.DLL', 'NFSICONN.ICO', 'DPLAY.dll', 'ddraw.dll')) {
     $path = Join-Path $destination $name
     [IO.File]::SetAttributes($path, ([IO.File]::GetAttributes($path) -bor [IO.FileAttributes]::ReadOnly))
 }
 Run-Installer $Kit $SourceMedia $destination 'reinstall' $true
 foreach ($path in $preserved.Keys) { Assert ((Hash $path) -eq $preserved[$path]) 'Reinstall changed user data.' }
+foreach ($name in $raceSpeech) {
+    if ($name -ne 'FIRST.EAS') {
+        Assert ((Hash (Join-Path $SourceMedia "FRONTEND\SPEECH\$name")) -eq (Hash (Join-Path $destination $name))) "Reinstall did not restore race speech: $name"
+    }
+}
 foreach ($name in @('IFORCE.DLL', 'NFSICONN.ICO', 'DPLAY.dll', 'ddraw.dll')) {
     Assert (([IO.File]::GetAttributes((Join-Path $destination $name)) -band [IO.FileAttributes]::ReadOnly) -eq 0) 'Managed media component remains read-only.'
 }
@@ -91,6 +108,11 @@ $wrongExe[100] = $wrongExe[100] -bxor 1
 $rejected = Join-Path $OutputRoot 'rejected-media-output'
 Run-Installer $Kit $fixture $rejected 'unsupported-media' $false
 Assert (-not (Test-Path -LiteralPath $rejected)) 'Unsupported media created a destination.'
+[IO.File]::Copy((Join-Path $SourceMedia 'NFS_WIN.EXE'), (Join-Path $fixture 'NFS_WIN.EXE'), $true)
+$missingSpeechDestination = Join-Path $OutputRoot 'rejected-missing-speech-output'
+Run-Installer $Kit $fixture $missingSpeechDestination 'missing-race-speech' $false
+Assert (-not (Test-Path -LiteralPath $missingSpeechDestination)) 'Missing race speech created a destination.'
+Assert ([IO.File]::ReadAllText((Join-Path $OutputRoot 'missing-race-speech.log')).Contains('FRONTEND\SPEECH\FINALLAP.EAS')) 'Missing race speech was not diagnosed.'
 
 $damagedKit = Join-Path $OutputRoot 'damaged-kit'
 Copy-Item -LiteralPath $Kit -Destination $damagedKit -Recurse
@@ -106,6 +128,10 @@ $result = [ordered]@{
     game_launched = $false
     generated_executable_sha256 = $exeHash
     identical_frontend_simdata_files = $assetCount
+    identical_root_race_speech_files = $raceSpeech.Count
+    reinstall_restores_missing_race_speech = $true
+    reinstall_preserves_existing_race_speech = $true
+    missing_race_speech_rejected_before_destination_write = $true
     original_iforce_unchanged = $true
     runtime_dlls_match_kit = $true
     valid_relative_path_records = 19

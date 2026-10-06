@@ -8,7 +8,7 @@ Modern Windows compatibility patch for **The Need for Speed Special Edition**, W
 
 ## Install and play
 
-1. Download `NFSSE-v0.1.0-patch-kit.zip` from Releases and extract the complete ZIP.
+1. Download `NFSSE-v0.1.1-patch-kit.zip` from Releases and extract the complete ZIP.
 2. Double-click `Install-NFSSE.cmd`.
 3. Select the folder containing your original `NFS_WIN.EXE`, `FRONTEND`, `SIMDATA`, `GAMEDATA`, `REDIST` and `DIRECTX3`. Choose a separate destination folder.
 4. Double-click `NFSSE.exe` in the destination. Move that complete folder to relocate the installation.
@@ -21,6 +21,7 @@ This release supports one verified English media executable: 1,069,056 bytes, SH
 
 - Borderless display scaling preserves each original mode's proportions and leaves the desktop resolution unchanged. Gameplay retains its original internal resolution.
 - Executable-relative paths and locally copied assets allow play without the physical CD.
+- Race announcer clips are copied beside the executable, matching the original installer. Users of v0.1.0 can rerun the latest installer against their existing installation to add the missing clips.
 - Startup fixes cover legacy memory reporting, VGA scratch pointers, privileged instructions and graphics initialization timing.
 - Legacy DirectPlay providers load from the game folder.
 - Buffered file reads, synchronized video presentation and periodic redraws address the observed video and menu failures.
