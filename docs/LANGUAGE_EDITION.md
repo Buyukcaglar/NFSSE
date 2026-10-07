@@ -9,14 +9,16 @@ Saves, player names, controls, display and sound choices are shared. Keep the
 whole game folder together when moving it. Normal play needs only Windows;
 Python, PowerShell, source media and development tools are not needed.
 
-`NFSSE-Game.exe` is the original accepted patched game, with its original icon,
-compatibility helper and renderer unchanged. Use **NFSSE.exe** for normal play.
+`NFSSE-Game.exe` is the original accepted patched game, retaining its original
+icon and renderer. v0.2.2 updates the compatibility helper for portable player
+persistence. Names/settings/records in `GAMEDATA/CONFIG/CONFIG.DAT` and tournament
+saves in `GAMEDATA/SAVEGAME/` are shared. Use **NFSSE.exe** for normal play.
 The selector verifies the chosen resources before starting it and prevents a
 second selector from changing files while the game runs.
 
 ## Install optional features
 
-Use the v0.2.1 PatchKit with your supported original English media and a new, empty destination folder outside your media and existing game folders. The default installation starts directly in English. Choose the language-selector option during installation, or run:
+Use the v0.2.2 PatchKit with your supported original English media and a new, empty destination folder outside your media and existing game folders. For an existing v0.2.1 kit installation, follow the update steps in the [user guide](USER_GUIDE.md). The default installation starts directly in English. Choose the language-selector option during installation, or run:
 
 ```powershell
 .\Install-NFSSE.ps1 -SourceMedia "C:\Media\English" -Destination "C:\Games\NFSSE" -LanguageSelector -NonInteractive
@@ -30,7 +32,7 @@ English and German use resources already on that disc. All three flags appear; J
 
 `-JapaneseMedia` enables the selector automatically. The installer validates the original Japanese executable and 435 input files, then builds 436 compatible outputs using Windows' built-in C# compiler. No Python or downloaded conversion tools are needed.
 
-v0.2.1 generates corrected Japanese graphics resources during installation from
+The v0.2.1 graphics correction is retained in v0.2.2, which generates resources from
 the original media. The user confirmed that Graphics selection no longer
 crashes. Follow the fresh-installation steps above; the completed installation
 contains all resources required for normal play.
@@ -103,5 +105,5 @@ its original bytes are preserved as NFSSE-Game.exe. Original media stay untouche
 `language-edition.json` and `LANG/language-edition.index` describe the installed
 runtime/resources. The developer verifier exercises all three real selections
 without starting the game. The original English installer/release remains
-available. Use the v0.2.1 installer for fresh language-edition installations. The local complete
+available. Use the v0.2.2 installer for fresh language-edition installations. The local complete
 game and original recordings/artwork must not be included in a public patch kit.

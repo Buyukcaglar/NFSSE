@@ -14,7 +14,7 @@ The [working report](../research/validation/iforce-user-report.json) records the
 
 - Complete the separate in-game focus-recovery and Alt+F4 checks without desktop mode changes. The window-presentation visual task is already accepted.
 - Expand smaller-desktop and broader host/transition coverage. The user accepted the window-presentation task and the full window title/original-icon visual task.
-- Exercise a complete race and save/reload with the public installer output.
+- Expand race/championship coverage beyond the persistence play checks accepted on 2026-10-07; see [user acceptance](../research/validation/player-persistence-user-acceptance.json).
 - Expand host/display coverage and assess multiplayer separately.
 
 Higher internal rendering resolution is outside the accepted original-image scaling objective. New media builds need their own source hashes and verified patch recipe.

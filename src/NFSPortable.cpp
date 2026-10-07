@@ -19,6 +19,7 @@ static decltype(&LoadLibraryA) realDplayLoadLibrary;
 static decltype(&CreateFileA) realCreateFile;
 static decltype(&ReadFile) realReadFile;
 static void logMessage(const char* format, ...);
+static void WINAPI portableExitProcess(UINT code);
 
 static bool verifyGraphicsSetting(BYTE* graphics, DWORD keyRva, const char* key,
     DWORD loadRva, DWORD readRva, DWORD storeRva, DWORD settingRva) {
@@ -88,7 +89,7 @@ static LRESULT CALLBACK portableWindowProc(HWND window, UINT message,
         // The original consumes system-key messages before DefWindowProc can
         // turn Alt+F4 into SC_CLOSE. Match cnc-ddraw's immediate close behavior.
         logMessage("Alt+F4: closing game\r\n");
-        ExitProcess(0);
+        portableExitProcess(0);
     }
     return CallWindowProcA(gameWindowProc, window, message, key, flags);
 }
@@ -267,6 +268,8 @@ static bool replaceCall(BYTE* base, DWORD rva, DWORD originalTarget, void* repla
         reinterpret_cast<DWORD>(replacement) - reinterpret_cast<DWORD>(base + rva + 5));
 }
 
+#include "PlayerPersistence.h"
+
 static bool replaceIndirectCall(BYTE* base, DWORD rva, DWORD slotRva, void* replacement) {
     BYTE* code = base + rva;
     if (code[0] != 0xff || code[1] != 0x15 ||
@@ -323,8 +326,9 @@ extern "C" __declspec(dllexport) BOOL WINAPI Initialize() {
 
     logFile = CreateFileW(L"portable-runtime.log", GENERIC_WRITE, FILE_SHARE_READ,
         nullptr, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, nullptr);
-    logMessage("NFSPortable 7; image=%p; executable-relative working directory established\r\n", base);
+    logMessage("NFSPortable 8; image=%p; executable-relative working directory established\r\n", base);
     gameBase = base;
+    if (!configurePlayerPersistence(base)) return FALSE;
     windowReady = CreateEventW(nullptr, TRUE, FALSE, nullptr);
     if (!windowReady) return FALSE;
 

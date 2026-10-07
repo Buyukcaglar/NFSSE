@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.2.2 — Portable player persistence, 2026-10-07
+
+- Save a confirmed player name immediately, and checkpoint the original
+  configuration/records block on the game's normal exit and Alt+F4.
+- Replace configuration files only after a complete flushed write; preserve
+  previous data and report save failures.
+- Replace six legacy save-space checks that truncate disk sizes with a 64-bit
+  query for the executable-relative game folder. Original tournament/replay
+  formats and Save/Load controls remain in use.
+- Update language-selector/runtime integrity pins and retain configuration and
+  the previous helper in update backups. All player storage remains portable.
+- Add native original-serializer/reload, separate-process exit/restart,
+  failure-preservation, relocation and media-independent CI checks. Automated
+  persistence checks do not establish full in-game race completion.
+- Record the user's successful persistence play checks on 2026-10-07. Package
+  the exact tested helper with updated save-location, update and backup guides.
+
 ## 0.2.1 — Japanese graphics-menu stability, 2026-10-06
 
 - Replace literal-only RefPack encoding with bounded backreference compression.

@@ -38,3 +38,26 @@ decoded artwork and fits both graphics contexts. Original-decompressor checks
 passed, and the user confirmed no crash on selection. The user authorized
 v0.2.1 publication with the normal fresh-installation workflow and requested
 that existing Japanese-mod repair instructions and tooling be omitted.
+
+On 2026-10-07 the user reported that the patched Windows game forgot the last
+player name and asked for validation of progress persistence, with every path
+relative to the game folder. The original configuration writer was not called
+on name confirmation, and its legacy disk-space check truncated modern disk
+values. v0.2.2 adds immediate name and normal-exit configuration checkpoints,
+complete flushed replacement writes, and 64-bit free-space checks. Original
+configuration/tournament formats and Save/Load controls are retained.
+
+Isolated original-serializer checks passed for the full 24,402-byte configuration
+and 1,462-byte tournament fixtures, exit/restart, failure preservation and
+relocation. Standard and all optional-language installation cases passed.
+The installed update preserved 1,703 of 1,709 existing files, changing only six
+managed files and retaining the previous helper and configuration in a portable
+backup. No game/UI run was performed by those automated checks.
+
+The user identified the game's Quit/Exit option as their exit method, then
+stated "Ok user play checks passed" and authorized commit, push, PatchKit release,
+documentation and release notes. That acceptance is recorded separately from
+the automated evidence. The v0.2.2 kit uses the exact helper they tested;
+publication does not repeat the accepted play or visual checks. The guides also
+explain that deleting CONFIG.DAT discards its name/settings/records and recommend
+retaining a backup for an intentional reset.

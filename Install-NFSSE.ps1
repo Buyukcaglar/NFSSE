@@ -124,7 +124,7 @@ try {
     $japanesePack = @{}
     if ([IO.Directory]::Exists($Destination)) { Assert-NfsSafeTree $Destination }
     if ($enableLanguages -or $existingEdition) {
-        if ((Get-NfsFileHash (Join-Path $PSScriptRoot 'runtime\NFSPortable.dll')) -ne '6cc562a54c8c861db79ff7ce55b8168570c176bb7840d77d1d0d1c045e386ff1') { throw 'Optional language selection requires the accepted v0.1.5 compatibility helper.' }
+        if ((Get-NfsFileHash (Join-Path $PSScriptRoot 'runtime\NFSPortable.dll')) -ne '4e970616fb5100f03c7bb2543dec6a0a28bcd1ad8227a455f7e840bc1b6662e4') { throw 'Optional language selection requires the verified player-persistence compatibility helper.' }
         Assert-NfsLanguageInputs $SourceMedia $Destination $PSScriptRoot $recipe $existingEdition
     }
     if ($JapaneseMedia) {
@@ -225,7 +225,7 @@ try {
         Write-Host 'Enabled a movable window border and added missing display settings. Original ddraw.ini retained in a backup beside it.'
     }
     [IO.File]::WriteAllText((Join-Path $Destination 'Run-NFS.cmd'), "@echo off`r`n`"%~dp0NFSSE.exe`"`r`n", [Text.Encoding]::ASCII)
-    foreach ($name in @('USER_GUIDE.md', 'VALIDATION.md', 'LICENSE')) {
+    foreach ($name in @('USER_GUIDE.md', 'VALIDATION.md', 'PLAYER_PERSISTENCE.md', 'LICENSE')) {
         Copy-ManagedFile (Join-Path $PSScriptRoot $name) (Join-Path $Destination $name)
     }
     Copy-ManagedFile (Join-Path $PSScriptRoot 'licenses\cnc-ddraw-MIT.txt') (Join-Path $Destination 'cnc-ddraw-LICENSE.txt')

@@ -1,11 +1,17 @@
 # Technical notes
 
+The v0.2.2 helper adds portable player-name/configuration checkpoints and
+64-bit save-space checks. [Player persistence](PLAYER_PERSISTENCE.md) documents
+the original layout, verified hook sites, atomic writes and isolated native
+serializer/reload checks. The game executable and renderer are unchanged.
+
 ## Native language edition
 
 `src/LanguageLauncher.cpp` supplies the new public NFSSE.exe for the local
 three-language edition. It displays three flag buttons and starts the exact
-accepted game bytes under the NFSSE-Game.exe name. The helper/renderer and their
-build-specific guards remain unchanged. A held Windows file handle excludes
+accepted game bytes under the NFSSE-Game.exe name. v0.2.2 updates the helper's
+integrity pin for player persistence; the renderer and build-specific guards
+are retained. A held Windows file handle excludes
 other selectors until the child exits; closing the initial window changes no
 game files. The executable contains the unchanged original media icon.
 

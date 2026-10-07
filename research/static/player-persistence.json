@@ -1,0 +1,457 @@
+{
+  "source_executable": "NFS_WIN.EXE",
+  "source_sha256": "ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b",
+  "preferred_image_base": "0x400000",
+  "config": {
+    "relative_path": "GAMEDATA/CONFIG/CONFIG.DAT",
+    "bytes": 24402,
+    "buffer_va": "0x524df0",
+    "load_va": "0x42a010",
+    "save_va": "0x42a504",
+    "name_max_characters": 8,
+    "name_buffer_bytes": 9
+  },
+  "tournament": {
+    "relative_path": "GAMEDATA/SAVEGAME/*.SAV",
+    "bytes": 1462,
+    "buffer_va": "0x52ad44",
+    "load_va": "0x42a484",
+    "save_va": "0x42a580"
+  },
+  "legacy_space_check": {
+    "va": "0x46733c",
+    "disk_geometry_adapter_va": "0x496148",
+    "problem": "Adapter truncates DWORD disk geometry/counts to WORD; caller compares signed 32-bit product. The current directory query is also limited to 40 bytes.",
+    "call_vas": [
+      "0x42a511",
+      "0x42a58d",
+      "0x42a64b",
+      "0x43cad9",
+      "0x43d22a",
+      "0x451aef"
+    ]
+  },
+  "name_entry": {
+    "function_va": "0x4667fc",
+    "caller_vas": [
+      "0x437431",
+      "0x437bd3",
+      "0x437c0b",
+      "0x437cf4"
+    ],
+    "existing_behavior": "Name entry has no immediate configuration-save checkpoint."
+  },
+  "configuration_load_call_vas": [
+    "0x4373e7",
+    "0x4374d4"
+  ],
+  "configuration_save_call_vas": [
+    "0x40432b",
+    "0x437499",
+    "0x437520"
+  ],
+  "exit_iat_vas": [
+    "0x531300",
+    "0x531514"
+  ],
+  "disassembly": {
+    "legacy_space_check": [
+      {
+        "va": "0x46733c",
+        "bytes": "53",
+        "instruction": "push ebx"
+      },
+      {
+        "va": "0x46733d",
+        "bytes": "52",
+        "instruction": "push edx"
+      },
+      {
+        "va": "0x46733e",
+        "bytes": "83ec58",
+        "instruction": "sub esp, 0x58"
+      },
+      {
+        "va": "0x467341",
+        "bytes": "89c3",
+        "instruction": "mov ebx, eax"
+      },
+      {
+        "va": "0x467343",
+        "bytes": "ba28000000",
+        "instruction": "mov edx, 0x28"
+      },
+      {
+        "va": "0x467348",
+        "bytes": "89e0",
+        "instruction": "mov eax, esp"
+      },
+      {
+        "va": "0x46734a",
+        "bytes": "e880ed0200",
+        "instruction": "call 0x4960cf"
+      },
+      {
+        "va": "0x46734f",
+        "bytes": "31c0",
+        "instruction": "xor eax, eax"
+      },
+      {
+        "va": "0x467351",
+        "bytes": "8a0424",
+        "instruction": "mov al, byte ptr [esp]"
+      },
+      {
+        "va": "0x467354",
+        "bytes": "8d542450",
+        "instruction": "lea edx, [esp + 0x50]"
+      },
+      {
+        "va": "0x467358",
+        "bytes": "83e840",
+        "instruction": "sub eax, 0x40"
+      },
+      {
+        "va": "0x46735b",
+        "bytes": "e8e8ed0200",
+        "instruction": "call 0x496148"
+      },
+      {
+        "va": "0x467360",
+        "bytes": "85c0",
+        "instruction": "test eax, eax"
+      },
+      {
+        "va": "0x467362",
+        "bytes": "7404",
+        "instruction": "je 0x467368"
+      },
+      {
+        "va": "0x467364",
+        "bytes": "31c0",
+        "instruction": "xor eax, eax"
+      },
+      {
+        "va": "0x467366",
+        "bytes": "eb2a",
+        "instruction": "jmp 0x467392"
+      },
+      {
+        "va": "0x467368",
+        "bytes": "31d2",
+        "instruction": "xor edx, edx"
+      },
+      {
+        "va": "0x46736a",
+        "bytes": "668b442456",
+        "instruction": "mov ax, word ptr [esp + 0x56]"
+      },
+      {
+        "va": "0x46736f",
+        "bytes": "668b542452",
+        "instruction": "mov dx, word ptr [esp + 0x52]"
+      },
+      {
+        "va": "0x467374",
+        "bytes": "0fafd0",
+        "instruction": "imul edx, eax"
+      },
+      {
+        "va": "0x467377",
+        "bytes": "31c0",
+        "instruction": "xor eax, eax"
+      },
+      {
+        "va": "0x467379",
+        "bytes": "668b442454",
+        "instruction": "mov ax, word ptr [esp + 0x54]"
+      },
+      {
+        "va": "0x46737e",
+        "bytes": "0fafc2",
+        "instruction": "imul eax, edx"
+      },
+      {
+        "va": "0x467381",
+        "bytes": "39d8",
+        "instruction": "cmp eax, ebx"
+      },
+      {
+        "va": "0x467383",
+        "bytes": "7d08",
+        "instruction": "jge 0x46738d"
+      },
+      {
+        "va": "0x467385",
+        "bytes": "31c0",
+        "instruction": "xor eax, eax"
+      },
+      {
+        "va": "0x467387",
+        "bytes": "83c458",
+        "instruction": "add esp, 0x58"
+      },
+      {
+        "va": "0x46738a",
+        "bytes": "5a",
+        "instruction": "pop edx"
+      },
+      {
+        "va": "0x46738b",
+        "bytes": "5b",
+        "instruction": "pop ebx"
+      },
+      {
+        "va": "0x46738c",
+        "bytes": "c3",
+        "instruction": "ret "
+      },
+      {
+        "va": "0x46738d",
+        "bytes": "b801000000",
+        "instruction": "mov eax, 1"
+      },
+      {
+        "va": "0x467392",
+        "bytes": "83c458",
+        "instruction": "add esp, 0x58"
+      },
+      {
+        "va": "0x467395",
+        "bytes": "5a",
+        "instruction": "pop edx"
+      },
+      {
+        "va": "0x467396",
+        "bytes": "5b",
+        "instruction": "pop ebx"
+      },
+      {
+        "va": "0x467397",
+        "bytes": "c3",
+        "instruction": "ret "
+      }
+    ],
+    "truncating_adapter": [
+      {
+        "va": "0x496191",
+        "bytes": "8b442404",
+        "instruction": "mov eax, dword ptr [esp + 4]"
+      },
+      {
+        "va": "0x496195",
+        "bytes": "668903",
+        "instruction": "mov word ptr [ebx], ax"
+      },
+      {
+        "va": "0x496198",
+        "bytes": "8b44240c",
+        "instruction": "mov eax, dword ptr [esp + 0xc]"
+      },
+      {
+        "va": "0x49619c",
+        "bytes": "66894302",
+        "instruction": "mov word ptr [ebx + 2], ax"
+      },
+      {
+        "va": "0x4961a0",
+        "bytes": "8b442408",
+        "instruction": "mov eax, dword ptr [esp + 8]"
+      },
+      {
+        "va": "0x4961a4",
+        "bytes": "66894304",
+        "instruction": "mov word ptr [ebx + 4], ax"
+      },
+      {
+        "va": "0x4961a8",
+        "bytes": "8b442410",
+        "instruction": "mov eax, dword ptr [esp + 0x10]"
+      },
+      {
+        "va": "0x4961ac",
+        "bytes": "66894306",
+        "instruction": "mov word ptr [ebx + 6], ax"
+      },
+      {
+        "va": "0x4961b0",
+        "bytes": "31c0",
+        "instruction": "xor eax, eax"
+      },
+      {
+        "va": "0x4961b2",
+        "bytes": "83c414",
+        "instruction": "add esp, 0x14"
+      },
+      {
+        "va": "0x4961b5",
+        "bytes": "59",
+        "instruction": "pop ecx"
+      },
+      {
+        "va": "0x4961b6",
+        "bytes": "5b",
+        "instruction": "pop ebx"
+      },
+      {
+        "va": "0x4961b7",
+        "bytes": "c3",
+        "instruction": "ret "
+      }
+    ],
+    "name_caller_without_checkpoint": [
+      {
+        "va": "0x437423",
+        "bytes": "bbc4fa4a00",
+        "instruction": "mov ebx, 0x4afac4"
+      },
+      {
+        "va": "0x437428",
+        "bytes": "b9f04d5200",
+        "instruction": "mov ecx, 0x524df0"
+      },
+      {
+        "va": "0x43742d",
+        "bytes": "31d2",
+        "instruction": "xor edx, edx"
+      },
+      {
+        "va": "0x43742f",
+        "bytes": "89c8",
+        "instruction": "mov eax, ecx"
+      },
+      {
+        "va": "0x437431",
+        "bytes": "e8c6f30200",
+        "instruction": "call 0x4667fc"
+      },
+      {
+        "va": "0x437436",
+        "bytes": "6685c0",
+        "instruction": "test ax, ax"
+      },
+      {
+        "va": "0x437439",
+        "bytes": "7536",
+        "instruction": "jne 0x437471"
+      },
+      {
+        "va": "0x43743b",
+        "bytes": "663b151cb35200",
+        "instruction": "cmp dx, word ptr [0x52b31c]"
+      }
+    ],
+    "conditional_transition_checkpoint": [
+      {
+        "va": "0x4374ff",
+        "bytes": "e8a8010000",
+        "instruction": "call 0x4376ac"
+      },
+      {
+        "va": "0x437504",
+        "bytes": "89c2",
+        "instruction": "mov edx, eax"
+      },
+      {
+        "va": "0x437506",
+        "bytes": "83f802",
+        "instruction": "cmp eax, 2"
+      },
+      {
+        "va": "0x437509",
+        "bytes": "7505",
+        "instruction": "jne 0x437510"
+      },
+      {
+        "va": "0x43750b",
+        "bytes": "bb01000000",
+        "instruction": "mov ebx, 1"
+      },
+      {
+        "va": "0x437510",
+        "bytes": "85d2",
+        "instruction": "test edx, edx"
+      },
+      {
+        "va": "0x437512",
+        "bytes": "7511",
+        "instruction": "jne 0x437525"
+      },
+      {
+        "va": "0x437514",
+        "bytes": "e8cbf50200",
+        "instruction": "call 0x466ae4"
+      },
+      {
+        "va": "0x437519",
+        "bytes": "e8d6baffff",
+        "instruction": "call 0x432ff4"
+      },
+      {
+        "va": "0x43751e",
+        "bytes": "89c2",
+        "instruction": "mov edx, eax"
+      },
+      {
+        "va": "0x437520",
+        "bytes": "e8df2fffff",
+        "instruction": "call 0x42a504"
+      },
+      {
+        "va": "0x437525",
+        "bytes": "663b3512b35200",
+        "instruction": "cmp si, word ptr [0x52b312]"
+      },
+      {
+        "va": "0x43752c",
+        "bytes": "7405",
+        "instruction": "je 0x437533"
+      },
+      {
+        "va": "0x43752e",
+        "bytes": "e8edec0000",
+        "instruction": "call 0x446220"
+      },
+      {
+        "va": "0x437533",
+        "bytes": "83fa01",
+        "instruction": "cmp edx, 1"
+      },
+      {
+        "va": "0x437536",
+        "bytes": "7583",
+        "instruction": "jne 0x4374bb"
+      },
+      {
+        "va": "0x437538",
+        "bytes": "83c420",
+        "instruction": "add esp, 0x20"
+      },
+      {
+        "va": "0x43753b",
+        "bytes": "5e",
+        "instruction": "pop esi"
+      },
+      {
+        "va": "0x43753c",
+        "bytes": "5a",
+        "instruction": "pop edx"
+      },
+      {
+        "va": "0x43753d",
+        "bytes": "59",
+        "instruction": "pop ecx"
+      },
+      {
+        "va": "0x43753e",
+        "bytes": "5b",
+        "instruction": "pop ebx"
+      },
+      {
+        "va": "0x43753f",
+        "bytes": "c3",
+        "instruction": "ret "
+      }
+    ]
+  }
+}

@@ -1,16 +1,21 @@
 # NFSSE
 
+**v0.2.2** fixes player-name persistence and legacy save-space checks while
+keeping settings and progress inside the game folder. The user confirmed the
+play checks passed on 2026-10-07. See [Player persistence](docs/PLAYER_PERSISTENCE.md)
+for save locations and validation details.
+
 [![Build and validate](https://github.com/Buyukcaglar/NFSSE/actions/workflows/build.yml/badge.svg)](https://github.com/Buyukcaglar/NFSSE/actions/workflows/build.yml)
 
 Modern Windows compatibility patch for **The Need for Speed Special Edition**, Windows version. It creates a portable installation from your own installation media, scales the original graphics in fullscreen or a movable window, and fixes the startup, video and menu problems investigated in this project.
 
-[Latest patch kit](https://github.com/Buyukcaglar/NFSSE/releases/latest) · [v0.2.1 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.1) · [User guide](docs/USER_GUIDE.md) · [Validation and limits](docs/VALIDATION.md) · [Report a problem](https://github.com/Buyukcaglar/NFSSE/issues/new/choose)
+[Latest patch kit](https://github.com/Buyukcaglar/NFSSE/releases/latest) · [v0.2.2 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.2) · [Release notes](docs/RELEASE_NOTES_v0.2.2.md) · [User guide](docs/USER_GUIDE.md) · [Validation and limits](docs/VALIDATION.md) · [Report a problem](https://github.com/Buyukcaglar/NFSSE/issues/new/choose)
 
-**v0.2.1 fixes opening Graphics in Japanese** while retaining optional English/German/Japanese language selection. Install from your original media into a new, empty destination folder; Japanese also requires its original installation media. The user confirmed that Graphics selection no longer crashes. The standard English installation remains the default. The game engine, accepted compatibility helper, renderer, full window title and original icon are unchanged. I-Force remains reported working.
+This release also retains the accepted Japanese Graphics fix and optional English/German/Japanese selection. Fresh installation uses your original media and a new, empty destination; Japanese also requires its original media. Existing v0.2.1 kit installations can be updated in place as described in the [user guide](docs/USER_GUIDE.md). The standard English installation remains the default. The original game engine, renderer, full window title and original icon are retained. I-Force remains reported working.
 
 ## Install and play
 
-1. Download `NFSSE-v0.2.1-patch-kit.zip` from the [latest release](https://github.com/Buyukcaglar/NFSSE/releases/latest) and extract the complete ZIP.
+1. Download `NFSSE-v0.2.2-patch-kit.zip` from the [latest release](https://github.com/Buyukcaglar/NFSSE/releases/latest) and extract the complete ZIP.
 2. Double-click `Install-NFSSE.cmd`.
 3. Select the folder containing your original `NFS_WIN.EXE`, `FRONTEND`, `SIMDATA`, `GAMEDATA`, `REDIST` and `DIRECTX3`. Choose a new, empty destination folder outside your media and existing game folders.
 4. Optionally enable the language-selector window. Supply your Japanese media folder to add Japanese; otherwise English/German are available and Japanese is disabled.
@@ -22,6 +27,8 @@ This release supports one verified English media executable: 1,069,056 bytes, SH
 
 ## Included changes
 
+- v0.2.2 saves a confirmed player name immediately and checkpoints settings/records on normal exit. Complete flushed writes preserve the previous configuration if saving fails.
+- Modern 64-bit free-space checks replace the original checks that could incorrectly report a full disk. Names/settings/records use `GAMEDATA/CONFIG/CONFIG.DAT`; tournament Save/Load uses `GAMEDATA/SAVEGAME/*.SAV`. All paths remain relative to the game folder.
 - v0.2.1 generates Japanese graphics archives that fit the original game's loading buffer. Their decoded artwork is unchanged. Fresh installation builds them from the user's verified media.
 - The optional language selector opens language flags before play. German selects all eleven original German announcer recordings; English/Japanese use the English recordings. Languages share saves and settings.
 - Borderless display scaling preserves each original mode's proportions and leaves the desktop resolution unchanged. Gameplay retains its original internal resolution.
@@ -36,7 +43,7 @@ This release supports one verified English media executable: 1,069,056 bytes, SH
 - The original `NFSICONN.ICO` is embedded in the generated `NFSSE.exe`; v0.1.4 also assigns that embedded icon to the game window class for the title bar.
 - Original I-Force code and `IFORCE.DLL` are retained. I-Force is reported working and the [backlog item](docs/BACKLOG.md) is closed with no further work planned.
 
-Videos, menu clicks, attract mode and relocation were accepted with the earlier helper on Windows 11. The v0.1.3 window-presentation visual task is accepted on the user's setup; the title and icon are also visually accepted. Separate nonvisual input/exit checks remain open. A complete manual race, save/reload cycle and multiplayer remain unverified. The [validation record](docs/VALIDATION.md) distinguishes these checks and the I-Force working report.
+Videos, menu clicks, attract mode and relocation were accepted with the earlier helper on Windows 11. The window presentation, title and icon are also visually accepted. The user confirmed the v0.2.2 persistence play checks passed. Separate focus/shortcut checks, exhaustive race/championship coverage, other hosts and multiplayer remain open. The [validation record](docs/VALIDATION.md) distinguishes automated checks, user acceptance and the I-Force working report.
 
 ## Project contents
 
@@ -45,7 +52,7 @@ Videos, menu clicks, attract mode and relocation were accepted with the earlier 
 | `src/` | 32-bit compatibility helper and native language selector source |
 | `Install-NFSSE.ps1`, `config/` | Media-validated installer, patch recipe, relative paths and graphics defaults |
 | `tools/` | Build, release packaging, PE icon embedding and executable analysis |
-| `tests/` | Media-independent input, window policy, language selection and resource conversion checks |
+| `tests/` | Persistence, input, window policy, language selection and resource conversion checks |
 | `research/` | Static analysis, diagnostic variants, selected logs and measured validation results |
 | `docs/` | User guide, build guide, technical notes, session history, validation and backlog |
 | `licenses/` | Redistributed renderer's MIT license |

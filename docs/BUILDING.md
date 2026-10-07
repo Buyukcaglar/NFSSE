@@ -1,8 +1,9 @@
 # Building and packaging
 
 The native [three-language edition](LANGUAGE_EDITION.md) has its own build and
-media-dependent verification workflow. It uses the accepted v0.1.5 runtime and
-adds a separate selector; rebuilding the helper below is not required for it.
+media-dependent verification workflow. The v0.2.2 release requires the
+player-persistence helper and rebuilt selector with its matching integrity pin.
+Published v0.2.1 used the earlier accepted v0.1.5 helper.
 
 ## Compatibility helper
 
@@ -20,10 +21,10 @@ The GitHub Actions workflow builds the helper on Windows and checks PowerShell p
 
 ## Patch-kit release
 
-Build the selector with `tools\build-language-launcher.cmd`. v0.2.1 packaging requires the accepted v0.1.5 helper binary (hash below), rather than a newly rebuilt helper. If necessary, extract it from the v0.1.5 PatchKit. Then run in PowerShell:
+Build the selector with `tools\build-language-launcher.cmd`. Current v0.2.2 packaging requires the verified player-persistence helper binary (hash below). A different compiler/timestamp can change its hash; update integrity pins only after verifying that build. Then run in PowerShell:
 
 ```powershell
-.\tools\package-release.ps1 -Version 0.2.1
+.\tools\package-release.ps1 -Version 0.2.2
 ```
 
 This downloads the exact [cnc-ddraw 7.1.0.0 archive](https://github.com/FunkyFr3sh/cnc-ddraw/releases/tag/v7.1.0.0), checks its hash and the renderer DLL hash, then creates the kit ZIP and `SHA256SUMS.txt` under `build/releases`. A fresh output root is required for repeated packaging; it will not overwrite an existing staging directory.
@@ -31,7 +32,7 @@ This downloads the exact [cnc-ddraw 7.1.0.0 archive](https://github.com/FunkyFr3
 For an existing archive or an explicitly selected helper:
 
 ```powershell
-.\tools\package-release.ps1 -Version 0.2.1 -RuntimeDll "C:\Builds\NFSSE-v0.1.5-patch-kit\runtime\NFSPortable.dll" -CncArchive "C:\Downloads\cnc-ddraw.zip" -OutputRoot "C:\Builds\NFSSE-release"
+.\tools\package-release.ps1 -Version 0.2.2 -RuntimeDll "C:\Builds\NFSPortable.dll" -CncArchive "C:\Downloads\cnc-ddraw.zip" -OutputRoot "C:\Builds\NFSSE-release"
 ```
 
 The published v0.1.0 and v0.1.1 kits use the same helper binary accepted during the session. The v0.1.2 prerelease adds focus/shortcut fixes; v0.1.3 adds the window border and height-based sizing. The user accepted the v0.1.3 window-presentation visual task. v0.1.4 binds the embedded original icon to the game window class, and v0.1.5 sets the requested full title through the existing window-creation hook. The user visually confirmed the title and original icon with v0.1.5. Rebuilding the same source with another compiler or timestamp may produce a different DLL hash; compilation alone does not validate its gameplay behavior. v0.2.0 packaging pins the accepted helper and renderer hashes. The manifest records every kit file. The new raw native selector contains no original game icon; the installer embeds that icon from the user's verified media. The original game executable is generated only by the installer. Optional resource conversion uses Windows' built-in C# compiler and verified user media, without including game assets in the kit.
@@ -47,11 +48,16 @@ Pinned input hashes:
 | v0.1.3 prerelease helper DLL | `8b0a3556fc84af570e1f9330ab8006a1e9d16890d5c8aebec49350e0ef7c4c19` |
 | v0.1.4 prerelease helper DLL | `32f777353b2637997a4ccb869e2359a73845aac5bc30d02ac6dd2c050d905a61` |
 | v0.1.5 full-release helper DLL | `6cc562a54c8c861db79ff7ce55b8168570c176bb7840d77d1d0d1c045e386ff1` |
+| v0.2.2 player-persistence helper DLL | `4e970616fb5100f03c7bb2543dec6a0a28bcd1ad8227a455f7e840bc1b6662e4` |
 | Generated game executable including icon | `a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd` |
 
 v0.1.5 was promoted from prerelease to the latest full release at the user's request. Its published ZIP remains unchanged, with SHA-256 `20a82c6c19b673c308981e64ccf897a0134db95ebc7a6176729a6a9663f63226`. The ZIP's documentation is the packaging snapshot from before the final visual confirmation and promotion; the online guide and validation record contain the current status.
 
 ## Media-dependent verification
+
+Run the [player-persistence checks](PLAYER_PERSISTENCE.md#verification) for
+current helper changes. These exercise the original file serializers/loaders
+in isolation, including exit/restart and relocation, without starting the game.
 
 Extract the resulting kit and run `Install-NFSSE.ps1` with your own supported media and a new destination. Check its generated executable hash against the table, verify the 19 relative path records, and compare copied `FRONTEND`/`SIMDATA` files with your source. Reinstall after adding a test save and changing configuration, then confirm these files survive. See [Validation](VALIDATION.md) for the checks performed for the first release.
 
@@ -60,7 +66,7 @@ Use a separate destination for development. Keep the supported original executab
 The media-dependent installation checks can be reproduced without launching the game:
 
 ```powershell
-.\tools\test-installer.ps1 -Kit "C:\Builds\NFSSE-release\NFSSE-v0.2.1-patch-kit" -SourceMedia "C:\Media"
+.\tools\test-installer.ps1 -Kit "C:\Builds\NFSSE-release\NFSSE-v0.2.2-patch-kit" -SourceMedia "C:\Media"
 ```
 
 This creates a fresh ignored test directory, checks copied asset hashes, exercises reinstall preservation and rejected-input cases, and writes a JSON result. It leaves the test outputs in place for inspection.
@@ -68,7 +74,7 @@ This creates a fresh ignored test directory, checks copied asset hashes, exercis
 For the optional language installer, run the developer reference suite with both supported media folders:
 
 ```powershell
-python tools/test-language-installer.py --kit "C:\Builds\NFSSE-release\NFSSE-v0.2.1-patch-kit" --english-media "C:\Media\English" --japanese-media "C:\Media\Japanese" --output-root "build/language-installer-check"
+python tools/test-language-installer.py --kit "C:\Builds\NFSSE-release\NFSSE-v0.2.2-patch-kit" --english-media "C:\Media\English" --japanese-media "C:\Media\Japanese" --output-root "build/language-installer-check"
 ```
 
 Run `tools\test-languages.cmd`, `python -m unittest discover -s tests -p test_nfs_resources.py`, and `tests\LanguageResources.Tests.ps1` in Windows PowerShell for media-independent native and converter checks. Python is required only for development reference tools. CI compiles both native components and runs these media-independent checks; it cannot exercise full installation without the user's media.

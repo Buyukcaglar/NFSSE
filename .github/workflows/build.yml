@@ -14,6 +14,9 @@ jobs:
       - name: Check focus recovery, window sizing, shortcuts and configuration upgrades
         shell: cmd
         run: tools\test-input.cmd
+      - name: Check portable player persistence without game media
+        shell: cmd
+        run: tools\test-player-persistence.cmd --storage "%CD%\build\player-storage-ci"
       - name: Parse installer scripts and compile icon tooling
         shell: powershell
         run: |

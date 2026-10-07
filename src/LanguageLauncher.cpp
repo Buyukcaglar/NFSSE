@@ -185,7 +185,7 @@ static bool languageAvailable(const std::wstring& root, Language language) {
 static void verifyRuntime(const std::wstring& root) {
     const struct { const char* path; const char* hash; } runtime[] = {
         {"NFSSE-Game.exe", "a962a27077a31748f860160dc84699cc46fe03b2c3d04287d07a0c88479c9ddd"},
-        {"NFSPortable.dll", "6cc562a54c8c861db79ff7ce55b8168570c176bb7840d77d1d0d1c045e386ff1"},
+        {"NFSPortable.dll", "4e970616fb5100f03c7bb2543dec6a0a28bcd1ad8227a455f7e840bc1b6662e4"},
         {"ddraw.dll", "85e0f7d530dfda134793a57cb3e76b0287dcc96892ee57162dd68f47283b03a9"}};
     for (const auto& file : runtime) require(hashFile(localPath(root, file.path)) == file.hash,
         "The supported game engine, compatibility helper or renderer has changed.");

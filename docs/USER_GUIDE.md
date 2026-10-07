@@ -1,6 +1,13 @@
 # NFSSE user guide
 
-This guide covers [v0.2.1](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.1), including the Japanese Graphics selection crash fix and optional English/German/Japanese language selection. Install from original media into a new, empty destination folder. The accepted v0.1.5 compatibility runtime, window title and original icon are retained. The user confirmed that Graphics selection no longer crashes; automated installer checks are recorded separately.
+**v0.2.2:** confirmed player names now save
+immediately, and normal game exit saves settings and records. Player data stays
+in `GAMEDATA/CONFIG/CONFIG.DAT` and tournament saves stay in
+`GAMEDATA/SAVEGAME/`. Move the complete game folder to retain them. Use the
+game's Save/Load controls for tournament continuation. See
+[Player persistence](PLAYER_PERSISTENCE.md) for validation and details.
+
+This guide covers [v0.2.2](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.2), including portable player persistence, the retained Japanese Graphics fix and optional English/German/Japanese selection. The user confirmed the persistence play checks passed on 2026-10-07. The original game engine, renderer, full window title and original icon are retained; automated checks are recorded separately.
 
 For the optional English/German/Japanese flag selector, use the
 [three-language edition guide](LANGUAGE_EDITION.md). Its NFSSE.exe opens the
@@ -31,7 +38,7 @@ The media folder must contain `NFS_WIN.EXE`, `NFSICONN.ICO`, `IFORCE.DLL`, `FRON
 
 ## Installation
 
-1. Download `NFSSE-v0.2.1-patch-kit.zip` from the [latest release](https://github.com/Buyukcaglar/NFSSE/releases/latest) and extract it to a folder.
+1. Download `NFSSE-v0.2.2-patch-kit.zip` from the [latest release](https://github.com/Buyukcaglar/NFSSE/releases/latest) and extract it to a folder.
 2. Double-click `Install-NFSSE.cmd` inside the extracted kit. A console asks for the media folder and destination folder.
 3. Enter the folder directly containing your original `NFS_WIN.EXE`. Choose a new, empty destination outside your media and existing game folders, such as `C:\Games\NFSSE`.
 4. Choose whether to enable the language selector; supply Japanese media if desired. Wait for the verified game data to be written, then close the installer after its success message.
@@ -47,6 +54,13 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Install-NFSSE.ps1 -Sou
 
 `SourceMedia` may also point to a mounted disc root. The installer validates the media executable, media icon, patch-kit file hashes and generated executable before copying game data. An unsupported build is rejected before destination files are written.
 
+To update an existing v0.2.1 installation created by this kit, close the game,
+back up `GAMEDATA` and the root configuration files, then run the v0.2.2 installer
+with the same supported media and existing destination. Existing saves,
+settings, enabled languages and selection are preserved. Replaced managed
+files and the previous helper/configuration are backed up under the game
+folder's `.patch-backups`. Fresh installations should use a new, empty folder.
+
 ## Playing and moving the game
 
 Launch `NFSSE.exe` directly. `Run-NFS.cmd` is an optional convenience: the executable's compatibility helper establishes its own working directory, so a desktop shortcut and double-click launch use the same executable-relative paths.
@@ -54,6 +68,24 @@ Launch `NFSSE.exe` directly. `Run-NFS.cmd` is an optional convenience: the execu
 Once installed, all game assets and required legacy DLLs are local. The physical CD and source-media folder are no longer needed for normal play. To move the game, close it and move the **whole destination folder**, including `FRONTEND`, `SIMDATA`, `GAMEDATA`, `NFSPortable.dll`, `ddraw.dll`, the DirectPlay DLLs and configuration files. Keep it on a writable drive; saves and settings live in that folder.
 
 Back up the entire `GAMEDATA` folder and root `nfs.cfg` before moving or reinstalling. To uninstall, close the game and remove the destination after preserving saves. No system-wide component needs uninstalling.
+
+## Player name and progress
+
+| File/folder relative to the game | Saved and restored data |
+| --- | --- |
+| `GAMEDATA/CONFIG/CONFIG.DAT` | Last confirmed player name, settings, records and other original configuration fields |
+| `GAMEDATA/SAVEGAME/*.SAV` | Saved tournament progress, through the game's original Save/Load controls |
+| `GAMEDATA/REPLAY/` | Saved replays |
+
+The name saves when confirmed. Settings and records also save at the game's
+configuration checkpoints and normal exit, including Quit and Alt+F4. The game
+loads its original configuration on startup; tournament continuation uses
+Save/Load. An unsaved race or tournament is not automatically resumed.
+
+Keep `CONFIG.DAT`: deleting it discards its name, settings and records. If you
+intentionally reset those, close the game and retain a backup such as
+`CONFIG.DAT.bak`. Tournament `.SAV` files are separate. Player data stays in the
+complete portable game folder, with no registry, AppData or Documents location.
 
 ## Display and video
 
@@ -69,7 +101,7 @@ From v0.1.4, the game window uses the original icon already embedded in `NFSSE.e
 
 The title bar displays `The Need for Speed: Special Edition` and uses the original game icon.
 
-The v0.1.2 helper releases stale keyboard states when the window loses or regains focus, addressing Enter becoming unavailable after Alt+Tab. Alt+F4 closes the game immediately. Use the in-game quit flow when you need to save progress normally.
+The helper releases stale keyboard states when the window loses or regains focus, addressing Enter becoming unavailable after Alt+Tab. Alt+F4 closes the game after checkpointing the player configuration. Use the game's Save/Load controls to save tournament progress before quitting.
 
 Use the bundled **cnc-ddraw 7.1.0.0 DLL**. The helper synchronizes presentation through a verified location inside that exact build, so replacing `ddraw.dll` with another version requires a corresponding helper update.
 
@@ -110,7 +142,7 @@ directly from the game folder.
 | Window is smaller than 1280×960 | The fixed size applies only when the primary desktop's current height is greater than 960 pixels. Relaunch after changing desktop resolution and check the `Window presentation` entry in `portable-runtime.log`. |
 | Alt+Enter does nothing | Check `toggle_borderless=true` in `[ddraw]`. An explicit custom hotkey or game-specific override can change the shortcut. |
 | Enter stops working after Alt+Tab | Use the latest helper, which resets stale keyboard states on focus transitions. Report whether the issue remains after switching away and back several times. |
-| Settings or saves do not persist | Use a writable destination outside protected system folders and close the game before backing up files. |
+| Settings or saves do not persist | Use v0.2.2 in a writable destination, keep CONFIG.DAT, and use the game's Save/Load controls for tournaments. Retain the runtime log and any save-failure message. |
 
 Open a [bug report](https://github.com/Buyukcaglar/NFSSE/issues/new/choose) with release version, Windows version, display setup, reproduction steps and `portable-runtime.log`. Review logs for personal folder names before attaching them. Do not attach original game files, video captures containing game assets or full process memory dumps.
 

@@ -1,8 +1,39 @@
 # Validation record
 
-Latest full release: **v0.2.1**, 2026-10-06. The user confirmed the Japanese Graphics selection crash resolved and authorized the corrected PatchKit and documentation for fresh installation from original media. The accepted v0.1.5 engine/helper/renderer are retained. Earlier language, window-presentation, title and icon confirmations remain recorded separately. Automated checks below validate specific files and behavior; user confirmation does not establish every frame, audio sample, multiplayer path or Windows host.
+Latest full release: **v0.2.2**, 2026-10-07. Automated file/installer checks and
+the user's successful persistence play checks are recorded separately below.
+
+## v0.2.2 player-persistence checks
+
+The original engine's isolated file routines restore every byte of the
+24,402-byte CONFIG.DAT and 1,462-byte tournament .SAV fixtures. The new helper
+checkpoints accepted names and normal exits, preserves old data on failed
+replacement and uses 64-bit save-space checks. Separate-process exit/restart,
+folder relocation, rejected hook bytes, cancelled names and uninitialized-exit
+guards pass. See [Player persistence](PLAYER_PERSISTENCE.md) for method,
+storage paths, reproducible commands and the limits of synthetic progress data.
+The original game engine, artwork and renderer retain their existing hashes;
+this update changes the helper and its selector integrity pin. Standard and
+optional-language installation checks pass, including 1,228 identical base
+assets, 436 Japanese outputs, all eleven German announcers, 19 relative paths,
+reinstall preservation and rejected-input cases. The local update preserved
+1,703 of 1,709 existing files; only six managed files changed, with the previous
+helper and configuration retained in the update backup. See
+[automated evidence](../research/validation/player-persistence-validation.json).
+
+On 2026-10-07 the user stated, "Ok user play checks passed", accepting this
+persistence task and authorizing commit, push and release. Their earlier reply
+identifies the game's own Quit/Exit option as their exit method. The
+[acceptance record](../research/validation/player-persistence-user-acceptance.json)
+does not infer unspecified race modes, a full championship, other hosts or
+multiplayer. No additional automated game/UI run was performed for publication.
 
 ## v0.2.1 Japanese graphics-menu checks
+
+Released on 2026-10-06, v0.2.1 retained the accepted v0.1.5 engine/helper/renderer.
+The Japanese Graphics fix and earlier language/window/title/icon acceptance
+remain included in v0.2.2. These confirmations do not establish every frame,
+audio sample, multiplayer path or Windows host.
 
 After the earlier collective language confirmation, the user reported an abort
 when opening Graphics in Japanese: `resizememblock - SENTINEL CORRUPTED`, with
@@ -127,7 +158,7 @@ This is a user-supplied working report; no controller model or wrapper configura
 
 ## Outstanding checks
 
-- Complete manual race, save/reload cycle and comprehensive audio/video coverage.
+- Expand race/championship and comprehensive audio/video coverage beyond the accepted v0.2.2 persistence play checks.
 - Input/exit checks: Enter after repeated Alt+Tab, Alt+F4 from both presentation modes, and unchanged desktop mode after exit. These have automated regression evidence but no separate user confirmation; the window-presentation visual task is already accepted.
 - Smaller desktops and broader display-transition/host coverage still require separate runtime checks. The v0.1.3 window-presentation task and v0.1.5 full title/original-icon visual task are accepted on the observed setup.
 - Multiplayer and serial/modem links.

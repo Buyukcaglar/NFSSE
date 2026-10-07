@@ -103,7 +103,7 @@ function Assert-NfsLanguageInputs([string]$Media, [string]$Destination, [string]
 }
 function Save-NfsLanguageBackup([string]$Root, [string]$Version, $Recipe) {
     $folder = Join-Path $Root ('.patch-backups\' + $Version + '-' + [DateTime]::UtcNow.ToString('yyyyMMdd-HHmmss') + '-' + [Guid]::NewGuid().ToString('N').Substring(0,8))
-    foreach ($relative in (@('NFSSE.exe','NFSSE-Game.exe','nfs.cfg','GAMEDATA/CONFIG/PATHS.DAT','language-edition.json','LANG/language-edition.index','LANG/English.paths','LANG/German.paths','LANG/Japanese.paths') + @($Recipe.race_speech_files))) {
+    foreach ($relative in (@('NFSSE.exe','NFSSE-Game.exe','NFSPortable.dll','nfs.cfg','GAMEDATA/CONFIG/CONFIG.DAT','GAMEDATA/CONFIG/PATHS.DAT','language-edition.json','LANG/language-edition.index','LANG/English.paths','LANG/German.paths','LANG/Japanese.paths') + @($Recipe.race_speech_files))) {
         $source = Join-Path $Root $relative
         if ([IO.File]::Exists($source)) {
             $target = Join-Path $folder $relative
