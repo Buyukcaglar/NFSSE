@@ -51,11 +51,8 @@ active one. `README.txt` in the ZIP has the full list.
 ## macOS
 
 1. Extract the ZIP and move `NFSSE` to any folder, for example Applications.
-2. Open NFSSE. The application is not signed with an Apple developer
-   certificate, so macOS refuses the first time. On macOS 15 and later: open
-   System Settings > Privacy & Security, scroll down to the line about NFSSE
-   and choose "Open Anyway". On macOS 11 to 14: Control-click NFSSE, choose
-   "Open", then "Open" again.
+2. Open NFSSE. The application is signed and notarized by Apple; macOS asks
+   once whether to open an application downloaded from the Internet.
 3. On the first start, choose the folder of your game copy. The application
    remembers it.
 

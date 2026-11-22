@@ -17,8 +17,8 @@
   silicon and Intel, macOS 11 or later; Metal, Core Audio) with the Windows
   version's functions: Enhanced 3D (Command-E or F9), native full screen,
   optional CRT scanlines, mouse in the menus, game controllers with analog
-  steering, saves in `~/Library/Application Support/NFSSE`. It is not signed
-  with an Apple developer certificate: macOS asks to allow it once.
+  steering, saves in `~/Library/Application Support/NFSSE`. Signed with a
+  Developer ID and notarized by Apple.
 - Not included: network, modem and serial play; languages other than English.
 - The compatibility patch kit (0.2.2 and earlier) is unchanged and stays
   available under its own release tags.
