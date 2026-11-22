@@ -1,5 +1,15 @@
 # NFSSE
 
+**v1.0** adds **native versions** of The Need for Speed: Special Edition: a
+64-bit Windows program and a PlayStation 3 program, made from the original
+game program and needing no compatibility layer. They are ready-made downloads
+on the [v1.0 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.0);
+see the [v1.0 release notes](docs/RELEASE_NOTES_v1.0.md) for installation and
+controls. The downloads contain no game data: you need your own copy of the
+game. The rest of this page describes the earlier compatibility patch kit
+(v0.2.2), which stays available under
+[its own release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.2).
+
 **v0.2.2** fixes player-name persistence and legacy save-space checks while
 keeping settings and progress inside the game folder. The user confirmed the
 play checks passed on 2026-10-07. See [Player persistence](docs/PLAYER_PERSISTENCE.md)
@@ -9,13 +19,13 @@ for save locations and validation details.
 
 Modern Windows compatibility patch for **The Need for Speed Special Edition**, Windows version. It creates a portable installation from your own installation media, scales the original graphics in fullscreen or a movable window, and fixes the startup, video and menu problems investigated in this project.
 
-[Latest patch kit](https://github.com/Buyukcaglar/NFSSE/releases/latest) · [v0.2.2 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.2) · [Release notes](docs/RELEASE_NOTES_v0.2.2.md) · [User guide](docs/USER_GUIDE.md) · [Validation and limits](docs/VALIDATION.md) · [Report a problem](https://github.com/Buyukcaglar/NFSSE/issues/new/choose)
+[Patch kit](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.2) · [v0.2.2 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.2) · [Release notes](docs/RELEASE_NOTES_v0.2.2.md) · [User guide](docs/USER_GUIDE.md) · [Validation and limits](docs/VALIDATION.md) · [Report a problem](https://github.com/Buyukcaglar/NFSSE/issues/new/choose)
 
 This release also retains the accepted Japanese Graphics fix and optional English/German/Japanese selection. Fresh installation uses your original media and a new, empty destination; Japanese also requires its original media. Existing v0.2.1 kit installations can be updated in place as described in the [user guide](docs/USER_GUIDE.md). The standard English installation remains the default. The original game engine, renderer, full window title and original icon are retained. I-Force remains reported working.
 
 ## Install and play
 
-1. Download `NFSSE-v0.2.2-patch-kit.zip` from the [latest release](https://github.com/Buyukcaglar/NFSSE/releases/latest) and extract the complete ZIP.
+1. Download `NFSSE-v0.2.2-patch-kit.zip` from the [v0.2.2 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.2) and extract the complete ZIP.
 2. Double-click `Install-NFSSE.cmd`.
 3. Select the folder containing your original `NFS_WIN.EXE`, `FRONTEND`, `SIMDATA`, `GAMEDATA`, `REDIST` and `DIRECTX3`. Choose a new, empty destination folder outside your media and existing game folders.
 4. Optionally enable the language-selector window. Supply your Japanese media folder to add Japanese; otherwise English/German are available and Japanese is disabled.

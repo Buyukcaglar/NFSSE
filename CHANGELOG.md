@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.0 — Native Windows (64-bit) and PlayStation 3 versions, 2026-11-22
+
+- First release of the native ports: the game as a 64-bit Windows program
+  (Direct3D 11, WASAPI) and as a PlayStation 3 program, made from the original
+  Windows 95 game program by static recompilation. Ready-made downloads without
+  game data; the player supplies the original game files.
+- Enhanced 3D (F9 on Windows, R3 on the PS3): the race's 3D scene at the
+  window's or display's resolution with in-between pictures; the original
+  picture stays available at any moment.
+- Windows: keyboard, mouse in the menus, XInput controllers with analog
+  steering, borderless full screen, optional CRT scanlines, saves in a `USER`
+  folder next to the program.
+- PlayStation 3: 1080p, analog steering, the system's on-screen keyboard.
+- Not included: network, modem and serial play; languages other than English.
+- The compatibility patch kit (0.2.2 and earlier) is unchanged and stays
+  available under its own release tags.
+
 ## 0.2.2 — Portable player persistence, 2026-10-07
 
 - Save a confirmed player name immediately, and checkpoint the original

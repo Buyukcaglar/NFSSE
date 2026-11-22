@@ -38,7 +38,7 @@ The media folder must contain `NFS_WIN.EXE`, `NFSICONN.ICO`, `IFORCE.DLL`, `FRON
 
 ## Installation
 
-1. Download `NFSSE-v0.2.2-patch-kit.zip` from the [latest release](https://github.com/Buyukcaglar/NFSSE/releases/latest) and extract it to a folder.
+1. Download `NFSSE-v0.2.2-patch-kit.zip` from the [v0.2.2 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.2) and extract it to a folder.
 2. Double-click `Install-NFSSE.cmd` inside the extracted kit. A console asks for the media folder and destination folder.
 3. Enter the folder directly containing your original `NFS_WIN.EXE`. Choose a new, empty destination outside your media and existing game folders, such as `C:\Games\NFSSE`.
 4. Choose whether to enable the language selector; supply Japanese media if desired. Wait for the verified game data to be written, then close the installer after its success message.
