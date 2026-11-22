@@ -1,10 +1,11 @@
-# NFSSE v1.0 — Native Windows (64-bit) and PlayStation 3 versions
+# NFSSE v1.0 — Native Windows (64-bit), macOS and PlayStation 3 versions
 
 v1.0 is the first release of the **native ports**: The Need for Speed: Special
-Edition as a 64-bit Windows program and as a PlayStation 3 program. They need
-no compatibility layer, no DirectX 3 runtime and no installer.
+Edition as a 64-bit Windows program, as a macOS application (added on
+2026-11-22, after the first publication) and as a PlayStation 3 program. They
+need no compatibility layer, no DirectX 3 runtime and no installer.
 
-Both are made from the original Windows 95 game program by static
+All are made from the original Windows 95 game program by static
 recompilation: the game's own code, translated for the new machines. They are
 not an emulator and not a rewrite, so the physics, the opponents, the menus
 and the timing are the game's own.
@@ -19,6 +20,7 @@ and the timing are the game's own.
 | File | For |
 | --- | --- |
 | `NFSSE-v1.0-Windows-x64.zip` | Windows 10 or 11, 64-bit, Direct3D 11 |
+| `NFSSE-v1.0-macOS-universal.zip` | macOS 11 or later, Apple silicon or Intel |
 | `NFSSE-v1.0-PS3-NFSSE0001-nodata.pkg` | PlayStation 3 with custom firmware |
 | `README-PS3.txt` | Install steps and controls for the PS3 |
 | `SHA256SUMS.txt` | Checksums of the files above |
@@ -46,6 +48,27 @@ steering. The window's system menu (the icon in the title bar) also has
 "CRT scanlines" and "About". The game stands still while its window is not the
 active one. `README.txt` in the ZIP has the full list.
 
+## macOS
+
+1. Extract the ZIP and move `NFSSE` to any folder, for example Applications.
+2. Open NFSSE. The application is not signed with an Apple developer
+   certificate, so macOS refuses the first time. On macOS 15 and later: open
+   System Settings > Privacy & Security, scroll down to the line about NFSSE
+   and choose "Open Anyway". On macOS 11 to 14: Control-click NFSSE, choose
+   "Open", then "Open" again.
+3. On the first start, choose the folder of your game copy. The application
+   remembers it.
+
+Nothing is written into your game copy. Settings, best times, replays, saved
+tournaments and the log go to `~/Library/Application Support/NFSSE`.
+
+The game's keys are those of the Windows version (Return for Enter). Added by
+the port, in the View menu: Enhanced 3D (Command-E or F9), CRT Scanlines
+(Command-L) and full screen (Control-Command-F or F11). The mouse works in
+the menus. Controllers that macOS knows (Xbox, DualShock 4, DualSense, MFi)
+work with analog steering. The game stands still while its window is not the
+front window. `README.txt` in the ZIP has the full list.
+
 ## PlayStation 3
 
 1. Install the PKG (Package Manager, Install Package Files).
@@ -68,7 +91,8 @@ game itself is the same in both modes, and you can switch at any moment.
 
 - Network, modem and serial play.
 - Languages other than English.
-- Joysticks and wheels other than XInput controllers; force feedback.
+- Joysticks and wheels other than game controllers (XInput on Windows); force
+  feedback.
 - The distance at which the track and its scenery appear is the original
   game's; a longer one is planned for v1.1.
 
@@ -85,6 +109,15 @@ game itself is the same in both modes, and you can switch at any moment.
   leaving the game and the first-start folder dialog were checked by script.
   Controllers, other graphics hardware and other display scalings were not
   tried.
+- macOS, on one Mac (Mac mini M4, macOS 27, a 2560x1600 display at 30 Hz):
+  scripted races in Enhanced 3D held 33 to 34 simulation steps per second at
+  the display's 30 pictures per second, on the Apple silicon code and on the
+  Intel code run by Rosetta 2; a call-by-call comparison with the reference
+  run gave identical results on both (717 and 389 calls). Window sizes, full
+  screen, CRT scanlines, the About panel, the mouse, both ways of leaving the
+  game and the pause in the background were checked by script. An Intel Mac,
+  a Retina display, a faster display, controllers, older macOS versions and
+  the first start on a second Mac were not tried.
 
 ## The earlier releases
 

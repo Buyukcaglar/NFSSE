@@ -1,8 +1,9 @@
 # NFSSE
 
 **v1.0** adds **native versions** of The Need for Speed: Special Edition: a
-64-bit Windows program and a PlayStation 3 program, made from the original
-game program and needing no compatibility layer. They are ready-made downloads
+64-bit Windows program, a macOS application (universal: Apple silicon and
+Intel) and a PlayStation 3 program, made from the original game program and
+needing no compatibility layer. They are ready-made downloads
 on the [v1.0 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.0);
 see the [v1.0 release notes](docs/RELEASE_NOTES_v1.0.md) for installation and
 controls. The downloads contain no game data: you need your own copy of the
