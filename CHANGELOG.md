@@ -24,6 +24,11 @@
   available under its own release tags.
 - 2026-11-23, Windows and PlayStation 3 files replaced (version unchanged): in Enhanced 3D other cars
   no longer jitter (the in-between pictures moved them but not the camera). The macOS file follows.
+- 2026-11-23, second update, Windows file (version unchanged): in Enhanced 3D the opponent no longer
+  slides sideways while the camera turns (the camera's turn was left out of the in-between pictures near
+  straight-ahead headings); the program checks the game copy before it starts and names what is missing or
+  different instead of closing without a word; the game's own file errors are explained; messages and the
+  folder picker follow the Windows dark or light theme. The PlayStation 3 and macOS files follow.
 
 ## 0.2.2 — Portable player persistence, 2026-10-07
 

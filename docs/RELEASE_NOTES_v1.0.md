@@ -18,6 +18,14 @@ and the timing are the game's own.
 **Update of 2026-11-23** (same version): the Windows and PlayStation 3 files were replaced. In Enhanced 3D
 other cars no longer jitter. The macOS file will follow.
 
+**Second update of 2026-11-23** (same version), Windows file: in Enhanced 3D the opponent no longer
+slides sideways and back while the camera turns (most visible on City, in the view behind the car).
+Before the game starts the program now checks the game copy and says what is missing or different
+(`NFS_WIN.EXE` by size and checksum, data files and folders, where it looked), with a choice of another
+folder; when the game itself stops over a missing file, its message is said in plain words with the
+file's name. Messages and the folder picker follow the Windows light or dark theme. The PlayStation 3
+and macOS files follow.
+
 ## Downloads
 
 | File | For |
