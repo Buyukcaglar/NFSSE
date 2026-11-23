@@ -31,6 +31,11 @@ version has the same two changes, with the system's message dialog. On both, a p
 start (PS button, Quit Game) no longer opens a message while it ends; on the PlayStation 3 that left the
 game unable to start again. The macOS file follows.
 
+**macOS file, evening of 2026-11-23** (same version): the same changes on macOS. In Enhanced 3D other
+cars and the opponent no longer jitter; the application checks the game copy before it starts, says what
+is missing or different (with "Choose Another Folder…", "Start Anyway" where the copy can still run, and
+"Quit"), and explains the game's own file errors in macOS alerts.
+
 ## Downloads
 
 | File | For |

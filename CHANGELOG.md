@@ -33,6 +33,10 @@
   the same two changes, with the system's message dialog. Fixed on both: when the program was closed
   during its start (PS button, Quit Game), it no longer opens a message while it ends; on the PlayStation 3
   that left the game unable to start again until the console restarted. The macOS file follows.
+- 2026-11-23, evening, macOS file (version unchanged): all of the above. In Enhanced 3D other cars and
+  the opponent no longer jitter; the application checks the game copy before it starts, says what is
+  missing or different and lets you choose another folder or start anyway; the game's own file errors
+  are explained in macOS alerts.
 
 ## 0.2.2 — Portable player persistence, 2026-10-07
 
