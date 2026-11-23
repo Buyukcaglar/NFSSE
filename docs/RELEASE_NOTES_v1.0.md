@@ -15,6 +15,9 @@ and the timing are the game's own.
 `ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b`) with the
 `FRONTEND`, `GAMEDATA` and `SIMDATA` folders. The English files are used.
 
+**Update of 2026-11-23** (same version): the Windows and PlayStation 3 files were replaced. In Enhanced 3D
+other cars no longer jitter. The macOS file will follow.
+
 ## Downloads
 
 | File | For |

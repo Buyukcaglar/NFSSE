@@ -22,6 +22,8 @@
 - Not included: network, modem and serial play; languages other than English.
 - The compatibility patch kit (0.2.2 and earlier) is unchanged and stays
   available under its own release tags.
+- 2026-11-23, Windows and PlayStation 3 files replaced (version unchanged): in Enhanced 3D other cars
+  no longer jitter (the in-between pictures moved them but not the camera). The macOS file follows.
 
 ## 0.2.2 — Portable player persistence, 2026-10-07
 
