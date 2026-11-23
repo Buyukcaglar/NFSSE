@@ -29,6 +29,10 @@
   straight-ahead headings); the program checks the game copy before it starts and names what is missing or
   different instead of closing without a word; the game's own file errors are explained; messages and the
   folder picker follow the Windows dark or light theme. The PlayStation 3 and macOS files follow.
+- 2026-11-23, evening, PlayStation 3 and Windows files (version unchanged): the PlayStation 3 version has
+  the same two changes, with the system's message dialog. Fixed on both: when the program was closed
+  during its start (PS button, Quit Game), it no longer opens a message while it ends; on the PlayStation 3
+  that left the game unable to start again until the console restarted. The macOS file follows.
 
 ## 0.2.2 — Portable player persistence, 2026-10-07
 

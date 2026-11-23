@@ -26,6 +26,11 @@ folder; when the game itself stops over a missing file, its message is said in p
 file's name. Messages and the folder picker follow the Windows light or dark theme. The PlayStation 3
 and macOS files follow.
 
+**Evening update of 2026-11-23** (same version), PlayStation 3 and Windows files: the PlayStation 3
+version has the same two changes, with the system's message dialog. On both, a program closed during its
+start (PS button, Quit Game) no longer opens a message while it ends; on the PlayStation 3 that left the
+game unable to start again. The macOS file follows.
+
 ## Downloads
 
 | File | For |
