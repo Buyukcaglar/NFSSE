@@ -9,7 +9,8 @@
 - At the high detail setting the race draws 60 track sections ahead instead
   of the original 28. On the open roads the distance ends with the road's data
   near the finish (a test build stopped there on City).
-- Windows and PlayStation 3 files; the macOS file follows.
+- Windows and PlayStation 3 files; the macOS file (universal, signed and
+  notarized) added the same afternoon.
 
 ## 1.0 — Native Windows (64-bit) and PlayStation 3 versions, 2026-11-22
 

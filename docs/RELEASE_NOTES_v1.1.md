@@ -9,8 +9,9 @@ for 64-bit Windows, macOS and the PlayStation 3 by static recompilation.
 `ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b`) with the
 `FRONTEND`, `GAMEDATA` and `SIMDATA` folders. The English files are used.
 
-The macOS file of v1.1 follows; until then the macOS application of
-[v1.0](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.0) stays available.
+**macOS file, afternoon of 2026-11-24** (same version): the same changes as a
+universal application for Apple silicon and Intel Macs, signed and notarized
+by Apple.
 
 ## New in v1.1
 
@@ -21,6 +22,8 @@ The macOS file of v1.1 follows; until then the macOS application of
   Enhanced 3D, and the choice is remembered.
   - Windows: F8, or "Widescreen race" in the window's system menu; on a
     controller, the left stick pressed and held for a second.
+  - macOS: F8, or "Widescreen Race" in the View menu; on a controller, the
+    left stick pressed and held for a second.
   - PlayStation 3: L3 held for a second.
 - **Longer draw distance.** At the high graphics detail setting the race draws
   the road and its scenery more than twice as far ahead as the original game
@@ -33,11 +36,13 @@ The macOS file of v1.1 follows; until then the macOS application of
 | File | For |
 | --- | --- |
 | `NFSSE-v1.1-Windows-x64.zip` | Windows 10 or 11, 64-bit, Direct3D 11 |
+| `NFSSE-v1.1-macOS-universal.zip` | macOS 11 or later, Apple silicon or Intel |
 | `NFSSE-v1.1-PS3-NFSSE0001-nodata.pkg` | PlayStation 3 with custom firmware |
 | `README-PS3.txt` | Install steps and controls for the PS3 |
 | `SHA256SUMS.txt` | Checksums of the files above |
 
-Installation is as in v1.0: extract the ZIP and start `NFSSE.exe`, or install
+Installation is as in v1.0: extract the ZIP and start `NFSSE.exe` (Windows)
+or open `NFSSE.app` (macOS), or install
 the PKG over v1.0 (settings, best times and the game files in `USRDIR/GAME`
 stay). `README.txt` in the ZIP and `README-PS3.txt` have the full key and
 button lists.
@@ -51,6 +56,9 @@ button lists.
 - PS3, on a real console: whole races in both modes at v1.0's speed (33.4
   simulation steps per second), widescreen switched on and off during races,
   the pause menu, and a City race to its finish.
+- macOS (Mac mini M4): the same comparison with the reference run, widescreen
+  switched during races in both modes, the pause menu, and City races to the
+  finish; the Intel half of the universal application raced under Rosetta.
 - Found before this release and fixed in it: on the open-road tracks (Coastal,
   Alpine, City) the longer draw distance ran past the end of the road's data
   shortly before the finish, and the race stopped there. Near the end of an
