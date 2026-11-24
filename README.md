@@ -7,7 +7,9 @@ needing no compatibility layer. They are ready-made downloads
 on the [v1.0 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.0);
 see the [v1.0 release notes](docs/RELEASE_NOTES_v1.0.md) for installation and
 controls. The downloads contain no game data: you need your own copy of the
-game. The rest of this page describes the earlier compatibility patch kit
+game. **v1.1** adds a widescreen race and a longer draw distance for Windows
+and the PlayStation 3 ([v1.1 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.1),
+[notes](docs/RELEASE_NOTES_v1.1.md)); its macOS file follows. The rest of this page describes the earlier compatibility patch kit
 (v0.2.2), which stays available under
 [its own release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.2).
 

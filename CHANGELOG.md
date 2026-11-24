@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1 — Widescreen race and a longer draw distance, 2026-11-24
+
+- Widescreen race (16:9; F8 or the system menu on Windows, the left stick held
+  on a controller, L3 held on the PS3): more road and scenery at the sides,
+  menus 4:3, the cockpit view skipped while it is on; switchable at any time
+  in Original and Enhanced 3D, remembered.
+- At the high detail setting the race draws 60 track sections ahead instead
+  of the original 28. On the open roads the distance ends with the road's data
+  near the finish (a test build stopped there on City).
+- Windows and PlayStation 3 files; the macOS file follows.
+
 ## 1.0 — Native Windows (64-bit) and PlayStation 3 versions, 2026-11-22
 
 - First release of the native ports: the game as a 64-bit Windows program
