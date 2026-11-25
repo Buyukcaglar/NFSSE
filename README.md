@@ -1,17 +1,28 @@
 # NFSSE
 
-**v1.0** adds **native versions** of The Need for Speed: Special Edition: a
-64-bit Windows program, a macOS application (universal: Apple silicon and
-Intel) and a PlayStation 3 program, made from the original game program and
-needing no compatibility layer. They are ready-made downloads
-on the [v1.0 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.0);
-see the [v1.0 release notes](docs/RELEASE_NOTES_v1.0.md) for installation and
-controls. The downloads contain no game data: you need your own copy of the
-game. **v1.1** adds a widescreen race and a longer draw distance for Windows,
-macOS and the PlayStation 3 ([v1.1 release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.1),
-[notes](docs/RELEASE_NOTES_v1.1.md)), and a **PlayStation Vita** program
-(960x544, not yet tried on a real Vita) on the same release. The rest of this page describes the earlier compatibility patch kit
-(v0.2.2), which stays available under
+Native ports of **The Need for Speed: Special Edition** (the 1996 Windows 95
+version) for **Windows (64-bit)**, **macOS** (Apple silicon and Intel),
+**PlayStation 3** and **PlayStation Vita**. They are made from the original game
+program by static recompilation and run natively, with no emulator or
+compatibility layer: Enhanced 3D at the display's resolution, a widescreen race,
+a longer draw distance, controllers with analog steering, and force feedback.
+The downloads contain no game data: you need your own copy of the game.
+
+- **v1.2**, the latest ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.2),
+  [notes](docs/RELEASE_NOTES_v1.2.md)): force feedback and rumble, and the PS
+  Vita version at 960x544. Windows and PS Vita files; the PS3 and macOS files
+  follow (until then they are on v1.1).
+- **v1.1** ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.1),
+  [notes](docs/RELEASE_NOTES_v1.1.md)): widescreen race and a longer draw
+  distance.
+- **v1.0** ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.0),
+  [notes](docs/RELEASE_NOTES_v1.0.md)): the first native versions, with
+  installation and controls.
+
+## Earlier: the compatibility patch kit (v0.2.2)
+
+The rest of this page describes the earlier compatibility patch kit for the
+original Windows game (v0.2.2), which stays available under
 [its own release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v0.2.2).
 
 **v0.2.2** fixes player-name persistence and legacy save-space checks while

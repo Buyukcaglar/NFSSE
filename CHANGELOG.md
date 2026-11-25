@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.2 — Force feedback and rumble, and the PlayStation Vita version, 2026-11-25
+
+- The game's I-Force force feedback effects (steering weight from the tyres'
+  grip, jolts, rough surfaces, a tumbling car) on today's devices: Windows
+  wheels and force feedback joysticks through DirectInput (also as inputs) and
+  XInput rumble, with a system menu switch and `nfsse.ini` settings; the PS3's
+  DUALSHOCK 3; a DUALSHOCK 3 or 4 on a PlayStation TV.
+- The PS Vita version (960x544, Enhanced 3D, widescreen race) is part of the
+  release.
+- Windows and PS Vita files; the PS3 file follows after a test on the console,
+  the macOS file from the Mac.
+
 ## 1.1 — Widescreen race and a longer draw distance, 2026-11-24
 
 - Widescreen race (16:9; F8 or the system menu on Windows, the left stick held
