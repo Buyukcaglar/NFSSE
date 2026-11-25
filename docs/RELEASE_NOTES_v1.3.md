@@ -34,9 +34,13 @@ available.
     version with its movie player, which follows from the Mac.
   - PlayStation 3: `/dev_hdd0/game/NFSSE0001/USRDIR/VIDEO/`, decoded by the
     console's video decoder: H.264 High profile up to level 4.1 and 1920x1088,
-    with 16-bit PCM sound.
+    with 16-bit PCM sound. The movies made for it:
+    [NFSSE PS3 1080p Upscaled Video Pack](https://www.moddb.com/games/the-need-for-speed/downloads/nfsse-ps3-1080p-upscaled-video-pack)
+    on ModDB (0.9 GB).
   - PS Vita: `ux0:data/NFSSE/VIDEO/`, decoded by the Vita's player: H.264 up
-    to 960x544 with AAC sound.
+    to 960x544 with AAC sound. The movies made for it:
+    [NFSSE PS Vita 544p Upscaled Video Pack](https://www.moddb.com/games/the-need-for-speed/downloads/nfsse-ps-vita-544p-upscaled-video-pack)
+    on ModDB (0.2 GB).
 - **PlayStation 3 file.** The v1.2 changes (the DUALSHOCK 3's motors play the
   game's force feedback effects) reach the PS3 with this release.
 - **PS Vita fixes** after the first report from a real Vita: Enhanced 3D no

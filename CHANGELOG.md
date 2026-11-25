@@ -7,7 +7,9 @@
   skip buttons): Windows (Media Foundation), PS3 (the console's decoder), PS
   Vita (its player). The 4K movies for Windows and macOS are the
   [NFSSE 4K Upscaled Video Pack](https://www.moddb.com/games/the-need-for-speed/downloads/nfsse-4k-upscaled-video-pack)
-  on ModDB.
+  on ModDB; for the consoles the
+  [PS3 1080p](https://www.moddb.com/games/the-need-for-speed/downloads/nfsse-ps3-1080p-upscaled-video-pack) and
+  [PS Vita 544p](https://www.moddb.com/games/the-need-for-speed/downloads/nfsse-ps-vita-544p-upscaled-video-pack) packs.
 - The PlayStation 3 file, with the v1.2 changes (DUALSHOCK 3 rumble).
 - PS Vita: Enhanced 3D without stuttering sound and dropped pictures (separate
   CPU cores, fewer GPU writes, in-between pictures only when there is time);

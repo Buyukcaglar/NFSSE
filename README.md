@@ -16,7 +16,12 @@ The downloads contain no game data: you need your own copy of the game.
 - **4K upscaled movies** for Windows and macOS: the
   [NFSSE 4K Upscaled Video Pack](https://www.moddb.com/games/the-need-for-speed/downloads/nfsse-4k-upscaled-video-pack)
   on ModDB (all 26 movies, 2.1 GB). Unzip it next to `NFSSE.exe` (v1.3 or
-  later); the macOS application plays them from its next version.
+  later); the macOS application plays them from its next version. For the
+  consoles (v1.3 or later), the same movies re-encoded for their decoders:
+  [PS3 1080p pack](https://www.moddb.com/games/the-need-for-speed/downloads/nfsse-ps3-1080p-upscaled-video-pack) (0.9 GB, its `VIDEO` folder to
+  `/dev_hdd0/game/NFSSE0001/USRDIR/`) and
+  [PS Vita 544p pack](https://www.moddb.com/games/the-need-for-speed/downloads/nfsse-ps-vita-544p-upscaled-video-pack) (0.2 GB, to
+  `ux0:data/NFSSE/`).
 - **v1.2** ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.2),
   [notes](docs/RELEASE_NOTES_v1.2.md)): force feedback and rumble, and the PS
   Vita version at 960x544.
