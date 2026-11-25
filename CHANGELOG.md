@@ -13,7 +13,8 @@
 - The PlayStation 3 file, with the v1.2 changes (DUALSHOCK 3 rumble).
 - PS Vita: Enhanced 3D without stuttering sound and dropped pictures (separate
   CPU cores, fewer GPU writes, in-between pictures only when there is time);
-  the menu's Exit ends cleanly.
+  the menu's Exit ends cleanly. Updated PS Vita file (2026-11-26): Enhanced 3D
+  at nearly full speed on a real Vita, far fewer sound gaps.
 - Windows: messages no longer cut off their last line.
 - Windows, PS3 and PS Vita files; the macOS file follows from the Mac.
 

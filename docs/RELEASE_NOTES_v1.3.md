@@ -49,6 +49,11 @@ available.
   rows are written to the GPU; in-between pictures are drawn only when there
   is time for them), and "Exit" in the game's first menu ends the program
   cleanly instead of with a crash report.
+- **PS Vita file updated (2026-11-26)** after a race on a real Vita: in
+  Enhanced 3D the game now runs at nearly full speed (30-33 of its 33.5
+  steps a second) and the sound has far fewer gaps (the game is given more
+  time to write its sound, and copying the pictures moved to the third CPU
+  core). Install it over the earlier v1.3 file the same way.
 - **Windows:** the program's messages (for example the question for the game
   folder) no longer cut off their last line.
 
@@ -83,9 +88,11 @@ key and button lists.
   and 509 of 512 pictures shown) with their sound; Cross skips the opening.
 - PS Vita, in the Vita3K emulator: a movie from `VIDEO` with its sound, skipped
   by a button; the menu's Exit ends cleanly; the Enhanced 3D race.
+- PS Vita, on a real Vita (updated file): the Enhanced 3D race with
+  widescreen at 27-30 pictures and 30-33 steps a second; a short sound gap
+  every few seconds remains.
 
-**Not tried yet:** the PS Vita version's speed on a real Vita after the fixes,
-and force feedback and rumble with a real wheel, joystick or controller.
+**Not tried yet:** force feedback and rumble with a real wheel, joystick or controller.
 Reports are welcome in the
 [issues](https://github.com/Buyukcaglar/NFSSE/issues/new/choose).
 
