@@ -11,6 +11,10 @@
   near the finish (a test build stopped there on City).
 - Windows and PlayStation 3 files; the macOS file (universal, signed and
   notarized) added the same afternoon.
+- PlayStation Vita file added on 2026-11-25: a native PS Vita program (VPK for
+  homebrew systems, title ID NFSSE0001) at the screen's 960x544, with Enhanced
+  3D, the widescreen race, the system's keyboard and messages; game files in
+  `ux0:data/NFSSE/GAME`. Tried in the Vita3K emulator, not yet on a Vita.
 
 ## 1.0 — Native Windows (64-bit) and PlayStation 3 versions, 2026-11-22
 

@@ -13,6 +13,15 @@ for 64-bit Windows, macOS and the PlayStation 3 by static recompilation.
 universal application for Apple silicon and Intel Macs, signed and notarized
 by Apple.
 
+**PlayStation Vita file, 2026-11-25** (new platform, same game version): the
+game as a native PS Vita program (title ID NFSSE0001) for systems that run
+homebrew (HENkaku / Ensō, installed with VitaShell). The picture uses the
+Vita's whole screen resolution, 960x544; Enhanced 3D draws the race's 3D scene
+at that resolution, and the widescreen race fills the screen. The game's files
+go to `ux0:data/NFSSE/GAME`. Tried in the Vita3K emulator only: not yet on a
+real Vita, so its speed there is not known yet. `README-PSVita.txt` has the
+install steps and the buttons.
+
 ## New in v1.1
 
 - **Widescreen race.** The race at 16:9: more road and scenery at both sides,
@@ -25,6 +34,7 @@ by Apple.
   - macOS: F8, or "Widescreen Race" in the View menu; on a controller, the
     left stick pressed and held for a second.
   - PlayStation 3: L3 held for a second.
+  - PlayStation Vita: Select + L.
 - **Longer draw distance.** At the high graphics detail setting the race draws
   the road and its scenery more than twice as far ahead as the original game
   (60 track sections instead of 28), so buildings, rocks and trees no longer
@@ -39,6 +49,8 @@ by Apple.
 | `NFSSE-v1.1-macOS-universal.zip` | macOS 11 or later, Apple silicon or Intel |
 | `NFSSE-v1.1-PS3-NFSSE0001-nodata.pkg` | PlayStation 3 with custom firmware |
 | `README-PS3.txt` | Install steps and controls for the PS3 |
+| `NFSSE-v1.1-PSVita-nodata.vpk` | PlayStation Vita (or PlayStation TV) that runs homebrew |
+| `README-PSVita.txt` | Install steps and buttons for the PS Vita |
 | `SHA256SUMS.txt` | Checksums of the files above |
 
 Installation is as in v1.0: extract the ZIP and start `NFSSE.exe` (Windows)
@@ -59,6 +71,10 @@ button lists.
 - macOS (Mac mini M4): the same comparison with the reference run, widescreen
   switched during races in both modes, the pause menu, and City races to the
   finish; the Intel half of the universal application raced under Rosetta.
+- PS Vita, in the Vita3K emulator (not on a real Vita yet): the start with the
+  game files in the package and on the memory card, the message when they are
+  missing, the demo race, and scripted races in Original and in Enhanced 3D
+  with widescreen.
 - Found before this release and fixed in it: on the open-road tracks (Coastal,
   Alpine, City) the longer draw distance ran past the end of the road's data
   shortly before the finish, and the race stopped there. Near the end of an
