@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.3 — Upscaled movies, the PlayStation 3 file, and PS Vita fixes, 2026-11-25
+
+- A `VIDEO` folder next to the program with MP4 files named like the game's
+  movies replaces the game's 320x200 movies (own shape, own sound, the same
+  skip buttons): Windows (Media Foundation), PS3 (the console's decoder), PS
+  Vita (its player). The 4K movies for Windows and macOS are the
+  [NFSSE 4K Upscaled Video Pack](https://www.moddb.com/games/the-need-for-speed/downloads/nfsse-4k-upscaled-video-pack)
+  on ModDB.
+- The PlayStation 3 file, with the v1.2 changes (DUALSHOCK 3 rumble).
+- PS Vita: Enhanced 3D without stuttering sound and dropped pictures (separate
+  CPU cores, fewer GPU writes, in-between pictures only when there is time);
+  the menu's Exit ends cleanly.
+- Windows: messages no longer cut off their last line.
+- Windows, PS3 and PS Vita files; the macOS file follows from the Mac.
+
 ## 1.2 — Force feedback and rumble, and the PlayStation Vita version, 2026-11-25
 
 - The game's I-Force force feedback effects (steering weight from the tyres'

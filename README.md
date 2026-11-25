@@ -8,10 +8,18 @@ compatibility layer: Enhanced 3D at the display's resolution, a widescreen race,
 a longer draw distance, controllers with analog steering, and force feedback.
 The downloads contain no game data: you need your own copy of the game.
 
-- **v1.2**, the latest ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.2),
+- **v1.3**, the latest ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.3),
+  [notes](docs/RELEASE_NOTES_v1.3.md)): upscaled movies (a `VIDEO` folder next
+  to the program replaces the game's 320x200 movies), the PlayStation 3 file
+  with the v1.2 changes, and PS Vita fixes (Enhanced 3D speed, Exit). Windows,
+  PS3 and PS Vita files; the macOS file follows (until then it is on v1.1).
+- **4K upscaled movies** for Windows and macOS: the
+  [NFSSE 4K Upscaled Video Pack](https://www.moddb.com/games/the-need-for-speed/downloads/nfsse-4k-upscaled-video-pack)
+  on ModDB (all 26 movies, 2.1 GB). Unzip it next to `NFSSE.exe` (v1.3 or
+  later); the macOS application plays them from its next version.
+- **v1.2** ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.2),
   [notes](docs/RELEASE_NOTES_v1.2.md)): force feedback and rumble, and the PS
-  Vita version at 960x544. Windows and PS Vita files; the PS3 and macOS files
-  follow (until then they are on v1.1).
+  Vita version at 960x544.
 - **v1.1** ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.1),
   [notes](docs/RELEASE_NOTES_v1.1.md)): widescreen race and a longer draw
   distance.
