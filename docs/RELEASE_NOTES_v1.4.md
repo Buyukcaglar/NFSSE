@@ -56,5 +56,14 @@ each download (`README.txt` in the Windows zip, `README-PS3.txt`,
 | `README-PS3.txt`, `README-PSVita.txt` | installation and buttons of the console versions |
 | `SHA256SUMS.txt` | checksums of the files above |
 
+**Windows file replaced in place (2026-11-26).** `NFSSE-v1.4-Windows-x64.zip`
+was replaced with the same three files plus `NFSSE/recomplauncher.json`, the
+file [RecompLauncher](https://recomplauncher.com) reads (see the
+[README](../README.md#play-through-a-launcher-windows)). It is now 3,070,559
+bytes, SHA-256
+`e31487557adf0b14c75a177728b7cd13addeb3f55175b4e90d93bd94a2d3c160`, and
+`SHA256SUMS.txt` was replaced to match. `NFSSE.exe` inside is byte-identical;
+the PS3 and PS Vita files are unchanged.
+
 The Need for Speed is a trademark of Electronic Arts. This is a fan project,
 not affiliated with or endorsed by Electronic Arts.

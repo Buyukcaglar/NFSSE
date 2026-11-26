@@ -10,6 +10,12 @@
   on; the sky is no longer a third too tall.
 - Windows, PS3 and PS Vita files (the console files not yet run on the
   consoles); the macOS file follows from the Mac.
+- Windows file replaced in place (2026-11-26): `NFSSE-v1.4-Windows-x64.zip`
+  now also holds `NFSSE/recomplauncher.json` for RecompLauncher (3,070,559
+  bytes, SHA-256
+  `e31487557adf0b14c75a177728b7cd13addeb3f55175b4e90d93bd94a2d3c160`);
+  `NFSSE.exe` in it is byte-identical, `SHA256SUMS.txt` was replaced to
+  match. The PS3 and PS Vita files are unchanged.
 
 ## 1.3 — Upscaled movies, the PlayStation 3 file, and PS Vita fixes, 2026-11-25
 

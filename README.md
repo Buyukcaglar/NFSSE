@@ -1,4 +1,5 @@
 # NFSSE
+<a href="https://recomplauncher.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://recomplauncher.com/assets/press/launcher/badge-light.svg"><img alt="Get it on RecompLauncher" src="https://recomplauncher.com/assets/press/launcher/badge-dark.svg" height="48"></picture></a>
 
 Native ports of **The Need for Speed: Special Edition** (the 1996 Windows 95
 version) for **Windows (64-bit)**, **macOS** (Apple silicon and Intel),
@@ -36,6 +37,28 @@ The downloads contain no game data: you need your own copy of the game.
 - **v1.0** ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.0),
   [notes](docs/RELEASE_NOTES_v1.0.md)): the first native versions, with
   installation and controls.
+
+## Play through a launcher (Windows)
+
+The Windows version can also be installed and started by two launchers.
+Neither launcher contains or downloads the game: both use your own copy.
+
+- **[RecompLauncher](https://recomplauncher.com)**: install NFSSE there, pick
+  your game folder once and press Play. The folder is your full copy of the
+  English Windows 95 Special Edition, the CD or a folder with everything from
+  it, the one that holds `NFS_WIN.EXE`, `FRONTEND` and `SIMDATA`. The launcher
+  starts `NFSSE.exe "<folder>"`. Enhanced 3D, widescreen race, full screen, CRT
+  scanlines and km/h are settings on the game's page there; saves, settings
+  and the log are in `USER\` beside the program.
+- **[sp00nznet's recomp-launcher](https://github.com/sp00nznet/recomp-launcher)**:
+  an installer can be built from the `launcher/` folder of this repository.
+  Until one is on a release, the same setup runs by hand from a copy of this
+  repository: `powershell -ExecutionPolicy Bypass -File launcher\setup.ps1 -Game "<folder>"`.
+  It downloads the newest Windows release into `play\` and writes
+  `The Need for Speed SE (recomp).cmd`, which starts the program with your
+  game folder.
+
+The PS3 and PS Vita versions are not part of either launcher.
 
 ## Earlier: the compatibility patch kit (v0.2.2)
 
