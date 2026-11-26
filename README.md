@@ -1,5 +1,4 @@
 # NFSSE
-<a href="https://recomplauncher.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://recomplauncher.com/assets/press/launcher/badge-light.svg"><img alt="Get it on RecompLauncher" src="https://recomplauncher.com/assets/press/launcher/badge-dark.svg" height="48"></picture></a>
 
 Native ports of **The Need for Speed: Special Edition** (the 1996 Windows 95
 version) for **Windows (64-bit)**, **macOS** (Apple silicon and Intel),
@@ -131,3 +130,5 @@ Start with [Building](docs/BUILDING.md) for development, [Technical notes](docs/
 The [language edition guide](docs/LANGUAGE_EDITION.md) documents the optional features and command-line installation. The user accepted the local three-language checks and subsequently confirmed the Japanese Graphics crash resolved on 2026-10-06. Native selection, Windows resource conversion and packaged installer/preservation checks pass. Original Japanese name/exit dialogs and race announcements remain English. The kit contains no original game executable, artwork, recordings or icon; game resources come from the user's media.
 
 The new code and documentation are MIT-licensed. The original game remains subject to its original ownership and licensing. This is an independent preservation project, unaffiliated with Electronic Arts.
+
+<a href="https://recomplauncher.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://recomplauncher.com/assets/press/launcher/badge-light.svg"><img alt="Get it on RecompLauncher" src="https://recomplauncher.com/assets/press/launcher/badge-dark.svg" height="48"></picture></a>
