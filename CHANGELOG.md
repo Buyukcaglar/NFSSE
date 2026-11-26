@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.4.1 — English race pictures with km/h, 2026-11-26
+
+- With "Speed in km/h" on, the replay buttons and other race pictures were
+  German (#6): v1.4 loaded the game's German picture file whole. Now the
+  English pictures stay and only the "KM" label comes from the German file.
+- Windows, PS3 and PS Vita files (the console files not yet run on the
+  consoles); the macOS file follows from the Mac.
+
 ## 1.4 — Speeds in km/h, and widescreen fixes, 2026-11-26
 
 - Speeds in km/h and distances in km through the game's own metric displays
