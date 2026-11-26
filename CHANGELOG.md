@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.4 — Speeds in km/h, and widescreen fixes, 2026-11-26
+
+- Speeds in km/h and distances in km through the game's own metric displays
+  (race bar, track lengths, results and records), texts still English:
+  "Speed in km/h" in the Windows system menu, L1 + R1 held on the PS3,
+  Select + Triangle on the PS Vita; remembered.
+- Widescreen race: no more garbage in the top corners from the second race
+  on; the sky is no longer a third too tall.
+- Windows, PS3 and PS Vita files (the console files not yet run on the
+  consoles); the macOS file follows from the Mac.
+
 ## 1.3 — Upscaled movies, the PlayStation 3 file, and PS Vita fixes, 2026-11-25
 
 - A `VIDEO` folder next to the program with MP4 files named like the game's
