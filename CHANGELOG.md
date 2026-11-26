@@ -7,6 +7,15 @@
   English pictures stay and only the "KM" label comes from the German file.
 - Windows, PS3 and PS Vita files (the console files not yet run on the
   consoles); the macOS file follows from the Mac.
+- macOS file added (2026-11-26): `NFSSE-v1.4.1-macOS-universal.zip`
+  (5,884,807 bytes, SHA-256
+  `990eda10524ad47248330f561e559f38caa628c10ad8a4cf5cc18ab0175ce613`), the
+  first since v1.1: universal, signed and notarized, with
+  `NFSSE/recomplauncher.json` for RecompLauncher (`recomplauncher.json` now
+  also covers the Mac: `NFSSE.app`, its settings file and saves in
+  `~/Library/Application Support/NFSSE`). No upscaled movies or force
+  feedback on the Mac yet. `SHA256SUMS.txt` was replaced to match; the other
+  files are unchanged.
 
 ## 1.4 — Speeds in km/h, and widescreen fixes, 2026-11-26
 

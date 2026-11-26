@@ -10,21 +10,21 @@ The downloads contain no game data: you need your own copy of the game.
 
 - **v1.4.1**, the latest ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.4.1),
   [notes](docs/RELEASE_NOTES_v1.4.1.md)): with km/h on, the replay buttons
-  and other race pictures are English again.
+  and other race pictures are English again. Windows, macOS, PS3 and PS Vita
+  files; the macOS file (added 2026-11-26) is the first since v1.1.
 - **v1.4** ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.4),
   [notes](docs/RELEASE_NOTES_v1.4.md)): speeds in km/h and distances in km
   (the game's own metric displays), and two widescreen fixes (top corners,
-  sky). Windows, PS3 and PS Vita files; the macOS file follows (until then it
-  is on v1.1).
+  sky). Windows, PS3 and PS Vita files; for macOS, use v1.4.1.
 - **v1.3** ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.3),
   [notes](docs/RELEASE_NOTES_v1.3.md)): upscaled movies (a `VIDEO` folder next
   to the program replaces the game's 320x200 movies), the PlayStation 3 file
   with the v1.2 changes, and PS Vita fixes (Enhanced 3D speed, Exit). Windows,
-  PS3 and PS Vita files; the macOS file follows (until then it is on v1.1).
+  PS3 and PS Vita files; for macOS, use v1.4.1.
 - **4K upscaled movies** for Windows and macOS: the
   [NFSSE 4K Upscaled Video Pack](https://www.moddb.com/games/the-need-for-speed/downloads/nfsse-4k-upscaled-video-pack)
   on ModDB (all 26 movies, 2.1 GB). Unzip it next to `NFSSE.exe` (v1.3 or
-  later); the macOS application plays them from its next version. For the
+  later); the macOS application does not play them yet (v1.4.1 included). For the
   consoles (v1.3 or later), the same movies re-encoded for their decoders:
   [PS3 1080p pack](https://www.moddb.com/games/the-need-for-speed/downloads/nfsse-ps3-1080p-upscaled-video-pack) (0.9 GB, its `VIDEO` folder to
   `/dev_hdd0/game/NFSSE0001/USRDIR/`) and
@@ -40,9 +40,10 @@ The downloads contain no game data: you need your own copy of the game.
   [notes](docs/RELEASE_NOTES_v1.0.md)): the first native versions, with
   installation and controls.
 
-## Play through a launcher (Windows)
+## Play through a launcher
 
-The Windows version can also be installed and started by two launchers.
+The Windows version can be installed and started by two launchers, the macOS
+version (v1.4.1 or later) by RecompLauncher.
 Neither launcher contains or downloads the game: both use your own copy.
 
 - **[RecompLauncher](https://recomplauncher.com)**: install NFSSE there, pick
@@ -51,7 +52,9 @@ Neither launcher contains or downloads the game: both use your own copy.
   it, the one that holds `NFS_WIN.EXE`, `FRONTEND` and `SIMDATA`. The launcher
   starts `NFSSE.exe "<folder>"`. Enhanced 3D, widescreen race, full screen, CRT
   scanlines and km/h are settings on the game's page there; saves, settings
-  and the log are in `USER\` beside the program.
+  and the log are in `USER\` beside the program. On the Mac the launcher
+  starts `NFSSE.app` with the folder; saves, settings and the log are in
+  `~/Library/Application Support/NFSSE`.
 - **[sp00nznet's recomp-launcher](https://github.com/sp00nznet/recomp-launcher)**:
   an installer can be built from the `launcher/` folder of this repository.
   Until one is on a release, the same setup runs by hand from a copy of this
@@ -60,7 +63,8 @@ Neither launcher contains or downloads the game: both use your own copy.
   `The Need for Speed SE (recomp).cmd`, which starts the program with your
   game folder.
 
-The PS3 and PS Vita versions are not part of either launcher.
+sp00nznet's launcher is Windows only. The PS3 and PS Vita versions are not
+part of either launcher.
 
 ## Earlier: the compatibility patch kit (v0.2.2)
 

@@ -8,10 +8,17 @@ The Need for Speed: Special Edition.
 `ac72e59587b66f9a3bb2bdb83fa40b8eaac2d68a5ae47a041b026922f8d2594b`) with the
 `FRONTEND`, `GAMEDATA` and `SIMDATA` folders. The English files are used.
 
-**Files on this release:** Windows, PlayStation 3 and PS Vita. The macOS file
-follows from the Mac; until then the macOS file of
-[v1.1](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.1) stays
-available.
+**Files on this release:** Windows, macOS, PlayStation 3 and PS Vita.
+
+**Updated 2026-11-26:** the macOS file was added
+(`NFSSE-v1.4.1-macOS-universal.zip`, 5,884,807 bytes, SHA-256
+`990eda10524ad47248330f561e559f38caa628c10ad8a4cf5cc18ab0175ce613`): one
+universal application for Apple silicon and Intel Macs (macOS 11 or later),
+signed and notarized by Apple, with all the changes since v1.1 (speeds in
+km/h, the widescreen fixes, the fix above) and `recomplauncher.json` for
+RecompLauncher. It does not yet play the upscaled movies or use force
+feedback. `SHA256SUMS.txt` was replaced to match; the other files are
+unchanged.
 
 ## Fixed in v1.4.1
 
@@ -24,16 +31,18 @@ available.
 Everything else is as in v1.4 (speeds in km/h, the widescreen fixes).
 
 The Windows program was tested with this change (race, pause menu and
-replay with km/h on); the PlayStation 3 and PS Vita files are built from the
+replay with km/h on); the macOS application was started on Apple silicon
+with each of its settings on and off; the PlayStation 3 and PS Vita files are built from the
 same code and had not yet been run on the consoles when this release was
 made. If one of them misbehaves, the v1.3 files stay available.
 
 ## Installation and controls
 
 As before: see the [v1.0 notes](RELEASE_NOTES_v1.0.md) and the README file of
-each download (`README.txt` in the Windows zip, `README-PS3.txt`,
+each download (`README.txt` in the Windows and macOS zips, `README-PS3.txt`,
 `README-PSVita.txt`). To update, replace the program: unpack the Windows zip
-over the old one, or install the PS3 / PS Vita file over the installed one.
+over the old one, replace `NFSSE.app` on the Mac, or install the PS3 /
+PS Vita file over the installed one.
 The settings and the game files stay.
 
 ## Files
@@ -41,6 +50,7 @@ The settings and the game files stay.
 | File | For |
 | --- | --- |
 | `NFSSE-v1.4.1-Windows-x64.zip` | Windows 10 / 11, 64-bit |
+| `NFSSE-v1.4.1-macOS-universal.zip` | macOS 11 or later, Apple silicon and Intel |
 | `NFSSE-v1.4.1-PS3-NFSSE0001-nodata.pkg` | PlayStation 3 with custom firmware or HEN |
 | `NFSSE-v1.4.1-PSVita-nodata.vpk` | PS Vita / PlayStation TV with HENkaku / Enso |
 | `README-PS3.txt`, `README-PSVita.txt` | installation and buttons of the console versions |

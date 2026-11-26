@@ -19,7 +19,8 @@
   ],
   "start": {
     "program": [
-      "NFSSE.exe"
+      "NFSSE.exe",
+      "NFSSE.app"
     ],
     "args": [
       "{input:game}"
@@ -31,7 +32,11 @@
       "format": "ini",
       "file": [
         {
-          "path": "{install}/USER/nfsse.ini"
+          "path": "{install}/USER/nfsse.ini",
+          "if": "{install}/NFSSE.exe"
+        },
+        {
+          "path": "{home}/Library/Application Support/NFSSE/nfsse.ini"
         }
       ]
     }
@@ -39,17 +44,28 @@
   "saves": [
     "{install}/USER/gamedata",
     "{install}/USER/nfs.cfg",
-    "{install}/USER/nfsse.ini"
+    "{install}/USER/nfsse.ini",
+    "{home}/Library/Application Support/NFSSE/gamedata",
+    "{home}/Library/Application Support/NFSSE/nfs.cfg",
+    "{home}/Library/Application Support/NFSSE/nfsse.ini"
   ],
   "folders": {
     "saves": [
       {
-        "path": "{install}/USER"
+        "path": "{install}/USER",
+        "if": "{install}/NFSSE.exe"
+      },
+      {
+        "path": "{home}/Library/Application Support/NFSSE"
       }
     ],
     "logs": [
       {
-        "path": "{install}/USER"
+        "path": "{install}/USER",
+        "if": "{install}/NFSSE.exe"
+      },
+      {
+        "path": "{home}/Library/Application Support/NFSSE"
       }
     ]
   },
@@ -179,7 +195,7 @@
     }
   ],
   "exit_codes": {
-    "1": "It couldn't start: the game folder wasn't accepted, or Direct3D 11 isn't available. Pick your game folder again on the game's page."
+    "1": "It couldn't start: the game folder wasn't accepted, or (on Windows) Direct3D 11 isn't available. Pick your game folder again on the game's page."
   },
   "system": {
     "windows": {
@@ -187,6 +203,9 @@
       "graphics": {
         "d3d11": "11_0"
       }
+    },
+    "macos": {
+      "version": "11"
     }
   }
 }
