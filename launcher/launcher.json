@@ -1,0 +1,29 @@
+{
+  "title": "The Need for Speed: Special Edition 64bit",
+  "repo": "Buyukcaglar/NFSSE",
+  "accent": "#d4a017",
+  "note": {
+    "default": "Nothing is compiled: the setup downloads this project's newest Windows release from GitHub (about 3 MB) and points it at your copy. It takes under a minute and needs your full copy of the English Windows 95 Special Edition, the CD or a folder with everything from it (the one that holds NFS_WIN.EXE). Windows only."
+  },
+  "game": {
+    "name": "The Need for Speed: Special Edition (Windows 95)",
+    "files": [
+      "NFS_WIN.EXE",
+      "FRONTEND/MOVIE/EA.TGV",
+      "SIMDATA/MISC/AL1.TRI"
+    ]
+  },
+  "setup": {
+    "windows": [
+      "powershell",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "launcher\\setup.ps1",
+      "-Game",
+      "{game}"
+    ]
+  },
+  "play": "* (recomp).cmd"
+}

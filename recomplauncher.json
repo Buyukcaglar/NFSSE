@@ -1,0 +1,192 @@
+{
+  "$schema": "https://recomplauncher.com/schema/recomplauncher.json",
+  "format": 1,
+  "name": "The Need for Speed: Special Edition 64bit (NFSSE)",
+  "repo": "Buyukcaglar/NFSSE",
+  "inputs": [
+    {
+      "id": "game",
+      "label": "Your full copy of The Need for Speed: Special Edition (the English Windows 95 release): the CD or a folder with everything from it, the one that holds NFS_WIN.EXE, FRONTEND and SIMDATA.",
+      "formats": [
+        {
+          "type": "folder"
+        }
+      ],
+      "check": {
+        "file": "NFS_WIN.EXE"
+      }
+    }
+  ],
+  "start": {
+    "program": [
+      "NFSSE.exe"
+    ],
+    "args": [
+      "{input:game}"
+    ]
+  },
+  "config": [
+    {
+      "id": "main",
+      "format": "ini",
+      "file": [
+        {
+          "path": "{install}/USER/nfsse.ini"
+        }
+      ]
+    }
+  ],
+  "saves": [
+    "{install}/USER/gamedata",
+    "{install}/USER/nfs.cfg",
+    "{install}/USER/nfsse.ini"
+  ],
+  "folders": {
+    "saves": [
+      {
+        "path": "{install}/USER"
+      }
+    ],
+    "logs": [
+      {
+        "path": "{install}/USER"
+      }
+    ]
+  },
+  "settings": [
+    {
+      "id": "enhanced",
+      "label": "Enhanced 3D",
+      "help": "Draws the race at your screen's resolution. F9 switches it while you play.",
+      "choices": [
+        {
+          "label": "Off",
+          "set": {
+            "enhanced": "0"
+          }
+        },
+        {
+          "label": "On",
+          "set": {
+            "enhanced": "1"
+          }
+        }
+      ],
+      "defaults": {
+        "enhanced": "0"
+      },
+      "group": "Picture"
+    },
+    {
+      "id": "widescreen",
+      "label": "Widescreen race",
+      "help": "Shows more of the road at the sides. F8 switches it while you play.",
+      "choices": [
+        {
+          "label": "Off",
+          "set": {
+            "widescreen": "0"
+          }
+        },
+        {
+          "label": "On",
+          "set": {
+            "widescreen": "1"
+          }
+        }
+      ],
+      "defaults": {
+        "widescreen": "0"
+      },
+      "group": "Picture"
+    },
+    {
+      "id": "fullscreen",
+      "label": "Full screen",
+      "help": "Starts in full screen instead of a window.",
+      "choices": [
+        {
+          "label": "Off",
+          "set": {
+            "fullscreen": "0"
+          }
+        },
+        {
+          "label": "On",
+          "set": {
+            "fullscreen": "1"
+          }
+        }
+      ],
+      "defaults": {
+        "fullscreen": "0"
+      },
+      "group": "Picture"
+    },
+    {
+      "id": "crt",
+      "label": "CRT scanlines",
+      "help": "Draws the picture with the lines of an old monitor.",
+      "choices": [
+        {
+          "label": "Off",
+          "set": {
+            "crt_scanlines": "0"
+          }
+        },
+        {
+          "label": "On",
+          "set": {
+            "crt_scanlines": "1"
+          }
+        }
+      ],
+      "defaults": {
+        "crt_scanlines": "0"
+      },
+      "group": "Picture"
+    },
+    {
+      "id": "kmh",
+      "label": "Speeds in km/h",
+      "help": "Shows speeds in kilometres per hour instead of miles per hour.",
+      "choices": [
+        {
+          "label": "Off",
+          "set": {
+            "kmh": "0"
+          }
+        },
+        {
+          "label": "On",
+          "set": {
+            "kmh": "1"
+          }
+        }
+      ],
+      "defaults": {
+        "kmh": "0"
+      },
+      "group": "Game"
+    }
+  ],
+  "actions": [
+    {
+      "id": "saves",
+      "label": "Saves and log",
+      "help": "Open the folder your saves, settings and the log are in.",
+      "open": "saves"
+    }
+  ],
+  "exit_codes": {
+    "1": "It couldn't start: the game folder wasn't accepted, or Direct3D 11 isn't available. Pick your game folder again on the game's page."
+  },
+  "system": {
+    "windows": {
+      "version": "10",
+      "graphics": {
+        "d3d11": "11_0"
+      }
+    }
+  }
+}
