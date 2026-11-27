@@ -8,7 +8,11 @@ compatibility layer: Enhanced 3D at the display's resolution, a widescreen race,
 a longer draw distance, controllers with analog steering, and force feedback.
 The downloads contain no game data: you need your own copy of the game.
 
-- **v1.4.1**, the latest ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.4.1),
+- **v1.4.2**, the latest ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.4.2),
+  [notes](docs/RELEASE_NOTES_v1.4.2.md)): on Windows, wheel forces push the
+  right way on mirrored tracks, and damaged files of the game copy are named
+  at the start. Windows, PS3 and PS Vita files; for macOS, use v1.4.1.
+- **v1.4.1** ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.4.1),
   [notes](docs/RELEASE_NOTES_v1.4.1.md)): with km/h on, the replay buttons
   and other race pictures are English again. Windows, macOS, PS3 and PS Vita
   files; the macOS file (added 2026-11-26) is the first since v1.1.

@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.4.2 — Wheel forces on mirrored tracks, damaged game files named, 2026-11-27
+
+- Windows, force feedback wheels and joysticks: on a mirrored track the
+  sideways forces pushed the wrong way (the wheel was turned into the bend),
+  as in the original game. They are turned round there now.
+- Windows: the files of the game copy are checked for damage once (CRC-32 of
+  every file; remembered in `USER\gamecopy.chk`). A damaged file is named at
+  the start instead of hanging the game later (#4: one unreadable CD sector
+  in `CL1.TRI` hung Coastal while loading).
+- Windows, PS3 and PS Vita files (the console files otherwise as 1.4.1, not
+  yet run on the consoles); the macOS file follows from the Mac.
+
 ## 1.4.1 — English race pictures with km/h, 2026-11-26
 
 - With "Speed in km/h" on, the replay buttons and other race pictures were
