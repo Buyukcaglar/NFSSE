@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.4.3 — Stick widescreen switch can be turned off, clean Quit (Windows), 2026-11-28
+
+- Windows: holding the left stick in (also the horn) switched widescreen,
+  and with it the cockpit view was left out (#8). "Left stick held switches
+  widescreen" in the system menu (`stick_widescreen` in `USER
+fsse.ini`,
+  a RecompLauncher setting too) turns that switch off; on by default.
+- Windows: choosing Quit in the game could end in an access violation (#10):
+  the program ended from the game's thread while sound and controller still
+  ran. The main thread now ends it in order, as on the PS Vita.
+- Windows file only. The release carries the v1.4.2 PS3 and PS Vita files
+  unchanged; the macOS file stays on v1.4.1.
+
 ## 1.4.2 — Wheel forces on mirrored tracks, damaged game files named, 2026-11-27
 
 - Windows, force feedback wheels and joysticks: on a mirrored track the

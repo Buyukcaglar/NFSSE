@@ -184,6 +184,29 @@
         "kmh": "0"
       },
       "group": "Game"
+    },
+    {
+      "id": "stick_widescreen",
+      "label": "Left stick switches widescreen",
+      "help": "Holding the left stick in for a second switches the widescreen race. The stick is the horn as well. (Windows)",
+      "choices": [
+        {
+          "label": "Off",
+          "set": {
+            "stick_widescreen": "0"
+          }
+        },
+        {
+          "label": "On",
+          "set": {
+            "stick_widescreen": "1"
+          }
+        }
+      ],
+      "defaults": {
+        "stick_widescreen": "1"
+      },
+      "group": "Game"
     }
   ],
   "actions": [

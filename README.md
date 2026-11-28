@@ -8,7 +8,12 @@ compatibility layer: Enhanced 3D at the display's resolution, a widescreen race,
 a longer draw distance, controllers with analog steering, and force feedback.
 The downloads contain no game data: you need your own copy of the game.
 
-- **v1.4.2**, the latest ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.4.2),
+- **v1.4.3**, the latest ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.4.3),
+  [notes](docs/RELEASE_NOTES_v1.4.3.md)): Windows only - the left stick's
+  widescreen hold (also the horn) can be turned off, and choosing Quit in the
+  game no longer ends in an error now and then. The release carries the
+  unchanged v1.4.2 PS3 and PS Vita files; for macOS, use v1.4.1.
+- **v1.4.2** ([release](https://github.com/Buyukcaglar/NFSSE/releases/tag/v1.4.2),
   [notes](docs/RELEASE_NOTES_v1.4.2.md)): on Windows, wheel forces push the
   right way on mirrored tracks, and damaged files of the game copy are named
   at the start. Windows, PS3 and PS Vita files; for macOS, use v1.4.1.
@@ -55,7 +60,7 @@ Neither launcher contains or downloads the game: both use your own copy.
   English Windows 95 Special Edition, the CD or a folder with everything from
   it, the one that holds `NFS_WIN.EXE`, `FRONTEND` and `SIMDATA`. The launcher
   starts `NFSSE.exe "<folder>"`. Enhanced 3D, widescreen race, full screen, CRT
-  scanlines and km/h are settings on the game's page there; saves, settings
+  scanlines, km/h and the left stick's widescreen hold (Windows) are settings on the game's page there; saves, settings
   and the log are in `USER\` beside the program. On the Mac the launcher
   starts `NFSSE.app` with the folder; saves, settings and the log are in
   `~/Library/Application Support/NFSSE`.
